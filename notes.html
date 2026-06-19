@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Digital Notes | Orient LMS</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS & JS for Math Typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Marked JS for Markdown Parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Mermaid JS for Flowcharts/Diagrams -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+
+    <!-- Project Stylesheet -->
+    <link rel="stylesheet" href="css/notes-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🔮</span> Orient LMS
+            </a>
+            <span class="subject-badge" id="active-subject-name">Loading Notes...</span>
+        </div>
+        
+        <div class="nav-right">
+            <span class="instruction-text">Double-click anywhere on the notes to add a sticky note 📌</span>
+            <!-- Dark Mode Toggle -->
+            <button class="btn-icon" id="theme-toggle" title="Switch Theme">🌙</button>
+            <a href="index.html" class="btn-primary">Back to Dashboard</a>
+        </div>
+    </header>
+
+    <!-- Main Workspace Container -->
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="search-box">
+                <input type="text" class="search-input" id="search-input" placeholder="Search syllabus...">
+            </div>
+            <div class="lessons-list accordion-container" id="lessons-list">
+                <!-- Loaded dynamically by JS -->
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="workspace" id="workspace">
+            <article class="digital-note-content" id="notes-content">
+                <div class="welcome-screen">
+                    <h2>Select a topic from the sidebar to begin.</h2>
+                    <p>Notes are fully digitized. You can double-click anywhere to place a sticky note.</p>
+                </div>
+            </article>
+
+            <!-- Sticky Note Layer (floating over the workspace) -->
+            <div class="sticky-note-layer" id="sticky-note-layer"></div>
+        </main>
+    </div>
+
+    <!-- Project Scripts -->
+    <script src="js/syllabus.js"></script>
+    <script src="js/sticky-notes.js"></script>
+    <script src="js/notes-app.js"></script>
+</body>
+</html>

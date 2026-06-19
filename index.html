@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orient LMS | Interactive Digitalised Notes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Modern Design Variables matching Orient LMS Purple/Slate theme */
+        :root {
+            --primary-purple: #6b46c1;
+            --primary-hover: #553c9a;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border-light: #e2e8f0;
+            --gradient-primary: linear-gradient(135deg, #6b46c1 0%, #4f46e5 100%);
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-light: #0f172a;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --white: #1e293b;
+            --border-light: #334155;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            transition: background-color 0.3s;
+        }
+
+        /* --- Navigation Bar --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border-light);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: background-color 0.3s;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary-purple);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .theme-btn {
+            background: none;
+            border: 1px solid var(--border-light);
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: var(--transition-smooth);
+        }
+
+        .theme-btn:hover {
+            border-color: var(--primary-purple);
+            color: var(--primary-purple);
+            background-color: rgba(107, 70, 193, 0.05);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Subject Cards Grid --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .subject-card {
+            background-color: var(--white);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 35px;
+            box-shadow: 0 4px 20px -5px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .subject-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .subject-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -10px rgba(107, 70, 193, 0.12);
+            border-color: rgba(107, 70, 193, 0.2);
+        }
+
+        .subject-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card-subject-code {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary-purple);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .subject-card h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+        }
+
+        .subject-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            flex: 1;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            font-size: 14px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .bullet-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--primary-purple);
+            font-weight: bold;
+        }
+
+        .btn-card {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-light);
+            color: var(--primary-purple);
+            padding: 14px 24px;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: var(--transition-smooth);
+        }
+
+        .subject-card:hover .btn-card {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 8px 20px -6px rgba(107, 70, 193, 0.4);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-muted);
+            font-size: 14px;
+            background-color: var(--white);
+        }
+
+        footer a {
+            color: var(--primary-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">🔮 Orient LMS</a>
+        <div class="nav-right">
+            <button class="theme-btn" id="theme-toggle">🌙</button>
+            <a href="https://rokushikii.github.io/students-LMS/" class="btn-card" style="border-color: var(--primary-purple); padding: 8px 18px;" target="_blank">View 3D Simulation Project</a>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <h1>Digitalised Subject Notes Workspace</h1>
+        <p>Convert your handwritten whiteboard notes into interactive digital notebooks. Toggles side-by-side with original images, featuring custom student sticky notes, teacher annotations, math formatting, and quick revision quizzes.</p>
+    </header>
+
+    <!-- Subject Portal Section -->
+    <main class="container">
+        <div class="subject-grid">
+            
+            <!-- Extended Math Card -->
+            <div class="subject-card">
+                <div class="card-icon">📐</div>
+                <div class="card-subject-code">IGCSE 0580</div>
+                <h2>Extended Mathematics</h2>
+                <p>Digitalised whiteboards and formulas for core and extended concepts, containing coordinates mapping geometry, primes, Venn diagrams, and trigonometry rules.</p>
+                <ul class="bullet-list">
+                    <li>96 image-mapped lessons imported</li>
+                    <li>KaTeX-rendered math equations</li>
+                    <li>Quick self-assessment quizzes</li>
+                    <li>Save custom sticky-notes locally</li>
+                </ul>
+                <a href="notes.html?subject=0580-ext-math" class="btn-card">Open Notes Workspace</a>
+            </div>
+
+            <!-- Additional Math Card -->
+            <div class="subject-card">
+                <div class="card-icon">📊</div>
+                <div class="card-subject-code">IGCSE 0606</div>
+                <h2>Additional Mathematics</h2>
+                <p>Advanced maths syllabus notes targeting calculus integration, binomial coefficients, matrices, permutations, and logarithms.</p>
+                <ul class="bullet-list">
+                    <li>Ready for whiteboard uploads</li>
+                    <li>Formula expansion guides</li>
+                    <li>LaTeX mathematical displays</li>
+                    <li>Clear drawing tool enabled</li>
+                </ul>
+                <a href="notes.html?subject=0606-add-math" class="btn-card">Open Notes Workspace</a>
+            </div>
+
+            <!-- Physics Card -->
+            <div class="subject-card">
+                <div class="card-icon">⚡</div>
+                <div class="card-subject-code">IGCSE 0625</div>
+                <h2>Physics Notes</h2>
+                <p>Digitalized slides covering mechanics forces, thermal heat capacity, wave reflection, electromagnetic electricity, and nuclear physics.</p>
+                <ul class="bullet-list">
+                    <li>Structure by subject ready</li>
+                    <li>Side-by-side whiteboard view</li>
+                    <li>Interactive teacher tips</li>
+                    <li>Drawing overlays for circuit tracing</li>
+                </ul>
+                <a href="notes.html?subject=0625-physics" class="btn-card">Open Notes Workspace</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Orient LMS. Integrated with <a href="https://rokushikii.github.io/students-LMS/" target="_blank">3D Simulation Project</a>.</p>
+    </footer>
+
+    <!-- Theme toggling script -->
+    <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('lms_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        themeBtn.innerText = currentTheme === 'dark' ? '☀️' : '🌙';
+
+        themeBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('lms_theme', newTheme);
+            themeBtn.innerText = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

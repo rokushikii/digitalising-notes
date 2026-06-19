@@ -1,0 +1,500 @@
+Version 1
+For the purposes of screen readers, any mention in this document of Cambridge IGCSE 
+refers to Cambridge International General Certificate of Secondary Education.Syllabus
+Cambridge IGCSE™ 
+Physics 0625
+Use this syllabus for exams in 2026, 2027 and 2028.
+Exams are available in the June and November series.
+Exams are also available in the March series in India.
+Why choose Cambridge International?
+Cambridge International prepares school students for life, helping them develop an informed curiosity and a 
+lasting passion for learning. We are part of the University of Cambridge.
+Our Cambridge Pathway gives students a clear path for educational success from age 5 to 19. Schools can 
+shape the curriculum around how they want students to learn – with a wide range of subjects and flexible ways 
+to offer them. It helps students discover new abilities and a wider world, and gives them the skills they need for 
+life, so they can achieve at school, university and work.
+Our programmes and qualifications set the global standard for international education. They are created by 
+subject experts, are rooted in academic rigour and reflect the latest educational research. They provide a 
+strong platform for learners to progress from one stage to the next, and are well supported by teaching and 
+learning resources. Learn more about our research at www.cambridgeassessment.org.uk/our-research/
+We believe education works best when curriculum, teaching, learning and assessment are closely aligned. 
+Our programmes develop deep knowledge, conceptual understanding and higher-order thinking skills, to 
+prepare students for their future. Together with schools, we develop Cambridge learners who are confident, 
+responsible, reflective, innovative and engaged – equipped for success in the modern world.
+Every year, nearly a million Cambridge students from 10 000 schools in 160 countries prepare for their future 
+with the Cambridge Pathway. 
+School feedback:  ‘We think the Cambridge curriculum is superb preparation for university.’
+Feedback from: Christoph Guttentag, Dean of Undergraduate Admissions, Duke University, USA
+Quality management
+Cambridge International is committed to providing exceptional quality. In line with this commitment, our 
+quality management system for the provision of international education programmes and qualifications  
+for students aged 5 to 19 is independently certified as meeting the internationally recognised standard,  
+ISO 9001:2015. Learn more at www.cambridgeinternational.org/about-us/our-standards/
+© Cambridge University Press & Assessment September 2023
+Cambridge Assessment International Education is part of Cambridge University Press & Assessment. Cambridge University Press & 
+Assessment is a department of the University of Cambridge.
+Cambridge University Press & Assessment retains the copyright on all its publications. Registered centres are permitted to copy 
+material from this booklet for their own internal use. However, we cannot give permission to centres to photocopy any material that is 
+acknowledged to a third party even for internal use within a centre.
+Important: C hanges to this syllabus
+For information about changes to this syllabus for 2026, 2027 and 2028, go to page 60.Contents
+Why choose Cambridge International?  ........................................................................ 2
+1 Why choose this syllabus?  ........................................................................................ 4
+2 Syllabus overview  ....................................................................................................... 7
+Aims  7
+Content overview  8
+Assessment overview  9
+Assessment objectives  10
+3 Subject content  ......................................................................................................... 12
+4 Details of the assessment  ....................................................................................... 42
+Core assessment 42
+Extended assessment  42
+Practical assessment  43
+Language of measurement 45
+Apparatus  46
+Safety in the laboratory 48
+Electrical symbols 49
+Symbols and units for physical quantities  50
+Mathematical requirements  52
+Presentation of data  53
+Conventions (e.g. signs, symbols, terminology and nomenclature)  54
+Command words 55
+5 What else you need to know  ................................................................................... 56
+Before you start 56
+Making entries 57
+Accessibility and equality  57
+After the exam 58
+How students and teachers can use the grades 59
+Changes to this syllabus for 2026, 2027 and 2028 60
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028.4
+www.cambridgeinternational.org/igcse Back to contents page1 Why choose this syllabus? 
+Key benefits  
+Cambridge IGCSE is the world’s most popular international 
+qualification for 14 to 16 year olds, although it can be taken by 
+students of other ages. It is tried, tested and trusted. 
+Students can choose from 70 subjects in any combination – it is 
+taught by over 5000 schools in 150 countries.
+Our programmes promote a thorough knowledge and 
+understanding of a subject and help to develop the skills 
+learners need for their next steps in education or employment. 
+Cambridge IGCSE Physics  develops a set of transferable 
+skills including handling data, practical problem-solving and 
+applying the scientific method. Learners develop relevant 
+attitudes, such as concern for accuracy and precision, 
+objectivity, integrity, enquiry, initiative and inventiveness. They acquire the essential scientific skills required for 
+progression to further studies or employment.
+Our approach in Cambridge IGCSE Physics encourages learners to be:
+confident , interested in learning about science, questioning ideas and using scientific language to 
+communicate their views and opinions
+responsible , working methodically and safely when working alone or collaboratively with others 
+reflective , learning from their experiences and interested in scientific issues that affect the individual, the 
+community and the environment
+innovative , solving unfamiliar problems confidently and creatively
+engaged , keen to develop scientific skills, curious about scientific principles and their application in the world.
+School feedback:  ‘The strength of Cambridge IGCSE qualifications is internationally 
+recognised and has provided an international pathway for our students to continue their studies 
+around the world.’
+Feedback from:  Gary Tan, Head of Schools and CEO, Raffles Group of Schools, IndonesiaCambridge
+learner
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Why choose this syllabus?  
+5
+www.cambridgeinternational.org/igcse Back to contents pageInternational recognition and acceptance
+Our expertise in curriculum, teaching and learning, and assessment is the basis for the recognition of our 
+programmes and qualifications around the world. The combination of knowledge and skills in Cambridge 
+IGCSE Physics gives learners a solid foundation for further study. Candidates who achieve grades A* to C are 
+well prepared to follow a wide range of courses including Cambridge International AS & A Level Physics.
+Cambridge IGCSEs are accepted and valued by leading universities and employers around the world as 
+evidence of academic achievement. Cambridge students can be confident that their qualifications will be 
+understood and valued throughout their education and career, in their home country and internationally. 
+Many universities require a combination of Cambridge International AS & A Levels and Cambridge IGCSEs or 
+equivalent to meet their entry requirements.
+UK ENIC, the national agency in the UK for the recognition and comparison of international qualifications and 
+skills, has carried out an independent benchmarking study of Cambridge IGCSE and found it to be comparable 
+to the standard of the GCSE in the UK. This means students can be confident that their Cambridge IGCSE 
+qualifications are accepted as equivalent to UK GCSEs by leading universities worldwide.
+Learn more at www.cambridgeinternational.org/recognition
+School feedback:  ‘Cambridge IGCSE is one of the most sought-after and recognised 
+qualifications in the world. It is very popular in Egypt because it provides the perfect 
+preparation for success at advanced level programmes.’
+Feedback from:  Managing Director of British School of Egypt BSE
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Why choose this syllabus?  
+6
+www.cambridgeinternational.org/igcse Back to contents pageSupporting teachers
+We believe education is most effective when curriculum, teaching and learning, and assessment are closely 
+aligned. We provide a wide range of resources, detailed guidance, innovative training and targeted professional 
+development so that you can give your students the best possible preparation for Cambridge IGCSE. To find 
+out which resources are available for each syllabus go to our School Support Hub. 
+The School Support Hub is our secure online site for Cambridge teachers where you can find the resources 
+you need to deliver our programmes. You can also keep up to date with your subject and the global Cambridge 
+community through our online discussion forums.  
+Find out more at www.cambridgeinternational.org/support
+Support for Cambridge IGCSE
+Planning and 
+preparation
+ •Syllabuses
+ •Schemes of work
+ •Specimen Question 
+Papers and Mark 
+Schemes
+ •Teacher guidesTeaching and 
+assessment
+ •Endorsed resources
+ •Online forums
+ •Support for 
+coursework 
+and speaking 
+components
+ •Resource Plus
+ •Everyday ScienceLearning and revision
+ •Example candidate 
+responses
+ •Past papers and 
+mark schemes
+ •Specimen paper 
+answers
+ •Test MakerResults
+ •Candidate Results 
+Service
+ •Principal examiner 
+reports for teachers
+ •Results Analysis
+Sign up for email notifications about changes to syllabuses, including new and revised products and services, 
+at www.cambridgeinternational.org/syllabusupdates
+Syllabuses and specimen materials represent the final authority on the content and structure of all of our 
+assessments. 
+Professional development
+Find the next step on your professional development journey. 
+ •Introductory Professional Development – An introduction to Cambridge programmes and qualifications.  
+ •Extension Professional Development – Develop your understanding of Cambridge programmes and 
+qualifications to build confidence in your delivery. 
+ •Enrichment Professional Development – Transform your approach to teaching with our Enrichment 
+workshops. 
+ •Cambridge Professional Development Qualifications (PDQs) – Practice-based programmes that transform 
+professional learning for practising teachers. Available at Certificate and Diploma level. 
+Find out more at: 
+www.cambridgeinternational.org/support-and-training-for-schools/professional-development/
+Supporting exams officers
+We provide comprehensive support and guidance for all Cambridge exams officers.  
+Find out more at: www.cambridgeinternational.org/eoguide
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028.7
+www.cambridgeinternational.org/igcse Back to contents page2 Syllabus overview 
+Aims
+The aims describe the purposes of a course based on this syllabus. 
+You can deliver some of the aims using suitable local, international or historical examples and applications, or 
+through collaborative practical work.
+The aims are to enable students to:
+ •acquire scientific knowledge and understanding of scientific theories and practice
+ •develop a range of experimental skills, including handling variables and working safely
+ •use scientific data and evidence to solve problems and discuss the limitations of scientific methods 
+ •communicate effectively and clearly, using scientific terminology, notation and conventions
+ •understand that the application of scientific knowledge can benefit people and the environment
+ •enjoy science and develop an informed interest in scientific matters which support further study.
+Cambridge Assessment International Education is an education organisation and politically  
+neutral. The contents of this syllabus, examination papers and associated materials do not endorse  
+any political view. We endeavour to treat all aspects of the exam process neutrally.
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Syllabus overview  
+8
+www.cambridgeinternational.org/igcse Back to contents pageContent overview
+Candidates study the following topics:
+1 Motion, forces and energy
+2 Thermal physics
+3 Waves
+4 Electricity and magnetism
+5 Nuclear physics
+6 Space physics
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Syllabus overview  
+9
+www.cambridgeinternational.org/igcse Back to contents pageAssessment overview
+All candidates take three papers. 
+Candidates who have studied the Core syllabus content, or who are expected to achieve a grade D or below, 
+should be entered for Paper 1, Paper 3 and either Paper 5 or Paper 6. These candidates will be eligible for 
+grades C to G.
+Candidates who have studied the Extended syllabus content (Core and Supplement), and who are expected 
+to achieve a grade C or above, should be entered for Paper 2, Paper 4 and either Paper 5 or Paper 6. These 
+candidates will be eligible for grades A* to G.
+Core assessment
+Core candidates take Paper 1 and Paper 3. The questions are based on the Core subject content only: 
+Paper 1: Multiple Choice (Core) Paper 3: Theory (Core)
+45 minutes
+40 marks 30%
+40 four-option multiple-choice questions 
+Externally assessed1 hour 15 minutes
+80 marks 50%
+Short-answer and structured questions 
+Externally assessed
+Extended assessment
+Extended candidates take Paper 2 and Paper 4. The questions are based on the Core and Supplement subject 
+content: 
+Paper 2: Multiple Choice (Extended) Paper 4: Theory (Extended)
+45 minutes
+40 marks 30%
+40 four-option multiple-choice questions 
+Externally assessed1 hour 15 minutes
+80 marks 50%
+Short-answer and structured questions 
+Externally assessed
+Practical assessment
+All candidates take one practical paper from a choice of two: 
+Paper 5: Practical Test Paper 6: Alternative to Practical
+1 hour 15 minutes
+40 marks 20%
+Questions will be based on the experimental 
+skills in Section 4
+Externally assessedOR1 hour 
+40 marks 20%
+Questions will be based on the experimental 
+skills in Section 4
+Externally assessed
+Information on availability is in the Before you start  section. 
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Syllabus overview  
+10
+www.cambridgeinternational.org/igcse Back to contents pageAssessment objectives
+The assessment objectives (AOs) are:
+AO1 Knowledge with understanding
+Candidates should be able to demonstrate knowledge and understanding of:
+ •scientific phenomena, facts, laws, definitions, concepts and theories
+ •scientific vocabulary, terminology and conventions (including symbols, quantities and units)
+ •scientific instruments and apparatus, including techniques of operation and aspects of safety
+ •scientific and technological applications with their social, economic and environmental implications. 
+Subject content defines the factual material that candidates may be required to recall and explain. 
+Candidates will also be asked questions which require them to apply this material to unfamiliar contexts and to 
+apply knowledge from one area of the syllabus to another.
+AO2 Handling information and problem-solving
+Candidates should be able, in words or using other written forms of presentation (i.e. symbolic, graphical and 
+numerical), to: 
+ •locate, select, organise and present information from a variety of sources 
+ •translate information from one form to another 
+ •manipulate numerical and other data 
+ •use information to identify patterns, report trends and form conclusions
+ •present reasoned explanations for phenomena, patterns and relationships 
+ •make predictions based on relationships and patterns
+ •solve problems, including some of a quantitative nature. 
+Questions testing these skills may be based on information that is unfamiliar to candidates, requiring them to 
+apply the principles and concepts from the syllabus to a new situation, in a logical, deductive way. 
+AO3 Experimental skills and investigations
+Candidates should be able to: 
+ •demonstrate knowledge of how to select and safely use techniques, apparatus and materials (including 
+following a sequence of instructions where appropriate)
+ •plan experiments and investigations
+ •make and record observations, measurements and estimates 
+ •interpret and evaluate experimental observations and data 
+ •evaluate methods and suggest possible improvements.
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Syllabus overview  
+11
+www.cambridgeinternational.org/igcse Back to contents pageWeighting for assessment objectives
+The approximate weightings allocated to each of the assessment objectives (AOs) are summarised below.
+Assessment objectives as a percentage of the qualification
+Assessment objective Weighting in IGCSE %
+AO1 Knowledge with understanding 50
+AO2 Handling information and problem-solving 30
+AO3 Experimental skills and investigations 20
+Total 100
+Assessment objectives as a percentage of each component
+Assessment objective Weighting in components %
+Papers 1 and 2 Papers 3 and 4 Papers 5 and 6
+AO1 Knowledge with understanding 63 63 0
+AO2 Handling information and problem-solving 37 37 0
+AO3 Experimental skills and investigations 0 0 100
+Total 100 100 100
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028.12
+www.cambridgeinternational.org/igcse Back to contents page3 Subject content 
+This syllabus gives you the flexibility to design a course that will interest, challenge and engage your learners. 
+Where appropriate you are responsible for selecting resources and examples to support your learners’ 
+study. These should be appropriate for the learners’ age, cultural background and learning context as well as 
+complying with your school policies and local legal requirements.
+All candidates should be taught the Core subject content. Candidates who are only taught the Core subject 
+content can achieve a maximum of grade C. Candidates aiming for grades A* to C should be taught the 
+Extended subject content. The Extended subject content includes both the Core and the Supplement. 
+Scientific subjects are, by their nature, experimental. Learners should pursue a fully integrated course which 
+allows them to develop their experimental skills by doing practical work and investigations.  
+Practical work helps students to:
+ •use equipment and materials accurately and safely 
+ •develop observational and problem-solving skills
+ •develop a deeper understanding of the syllabus topics and the scientific approach
+ •appreciate how scientific theories are developed and tested
+ •transfer the experimental skills acquired to unfamiliar contexts
+ •develop positive scientific attitudes such as objectivity, integrity, cooperation, enquiry and inventiveness
+ •develop an interest and enjoyment in science.
+1 Motion, forces and energy
+1.1 Physical quantities and measurement techniques 
+Core
+1  Describe the use of rulers and measuring 
+cylinders to find a length or a volume
+2  Describe how to measure a variety of time 
+intervals using clocks and digital timers
+3  Determine an average value for a small distance 
+and for a short interval of time by measuring 
+multiples (including the period of oscillation of a 
+pendulum)Supplement
+4  Understand that a scalar quantity has 
+magnitude (size) only and that a vector quantity 
+has magnitude and direction
+5  Know that the following quantities are examples 
+of scalars: distance, speed, time, mass, energy 
+and temperature
+6  Know that the following quantities are examples 
+of vectors: force, weight, velocity, acceleration, 
+momentum, electric field strength and 
+gravitational field strength
+7  Determine, by calculation and graphically, the 
+resultant of two vectors at right angles, limited 
+to forces or velocities only
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Subject content  
+13
+www.cambridgeinternational.org/igcse Back to contents page1.2 Motion
+Core
+1  Define speed as distance travelled per unit 
+time; recall and use the equation
+ v = s
+t
+2  Define velocity as speed in a given direction
+3  Recall and use the equation
+ average speed = total distance travelled
+total time taken 
+4  Sketch, plot and interpret distance–time and 
+speed–time graphs
+5  Determine, qualitatively, from given data or the 
+shape of a distance–time graph or speed–time 
+graph when an object is:
+(a) at rest
+(b) moving with constant speed
+(c) accelerating
+(d) decelerating
+6  Calculate speed from the gradient of a straight-
+line section of a distance–time graph
+7  Calculate the area under a speed–time graph to 
+determine the distance travelled for motion with 
+constant speed or constant acceleration
+8  State that the acceleration of free fall g for 
+an object near to the surface of the Earth is 
+approximately constant and is approximately 
+9.8 m / s2Supplement
+9  Define acceleration as change in velocity per 
+unit time; recall and use the equation
+ a = ∆v
+∆t
+10  Determine from given data or the shape of a 
+speed–time graph when an object is moving 
+with:
+(a) constant acceleration
+(b) changing acceleration
+11  Calculate acceleration from the gradient of a 
+speed–time graph
+12  Know that a deceleration is a negative 
+acceleration and use this in calculations
+13  Describe the motion of objects falling in a 
+uniform gravitational field with and without air/
+liquid resistance, including reference to terminal 
+velocity and drag
+1.3 Mass and weight
+Core
+1  State that mass is a measure of the quantity 
+of matter in an object at rest relative to the 
+observer
+2  State that weight is a gravitational force on an 
+object that has mass
+3  Define gravitational field strength as force per 
+unit mass; recall and use the equation 
+ g = W
+m
+  and know that this is equivalent to the 
+acceleration of free fall
+4  Know that weights (and masses) may be 
+compared using a balance Supplement
+5  Describe, and use the concept of, weight as 
+the effect of a gravitational field on a mass
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Subject content  
+14
+www.cambridgeinternational.org/igcse Back to contents page1.4 Density
+Core
+1  Define density as mass per unit volume; recall 
+and use the equation
+ ρ = m
+V
+2  Describe how to determine the density of a 
+liquid, of a regularly shaped solid and of an 
+irregularly shaped solid which sinks in a liquid 
+(volume by displacement), including appropriate 
+calculations
+3  Determine whether an object floats or sinks 
+based on density dataSupplement
+4  Determine whether one liquid will float on 
+another liquid based on density data given that 
+the liquids do not mix
+1.5 Forces
+1.5.1 Effects of forces
+Core
+1  Know that forces may produce changes in the 
+size, shape and motion of an object
+2  Sketch, plot and interpret load–extension 
+graphs for an elastic solid and describe the 
+associated experimental procedures
+3  Determine the resultant of two or more forces 
+acting along the same straight line  
+4  Know that an object either remains at rest or 
+continues in a straight line at constant speed 
+unless acted on by a resultant force
+5  State that a resultant force may change the 
+velocity of an object by changing its direction of 
+motion or its speedSupplement
+9  Define the spring constant as force per unit 
+extension; recall and use the equation
+ k = F
+x
+10  Define and use the term ‘limit of proportionality’ 
+for a load–extension graph and identify this 
+point on the graph (an understanding of the 
+elastic limit is not required)
+11  Recall and use the equation F = ma and know 
+that the force and the acceleration are in the 
+same direction
+12  Describe, qualitatively, motion in a circular path 
+due to a force perpendicular to the motion as:
+(a)  speed increases if force increases, with 
+mass and radius constant
+(b)  radius decreases if force increases, with 
+mass and speed constant
+(c)  an increased mass requires an increased 
+force to keep speed and radius constant 
+ ( F = mv 2
+r is not required)
+continued
+Cambridge IGCSE Physics 0625 syllabus for 2026, 2027 and 2028. Subject content  
+15
+www.cambridgeinternational.org/igcse Back to contents page1.5 Forces continued
+1.5.1 Effects of forces continued
+Core
+6  Describe solid friction as the force between two 
+surfaces that may impede relative motion and 
+produce heating
+7  Know that friction (drag) acts on an object 
+moving through a liquid
+8  Know that friction (drag) acts on an object 
+moving through a gas (e.g. air resistance)Supplement
+1.5.2 Turning effect of forces
+Core
+1  Describe the moment of a force as a measure 
+of its turning effect and give everyday examples
+2  Define the moment of a force as  
+moment = force × perpendicular distance from 
+the pivot; recall and use this equation
+3  Apply the principle of moments to situations 
+with one force each side of the pivot, including 
+balancing of a beam
+4  State that, when there is no resultant force and 
+no resultant moment, an object is in equilibriumSupplement
+5  Apply the principle of moments to other 
+situations, including those with more than one 
+force each side of the pivot
+6  Describe an experiment to demonstrate that 
+there is no resultant moment on an object in 
+equilibrium
+1.5.3  Centre of gravity
+Core
+1  State what is meant by centre of gravity
+2  Describe an experiment to determine the 
+position of the centre of gravity of an irregularly 
+shaped plane lamina
+3  Describe, qualitatively, the effect of the position 
+of the centre of gravity and the angle of tilt of a 
+simple object on its stabilitySupplement

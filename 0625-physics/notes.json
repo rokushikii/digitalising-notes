@@ -1,0 +1,2093 @@
+[
+  {
+    "subtopicId": "1.1",
+    "title": "Physical Quantities and Measurement Techniques",
+    "digitizedText": "# 1.1 Physical Quantities and Measurement Techniques\n\nWelcome to Physics! Our first step is to understand how we measure the world around us. In physics, we deal with **physical quantities**\u2014things we can measure, like length, time, or mass. \n\n![Derived Quantities](0625-physics/images/main_p1_i0.png)\n\n### Base and Derived Quantities\nWe have **Base Quantities**, which are the fundamental building blocks (like Mass in kg, Length in m, Time in s). From these, we get **Derived Quantities** by combining base quantities using multiplication or division.\n*   **Area**: Length \u00d7 Length = $m^2$\n*   **Volume**: Length \u00d7 Length \u00d7 Length = $m^3$\n*   **Velocity**: Length \u00f7 Time = $m/s$ or $m s^{-1}$\n*   **Density**: Mass \u00f7 Volume = $kg/m^3$\n\n![Prefixes](0625-physics/images/main_p2_i0.png)\n\n### Prefixes\nSometimes numbers are too big or too small, so we use **prefixes** to make them easier to read:\n*   **Giga (G)**: $10^9$ (1,000,000,000)\n*   **Mega (M)**: $10^6$ (1,000,000)\n*   **kilo (k)**: $10^3$ (1,000)\n*   **deci (d)**: $10^{-1}$ (0.1)\n*   **centi (c)**: $10^{-2}$ (0.01)\n*   **milli (m)**: $10^{-3}$ (0.001)\n*   **micro ($\\mu$)**: $10^{-6}$ (0.000001)\n*   **nano (n)**: $10^{-9}$ (0.000000001)\n\n![Measuring Time and Length](0625-physics/images/main_p3_i0.png)\n\n### Measuring Time: The Pendulum\nA simple pendulum swings back and forth. The time taken to complete **one full oscillation** (from point A to B and back to A) is called the **Period (T)**.\n*   To find the period accurately, time 10 or 20 oscillations and divide the total time by the number of oscillations.\n*   **Important rule**: The period of a pendulum depends **only on its length**. It does *not* depend on the mass of the bob!\n\n### Measuring Length: Micrometer Screw Gauge\nFor very thin objects (like a piece of wire), a ruler isn't precise enough. We use a **Micrometer Screw Gauge**. \n*   It has a **Main Scale** (in mm) and a **Thimble Scale** (rotating part).\n*   **Reading = Main Scale Reading + Thimble Scale Reading**.\n*   In the example shown, if the main scale shows $3.5\\text{ mm}$ and the thimble aligns at $0.12\\text{ mm}$, the total reading is $3.5 + 0.12 = 3.62\\text{ mm}$.\n",
+    "quizzes": [
+      {
+        "question": "Which of the following is a base quantity?",
+        "options": [
+          "Velocity",
+          "Density",
+          "Mass",
+          "Force"
+        ],
+        "answer": "Mass",
+        "explanation": "Mass is a fundamental base quantity. Velocity, density, and force are derived from base quantities."
+      },
+      {
+        "question": "What is the SI unit for volume?",
+        "options": [
+          "m^2",
+          "m^3",
+          "kg/m^3",
+          "cm^2"
+        ],
+        "answer": "m^3",
+        "explanation": "Volume is length x length x length, so the standard SI unit is cubic meters (m^3)."
+      },
+      {
+        "question": "What does the prefix 'micro' (\\u03bc) represent?",
+        "options": [
+          "10^-3",
+          "10^6",
+          "10^-6",
+          "10^-9"
+        ],
+        "answer": "10^-6",
+        "explanation": "Micro represents one millionth, or 10^-6."
+      },
+      {
+        "question": "A student wants to measure the period of a pendulum. What is the most accurate method?",
+        "options": [
+          "Measure the time for 1 oscillation.",
+          "Measure the time for 10 oscillations and divide by 10.",
+          "Measure the time for half an oscillation and multiply by 2.",
+          "Weigh the pendulum bob."
+        ],
+        "answer": "Measure the time for 10 oscillations and divide by 10.",
+        "explanation": "Timing multiple oscillations reduces the effect of human reaction time error."
+      },
+      {
+        "question": "What factor affects the period of a simple pendulum?",
+        "options": [
+          "Mass of the bob",
+          "Amplitude of the swing",
+          "Length of the string",
+          "The material of the bob"
+        ],
+        "answer": "Length of the string",
+        "explanation": "The period of a pendulum depends only on its length and the gravitational field strength."
+      },
+      {
+        "question": "Which instrument is most suitable for measuring the diameter of a thin copper wire?",
+        "options": [
+          "Measuring tape",
+          "Meter rule",
+          "Vernier caliper",
+          "Micrometer screw gauge"
+        ],
+        "answer": "Micrometer screw gauge",
+        "explanation": "A micrometer screw gauge is used for very small and precise measurements like the diameter of a wire."
+      },
+      {
+        "question": "A micrometer shows a main scale reading of 5.5 mm and a thimble reading of 0.24 mm. What is the total reading?",
+        "options": [
+          "5.26 mm",
+          "5.74 mm",
+          "5.524 mm",
+          "7.9 mm"
+        ],
+        "answer": "5.74 mm",
+        "explanation": "Total reading = Main scale + Thimble scale = 5.5 + 0.24 = 5.74 mm."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.2",
+    "title": "Motion",
+    "digitizedText": "# 1.2 Motion\n\nIn physics, understanding how things move is called kinematics. Before we dive into motion, we must distinguish between two types of quantities.\n\n![Scalar and Vector Quantities](0625-physics/images/main_p4_i0.png)\n\n### Scalar vs Vector Quantities\n*   **Scalar Quantity**: Has only **magnitude** (size or value). Examples: distance, speed, mass, time, energy.\n*   **Vector Quantity**: Has both **magnitude and direction**. Examples: displacement, velocity, acceleration, force, weight.\n\n![Distance, Speed, Acceleration](0625-physics/images/main_p5_i0.png)\n\n### Key Definitions of Motion\n*   **Distance ($d$)**: Total length of the path traveled. (Scalar)\n*   **Displacement ($s$)**: The straight-line distance from the start to the end point, in a specific direction. (Vector)\n*   **Speed**: Rate of change of distance ($Speed = \\text{Distance} / \\text{Time}$). (Scalar)\n*   **Velocity ($v$)**: Rate of change of displacement ($Velocity = \\text{Displacement} / \\text{Time}$). (Vector)\n*   **Acceleration ($a$)**: Rate of change of velocity. ($a = \\frac{v - u}{t}$, where $v$ is final velocity and $u$ is initial velocity). Unit: $m/s^2$. (Vector). Deceleration is just negative acceleration (slowing down).\n\n![Kinematic Equations](0625-physics/images/main_p6_i0.png)\n\n### Kinematic Equations\nFor an object moving with **constant acceleration**, we can use these equations:\n1.  $v = u + at$\n2.  $s = \\frac{1}{2}(u + v)t$\n3.  $s = ut + \\frac{1}{2}at^2$\n4.  $v^2 = u^2 + 2as$\n\n![Distance-Time Graph](0625-physics/images/main_p7_i0.png)\n\n### Distance-Time ($s-t$) Graphs\n*   The **gradient** (slope) of a distance-time graph represents **velocity** ($v = \\frac{\\Delta s}{\\Delta t}$).\n*   Constant gradient = constant velocity.\n*   Zero gradient (horizontal line) = zero velocity (stationary).\n*   Curve curving upwards = increasing gradient = increasing velocity (acceleration).\n*   Curve flattening out = decreasing gradient = decreasing velocity (deceleration).\n\n![Velocity-Time Graph](0625-physics/images/main_p8_i0.png)\n\n### Velocity-Time ($v-t$) Graphs\n*   The **gradient** of a velocity-time graph represents **acceleration** ($a = \\frac{\\Delta v}{\\Delta t}$).\n*   The **area under the graph** represents the **distance traveled** or displacement.\n*   Constant gradient = constant acceleration.\n*   Zero gradient (horizontal line) = constant velocity (zero acceleration).\n*   Negative gradient = deceleration.\n\n![Free Fall](0625-physics/images/main_p9_i0.png)\n\n### Free Fall and Terminal Velocity\nWhen an object is dropped, it falls due to gravity with an acceleration of $g = 10 \\text{ m/s}^2$ (ignoring air resistance).\n*   If air resistance is present, as the object speeds up, air resistance increases.\n*   Eventually, Air Resistance = Weight. The resultant force becomes zero.\n*   The object stops accelerating and falls at a constant maximum speed called **Terminal Velocity**.\n",
+    "quizzes": [
+      {
+        "question": "Which of the following is a vector quantity?",
+        "options": [
+          "Speed",
+          "Distance",
+          "Mass",
+          "Acceleration"
+        ],
+        "answer": "Acceleration",
+        "explanation": "Acceleration is a vector because it has both magnitude and direction."
+      },
+      {
+        "question": "A car travels 50 m North and then 50 m South. What is its total displacement?",
+        "options": [
+          "100 m",
+          "50 m",
+          "0 m",
+          "2500 m"
+        ],
+        "answer": "0 m",
+        "explanation": "Displacement is the straight-line distance from start to end. Since the car returned to its starting point, displacement is zero."
+      },
+      {
+        "question": "What does the gradient of a distance-time graph represent?",
+        "options": [
+          "Acceleration",
+          "Speed/Velocity",
+          "Distance",
+          "Time"
+        ],
+        "answer": "Speed/Velocity",
+        "explanation": "The slope (gradient) of a distance-time graph equals the rate of change of distance, which is speed."
+      },
+      {
+        "question": "A car accelerates from rest to 20 m/s in 5 seconds. What is its acceleration?",
+        "options": [
+          "100 m/s^2",
+          "4 m/s^2",
+          "15 m/s^2",
+          "25 m/s^2"
+        ],
+        "answer": "4 m/s^2",
+        "explanation": "Acceleration = (Final Velocity - Initial Velocity) / Time = (20 - 0) / 5 = 4 m/s^2."
+      },
+      {
+        "question": "What does the area under a velocity-time graph represent?",
+        "options": [
+          "Acceleration",
+          "Time",
+          "Distance traveled",
+          "Final velocity"
+        ],
+        "answer": "Distance traveled",
+        "explanation": "The area under a velocity-time graph equals the displacement or distance traveled."
+      },
+      {
+        "question": "What happens to the acceleration of an object as it approaches terminal velocity?",
+        "options": [
+          "It increases",
+          "It remains constant at 10 m/s^2",
+          "It decreases to zero",
+          "It becomes negative"
+        ],
+        "answer": "It decreases to zero",
+        "explanation": "As speed increases, air resistance increases. The resultant force decreases, so acceleration decreases until it hits zero at terminal velocity."
+      },
+      {
+        "question": "Which equation represents the kinematic relationship without time?",
+        "options": [
+          "v = u + at",
+          "s = ut + 1/2 at^2",
+          "v^2 = u^2 + 2as",
+          "s = 1/2(u+v)t"
+        ],
+        "answer": "v^2 = u^2 + 2as",
+        "explanation": "This equation does not require the time variable to solve."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.3",
+    "title": "Mass and Weight",
+    "digitizedText": "# 1.3 Mass and Weight\n\n![Mass vs Weight](0625-physics/images/main_p10_i0.png)\n\n### Understanding Mass and Weight\nStudents often confuse mass and weight, but in physics, they are very different!\n*   **Mass ($m$)**: The amount of matter in an object. It is a scalar quantity, measured in kilograms (kg), and it **never changes** regardless of where you are in the universe. Mass also represents an object's **inertia** (its reluctance to change its state of motion).\n*   **Weight ($W$)**: The gravitational force acting on an object. It is a vector quantity (always pointing downwards), measured in Newtons (N). Weight depends on the gravitational field strength ($g$).\n*   **Equation**: $W = m \\times g$\n    *   On Earth, $g \\approx 10 \\text{ N/kg}$ (or $10 \\text{ m/s}^2$).\n    *   So, a $5\\text{ kg}$ mass has a weight of $5 \\times 10 = 50\\text{ N}$ on Earth. On the moon, its weight would be less because the moon's gravity is weaker, but its mass remains $5\\text{ kg}$.\n\n![Centre of Mass](0625-physics/images/main_p14_i0.png)\n\n### Centre of Mass and Stability\n*   **Centre of Mass**: The imaginary point where all the mass (and weight) of an object seems to be concentrated.\n*   **Stability**: How difficult it is to topple an object. \n    *   To make an object more stable, you should **lower its centre of mass** and **widen its base**.\n    *   If the vertical line extending downwards from the centre of mass falls outside the base, the object will topple!\n",
+    "quizzes": [
+      {
+        "question": "Which statement about mass and weight is correct?",
+        "options": [
+          "Mass is a force, weight is not.",
+          "Weight is measured in kilograms.",
+          "Mass changes depending on gravity.",
+          "Mass is scalar, weight is vector."
+        ],
+        "answer": "Mass is scalar, weight is vector.",
+        "explanation": "Mass only has magnitude, while weight is a force and has a downwards direction."
+      },
+      {
+        "question": "What is the weight of a 12 kg object on Earth? (g = 10 N/kg)",
+        "options": [
+          "1.2 N",
+          "12 N",
+          "120 N",
+          "1200 N"
+        ],
+        "answer": "120 N",
+        "explanation": "Weight = mass x gravity = 12 kg x 10 N/kg = 120 N."
+      },
+      {
+        "question": "An astronaut travels to the moon. What happens to her mass and weight?",
+        "options": [
+          "Mass stays the same, weight decreases.",
+          "Mass decreases, weight stays the same.",
+          "Both decrease.",
+          "Both stay the same."
+        ],
+        "answer": "Mass stays the same, weight decreases.",
+        "explanation": "Mass is the amount of matter and never changes. The moon has less gravity, so weight decreases."
+      },
+      {
+        "question": "What is meant by an object's inertia?",
+        "options": [
+          "Its resistance to a change in motion",
+          "Its gravitational pull",
+          "Its turning effect",
+          "Its acceleration"
+        ],
+        "answer": "Its resistance to a change in motion",
+        "explanation": "Inertia is the property of mass that resists changes in velocity."
+      },
+      {
+        "question": "Where does the weight of an object appear to act?",
+        "options": [
+          "At its base",
+          "At its centre of mass",
+          "At its top",
+          "Evenly across its surface"
+        ],
+        "answer": "At its centre of mass",
+        "explanation": "The centre of mass is defined as the point where all the weight of the object seems to act."
+      },
+      {
+        "question": "How can you increase the stability of an object?",
+        "options": [
+          "Raise its centre of mass and narrow its base.",
+          "Raise its centre of mass and widen its base.",
+          "Lower its centre of mass and narrow its base.",
+          "Lower its centre of mass and widen its base."
+        ],
+        "answer": "Lower its centre of mass and widen its base.",
+        "explanation": "A lower centre of gravity and a wider base make it harder for the object's centre of mass to pass outside its base."
+      },
+      {
+        "question": "When will an object topple over?",
+        "options": [
+          "When its centre of mass is exactly above the edge of its base",
+          "When the vertical line from its centre of mass falls outside its base",
+          "When it is pushed slightly",
+          "When it is on an incline"
+        ],
+        "answer": "When the vertical line from its centre of mass falls outside its base",
+        "explanation": "Once the centre of mass is outside the base, gravity creates a turning moment that topples the object."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.4",
+    "title": "Density",
+    "digitizedText": "# 1.4 Density\n\n![Density Definition](0625-physics/images/main_p11_i0.png)\n\n### What is Density?\nDensity tells us how tightly packed the matter in an object is. A block of iron feels heavier than a block of wood of the exact same size because iron is more dense.\n*   **Definition**: Density is mass per unit volume.\n*   **Equation**: $\\rho = \\frac{m}{V}$ (where $\\rho$ is density, $m$ is mass, and $V$ is volume).\n*   **Units**: $kg/m^3$ or $g/cm^3$.\n\n### Floating and Sinking\n*   An object will **float** in a fluid if its density is **less** than the fluid's density.\n*   An object will **sink** if its density is **greater** than the fluid's density.\n\n![Measuring Volume](0625-physics/images/main_p12_i0.png)\n\n### Measuring Volume to Find Density\nTo find the density of an object, you need its mass (using a balance) and its volume.\n*   **Regular objects** (like a box): Use a ruler to measure length, width, and height. ($V = l \\times w \\times h$).\n*   **Irregular objects** (like a stone): Use the **water displacement method**.\n    1. Fill a measuring cylinder with a known volume of water ($V_1$).\n    2. Submerge the stone in the water.\n    3. Read the new volume ($V_2$).\n    4. The volume of the stone is $V_2 - V_1$.\n",
+    "quizzes": [
+      {
+        "question": "What is the formula for density?",
+        "options": [
+          "Density = Mass x Volume",
+          "Density = Volume / Mass",
+          "Density = Mass / Volume",
+          "Density = Force / Area"
+        ],
+        "answer": "Density = Mass / Volume",
+        "explanation": "Density is defined as the mass per unit volume."
+      },
+      {
+        "question": "A block of metal has a mass of 400 g and a volume of 50 cm^3. What is its density?",
+        "options": [
+          "8 g/cm^3",
+          "0.125 g/cm^3",
+          "450 g/cm^3",
+          "20000 g/cm^3"
+        ],
+        "answer": "8 g/cm^3",
+        "explanation": "Density = 400 g / 50 cm^3 = 8 g/cm^3."
+      },
+      {
+        "question": "Why does a piece of wood float on water?",
+        "options": [
+          "Wood has less mass than water.",
+          "Wood has more volume than water.",
+          "Wood has a lower density than water.",
+          "Wood does not absorb water."
+        ],
+        "answer": "Wood has a lower density than water.",
+        "explanation": "An object floats if its density is lower than the density of the fluid it is in."
+      },
+      {
+        "question": "How do you find the volume of an irregularly shaped stone?",
+        "options": [
+          "Use a ruler to measure its sides",
+          "Use the water displacement method in a measuring cylinder",
+          "Weigh it on a balance",
+          "Multiply its mass by its density"
+        ],
+        "answer": "Use the water displacement method in a measuring cylinder",
+        "explanation": "Water displacement accurately measures the volume of irregular solid objects."
+      },
+      {
+        "question": "Water has a density of 1000 kg/m^3. An object has a density of 1200 kg/m^3. What will happen to it in water?",
+        "options": [
+          "It will float.",
+          "It will sink.",
+          "It will stay suspended in the middle.",
+          "It will dissolve."
+        ],
+        "answer": "It will sink.",
+        "explanation": "Because 1200 kg/m^3 > 1000 kg/m^3, the object is denser than water and will sink."
+      },
+      {
+        "question": "What is the SI unit for density?",
+        "options": [
+          "kg/m",
+          "g/cm^3",
+          "kg/m^3",
+          "N/m^2"
+        ],
+        "answer": "kg/m^3",
+        "explanation": "The standard SI unit uses kilograms for mass and cubic meters for volume."
+      },
+      {
+        "question": "If you cut a block of wood in half, what happens to its density?",
+        "options": [
+          "It doubles.",
+          "It halves.",
+          "It stays the same.",
+          "It becomes zero."
+        ],
+        "answer": "It stays the same.",
+        "explanation": "Density is an intrinsic property of the material. Both mass and volume halve, so the ratio (density) remains the same."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.5",
+    "title": "Forces",
+    "digitizedText": "# 1.5 Forces\n\nForces are pushes or pulls that can change the shape, speed, or direction of an object.\n\n![Resultant Force](0625-physics/images/main_p12_i0.png)\n\n### Resultant Force\nWhen multiple forces act on an object, we can combine them into a single **Resultant Force**. \n*   If forces are in the same direction, add them.\n*   If forces are in opposite directions, subtract them.\n*   If the resultant force is zero, the object is in equilibrium (it stays at rest or continues moving at a constant velocity).\n*   Newton's Second Law states that Resultant Force = Mass \u00d7 Acceleration ($F = ma$).\n\n![Equilibrium and Moments](0625-physics/images/main_p13_i0.png)\n\n### Turning Effect (Moments) and Equilibrium\nA force can cause an object to turn or rotate around a pivot. This turning effect is called a **Moment**.\n*   **Equation**: $\\text{Moment} = \\text{Force} \\times \\text{Perpendicular distance from pivot}$ ($M = F \\times d$).\n*   **Principle of Moments**: For an object to be in equilibrium (balanced and not rotating), the **total clockwise moment must equal the total anti-clockwise moment** about any pivot point.\n*   **Conditions for Equilibrium**:\n    1. Resultant force = $0$ (forces up = forces down, forces left = forces right).\n    2. Resultant moment = $0$ (total clockwise moment = total anti-clockwise moment).\n\n![Hooke's Law](0625-physics/images/main_p15_i0.png)\n\n### Elasticity and Hooke's Law\n*   **Elasticity** is the ability of an object to return to its original shape after a stretching or compressing force is removed.\n*   **Hooke's Law**: The extension ($x$) of a spring is directly proportional to the force applied ($F$), provided the limit of proportionality (elastic limit) is not exceeded.\n*   **Equation**: $F = kx$ (where $k$ is the spring constant).\n*   On a Force-Extension graph, Hooke's Law is shown as a straight line passing through the origin. Once the graph curves, the spring has passed its elastic limit and is permanently deformed.\n",
+    "quizzes": [
+      {
+        "question": "A force of 10 N pushes an object right, and a force of 4 N pushes it left. What is the resultant force?",
+        "options": [
+          "14 N right",
+          "6 N right",
+          "6 N left",
+          "14 N left"
+        ],
+        "answer": "6 N right",
+        "explanation": "Opposite forces are subtracted: 10 N - 4 N = 6 N in the direction of the larger force (right)."
+      },
+      {
+        "question": "What is the formula for calculating a moment?",
+        "options": [
+          "Moment = Force / Distance",
+          "Moment = Mass x Acceleration",
+          "Moment = Force x Perpendicular Distance",
+          "Moment = Force x Time"
+        ],
+        "answer": "Moment = Force x Perpendicular Distance",
+        "explanation": "A moment is the turning effect of a force, calculated as Force x distance from the pivot."
+      },
+      {
+        "question": "A 5 N force is applied 2 meters away from a pivot. What is the moment?",
+        "options": [
+          "10 Nm",
+          "2.5 Nm",
+          "7 Nm",
+          "3 Nm"
+        ],
+        "answer": "10 Nm",
+        "explanation": "Moment = F x d = 5 N x 2 m = 10 Nm."
+      },
+      {
+        "question": "What are the two conditions for an object to be in equilibrium?",
+        "options": [
+          "Resultant force = 0 and Resultant moment = 0",
+          "Constant velocity and Constant acceleration",
+          "Resultant force > 0 and Resultant moment = 0",
+          "Mass = 0 and Weight = 0"
+        ],
+        "answer": "Resultant force = 0 and Resultant moment = 0",
+        "explanation": "Equilibrium requires no net translation (force = 0) and no net rotation (moment = 0)."
+      },
+      {
+        "question": "What does Hooke's Law state?",
+        "options": [
+          "Force is inversely proportional to extension",
+          "Force is directly proportional to extension",
+          "Mass is directly proportional to weight",
+          "Acceleration is proportional to force"
+        ],
+        "answer": "Force is directly proportional to extension",
+        "explanation": "Hooke's law states F = kx, meaning force and extension are directly proportional."
+      },
+      {
+        "question": "What happens when a spring is stretched beyond its elastic limit?",
+        "options": [
+          "It snaps instantly.",
+          "It no longer obeys Hooke's Law and permanently deforms.",
+          "It becomes stiffer and harder to stretch.",
+          "It returns to its original shape faster."
+        ],
+        "answer": "It no longer obeys Hooke's Law and permanently deforms.",
+        "explanation": "Past the elastic limit, the material undergoes plastic deformation and won't return to its original length."
+      },
+      {
+        "question": "A spring has a constant k = 50 N/m. What force is needed to extend it by 0.2 m?",
+        "options": [
+          "10 N",
+          "250 N",
+          "100 N",
+          "5 N"
+        ],
+        "answer": "10 N",
+        "explanation": "F = kx = 50 N/m x 0.2 m = 10 N."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.6",
+    "title": "Momentum",
+    "digitizedText": "# 1.6 Momentum\n\n![Momentum and Impulse](0625-physics/images/main_p16_i0.png)\n\n### What is Momentum?\nMomentum ($p$) is a property of moving objects. It tells us how hard it is to stop something.\n*   **Equation**: $\\text{Momentum} = \\text{Mass} \\times \\text{Velocity}$ ($p = mv$).\n*   **Units**: $kg \\cdot m/s$. It is a **vector quantity**, so direction matters! (e.g., if moving right is positive, moving left is negative).\n\n### Impulse and Force\n*   **Impulse**: The change in momentum. $\\text{Impulse} = mv - mu$ (where $v$ is final velocity, $u$ is initial velocity).\n*   Impulse is also equal to Force $\\times$ Time ($Ft$). So, $Ft = mv - mu$.\n*   **Impulsive Force**: The rate of change of momentum. $F = \\frac{mv - mu}{t}$. To reduce the force of an impact (like in a car crash), you must increase the time of the impact ($t$).\n\n![Collisions](0625-physics/images/main_p17_i0.png)\n\n### Principle of Conservation of Momentum\nIn any collision or explosion, if no external forces are acting on the system:\n*   **Total Initial Momentum = Total Final Momentum**\n*   $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$\n*   *Tip:* Always define one direction as positive. If objects move in opposite directions, one must have a negative velocity!\n",
+    "quizzes": [
+      {
+        "question": "What is the formula for momentum?",
+        "options": [
+          "p = m/v",
+          "p = mv",
+          "p = 1/2 mv^2",
+          "p = ma"
+        ],
+        "answer": "p = mv",
+        "explanation": "Momentum is the product of mass and velocity."
+      },
+      {
+        "question": "A 2 kg ball moves at 3 m/s. What is its momentum?",
+        "options": [
+          "5 kg m/s",
+          "1.5 kg m/s",
+          "6 kg m/s",
+          "9 kg m/s"
+        ],
+        "answer": "6 kg m/s",
+        "explanation": "p = mv = 2 kg x 3 m/s = 6 kg m/s."
+      },
+      {
+        "question": "What does impulse equal?",
+        "options": [
+          "Rate of change of momentum",
+          "Change in momentum",
+          "Mass times acceleration",
+          "Force divided by time"
+        ],
+        "answer": "Change in momentum",
+        "explanation": "Impulse is defined as the change in momentum (mv - mu) and also equals Force x time (Ft)."
+      },
+      {
+        "question": "How do airbags protect passengers in a car crash?",
+        "options": [
+          "They decrease the change in momentum.",
+          "They increase the time of impact, reducing the impulsive force.",
+          "They increase the force of the impact.",
+          "They prevent any change in momentum."
+        ],
+        "answer": "They increase the time of impact, reducing the impulsive force.",
+        "explanation": "Because F = (mv-mu)/t, increasing the time t decreases the force F for the same change in momentum."
+      },
+      {
+        "question": "The Principle of Conservation of Momentum applies when:",
+        "options": [
+          "There are no external forces acting on the system.",
+          "Objects stick together after collision.",
+          "Objects bounce apart after collision.",
+          "Friction is present."
+        ],
+        "answer": "There are no external forces acting on the system.",
+        "explanation": "Momentum is only conserved in a closed system with no external resultant force."
+      },
+      {
+        "question": "Car A (1000 kg) moving at 5 m/s hits stationary Car B (1000 kg). They stick together. What is their velocity after impact?",
+        "options": [
+          "5 m/s",
+          "2.5 m/s",
+          "0 m/s",
+          "10 m/s"
+        ],
+        "answer": "2.5 m/s",
+        "explanation": "Initial p = 1000x5 + 0 = 5000. Final p = (1000+1000)v. 5000 = 2000v. v = 2.5 m/s."
+      },
+      {
+        "question": "Is momentum a scalar or a vector quantity?",
+        "options": [
+          "Scalar",
+          "Vector",
+          "Neither",
+          "Both"
+        ],
+        "answer": "Vector",
+        "explanation": "Momentum has both magnitude and direction because velocity is a vector."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.7",
+    "title": "Energy, Work and Power",
+    "digitizedText": "# 1.7 Energy, Work and Power\n\n![Work and Energy](0625-physics/images/main_p18_i0.png)\n\n### Work Done and Energy\nDoing \"work\" in physics means transferring energy by applying a force over a distance.\n*   **Work ($W$)**: $W = F \\times d$ (Force $\\times$ displacement in the direction of the force). \n*   **Unit**: Joules (J). 1 Joule of work transfers 1 Joule of energy.\n*   **Kinetic Energy ($E_k$)**: The energy of a moving object. $E_k = \\frac{1}{2}mv^2$.\n*   **Gravitational Potential Energy ($E_p$)**: The energy gained when an object is raised up. $E_p = mgh$.\n\n![Power and Efficiency](0625-physics/images/main_p19_i0.png)\n\n### Power and Efficiency\n*   **Power ($P$)**: The rate at which energy is transferred or work is done. \n*   **Equation**: $P = \\frac{E}{t}$ or $P = \\frac{W}{t}$. \n*   **Unit**: Watts (W) or Joules per second (J/s).\n*   **Efficiency**: How good a machine is at converting input energy into useful output energy. No machine is 100% efficient due to heat loss (friction, resistance).\n    *   $\\text{Efficiency} = (\\text{Useful Energy Output} / \\text{Total Energy Input}) \\times 100\\%$\n    *   $\\text{Efficiency} = (\\text{Useful Power Output} / \\text{Total Power Input}) \\times 100\\%$\n\n![Energy Sources](0625-physics/images/main_p20_i0.png)\n\n### Energy Resources\n*   **Non-renewable**: Cannot be easily replaced once used. (e.g., Fossil fuels like coal, oil, gas; Nuclear fuels).\n*   **Renewable**: Naturally replenished. (e.g., Solar, Wind, Wave, Tidal, Hydroelectric, Geothermal, Biomass).\n\n![Conservation of Energy](0625-physics/images/main_p21_i0.png)\n\n### Principle of Conservation of Energy\n*   **Energy cannot be created or destroyed**, it can only change from one form to another.\n*   The total energy of an isolated system remains constant.\n*   *Example*: When a fruit falls from a tree, its Gravitational Potential Energy converts into Kinetic Energy. Just before it hits the ground, all its $E_p$ has become $E_k$ ($mgh = \\frac{1}{2}mv^2$).\n",
+    "quizzes": [
+      {
+        "question": "What is the formula for calculating work done?",
+        "options": [
+          "W = F x d",
+          "W = F / d",
+          "W = m x g",
+          "W = E / t"
+        ],
+        "answer": "W = F x d",
+        "explanation": "Work is done when a force moves an object over a distance."
+      },
+      {
+        "question": "A 2 kg mass is lifted 3 meters into the air. What is its gained gravitational potential energy? (g = 10)",
+        "options": [
+          "6 J",
+          "60 J",
+          "20 J",
+          "30 J"
+        ],
+        "answer": "60 J",
+        "explanation": "Ep = mgh = 2 x 10 x 3 = 60 Joules."
+      },
+      {
+        "question": "What is kinetic energy?",
+        "options": [
+          "Energy stored in a spring",
+          "Energy due to height",
+          "Energy of motion",
+          "Energy from heat"
+        ],
+        "answer": "Energy of motion",
+        "explanation": "Kinetic energy (1/2 mv^2) is the energy an object possesses due to its motion."
+      },
+      {
+        "question": "What does power measure in physics?",
+        "options": [
+          "Total energy used",
+          "Force applied over time",
+          "The rate at which work is done",
+          "The speed of an object"
+        ],
+        "answer": "The rate at which work is done",
+        "explanation": "Power is Energy/Time or Work/Time, measuring how fast energy is transferred."
+      },
+      {
+        "question": "An engine uses 1000 J of energy to produce 300 J of useful work. What is its efficiency?",
+        "options": [
+          "30%",
+          "70%",
+          "300%",
+          "33%"
+        ],
+        "answer": "30%",
+        "explanation": "Efficiency = (Useful output / Total input) x 100% = (300 / 1000) x 100% = 30%."
+      },
+      {
+        "question": "Which of the following is a renewable energy source?",
+        "options": [
+          "Coal",
+          "Nuclear",
+          "Wind",
+          "Natural Gas"
+        ],
+        "answer": "Wind",
+        "explanation": "Wind is naturally replenished, unlike fossil fuels and nuclear materials."
+      },
+      {
+        "question": "According to the Principle of Conservation of Energy:",
+        "options": [
+          "Energy can be destroyed by friction.",
+          "Energy cannot be created or destroyed.",
+          "Total energy in the universe decreases over time.",
+          "Kinetic energy is always conserved in every collision."
+        ],
+        "answer": "Energy cannot be created or destroyed.",
+        "explanation": "Energy can only be transferred or changed from one form to another."
+      }
+    ]
+  },
+  {
+    "subtopicId": "1.8",
+    "title": "Pressure",
+    "digitizedText": "# 1.8 Pressure\n\n![Solid Pressure](0625-physics/images/main_p22_i0.png)\n\n### Pressure in Solids\nPressure tells us how concentrated a force is over an area. \n*   **Definition**: Force acting perpendicularly per unit area.\n*   **Equation**: $P = \\frac{F}{A}$\n*   **Units**: Pascals (Pa) or $N/m^2$.\n*   A smaller area creates a **larger pressure** (like a sharp knife). A larger area creates a **smaller pressure** (like snowshoes).\n\n![Liquid Pressure](0625-physics/images/main_p23_i0.png)\n\n### Pressure in Liquids\nLiquids exert pressure in all directions. The pressure depends on the depth and the type of liquid.\n*   **Equation**: $P = \\rho g h$ \n    *   $\\rho$ = density of the liquid ($kg/m^3$)\n    *   $g$ = gravitational field strength ($10\\text{ N/kg}$)\n    *   $h$ = depth measured from the surface of the liquid ($m$)\n*   Pressure in a liquid **increases with depth**. It does not depend on the shape or width of the container.\n\n![Atmospheric Pressure](0625-physics/images/main_p24_i0.png)\n![Barometer Calculations](0625-physics/images/main_p25_i0.png)\n\n### Gas and Atmospheric Pressure\n*   Gas molecules constantly collide with the walls of their container, exerting a force and creating pressure.\n*   **Atmospheric Pressure ($P_{atm}$)**: The pressure exerted by the weight of the air above us. At sea level, it is roughly $100,000\\text{ Pa}$ (or $1\\text{ atm}$). As altitude increases, atmospheric pressure decreases.\n*   **Barometer**: An instrument used to measure atmospheric pressure. It typically consists of a glass tube inverted in a dish of mercury. A vacuum is at the top of the tube. The height of the mercury column ($h$) is pushed up by atmospheric pressure.\n    *   Standard atmospheric pressure supports a mercury column about $76\\text{ cm}$ (or $760\\text{ mm}$) high. So, $P_{atm} = 76\\text{ cm Hg}$.\n    *   To find total pressure underwater, add atmospheric pressure to liquid pressure: $\\text{Total } P = P_{atm} + \\rho g h$.\n",
+    "quizzes": [
+      {
+        "question": "What is the formula for pressure?",
+        "options": [
+          "P = F x A",
+          "P = A / F",
+          "P = F / A",
+          "P = m x g"
+        ],
+        "answer": "P = F / A",
+        "explanation": "Pressure is defined as Force divided by the Area over which it acts."
+      },
+      {
+        "question": "Why do snowshoes stop you from sinking into the snow?",
+        "options": [
+          "They decrease your weight.",
+          "They increase the area, reducing the pressure.",
+          "They increase the pressure.",
+          "They repel the snow."
+        ],
+        "answer": "They increase the area, reducing the pressure.",
+        "explanation": "Because P = F/A, a larger area means less pressure exerted on the snow."
+      },
+      {
+        "question": "What happens to the pressure in a liquid as depth increases?",
+        "options": [
+          "It decreases.",
+          "It stays the same.",
+          "It increases.",
+          "It fluctuates."
+        ],
+        "answer": "It increases.",
+        "explanation": "Liquid pressure is given by P = \u03c1gh. Since depth (h) increases, pressure increases."
+      },
+      {
+        "question": "Water has a density of 1000 kg/m^3. What is the liquid pressure at a depth of 5 meters? (g = 10 N/kg)",
+        "options": [
+          "50 Pa",
+          "5000 Pa",
+          "50000 Pa",
+          "200 Pa"
+        ],
+        "answer": "50000 Pa",
+        "explanation": "P = \u03c1gh = 1000 x 10 x 5 = 50000 Pa."
+      },
+      {
+        "question": "What causes gas pressure in a container?",
+        "options": [
+          "Gravity pulling the gas down",
+          "Gas molecules expanding",
+          "Gas molecules colliding with the walls",
+          "The temperature of the room"
+        ],
+        "answer": "Gas molecules colliding with the walls",
+        "explanation": "The continuous collisions of particles against the container walls exert a force, creating pressure."
+      },
+      {
+        "question": "What happens to atmospheric pressure as you climb a tall mountain?",
+        "options": [
+          "It increases.",
+          "It decreases.",
+          "It stays exactly the same.",
+          "It becomes zero."
+        ],
+        "answer": "It decreases.",
+        "explanation": "There is less air above you at higher altitudes, so the weight of the air (and thus the pressure) decreases."
+      },
+      {
+        "question": "In a simple mercury barometer, what is in the space at the very top of the closed tube?",
+        "options": [
+          "Air",
+          "Water",
+          "A vacuum",
+          "Helium"
+        ],
+        "answer": "A vacuum",
+        "explanation": "The space above the mercury column is a vacuum so that no gas pushes down on the mercury."
+      }
+    ]
+  },
+  {
+    "subtopicId": "2.1",
+    "title": "Matter and its Physical State",
+    "digitizedText": "### Matter and its Physical State\n\n**Raw Points Transcribed:**\n* Matter is anything that has mass and occupies space.\n* Physical states: Solid, Liquid, Gas.\n* Phase Changes absorbing energy: Melting (Solid $\\rightarrow$ Liquid), Boiling/Evaporation (Liquid $\\rightarrow$ Gas), Sublimation (Solid $\\rightarrow$ Gas).\n* Phase Changes releasing energy: Freezing (Liquid $\\rightarrow$ Solid), Condensation (Gas $\\rightarrow$ Liquid).\n* Solid has the strongest attractive forces, while gas has the weakest attractive forces.\n* Thermal expansion: As temperature increases, volume increases (expansion). As temperature decreases, volume decreases (contraction).\n* Expansion rate increases from solid to liquid to gas.\n\n**Teacher's Explanation:**\nWelcome to Thermal Physics! Let's start with the basics: **Matter**. Matter is the \"stuff\" everything is made of. If it has mass (you can weigh it) and occupies space (it has volume), it's matter.\n\nMatter primarily exists in three distinct physical states: **Solid, Liquid, and Gas**.\n\n* **Solids** have a fixed shape and volume. Their particles are packed closely together in a regular arrangement. The attractive forces holding them together are very strong, meaning they can only vibrate in fixed positions.\n* **Liquids** have a fixed volume but take the shape of their container. The particles are still close together but can slide past each other, meaning the attractive forces are weaker than in solids.\n* **Gases** completely fill any container they are placed in. Their particles are far apart and move rapidly in random directions. The attractive forces between gas particles are extremely weak.\n\n**Changes of State:**\nWhen matter changes from one state to another, it involves the transfer of thermal energy (heat).\n\n![State Changes](0625-physics/images/main_p27_i0.png)\n\n* **Absorbing Energy:** When you heat a substance, its particles gain kinetic energy. This energy can overcome the attractive forces between them.\n    * **Melting:** Solid to Liquid.\n    * **Boiling/Evaporation:** Liquid to Gas.\n    * **Sublimation:** Solid directly to Gas.\n* **Releasing Energy:** When you cool a substance, it loses energy, and the attractive forces pull the particles closer together.\n    * **Freezing:** Liquid to Solid.\n    * **Condensation:** Gas to Liquid.\n\n**Thermal Expansion:**\nHave you ever noticed that a metal door might stick on a hot day? This happens because of **Thermal Expansion**. When a substance is heated, its temperature increases, giving the particles more kinetic energy. They vibrate or move more vigorously, pushing each other slightly further apart. This causes the overall volume of the substance to increase (it expands).\nConversely, when cooled, the particles lose energy, move less, and get closer together, causing the volume to decrease (it contracts).\n\nInterestingly, the **rate of expansion** depends on the state of matter:\n* **Gases** expand the most when heated.\n* **Liquids** expand less than gases but more than solids.\n* **Solids** expand the least.\n\n```mermaid\ngraph TD\n    A[Solid] -->|Melting<br>Absorbs Energy| B(Liquid)\n    B -->|Boiling/Evaporation<br>Absorbs Energy| C{Gas}\n    C -->|Condensation<br>Releases Energy| B\n    B -->|Freezing<br>Releases Energy| A\n    A -->|Sublimation<br>Absorbs Energy| C\n```",
+    "quizzes": [
+      {
+        "question": "Which of the following states of matter has the strongest intermolecular attractive forces?",
+        "options": [
+          "Solid",
+          "Liquid",
+          "Gas",
+          "Plasma"
+        ],
+        "answer": "Solid",
+        "explanation": "Solids have particles closely packed in a regular lattice, held together by strong attractive forces, which is why they have a fixed shape."
+      },
+      {
+        "question": "When a gas turns into a liquid, the process is called:",
+        "options": [
+          "Melting",
+          "Freezing",
+          "Condensation",
+          "Sublimation"
+        ],
+        "answer": "Condensation",
+        "explanation": "Condensation is the process where a gas loses thermal energy and its particles come closer together to form a liquid."
+      },
+      {
+        "question": "Which of the following processes requires the absorption of thermal energy?",
+        "options": [
+          "Freezing",
+          "Condensation",
+          "Melting",
+          "Deposition"
+        ],
+        "answer": "Melting",
+        "explanation": "Melting involves breaking the strong attractive bonds in a solid to form a liquid, which requires an input (absorption) of energy."
+      },
+      {
+        "question": "Sublimation is the process where a substance changes from:",
+        "options": [
+          "Solid to Liquid",
+          "Liquid to Gas",
+          "Solid to Gas",
+          "Gas to Liquid"
+        ],
+        "answer": "Solid to Gas",
+        "explanation": "Sublimation skips the liquid phase completely, transforming directly from a solid state to a gaseous state upon absorbing heat."
+      },
+      {
+        "question": "Which state of matter exhibits the greatest rate of thermal expansion when subjected to the same temperature increase?",
+        "options": [
+          "Solid",
+          "Liquid",
+          "Gas",
+          "They all expand equally"
+        ],
+        "answer": "Gas",
+        "explanation": "Because the intermolecular forces in gases are very weak, giving gas particles a little bit of kinetic energy causes them to fly much further apart, resulting in the highest rate of expansion."
+      },
+      {
+        "question": "What happens to the volume of a liquid when its temperature decreases?",
+        "options": [
+          "It expands",
+          "It contracts",
+          "It remains the same",
+          "It fluctuates rapidly"
+        ],
+        "answer": "It contracts",
+        "explanation": "Cooling a liquid removes kinetic energy. The particles move less vigorously and settle closer together, causing the overall volume to decrease (contract)."
+      },
+      {
+        "question": "During which phase change is energy released to the surroundings?",
+        "options": [
+          "Evaporation",
+          "Melting",
+          "Sublimation",
+          "Freezing"
+        ],
+        "answer": "Freezing",
+        "explanation": "In freezing, liquid particles slow down and form stronger bonds to become a solid, releasing excess thermal energy into the surroundings."
+      }
+    ]
+  },
+  {
+    "subtopicId": "2.2",
+    "title": "Properties of Gas",
+    "digitizedText": "### Properties of Gas\n\n**Raw Points Transcribed:**\n* Properties of gas relate to Pressure ($P$), Volume ($V$), and Temperature ($T$).\n* Equations: $F = \\frac{mv - mu}{t}$, $P = \\frac{F}{A}$\n* **Existence of gas pressure:**\n    * Gas particles collide with the walls.\n    * They experience a change in momentum.\n    * The rate of change of momentum produces a force.\n    * The force applied on a unit area exerts pressure.\n* **i) Pressure & Volume ($T$ constant): Boyle's Law**\n    * $V \\uparrow$, $P \\downarrow$ ($V \\propto \\frac{1}{P}$)\n    * $P_1V_1 = P_2V_2$\n    * Explanation: As volume increases, the space where gas particles can travel increases. Therefore, there are fewer collisions between the particles and the wall.\n* **ii) Pressure & Temperature ($V$ constant): Pressure Law**\n    * $T \\uparrow$, $P \\uparrow$ ($T \\propto P$)\n    * Explanation: As temperature increases, the particles gain kinetic energy. They move faster, leading to more frequent collisions between the particles and the wall.\n* **iii) Temperature & Volume ($P$ constant): Charles's Law**\n    * $T \\uparrow$, $V \\uparrow$ ($T \\propto V$)\n    * Explanation: As temperature increases, the particles gain kinetic energy. To maintain constant pressure, they travel further and occupy more space.\n\n**Teacher's Explanation:**\nNow, let's zoom in on gases. The behavior of a gas is governed by three main variables: **Pressure ($P$), Volume ($V$), and Temperature ($T$)**.\n\n![Gas Pressure Triangle](0625-physics/images/main_p28_i0.png)\n![Gas Properties Overview](0625-physics/images/main_p29_i0.png)\n\n**How is Gas Pressure Created?**\nImagine a balloon filled with gas. The gas particles are constantly zipping around in random directions. When they hit the inner wall of the balloon and bounce back, their momentum changes. According to Newton's Second Law, a rate of change of momentum produces a **force** ($F = \\frac{\\Delta p}{t}$). Since there are billions of particles striking the wall, they exert a collective force over the inner surface area ($A$). This force per unit area is what we measure as **pressure** ($P = \\frac{F}{A}$).\n\nThere are three key relationships to remember:\n\n**1. Pressure and Volume (Constant Temperature)** - *Boyle's Law*\nIf you squash a gas into a smaller volume without changing its temperature, its pressure will increase. Why? Because the particles are now trapped in a smaller space. They have less distance to travel before hitting a wall, so they collide with the walls more frequently. More collisions mean a greater average force on the walls, and hence, higher pressure. Mathematically, they are inversely proportional: $P_1V_1 = P_2V_2$.\n\n**2. Pressure and Temperature (Constant Volume)**\nIf you heat a gas in a rigid container (fixed volume), the pressure goes up. Why? Heating the gas increases its thermal energy, which turns into the kinetic energy of the particles. They move much faster. Because they are moving faster, they hit the walls more often AND with a greater force each time. This leads to a higher pressure.\n\n**3. Temperature and Volume (Constant Pressure)** - *Charles's Law*\nIf you heat a gas in an expandable container (like a balloon), the volume must increase to keep the pressure constant. The faster-moving, more energetic particles need more room to ensure they don't hit the walls too frequently, keeping the force per unit area constant.\n\n```mermaid\nflowchart LR\n    subgraph Boyle's Law\n    direction TB\n    V_down[Volume Decreases] --> Col[Collisions per second Increase]\n    Col --> P_up[Pressure Increases]\n    end\n\n    subgraph Pressure Law\n    direction TB\n    T_up[Temperature Increases] --> KE[Kinetic Energy & Speed Increase]\n    KE --> Freq[Harder & More Frequent Collisions]\n    Freq --> P_up2[Pressure Increases]\n    end\n```",
+    "quizzes": [
+      {
+        "question": "Gas pressure is caused by gas particles:",
+        "options": [
+          "Attracting each other",
+          "Repelling each other",
+          "Colliding with the walls of their container",
+          "Expanding in volume"
+        ],
+        "answer": "Colliding with the walls of their container",
+        "explanation": "The macroscopic property of pressure is the result of countless microscopic collisions between gas particles and the inner walls of the container."
+      },
+      {
+        "question": "According to physics principles, the force exerted by gas particles on a wall is due to their:",
+        "options": [
+          "Change in volume",
+          "Rate of change of momentum",
+          "Change in potential energy",
+          "Increase in mass"
+        ],
+        "answer": "Rate of change of momentum",
+        "explanation": "When particles strike the wall and bounce off, their momentum changes. The rate of this momentum change equals the force exerted on the wall (Newton's Second Law)."
+      },
+      {
+        "question": "If the volume of a fixed mass of gas is halved at constant temperature, what happens to its pressure?",
+        "options": [
+          "It is halved",
+          "It is doubled",
+          "It remains the same",
+          "It increases by a factor of 4"
+        ],
+        "answer": "It is doubled",
+        "explanation": "Boyle's Law states that Pressure and Volume are inversely proportional ($P \\propto 1/V$). Halving the volume doubles the pressure."
+      },
+      {
+        "question": "Why does heating a gas at a constant volume increase its pressure?",
+        "options": [
+          "The particles expand in size.",
+          "The particles gain kinetic energy and hit the walls more frequently and harder.",
+          "The container shrinks.",
+          "The attractive forces between particles increase."
+        ],
+        "answer": "The particles gain kinetic energy and hit the walls more frequently and harder.",
+        "explanation": "Higher temperature means higher average kinetic energy. Faster particles travel distance quicker (more frequent collisions) and hit with more momentum (harder collisions), increasing the total force and pressure."
+      },
+      {
+        "question": "For a fixed mass of gas at constant pressure, what happens to its volume if the temperature increases?",
+        "options": [
+          "Volume increases",
+          "Volume decreases",
+          "Volume remains constant",
+          "Volume drops to zero"
+        ],
+        "answer": "Volume increases",
+        "explanation": "According to Charles's law, Volume is directly proportional to Temperature at constant pressure. As temperature rises, volume must expand so particles have more space, preventing a rise in collision frequency."
+      },
+      {
+        "question": "The formula $P_1V_1 = P_2V_2$ is used when which property is kept constant?",
+        "options": [
+          "Pressure",
+          "Volume",
+          "Temperature",
+          "Mass only"
+        ],
+        "answer": "Temperature",
+        "explanation": "This formula represents Boyle's Law, which only applies to a fixed mass of gas held at a constant temperature."
+      },
+      {
+        "question": "Which of the following defines pressure in terms of force and area?",
+        "options": [
+          "$P = F \\times A$",
+          "$P = A / F$",
+          "$P = F / A$",
+          "$P = F + A$"
+        ],
+        "answer": "$P = F / A$",
+        "explanation": "Pressure is defined as the force applied per unit cross-sectional area, calculated as $P = F / A$."
+      }
+    ]
+  },
+  {
+    "subtopicId": "2.3",
+    "title": "Evaporation",
+    "digitizedText": "### Evaporation\n\n**Raw Points Transcribed:**\n* **Evaporation:** The process when particles of a liquid on the surface gain enough energy to escape from the liquid to form a gas.\n* Remaining liquid has: 1) lower energy, 2) decreased temperature (cooling effect).\n* **Factors increasing evaporation:**\n    1) Temperature $\\uparrow$\n    2) Surface area $\\uparrow$\n    3) Air movement (wind) $\\uparrow$\n    4) Humidity $\\downarrow$\n* **Differences between Evaporation & Boiling:**\n    * **Evaporation:** Occurs at any temperature, happens only on the surface of the liquid.\n    * **Boiling:** Occurs at a specific temperature (boiling point), happens throughout the liquid.\n\n**Teacher's Explanation:**\nEvaporation is something you see every day, like a puddle drying up after rain. But what's happening at the microscopic level?\n\n**The Mechanism of Evaporation:**\nIn any liquid, particles are moving at different speeds. Some are fast, some are slow. If a fast-moving particle happens to be near the **surface** of the liquid, and it's moving fast enough to overcome the attractive forces pulling it back in by the other liquid particles, it can escape! Once it escapes into the air, it becomes a gas particle. This is **evaporation**.\n\n![Evaporation Mechanism](0625-physics/images/main_p30_i0.png)\n\n**The Cooling Effect of Evaporation:**\nWhen the fastest, most energetic particles escape, they take their high energy with them. This leaves behind the slower, lower-energy particles. Since temperature is a measure of the average kinetic energy of the particles, the average energy of the remaining liquid is now lower. Thus, **evaporation causes cooling**. This is why sweating cools your body down!\n\n**Factors Affecting the Rate of Evaporation:**\nIf you want something to dry faster, you can change a few conditions:\n1. **Higher Temperature:** Giving the liquid more heat means more particles will gain enough kinetic energy to escape.\n2. **Larger Surface Area:** Spreading out a puddle means more particles are directly at the surface, giving them a chance to escape.\n3. **More Air Movement (Wind):** Wind blows away the gas particles that have just evaporated. This stops them from bouncing back into the liquid and makes room for more to escape.\n4. **Lower Humidity:** If the air is already full of water vapor (high humidity), it's harder for more water to evaporate. Dry air encourages faster evaporation.\n\n**Evaporation vs. Boiling:**\nMany students confuse evaporation and boiling because both involve a liquid turning into a gas. Let's clarify the differences:\n\n| Feature | Evaporation | Boiling |\n| :--- | :--- | :--- |\n| **Temperature** | Can happen at *any* temperature between melting and boiling points. | Only happens at a *specific* temperature called the boiling point. |\n| **Location** | Only happens at the **surface** of the liquid. | Happens **throughout** the liquid (you see bubbles forming everywhere). |\n| **Speed** | Usually a slow process. | Usually a fast, vigorous process. |\n\n```mermaid\ngraph TD\n    A[Liquid Particles] -->|Random Speeds| B{Is particle fast enough & near surface?}\n    B -->|Yes| C[Overcomes attractive forces]\n    C --> D[Escapes as Gas]\n    D --> E[Average energy of remaining liquid decreases]\n    E --> F[Temperature of liquid drops]\n```",
+    "quizzes": [
+      {
+        "question": "Which of the particles are most likely to escape during evaporation?",
+        "options": [
+          "The slowest particles at the bottom of the liquid",
+          "The fastest particles at the surface of the liquid",
+          "The slowest particles at the surface of the liquid",
+          "The fastest particles at the bottom of the liquid"
+        ],
+        "answer": "The fastest particles at the surface of the liquid",
+        "explanation": "Evaporation only occurs at the surface. Only the particles with the highest kinetic energy (the fastest ones) have enough energy to break the attractive forces and escape."
+      },
+      {
+        "question": "Why does evaporation cause the remaining liquid to cool down?",
+        "options": [
+          "Because the escaping gas absorbs heat from the air.",
+          "Because the most energetic particles leave, lowering the average kinetic energy of the remaining liquid.",
+          "Because air movement physically cools the liquid surface.",
+          "Because atmospheric pressure drops on the surface."
+        ],
+        "answer": "Because the most energetic particles leave, lowering the average kinetic energy of the remaining liquid.",
+        "explanation": "Temperature is a measure of average kinetic energy. When high-energy particles escape, the average energy of the particles left behind is lower, meaning the temperature drops."
+      },
+      {
+        "question": "Which of the following conditions would DECREASE the rate of evaporation of a puddle of water?",
+        "options": [
+          "Increasing the temperature of the surroundings",
+          "Spreading the puddle out over a larger area",
+          "A strong breeze blowing over the puddle",
+          "High humidity in the air"
+        ],
+        "answer": "High humidity in the air",
+        "explanation": "High humidity means the air is already saturated with water vapor. This leaves less 'room' in the air for new water molecules to evaporate into, slowing the process."
+      },
+      {
+        "question": "A key difference between boiling and evaporation is that:",
+        "options": [
+          "Boiling causes cooling, while evaporation causes heating.",
+          "Evaporation occurs at any temperature, while boiling only occurs at the boiling point.",
+          "Evaporation happens throughout the liquid, while boiling only happens at the surface.",
+          "Boiling turns liquid to solid, evaporation turns liquid to gas."
+        ],
+        "answer": "Evaporation occurs at any temperature, while boiling only occurs at the boiling point.",
+        "explanation": "Evaporation can happen at room temperature (or any temp below boiling), whereas a liquid must reach its specific boiling point for boiling to occur."
+      },
+      {
+        "question": "Where does boiling take place in a liquid?",
+        "options": [
+          "Only at the surface",
+          "Only at the very bottom",
+          "Throughout the entire liquid",
+          "Only at the sides of the container"
+        ],
+        "answer": "Throughout the entire liquid",
+        "explanation": "Unlike evaporation which is a surface phenomenon, boiling is a bulk process. You can see this as bubbles of gas forming everywhere inside the liquid during boiling."
+      },
+      {
+        "question": "Spreading wet clothes out on a line instead of crumpling them up helps them dry faster because:",
+        "options": [
+          "It increases the temperature of the clothes.",
+          "It decreases the humidity of the air.",
+          "It increases the surface area exposed to the air.",
+          "It decreases the wind speed around the clothes."
+        ],
+        "answer": "It increases the surface area exposed to the air.",
+        "explanation": "A larger exposed surface area means more particles are at the surface and have the opportunity to escape the liquid state, thus increasing the evaporation rate."
+      },
+      {
+        "question": "Which phenomenon explains why sweating cools down the human body?",
+        "options": [
+          "Condensation",
+          "Boiling",
+          "Evaporation",
+          "Sublimation"
+        ],
+        "answer": "Evaporation",
+        "explanation": "As sweat (a liquid) evaporates from the skin, the most energetic water molecules escape, leaving the lower-energy ones behind, effectively removing heat and lowering the skin's temperature."
+      }
+    ]
+  },
+  {
+    "subtopicId": "3.1",
+    "title": "General Wave Properties",
+    "digitizedText": "# 3.1 General Wave Properties\n\nWelcome to the world of waves! Waves are fantastic because they transfer energy from one place to another without transferring matter. Imagine a Mexican wave in a stadium \u2013 the people move up and down, but the wave itself travels around the arena.\n\n## Types of Waves\nThere are two main types of waves you need to know:\n1. **Transverse Waves**: The vibrations are perpendicular (at right angles) to the direction of wave travel. Examples include light waves, water waves, and electromagnetic waves.\n2. **Longitudinal Waves**: The vibrations are parallel to the direction of wave travel. The best example is sound waves. They feature areas where particles are squashed together (compressions) and spread apart (rarefactions).\n\n```mermaid\ngraph TD\n    A[Waves Transfer Energy] --> B[Transverse Waves]\n    A --> C[Longitudinal Waves]\n    B --> D[Vibrations are perpendicular to travel]\n    C --> E[Vibrations are parallel to travel]\n    D --> F[Examples: Light, Water ripples]\n    E --> G[Examples: Sound, Ultrasound]\n```\n\n## Wave Characteristics\n- **Amplitude**: The maximum displacement from the rest position. A larger amplitude means more energy.\n- **Wavelength ($\\lambda$)**: The distance between two consecutive matching points (e.g., from crest to crest or trough to trough). \n- **Frequency ($f$)**: The number of waves passing a point every second. Measured in Hertz (Hz).\n- **Period ($T$)**: The time taken for one complete wave to pass. ($T = 1/f$).\n\n![Wavefronts, Crests and Troughs](0625-physics/images/main_p50_i0.png)\n\n## The Wave Equation\nThe speed of a wave can be calculated using a simple equation:\n**$v = f \\times \\lambda$**\nWhere:\n- $v$ = wave speed in m/s\n- $f$ = frequency in Hz\n- $\\lambda$ = wavelength in meters\n\n## Wave Behaviors\nWhen waves travel, they can experience reflection, refraction, and diffraction.\n- **Reflection**: Bouncing back of waves when they hit a barrier.\n- **Refraction**: Bending of waves when they change speed (usually due to a change in depth for water waves, or a change in density for light). For example, when water waves enter shallower water, they slow down and their wavelength decreases.\n\n![Refraction of Wavefronts](0625-physics/images/main_p55_i0.png)\n",
+    "quizzes": [
+      {
+        "question": "What is the equation linking wave speed, frequency, and wavelength?",
+        "options": [
+          "v = f / \u03bb",
+          "v = f \u00d7 \u03bb",
+          "v = \u03bb / f",
+          "f = v \u00d7 \u03bb"
+        ],
+        "answer": "v = f \u00d7 \u03bb"
+      },
+      {
+        "question": "Which wave property is defined as the number of wavefronts passing a point per second?",
+        "options": [
+          "Amplitude",
+          "Wavelength",
+          "Frequency",
+          "Speed"
+        ],
+        "answer": "Frequency"
+      },
+      {
+        "question": "When water waves refract by entering shallower water, what happens to their speed and wavelength?",
+        "options": [
+          "Speed decreases, wavelength decreases",
+          "Speed decreases, wavelength increases",
+          "Speed increases, wavelength decreases",
+          "Speed increases, wavelength increases"
+        ],
+        "answer": "Speed decreases, wavelength decreases"
+      },
+      {
+        "question": "Sound waves are an example of which type of wave?",
+        "options": [
+          "Transverse",
+          "Longitudinal",
+          "Electromagnetic",
+          "Stationary"
+        ],
+        "answer": "Longitudinal"
+      },
+      {
+        "question": "The distance between two consecutive crests is called?",
+        "options": [
+          "Amplitude",
+          "Period",
+          "Wavelength",
+          "Frequency"
+        ],
+        "answer": "Wavelength"
+      },
+      {
+        "question": "If a wave has a frequency of 50 Hz and a wavelength of 2 m, what is its speed?",
+        "options": [
+          "25 m/s",
+          "100 m/s",
+          "0.04 m/s",
+          "200 m/s"
+        ],
+        "answer": "100 m/s"
+      },
+      {
+        "question": "What happens to the frequency of a wave during refraction?",
+        "options": [
+          "It increases",
+          "It decreases",
+          "It stays the same",
+          "It becomes zero"
+        ],
+        "answer": "It stays the same"
+      }
+    ]
+  },
+  {
+    "subtopicId": "3.2",
+    "title": "Light",
+    "digitizedText": "# 3.2 Light\n\nLight behaves as a transverse wave and allows us to see the world around us. In a vacuum, light travels incredibly fast\u2014at $3 \\times 10^8$ m/s!\n\n## Reflection of Light\nWhen a light ray strikes a mirror, it bounces off. \n**The Law of Reflection** states:\n*The angle of incidence ($i$) is always equal to the angle of reflection ($r$).*\nRemember, both angles are measured from the **normal** (an imaginary line drawn perpendicular to the surface).\n\n```mermaid\ngraph LR\n    A[Incident Ray] -->|Hits Mirror| B(Normal Line)\n    B -->|Bounces off| C[Reflected Ray]\n    style B stroke-dasharray: 5 5\n```\n\n## Refraction of Light\nWhen light passes from one transparent medium to another (e.g., from air to glass), its speed changes, which causes it to bend. This is called **refraction**.\n- Entering a **denser** medium (air to glass): Light slows down and bends **towards** the normal.\n- Entering a **less dense** medium (glass to air): Light speeds up and bends **away from** the normal.\n\n![Refraction of Light](0625-physics/images/main_p40_i0.png)\n\n**Snell's Law** and Refractive Index ($n$):\n$n = \\frac{\\sin i}{\\sin r}$\n\n## Total Internal Reflection (TIR)\nIf light travels from a denser medium to a less dense medium, and the angle of incidence is greater than a specific angle called the **critical angle ($c$)**, it will not refract. Instead, it reflects entirely back inside the denser medium. This is the principle behind optical fibers used in internet cables!\n\nFormula relating critical angle and refractive index:\n$n = \\frac{1}{\\sin c}$\n\n## Lenses\n**Converging (Convex) Lenses** are thicker in the middle and cause parallel rays of light to converge (meet) at a point called the **principal focus ($F$)**.\nThe distance from the center of the lens to the principal focus is the **focal length**.\n\n![Converging Lens Ray Diagram](0625-physics/images/main_p45_i0.png)\n",
+    "quizzes": [
+      {
+        "question": "The law of reflection states that:",
+        "options": [
+          "Angle of incidence > angle of reflection",
+          "Angle of incidence = angle of reflection",
+          "Angle of incidence < angle of reflection",
+          "Angle of incidence = angle of refraction"
+        ],
+        "answer": "Angle of incidence = angle of reflection"
+      },
+      {
+        "question": "What is the formula for the refractive index n using angles of incidence and refraction?",
+        "options": [
+          "n = cos(i) / cos(r)",
+          "n = sin(i) / sin(r)",
+          "n = tan(i) / tan(r)",
+          "n = sin(r) / sin(i)"
+        ],
+        "answer": "n = sin(i) / sin(r)"
+      },
+      {
+        "question": "Total internal reflection occurs when light travels from:",
+        "options": [
+          "A less dense to a more dense medium",
+          "A denser to a less dense medium at an angle greater than the critical angle",
+          "A denser to a less dense medium at an angle less than the critical angle",
+          "Any medium to a vacuum"
+        ],
+        "answer": "A denser to a less dense medium at an angle greater than the critical angle"
+      },
+      {
+        "question": "A converging lens produces a virtual, upright, and magnified image when the object is placed:",
+        "options": [
+          "Beyond 2F",
+          "At 2F",
+          "Between F and 2F",
+          "Between the lens and F"
+        ],
+        "answer": "Between the lens and F"
+      },
+      {
+        "question": "The refractive index of glass is 1.5. What is the speed of light in this glass? (Speed of light in vacuum = 3 \u00d7 10^8 m/s)",
+        "options": [
+          "2 \u00d7 10^8 m/s",
+          "4.5 \u00d7 10^8 m/s",
+          "1.5 \u00d7 10^8 m/s",
+          "3 \u00d7 10^8 m/s"
+        ],
+        "answer": "2 \u00d7 10^8 m/s"
+      },
+      {
+        "question": "Which characteristic of an image is formed by a plane mirror?",
+        "options": [
+          "Real and inverted",
+          "Virtual and inverted",
+          "Virtual and laterally inverted",
+          "Real and laterally inverted"
+        ],
+        "answer": "Virtual and laterally inverted"
+      },
+      {
+        "question": "When light passes from air into a glass block, it bends:",
+        "options": [
+          "Towards the normal",
+          "Away from the normal",
+          "It does not bend",
+          "It reflects completely"
+        ],
+        "answer": "Towards the normal"
+      }
+    ]
+  },
+  {
+    "subtopicId": "3.3",
+    "title": "Electromagnetic Spectrum",
+    "digitizedText": "# 3.3 Electromagnetic Spectrum\n\nThe Electromagnetic (EM) Spectrum is a family of transverse waves. They are everywhere around us, from the light we see to the Wi-Fi signals we use.\n\n## Properties of EM Waves\nAll electromagnetic waves share these crucial properties:\n1. They are all **transverse waves**.\n2. They can travel through a **vacuum** (they don't need a medium like air or water).\n3. They all travel at the **speed of light** in a vacuum ($3 \\times 10^8$ m/s).\n\n## The Spectrum Order\nFrom longest wavelength (lowest frequency) to shortest wavelength (highest frequency):\n\n```mermaid\ngraph TD\n    A[Radio Waves] --> B[Microwaves]\n    B --> C[Infrared]\n    C --> D[Visible Light]\n    D --> E[Ultraviolet]\n    E --> F[X-rays]\n    F --> G[Gamma Rays]\n    style A fill:#ffcccc\n    style G fill:#ccccff\n```\n\n## Uses and Dangers\n- **Radio Waves**: \n  - *Uses*: Television and radio communications.\n- **Microwaves**: \n  - *Uses*: Satellite communications, mobile phones, and cooking food.\n  - *Dangers*: Internal heating of body tissues.\n- **Infrared (IR)**: \n  - *Uses*: Electrical heaters, cooking, night-vision cameras, remote controls.\n  - *Dangers*: Skin burns.\n- **Visible Light**: \n  - *Uses*: Vision, photography, optical fibers.\n- **Ultraviolet (UV)**: \n  - *Uses*: Fluorescent lamps, security marking, sunbeds.\n  - *Dangers*: Damage to surface cells and eyes, leading to skin cancer and cataracts.\n- **X-rays**: \n  - *Uses*: Medical imaging (seeing broken bones), security scanners.\n  - *Dangers*: Mutation of DNA leading to cancer.\n- **Gamma Rays**: \n  - *Uses*: Sterilizing medical equipment, treating cancer (radiotherapy).\n  - *Dangers*: Mutation of DNA leading to cancer.\n",
+    "quizzes": [
+      {
+        "question": "Which of the following is NOT an electromagnetic wave?",
+        "options": [
+          "X-rays",
+          "Sound waves",
+          "Microwaves",
+          "Ultraviolet"
+        ],
+        "answer": "Sound waves"
+      },
+      {
+        "question": "Which electromagnetic wave has the highest frequency?",
+        "options": [
+          "Radio waves",
+          "Visible light",
+          "X-rays",
+          "Gamma rays"
+        ],
+        "answer": "Gamma rays"
+      },
+      {
+        "question": "All electromagnetic waves travel through a vacuum at what speed?",
+        "options": [
+          "3 \u00d7 10^6 m/s",
+          "3 \u00d7 10^8 m/s",
+          "340 m/s",
+          "1500 m/s"
+        ],
+        "answer": "3 \u00d7 10^8 m/s"
+      },
+      {
+        "question": "Which EM wave is used for thermal imaging and remote controls?",
+        "options": [
+          "Infrared",
+          "Ultraviolet",
+          "Microwaves",
+          "Radio waves"
+        ],
+        "answer": "Infrared"
+      },
+      {
+        "question": "Overexposure to which wave can cause premature skin aging and skin cancer?",
+        "options": [
+          "Infrared",
+          "Ultraviolet",
+          "Radio waves",
+          "Visible light"
+        ],
+        "answer": "Ultraviolet"
+      },
+      {
+        "question": "What is a primary use of microwaves?",
+        "options": [
+          "Sterilizing medical equipment",
+          "Optical fibers",
+          "Satellite communication and cooking",
+          "Treating cancer"
+        ],
+        "answer": "Satellite communication and cooking"
+      },
+      {
+        "question": "Which color of visible light has the longest wavelength?",
+        "options": [
+          "Violet",
+          "Green",
+          "Yellow",
+          "Red"
+        ],
+        "answer": "Red"
+      }
+    ]
+  },
+  {
+    "subtopicId": "3.4",
+    "title": "Sound",
+    "digitizedText": "# 3.4 Sound\n\nSound waves are how we hear the world. They are fundamentally different from light because they are **longitudinal waves** and require a medium to travel.\n\n## How is Sound Produced?\nSound is produced by vibrating objects. These vibrations compress and expand the surrounding air, creating a series of **compressions** (high pressure) and **rarefactions** (low pressure) that travel through the air.\n\n```mermaid\ngraph LR\n    A[Vibrating Source] --> B[Compressions]\n    A --> C[Rarefactions]\n    B --> D[Sound Wave Travels]\n    C --> D\n    D --> E[Ear Drum Vibrates]\n```\n\n## Speed of Sound\nBecause sound relies on particles knocking into each other, it travels fastest where particles are closest together:\n- **Solids**: Fastest (approx. $5000$ m/s in steel)\n- **Liquids**: Slower (approx. $1500$ m/s in water)\n- **Gases**: Slowest (approx. $340$ m/s in air)\n*Note: Sound cannot travel through a vacuum (like in space) because there are no particles to carry the vibrations!*\n\n## Pitch and Loudness\n- **Pitch**: How high or low a sound is. It depends on the **frequency** of the wave. High frequency = high pitch.\n- **Loudness**: How loud or quiet a sound is. It depends on the **amplitude** of the wave. Large amplitude = loud sound.\n\n## Echoes\nAn echo is simply a **reflection** of sound off a hard, flat surface.\nYou can use echoes to measure distance. If you know the speed of sound, you can time how long an echo takes to return and calculate the distance ($d = \\frac{v \\times t}{2}$).\n\n## Human Hearing\nThe audible range for a healthy young human ear is **20 Hz to 20,000 Hz**.\nSounds above 20,000 Hz are called **ultrasound**. Ultrasound is used for medical imaging (like scanning a baby in the womb) and non-destructive testing in industry.\n",
+    "quizzes": [
+      {
+        "question": "Sound travels fastest in which of the following media?",
+        "options": [
+          "Vacuum",
+          "Gases",
+          "Liquids",
+          "Solids"
+        ],
+        "answer": "Solids"
+      },
+      {
+        "question": "The approximate range of audible frequencies for a healthy human ear is:",
+        "options": [
+          "2 Hz to 2000 Hz",
+          "20 Hz to 20,000 Hz",
+          "200 Hz to 200,000 Hz",
+          "20,000 Hz to 20,000,000 Hz"
+        ],
+        "answer": "20 Hz to 20,000 Hz"
+      },
+      {
+        "question": "An echo is the result of the:",
+        "options": [
+          "Refraction of sound",
+          "Reflection of sound",
+          "Diffraction of sound",
+          "Interference of sound"
+        ],
+        "answer": "Reflection of sound"
+      },
+      {
+        "question": "The pitch of a sound is directly related to its:",
+        "options": [
+          "Amplitude",
+          "Speed",
+          "Frequency",
+          "Wavelength"
+        ],
+        "answer": "Frequency"
+      },
+      {
+        "question": "The loudness of a sound is directly related to its:",
+        "options": [
+          "Amplitude",
+          "Speed",
+          "Frequency",
+          "Wavelength"
+        ],
+        "answer": "Amplitude"
+      },
+      {
+        "question": "Compressions and rarefactions are characteristics of:",
+        "options": [
+          "Transverse waves",
+          "Longitudinal waves",
+          "Electromagnetic waves",
+          "Light waves"
+        ],
+        "answer": "Longitudinal waves"
+      },
+      {
+        "question": "A sound wave takes 2 seconds to travel to a wall and echo back to the source. If the speed of sound is 340 m/s, how far is the wall?",
+        "options": [
+          "170 m",
+          "340 m",
+          "680 m",
+          "85 m"
+        ],
+        "answer": "340 m"
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.1",
+    "title": "Simple Phenomena of Magnetism",
+    "digitizedText": "### 1. Properties of Magnets\n\nMagnetism is a fundamental force of nature. Magnets have two poles: a North pole and a South pole. \n\n*   **Law of Magnetism:** Like poles repel, and unlike poles attract.\n*   **Magnetic Materials:** Materials that can be magnetized or are attracted to a magnet. The most common magnetic materials are iron, steel, cobalt, and nickel.\n*   **Non-magnetic Materials:** Materials that are not attracted to a magnet, such as plastic, wood, copper, and aluminum.\n\n![Diagram](0625-physics/images/main_p71_i0.png)\n\n### 2. Induced Magnetism\nWhen a piece of unmagnetized magnetic material touches or is brought near the pole of a permanent magnet, it becomes a magnet itself. The induced pole is of the opposite sign to the inducing pole.\n\n### 3. Magnetic Fields\nA magnetic field is a region in which a magnetic pole experiences a force. Magnetic field lines indicate the direction of the magnetic force. They always point from the North pole to the South pole outside the magnet.\n\n![Diagram](0625-physics/images/main_p72_i0.png)\n\n### 4. Electromagnets\nAn electromagnet is a type of magnet in which the magnetic field is produced by an electric current. It usually consists of a coil of wire wound around a soft iron core. The magnetic field disappears when the current is turned off.\n\n```mermaid\nflowchart TD\n    A[Magnet Types] --> B(Permanent Magnets)\n    A --> C(Temporary Magnets)\n    A --> D(Electromagnets)\n    B --> E[Made of hard magnetic materials like steel]\n    C --> F[Made of soft magnetic materials like iron]\n    D --> G[Magnetic field generated by electric current]\n```\n",
+    "quizzes": [
+      {
+        "question": "Which of the following materials is magnetic?",
+        "options": [
+          "Copper",
+          "Aluminum",
+          "Steel",
+          "Plastic"
+        ],
+        "answer": "Steel",
+        "explanation": "Steel is a magnetic material (made mostly of iron), whereas copper, aluminum, and plastic are non-magnetic."
+      },
+      {
+        "question": "What is the rule for magnetic poles?",
+        "options": [
+          "Like poles attract",
+          "Unlike poles repel",
+          "Like poles repel and unlike poles attract",
+          "All poles attract each other"
+        ],
+        "answer": "Like poles repel and unlike poles attract",
+        "explanation": "This is the fundamental law of magnetism. North repels North, but North attracts South."
+      },
+      {
+        "question": "In which direction do magnetic field lines point outside a magnet?",
+        "options": [
+          "From South to North",
+          "From North to South",
+          "From East to West",
+          "From positive to negative"
+        ],
+        "answer": "From North to South",
+        "explanation": "By convention, magnetic field lines outside a magnet go from the North pole to the South pole."
+      },
+      {
+        "question": "Which material is best suited for the core of an electromagnet?",
+        "options": [
+          "Steel",
+          "Soft iron",
+          "Copper",
+          "Wood"
+        ],
+        "answer": "Soft iron",
+        "explanation": "Soft iron is easily magnetized and demagnetized, making it ideal for electromagnets where the field needs to be turned on and off quickly."
+      },
+      {
+        "question": "What happens to an electromagnet when the electric current is switched off?",
+        "options": [
+          "It retains its magnetism permanently.",
+          "Its magnetic field reverses direction.",
+          "It loses its magnetism.",
+          "It becomes a stronger magnet."
+        ],
+        "answer": "It loses its magnetism.",
+        "explanation": "An electromagnet's magnetic field is produced by the electric current. When the current stops, the magnetic field disappears."
+      },
+      {
+        "question": "What is a region where a magnetic pole experiences a force called?",
+        "options": [
+          "Electric field",
+          "Gravitational field",
+          "Magnetic field",
+          "Electromagnetic field"
+        ],
+        "answer": "Magnetic field",
+        "explanation": "A magnetic field is the specific region around a magnet where magnetic forces can be detected."
+      },
+      {
+        "question": "What happens when a soft iron nail is brought near a strong permanent magnet?",
+        "options": [
+          "It gets repelled.",
+          "It becomes an induced magnet and is attracted.",
+          "It melts.",
+          "Nothing happens."
+        ],
+        "answer": "It becomes an induced magnet and is attracted.",
+        "explanation": "The permanent magnet induces a temporary opposite pole in the near end of the soft iron nail, causing attraction."
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.2",
+    "title": "Electrical Quantities",
+    "digitizedText": "### 1. Electric Field and Electrostatics\nAn **Electric Field** is a region where a charged particle experiences a force. The direction of the field is defined as the direction of the force on a positive charge (from positive to negative).\n\n*   **Same charges:** Repel\n*   **Opposite charges:** Attract\n\n![Diagram](0625-physics/images/main_p61_i0.png)\n\n### 2. Charge and Current\n**Charge (Q)** is measured in **Coulombs (C)**. A single electron has a charge of $1.6 \\times 10^{-19} C$.\n**Current (I)** is the rate of flow of electric charge. It indicates the \"speed of charge\".\n\n$$I = \\frac{Q}{t}$$\n\n*   Current is measured in **Amperes (A)**.\n*   To measure current, an **ammeter** must be connected in series in the circuit.\n*   Conventional current flows from positive to negative, whereas electron flow is from negative to positive.\n\n![Diagram](0625-physics/images/main_p63_i0.png)\n\n### 3. Potential Difference and E.M.F. (Voltage)\n**Potential Difference (V)** is the energy required to carry 1 Coulomb of charge from one point to another in a conductor.\n\n$$V = \\frac{E}{Q}$$\n\n**Electromotive Force (E.M.F.)** is the total energy required to carry 1 Coulomb of charge around the entire circuit. Both are measured in **Volts (V)**.\n*   To measure voltage, a **voltmeter** must be connected in parallel.\n\n![Diagram](0625-physics/images/main_p64_i0.png)\n\n### 4. Electrical Energy and Power\nPower is the rate at which electrical energy is transferred.\n*   **Electrical Energy (E):** $E = V I t$\n*   **Electrical Power (P):** $P = V I$ and $P = \\frac{E}{t}$\n*   **Power Loss in Cables:** $P = I^2 R$\n\n![Diagram](0625-physics/images/main_p70_i0.png)\n\n```mermaid\nflowchart TD\n    A[Electrical Quantities] --> B(Charge Q)\n    A --> C(Current I)\n    A --> D(Voltage V)\n    A --> E(Power P)\n    B --> F[Measured in Coulombs]\n    C --> G[Rate of charge flow: I = Q/t]\n    D --> H[Energy per unit charge: V = E/Q]\n    E --> I[Rate of energy transfer: P = VI]\n```\n",
+    "quizzes": [
+      {
+        "question": "What is the unit of electric current?",
+        "options": [
+          "Volts",
+          "Amperes",
+          "Coulombs",
+          "Joules"
+        ],
+        "answer": "Amperes",
+        "explanation": "Current is measured in Amperes (A), which represents the rate of flow of charge."
+      },
+      {
+        "question": "How should an ammeter be connected in a circuit to measure current?",
+        "options": [
+          "In parallel with the component",
+          "In series with the component",
+          "Directly across the battery",
+          "In any configuration"
+        ],
+        "answer": "In series with the component",
+        "explanation": "An ammeter must be connected in series so that all the current flowing through the circuit passes through it."
+      },
+      {
+        "question": "If 10 Coulombs of charge flows through a wire in 2 seconds, what is the current?",
+        "options": [
+          "20 A",
+          "5 A",
+          "12 A",
+          "8 A"
+        ],
+        "answer": "5 A",
+        "explanation": "Current I = Q / t = 10 C / 2 s = 5 A."
+      },
+      {
+        "question": "Which quantity is defined as the energy transferred per unit charge?",
+        "options": [
+          "Current",
+          "Power",
+          "Potential Difference",
+          "Resistance"
+        ],
+        "answer": "Potential Difference",
+        "explanation": "Potential difference (Voltage) is the energy transferred per unit charge, V = E / Q."
+      },
+      {
+        "question": "What is the formula for calculating electrical power?",
+        "options": [
+          "P = V / I",
+          "P = I / V",
+          "P = V * I",
+          "P = V * Q"
+        ],
+        "answer": "P = V * I",
+        "explanation": "Electrical power is the product of potential difference and current, P = V * I."
+      },
+      {
+        "question": "Which instrument is used to measure electromotive force (e.m.f)?",
+        "options": [
+          "Ammeter",
+          "Voltmeter",
+          "Galvanometer",
+          "Ohmmeter"
+        ],
+        "answer": "Voltmeter",
+        "explanation": "E.M.F. and potential difference are both measured in Volts using a voltmeter connected in parallel."
+      },
+      {
+        "question": "What does conventional current refer to?",
+        "options": [
+          "The flow of electrons from negative to positive",
+          "The flow of positive charge from positive to negative",
+          "The movement of neutrons",
+          "The resistance in a wire"
+        ],
+        "answer": "The flow of positive charge from positive to negative",
+        "explanation": "By historical convention, current is considered to flow from the positive terminal to the negative terminal."
+      },
+      {
+        "question": "The direction of an electric field is defined by the force acting on a:",
+        "options": [
+          "Negative charge",
+          "Neutral particle",
+          "Positive charge",
+          "Magnetic pole"
+        ],
+        "answer": "Positive charge",
+        "explanation": "Electric field lines point in the direction that a positive test charge would be pushed or pulled."
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.3",
+    "title": "Electric Circuits",
+    "digitizedText": "### 1. Ohm's Law and Resistance\n**Ohm's Law** states that the potential difference across a conductor is directly proportional to the current through it, provided temperature remains constant.\n\n$$V = IR$$\n\n**Resistance (R)** is the ratio of potential difference to current, measured in Ohms ($\\Omega$).\nFactors affecting the resistance of a wire:\n1.  **Length:** Resistance is directly proportional to length ($R \\propto L$). Longer wires have more resistance.\n2.  **Cross-sectional Area (Thickness):** Resistance is inversely proportional to area ($R \\propto 1/A$). Thicker wires have less resistance.\n3.  **Temperature:** Resistance usually increases with temperature.\n4.  **Material:** Different materials have different conductivities (e.g., copper has low resistance).\n\n![Diagram](0625-physics/images/main_p65_i0.png)\n\n### 2. Series Circuits\nIn a series circuit, components are connected end-to-end.\n*   **Current:** Constant everywhere ($I_T = I_1 = I_2 = I_3$).\n*   **Voltage:** The total voltage is the sum of the voltages across each component ($V_T = V_1 + V_2 + V_3$).\n*   **Resistance:** Total resistance is the sum of individual resistances ($R_T = R_1 + R_2 + R_3$).\n\n### 3. Parallel Circuits\nIn a parallel circuit, components are connected across multiple branches.\n*   **Voltage:** Constant across all parallel branches ($V_T = V_1 = V_2 = V_3$).\n*   **Current:** The total current splits across the branches ($I_T = I_1 + I_2 + I_3$).\n*   **Resistance:** The total resistance decreases as more branches are added. $\\frac{1}{R_T} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3}$.\n\n![Diagram](0625-physics/images/main_p67_i0.png)\n\n### 4. Circuit Analysis Example\nTo solve complex circuits, simplify them step-by-step by combining series and parallel resistors into a single equivalent resistance.\n\n![Diagram](0625-physics/images/main_p68_i0.png)\n\n```mermaid\nflowchart TD\n    A[Electric Circuits] --> B(Series)\n    A --> C(Parallel)\n    B --> D[Current is the same everywhere]\n    B --> E[Voltage is shared]\n    B --> F[Rt = R1 + R2 + ...]\n    C --> G[Voltage is the same across branches]\n    C --> H[Current is shared]\n    C --> I[1/Rt = 1/R1 + 1/R2 + ...]\n```\n",
+    "quizzes": [
+      {
+        "question": "According to Ohm's Law, what is the relationship between voltage and current at a constant temperature?",
+        "options": [
+          "Inversely proportional",
+          "Directly proportional",
+          "Exponential",
+          "No relationship"
+        ],
+        "answer": "Directly proportional",
+        "explanation": "Ohm's Law states that V is directly proportional to I, meaning V = IR where R is constant."
+      },
+      {
+        "question": "What happens to the resistance of a wire if its length is doubled?",
+        "options": [
+          "It halves",
+          "It quadruples",
+          "It doubles",
+          "It remains the same"
+        ],
+        "answer": "It doubles",
+        "explanation": "Resistance is directly proportional to the length of the wire (R \u221d L)."
+      },
+      {
+        "question": "In a series circuit with three identical resistors, what can be said about the current?",
+        "options": [
+          "It is highest at the first resistor.",
+          "It splits evenly among the three resistors.",
+          "It is the same through all three resistors.",
+          "It drops to zero at the last resistor."
+        ],
+        "answer": "It is the same through all three resistors.",
+        "explanation": "In a series circuit, there is only one path for the electrons, so current is constant everywhere."
+      },
+      {
+        "question": "Two 4 \u03a9 resistors are connected in series. What is the total resistance?",
+        "options": [
+          "2 \u03a9",
+          "4 \u03a9",
+          "8 \u03a9",
+          "16 \u03a9"
+        ],
+        "answer": "8 \u03a9",
+        "explanation": "For series resistors, total resistance Rt = R1 + R2 = 4 + 4 = 8 \u03a9."
+      },
+      {
+        "question": "Two 6 \u03a9 resistors are connected in parallel. What is the total effective resistance?",
+        "options": [
+          "12 \u03a9",
+          "6 \u03a9",
+          "3 \u03a9",
+          "1.5 \u03a9"
+        ],
+        "answer": "3 \u03a9",
+        "explanation": "For parallel resistors, 1/Rt = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6. So Rt = 6/2 = 3 \u03a9."
+      },
+      {
+        "question": "Which of the following increases the resistance of a metal wire?",
+        "options": [
+          "Decreasing its length",
+          "Increasing its cross-sectional area",
+          "Increasing its temperature",
+          "Cooling it down"
+        ],
+        "answer": "Increasing its temperature",
+        "explanation": "For most metals, an increase in temperature causes the atoms to vibrate more, increasing resistance to electron flow."
+      },
+      {
+        "question": "In a parallel circuit, what remains constant across all branches?",
+        "options": [
+          "Current",
+          "Resistance",
+          "Power",
+          "Potential Difference (Voltage)"
+        ],
+        "answer": "Potential Difference (Voltage)",
+        "explanation": "Every branch in a parallel circuit is connected across the same two points, so they share the same voltage."
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.4",
+    "title": "Electrical Safety",
+    "digitizedText": "### 1. Dangers of Electricity\nElectricity can be dangerous if mishandled. The main hazards include:\n*   **Damaged Insulation:** Exposed wires can cause electric shocks if touched, or short circuits which may lead to fires.\n*   **Overheating of Cables:** If too much current flows through a wire, its resistance causes it to heat up, potentially melting the insulation and starting a fire.\n*   **Damp Conditions:** Water is a good conductor of electricity. Wet conditions significantly lower the resistance of the human body, increasing the risk of a fatal electric shock.\n\n### 2. Safety Devices\nTo protect against these hazards, several safety devices are used:\n*   **Fuses:** A fuse is a thin piece of wire that melts and breaks the circuit if the current exceeds its rating. It must be connected to the live wire.\n*   **Circuit Breakers:** These are automatic switches that \"trip\" (turn off) when the current is too high. They can be easily reset, unlike fuses which must be replaced.\n*   **Earth Wire:** The earth wire provides a low-resistance path to the ground. If a fault causes the metal casing of an appliance to become live, the current safely flows to earth, preventing a shock and usually blowing the fuse.\n*   **Double Insulation:** Some appliances have plastic casings and no exposed metal parts. These do not require an earth wire and are said to be double-insulated.\n\n```mermaid\nflowchart LR\n    A[Electrical Hazards] --> B(Fires)\n    A --> C(Electric Shocks)\n    B --> D[Prevented by Fuses & Circuit Breakers]\n    C --> E[Prevented by Earth Wires & Double Insulation]\n```\n",
+    "quizzes": [
+      {
+        "question": "Why is damaged insulation on a wire dangerous?",
+        "options": [
+          "It increases the wire's resistance",
+          "It wastes electrical energy",
+          "It can cause electric shocks or short circuits",
+          "It prevents the appliance from turning off"
+        ],
+        "answer": "It can cause electric shocks or short circuits",
+        "explanation": "Exposed wires can be touched accidentally (causing shock) or touch each other (causing a short circuit and fire)."
+      },
+      {
+        "question": "How does a fuse protect a circuit?",
+        "options": [
+          "It slows down the current.",
+          "It melts and breaks the circuit when current is too high.",
+          "It redirects current to the earth wire.",
+          "It increases voltage to compensate."
+        ],
+        "answer": "It melts and breaks the circuit when current is too high.",
+        "explanation": "A fuse contains a thin wire designed to melt when heated by a current exceeding its safety rating."
+      },
+      {
+        "question": "To which wire in a plug is the fuse connected?",
+        "options": [
+          "Neutral wire",
+          "Earth wire",
+          "Live wire",
+          "Any of the wires"
+        ],
+        "answer": "Live wire",
+        "explanation": "The fuse must be in the live wire so that if it blows, the appliance is completely disconnected from the high voltage supply."
+      },
+      {
+        "question": "What is the main purpose of the earth wire?",
+        "options": [
+          "To supply power to the appliance",
+          "To complete the circuit",
+          "To protect the user from electric shock if the metal casing becomes live",
+          "To prevent the appliance from overheating"
+        ],
+        "answer": "To protect the user from electric shock if the metal casing becomes live",
+        "explanation": "The earth wire provides a safe path for current to flow to the ground instead of through a person touching a faulty appliance."
+      },
+      {
+        "question": "Which of the following conditions significantly increases the risk of electric shock?",
+        "options": [
+          "Dry skin",
+          "Damp conditions",
+          "Wearing rubber gloves",
+          "Using battery-powered devices"
+        ],
+        "answer": "Damp conditions",
+        "explanation": "Water containing impurities conducts electricity well, greatly lowering the body's resistance and allowing large, dangerous currents to flow."
+      },
+      {
+        "question": "What does 'double insulation' mean?",
+        "options": [
+          "The appliance has two earth wires.",
+          "The appliance has a plastic casing with no exposed metal parts.",
+          "The appliance requires twice the normal voltage.",
+          "The cables are twice as thick."
+        ],
+        "answer": "The appliance has a plastic casing with no exposed metal parts.",
+        "explanation": "Double-insulated appliances have a non-conducting outer casing, meaning the user cannot get shocked even if there's an internal fault. They don't need an earth wire."
+      },
+      {
+        "question": "Why are circuit breakers often preferred over fuses?",
+        "options": [
+          "They are cheaper.",
+          "They handle much higher voltages.",
+          "They can be easily reset after tripping.",
+          "They don't use any electricity."
+        ],
+        "answer": "They can be easily reset after tripping.",
+        "explanation": "Fuses must be replaced once they melt, whereas circuit breakers are switches that can simply be flipped back on."
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.5",
+    "title": "Electromagnetic Effects (Motor Effect)",
+    "digitizedText": "### 1. Magnetic Effect of a Current\nWhen an electric current flows through a wire, it generates a magnetic field around it. The field lines are concentric circles around the wire. The direction of the magnetic field can be determined using the **Right-Hand Grip Rule**: if your thumb points in the direction of the current, your fingers curl in the direction of the magnetic field lines.\n\n### 2. Force on a Current-Carrying Conductor (The Motor Effect)\nWhen a current-carrying wire is placed in a magnetic field, it experiences a force. This happens because the magnetic field around the wire interacts with the external magnetic field.\n*   The force is strongest when the wire is perpendicular to the magnetic field.\n*   There is zero force if the wire is parallel to the magnetic field.\n\n**Fleming's Left-Hand Rule** is used to find the direction of the force:\n*   **First finger:** Direction of Magnetic Field (North to South)\n*   **Second finger:** Direction of Current (Positive to Negative)\n*   **Thumb:** Direction of Force (Motion)\n\n![Diagram](0625-physics/images/main_p73_i0.png)\n![Diagram](0625-physics/images/main_p74_i0.png)\n\n### 3. DC Motor\nA simple direct-current (DC) motor uses the motor effect to create continuous rotation.\n*   It consists of a rectangular coil of wire in a magnetic field.\n*   Current flows in opposite directions on each side of the coil, causing one side to be pushed up and the other down, producing a turning effect.\n*   A **split-ring commutator** is used to reverse the current in the coil every half-turn. This ensures the force on the coil keeps it turning in the same direction continuously.\n\n![Diagram](0625-physics/images/main_p75_i0.png)\n\n```mermaid\nflowchart TD\n    A[Motor Effect] --> B[Current-carrying wire]\n    A --> C[External Magnetic Field]\n    B & C --> D[Interact to produce a Force]\n    D --> E[Predicted by Fleming's Left-Hand Rule]\n    D --> F[Applied in DC Motors]\n```\n",
+    "quizzes": [
+      {
+        "question": "What happens when a current-carrying wire is placed in a magnetic field?",
+        "options": [
+          "It gets cold.",
+          "It becomes a permanent magnet.",
+          "It experiences a force.",
+          "It produces light."
+        ],
+        "answer": "It experiences a force.",
+        "explanation": "The interaction between the wire's magnetic field and the external magnetic field produces a force. This is known as the motor effect."
+      },
+      {
+        "question": "Which rule determines the direction of force on a current-carrying wire in a magnetic field?",
+        "options": [
+          "Right-Hand Grip Rule",
+          "Fleming's Left-Hand Rule",
+          "Fleming's Right-Hand Rule",
+          "Lenz's Law"
+        ],
+        "answer": "Fleming's Left-Hand Rule",
+        "explanation": "Fleming's Left-Hand Rule correlates the directions of the magnetic Field, Current, and resulting Force (Motion)."
+      },
+      {
+        "question": "In Fleming's Left-Hand Rule, what does the first finger represent?",
+        "options": [
+          "Direction of Current",
+          "Direction of Force",
+          "Direction of Magnetic Field",
+          "Direction of Electron Flow"
+        ],
+        "answer": "Direction of Magnetic Field",
+        "explanation": "The First finger points in the direction of the Field (North to South)."
+      },
+      {
+        "question": "What is the function of a split-ring commutator in a DC motor?",
+        "options": [
+          "To increase the voltage.",
+          "To reverse the current direction in the coil every half turn.",
+          "To act as a permanent magnet.",
+          "To stop the motor from spinning too fast."
+        ],
+        "answer": "To reverse the current direction in the coil every half turn.",
+        "explanation": "By reversing the current every half turn, the commutator ensures the turning effect (torque) remains in the same direction, allowing continuous rotation."
+      },
+      {
+        "question": "Under what condition is the force on a current-carrying wire in a magnetic field zero?",
+        "options": [
+          "When the wire is perpendicular to the field.",
+          "When the current is very high.",
+          "When the wire is parallel to the magnetic field.",
+          "When the magnetic field is very strong."
+        ],
+        "answer": "When the wire is parallel to the magnetic field.",
+        "explanation": "The motor effect force is maximum at 90 degrees and drops to zero if the current flows parallel to the magnetic field lines."
+      },
+      {
+        "question": "How can you increase the speed of a DC motor?",
+        "options": [
+          "Decrease the current.",
+          "Use a weaker magnet.",
+          "Increase the current or use a stronger magnet.",
+          "Remove the split-ring commutator."
+        ],
+        "answer": "Increase the current or use a stronger magnet.",
+        "explanation": "Increasing current, using stronger magnets, or adding more turns to the coil will increase the force and thus the speed of rotation."
+      },
+      {
+        "question": "Which rule is used to find the pattern of the magnetic field around a straight current-carrying wire?",
+        "options": [
+          "Fleming's Left-Hand Rule",
+          "Right-Hand Grip Rule",
+          "Ohm's Law",
+          "Faraday's Law"
+        ],
+        "answer": "Right-Hand Grip Rule",
+        "explanation": "The Right-Hand Grip Rule shows that if the thumb points along the current, the curled fingers show the circular magnetic field direction."
+      }
+    ]
+  },
+  {
+    "subtopicId": "4.6",
+    "title": "Electromagnetic Effects (Induction & Transformers)",
+    "digitizedText": "### 1. Electromagnetic Induction\nIf a wire \"cuts\" through magnetic field lines, or if the magnetic field through a coil changes, a voltage (Electromotive Force or E.M.F.) is induced. If the circuit is closed, an induced current flows. This is called electromagnetic induction.\n\n*   **Faraday's Law:** The magnitude of the induced E.M.F. is proportional to the rate at which magnetic field lines are cut.\n*   You can increase the induced E.M.F. by:\n    1. Moving the magnet or wire faster.\n    2. Using a stronger magnet.\n    3. Increasing the number of turns on the coil.\n\n![Diagram](0625-physics/images/main_p76_i0.png)\n\n### 2. A.C. Generator\nAn AC generator uses electromagnetic induction to produce alternating current (A.C.).\n*   A coil is rotated inside a magnetic field, cutting the field lines and inducing an E.M.F.\n*   Instead of a split-ring commutator, it uses **slip rings**, which keep continuous contact with the ends of the coil without reversing the connections. This results in an alternating output voltage.\n\n### 3. Transformers\nA transformer changes the voltage of an alternating current. It consists of a primary coil and a secondary coil wound around a soft iron core.\n*   An AC current in the primary coil creates a constantly changing magnetic field in the iron core.\n*   This changing magnetic field cuts through the secondary coil, inducing an AC voltage in it.\n*   **Step-up transformer:** Has more turns on the secondary coil; increases voltage.\n*   **Step-down transformer:** Has fewer turns on the secondary coil; decreases voltage.\n\n**Transformer Equation:**\n$$\\frac{V_p}{V_s} = \\frac{N_p}{N_s}$$\nWhere $V$ is voltage, $N$ is number of turns, $p$ is primary, and $s$ is secondary.\nFor a 100% efficient transformer, Electrical Power In = Electrical Power Out:\n$$V_p \\times I_p = V_s \\times I_s$$\n\n![Diagram](0625-physics/images/main_p77_i0.png)\n\n```mermaid\nflowchart TD\n    A[Transformers] --> B(Step-Up)\n    A --> C(Step-Down)\n    B --> D[More turns on secondary coil]\n    B --> E[Increases Voltage, Decreases Current]\n    C --> F[Fewer turns on secondary coil]\n    C --> G[Decreases Voltage, Increases Current]\n```\n",
+    "quizzes": [
+      {
+        "question": "What is electromagnetic induction?",
+        "options": [
+          "Creating a magnet using electricity",
+          "Inducing a voltage by changing the magnetic field across a conductor",
+          "The force on a wire in a magnetic field",
+          "Static electricity buildup on an insulator"
+        ],
+        "answer": "Inducing a voltage by changing the magnetic field across a conductor",
+        "explanation": "Electromagnetic induction refers to generating an electromotive force (voltage) due to a changing magnetic environment."
+      },
+      {
+        "question": "Which of the following does NOT increase the induced e.m.f. in a coil?",
+        "options": [
+          "Moving the magnet faster",
+          "Using a stronger magnetic field",
+          "Increasing the number of turns on the coil",
+          "Holding the magnet stationary inside the coil"
+        ],
+        "answer": "Holding the magnet stationary inside the coil",
+        "explanation": "Induction requires relative motion or a changing magnetic field. If the magnet is stationary, no field lines are being cut, so e.m.f. is zero."
+      },
+      {
+        "question": "What type of current is produced by a basic generator with slip rings?",
+        "options": [
+          "Direct Current (DC)",
+          "Alternating Current (AC)",
+          "Static Electricity",
+          "No current"
+        ],
+        "answer": "Alternating Current (AC)",
+        "explanation": "Slip rings maintain a constant connection to the rotating coil, meaning the output current naturally alternates direction every half turn."
+      },
+      {
+        "question": "What is the primary function of a step-up transformer?",
+        "options": [
+          "To increase the current",
+          "To convert AC to DC",
+          "To increase the voltage",
+          "To decrease the resistance"
+        ],
+        "answer": "To increase the voltage",
+        "explanation": "A step-up transformer increases voltage for efficient power transmission, which simultaneously decreases current to minimize power loss in cables."
+      },
+      {
+        "question": "Why do transformers only work with Alternating Current (AC)?",
+        "options": [
+          "DC is too dangerous.",
+          "AC produces a constantly changing magnetic field needed for induction.",
+          "DC creates too much heat.",
+          "AC travels faster than DC."
+        ],
+        "answer": "AC produces a constantly changing magnetic field needed for induction.",
+        "explanation": "Electromagnetic induction in the secondary coil only happens if the magnetic field is changing. A steady DC current creates a static magnetic field, which induces nothing."
+      },
+      {
+        "question": "A transformer has 100 turns on the primary coil and 500 turns on the secondary coil. If the primary voltage is 10V, what is the secondary voltage?",
+        "options": [
+          "2V",
+          "10V",
+          "50V",
+          "5000V"
+        ],
+        "answer": "50V",
+        "explanation": "Using Vp/Vs = Np/Ns: 10 / Vs = 100 / 500. So Vs = 10 * 5 = 50V."
+      },
+      {
+        "question": "If a transformer is 100% efficient and steps up the voltage, what happens to the current?",
+        "options": [
+          "It increases by the same factor.",
+          "It remains the same.",
+          "It decreases.",
+          "It becomes zero."
+        ],
+        "answer": "It decreases.",
+        "explanation": "Because Power In = Power Out (Vp*Ip = Vs*Is), if voltage increases (Vs > Vp), current must decrease proportionally to maintain the same power."
+      }
+    ]
+  },
+  {
+    "subtopicId": "5.1",
+    "title": "The Nuclear Atom",
+    "digitizedText": "# 5.1 The Nuclear Atom\n\n## Atomic Structure\n![Atomic Structure Diagram](0625-physics/images/main_p93_i0.png)\n\nAt the heart of every atom lies the **nucleus**, which contains subatomic particles called **protons** and **neutrons**. Orbiting this nucleus are **electrons**, which travel in specific layers called shells. \n\nHere is a summary of the subatomic particles:\n\n| Subatomic Particle | Charge | Relative Mass |\n| :--- | :--- | :--- |\n| **Proton** | Positive (+ve) | 1 |\n| **Neutron** | Neutral (no charge) | 1 |\n| **Electron** | Negative (-ve) | $\\approx$ 0 |\n\n### Key Definitions\n*   **Nucleon Number (Mass Number):** The total sum of protons and neutrons in the nucleus of an atom.\n*   **Proton Number (Atomic Number):** The number of protons in the nucleus. In a neutral atom, this is also equal to the number of electrons.\n\n**Teacher's Note:** Remember that the mass of an electron is so incredibly tiny compared to a proton or neutron that we consider it to be almost zero when calculating the total mass of an atom! \n\n## Isotopes\n![Isotopes Example](0625-physics/images/main_p93_i0.png)\n\n**Isotopes** are atoms of the *same element* that have the *same number of protons* but a *different number of neutrons*. Because they have the same number of protons (and thus electrons), their chemical properties are exactly the same!\n\n*   Example: Sodium-23 ($^{23}_{11}\\text{Na}$) and Sodium-24 ($^{24}_{11}\\text{Na}$). Both have 11 protons, but Sodium-23 has 12 neutrons while Sodium-24 has 13 neutrons.\n\n## Radioisotopes\nA **Radioisotope** is an unstable isotope that releases radioactive particles (radiation) to become more stable.\n\n*   **Examples of Radioisotopes:** Sodium-24, Carbon-13, Carbon-14, Cobalt-60.",
+    "quizzes": [
+      {
+        "question": "What are the constituent particles of an atomic nucleus?",
+        "options": [
+          "Protons and electrons",
+          "Neutrons and electrons",
+          "Protons and neutrons",
+          "Protons, neutrons, and electrons"
+        ],
+        "answer": "Protons and neutrons"
+      },
+      {
+        "question": "Which subatomic particle has a negative charge and negligible mass?",
+        "options": [
+          "Proton",
+          "Neutron",
+          "Electron",
+          "Nucleon"
+        ],
+        "answer": "Electron"
+      },
+      {
+        "question": "The nucleon number of an atom is defined as:",
+        "options": [
+          "The number of protons in the nucleus",
+          "The total number of protons and neutrons in the nucleus",
+          "The number of electrons orbiting the nucleus",
+          "The total number of protons and electrons"
+        ],
+        "answer": "The total number of protons and neutrons in the nucleus"
+      },
+      {
+        "question": "An atom of Carbon-14 has a proton number of 6. How many neutrons does it contain?",
+        "options": [
+          "6",
+          "8",
+          "14",
+          "20"
+        ],
+        "answer": "8"
+      },
+      {
+        "question": "Isotopes are atoms of the same element that have:",
+        "options": [
+          "The same number of protons but different number of neutrons",
+          "The same number of neutrons but different number of protons",
+          "The same number of electrons but different number of protons",
+          "The same mass number but different atomic number"
+        ],
+        "answer": "The same number of protons but different number of neutrons"
+      },
+      {
+        "question": "Which of the following best describes a radioisotope?",
+        "options": [
+          "An isotope with no neutrons",
+          "A highly stable isotope that does not decay",
+          "An unstable isotope that emits radioactive particles",
+          "An isotope that absorbs radiation from its surroundings"
+        ],
+        "answer": "An unstable isotope that emits radioactive particles"
+      },
+      {
+        "question": "What does the proton number of a neutral atom tell us about its electrons?",
+        "options": [
+          "It has twice as many electrons as protons",
+          "The number of electrons is equal to the number of protons",
+          "The number of electrons is equal to the number of neutrons",
+          "It provides no information about the electrons"
+        ],
+        "answer": "The number of electrons is equal to the number of protons"
+      },
+      {
+        "question": "Which of the following is NOT an example of a radioisotope?",
+        "options": [
+          "Carbon-14",
+          "Cobalt-60",
+          "Sodium-24",
+          "Sodium-23"
+        ],
+        "answer": "Sodium-23"
+      }
+    ]
+  },
+  {
+    "subtopicId": "5.2",
+    "title": "Radioactivity",
+    "digitizedText": "# 5.2 Radioactivity\n\n## Radioactive Particles\nRadioactive decay involves the emission of three main types of radiation: **Alpha ($\\alpha$)**, **Beta ($\\beta$)**, and **Gamma ($\\gamma$)**.\n\n![Radioactive Particles Characteristics](0625-physics/images/main_p94_i0.png)\n\n| Property | Alpha ($\\alpha$) | Beta ($\\beta$) | Gamma ($\\gamma$) |\n| :--- | :--- | :--- | :--- |\n| **Definition** | Helium nucleus ($^{4}_{2}\\text{He}$) | Fast-moving electron ($^{0}_{-1}\\text{e}$) | Electromagnetic wave |\n| **Mass** | Heaviest | Light | No mass |\n| **Speed** | Slowest | Moderate | Fastest ($3 \\times 10^8 \\text{ m/s}$) |\n| **Charge** | Positive (+2) | Negative (-1) | No charge |\n\n### Penetrating Power\n*   **Alpha:** Lowest penetration. Stopped by a thin sheet of paper.\n*   **Beta:** Moderate penetration. Stopped by a few millimeters of aluminium.\n*   **Gamma:** Highest penetration. Only stopped by thick lead or concrete.\n\n### Deflection in Electric and Magnetic Fields\n*   **Electric Field:** Alpha particles deflect towards the negative plate, while Beta particles deflect strongly towards the positive plate (due to their lighter mass). Gamma rays are unaffected.\n*   **Magnetic Field:** Using Fleming's Left-Hand Rule, Alpha and Beta particles deflect in opposite directions. Gamma rays pass straight through.\n\n## Ionisation Effect\n![Ionisation Effect](0625-physics/images/main_p95_i0.png)\n\nIonisation occurs when radiation knocks electrons out of gas molecules, turning them into charged ions.\n*   **Alpha ($\\alpha$):** Strongest ionising effect (because it has the largest mass and charge).\n*   **Beta ($\\beta$):** Moderate ionising effect.\n*   **Gamma ($\\gamma$):** Weakest ionising effect.\n\n## Radioactive Decay Equations\n![Radioactive Decay](0625-physics/images/main_p96_i0.png)\n\nRadioactive decay is the process where an unstable isotope becomes a more stable isotope by releasing a radioactive particle.\n\n1.  **Alpha Decay:** The nucleus loses 2 protons and 2 neutrons. The nucleon number decreases by 4, and the proton number decreases by 2.\n    *   *Example:* $^{210}_{84}\\text{Po} \\rightarrow ^{206}_{82}\\text{Pb} + ^{4}_{2}\\text{He}$\n2.  **Beta Decay:** A neutron turns into a proton and emits a fast-moving electron. The nucleon number stays the same, but the proton number increases by 1.\n    *   *Example:* $^{14}_{6}\\text{C} \\rightarrow ^{14}_{7}\\text{N} + ^{0}_{-1}\\text{e}$\n3.  **Gamma Emission:** The nucleus releases excess energy as a gamma ray. The atomic structure doesn't change, but it becomes more stable.\n    *   *Example:* $^{60}_{27}\\text{Co}^* \\rightarrow ^{60}_{27}\\text{Co} + \\gamma$\n\n![Graph of Decay](0625-physics/images/main_p97_i0.png)\n\n## Half-Life ($T_{1/2}$)\n![Half-Life Calculations](0625-physics/images/main_p98_i0.png)\n\n**Half-life** is the time taken for a radioactive substance to decay to half of its initial mass or activity.\n\n*   *Teacher's Tip:* If you start with 600g of a substance with a half-life of 20 minutes, after 20 minutes you'll have 300g left. After another 20 minutes, you'll have 150g left, and so on.\n\n## Background Radiation\n![Background Radiation](0625-physics/images/main_p99_i0.png)\n![Activity vs Time Graphs](0625-physics/images/main_p100_i0.png)\n\n**Background radiation** is the low-level radiation that occurs naturally in our environment (from the air, ground, cosmic rays, etc.).\n\nWhen calculating half-life from experimental data, you must **subtract the background radiation** from your readings first, find the half-life, and then add it back if you are plotting the actual count rate!\n\n```mermaid\ngraph TD\n    A[\"Measure Total Count Rate\"] --> B[\"Measure Background Count\"]\n    B --> C[\"Subtract Background from Total = Corrected Count\"]\n    C --> D[\"Halve the Corrected Count to find Half-Life interval\"]\n```\n",
+    "quizzes": [
+      {
+        "question": "Which type of radioactive emission is a helium nucleus?",
+        "options": [
+          "Alpha particle",
+          "Beta particle",
+          "Gamma ray",
+          "X-ray"
+        ],
+        "answer": "Alpha particle"
+      },
+      {
+        "question": "Which type of radiation has the highest penetrating power?",
+        "options": [
+          "Alpha",
+          "Beta",
+          "Gamma",
+          "Ultraviolet"
+        ],
+        "answer": "Gamma"
+      },
+      {
+        "question": "What happens to the atomic structure of an element during Beta decay?",
+        "options": [
+          "The nucleon number decreases by 4",
+          "The proton number decreases by 2",
+          "The proton number increases by 1",
+          "The nucleon number increases by 1"
+        ],
+        "answer": "The proton number increases by 1"
+      },
+      {
+        "question": "Which type of radiation is most strongly deflected by a magnetic field, assuming equal velocities?",
+        "options": [
+          "Alpha particles",
+          "Beta particles",
+          "Gamma rays",
+          "Alpha and Beta are deflected equally"
+        ],
+        "answer": "Beta particles"
+      },
+      {
+        "question": "Which type of radiation has the strongest ionising effect?",
+        "options": [
+          "Alpha",
+          "Beta",
+          "Gamma",
+          "Microwave"
+        ],
+        "answer": "Alpha"
+      },
+      {
+        "question": "A radioactive substance has a half-life of 8 hours. If the initial mass is 1600g, how much will remain after 32 hours?",
+        "options": [
+          "800g",
+          "400g",
+          "200g",
+          "100g"
+        ],
+        "answer": "100g"
+      },
+      {
+        "question": "What is background radiation?",
+        "options": [
+          "Radiation emitted solely by nuclear power plants",
+          "Radiation that occurs naturally in the environment",
+          "Radiation used in medical imaging",
+          "Radiation resulting only from nuclear weapons testing"
+        ],
+        "answer": "Radiation that occurs naturally in the environment"
+      },
+      {
+        "question": "When determining the true half-life of a radioactive source from a Geiger-Muller tube reading, what must be done first?",
+        "options": [
+          "Multiply the reading by 2",
+          "Add the background count to the reading",
+          "Subtract the background count from the reading",
+          "Divide the reading by the background count"
+        ],
+        "answer": "Subtract the background count from the reading"
+      }
+    ]
+  },
+  {
+    "id": "phys_6_1",
+    "subtopicId": "6.1",
+    "title": "Earth and the Solar System",
+    "digitizedText": "## 6.1 Earth and the Solar System\n\nWelcome to the start of Space Physics! Let's explore our local cosmic neighborhood.\n\n### The Earth and the Moon\n- **Earth's Orbit:** The Earth orbits the Sun in approximately 365 days (1 year).\n- **Earth's Rotation:** The Earth rotates on its own axis once every 24 hours (1 day).\n- **Seasons:** The Earth's axis is tilted. This tilt is responsible for the different seasons we experience as Earth orbits the Sun.\n- **The Moon:** Our Moon orbits the Earth approximately once every 28 days (1 month). The Moon is a natural satellite of Earth.\n\n> [!NOTE]\n> The rotation of the Earth gives us day and night, while its orbit around the Sun combined with its axial tilt gives us the seasons.\n\n### The Solar System\nThe Solar System consists of a central star (the Sun) and all the celestial bodies that orbit it.\n- **The Planets:** There are 8 planets. In order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.\n- **Minor Planets:** Dwarf planets like Pluto.\n- **Asteroids:** Rocky objects that mostly orbit between Mars and Jupiter.\n- **Comets:** Icy bodies that have highly elliptical orbits. They originate from the outer edges of the Solar System (like the Kuiper Belt or Oort Cloud). As they get closer to the Sun, the ice vaporizes, forming a glowing tail.\n\n```mermaid\ngraph TD\n    Sun[Sun]\n    Sun --> Mercury\n    Sun --> Venus\n    Sun --> Earth\n    Sun --> Mars\n    Sun --> AsteroidBelt[Asteroid Belt]\n    Sun --> Jupiter\n    Sun --> Saturn\n    Sun --> Uranus\n    Sun --> Neptune\n    Sun --> Comets[Comets with Highly Elliptical Orbits]\n```\n\n### Orbits and Gravity\nPlanets, moons, and comets are kept in their orbits by gravity.\n- **Gravitational Field Strength ($g$):** This is the force per unit mass exerted by a planet. It depends on the mass and radius of the planet.\n  - On Earth, $g \\approx 9.8 \\text{ N/kg}$\n  - Planets with a larger mass have a stronger gravitational field.\n\n**Orbital Speed:**\nFor a nearly circular orbit, the orbital speed $v$ can be calculated using the formula:\n\\[ v = \\frac{2\\pi r}{T} \\]\nwhere:\n- $v$ = orbital velocity (speed)\n- $r$ = radius of the orbit\n- $T$ = orbital period (time taken for one complete orbit)\n\n### The Sun\nThe Sun is our local star. It is a medium-mass, stable star that has been shining for about 4.6 billion years.\n\n**Composition of the Sun:**\n- 75% Hydrogen\n- 24% Helium\n- 1% other elements\n\n**Nuclear Fusion:**\nThe Sun produces its vast amounts of energy through **nuclear fusion** in its core. The immense pressure and temperature cause hydrogen nuclei to fuse together.\n- Specifically, **4 hydrogen nuclei fuse into 1 helium nucleus**.\n- This reaction releases an enormous amount of energy.\n\n**Energy Emissions:**\nThe energy from the Sun travels outwards and is emitted into space. The distribution of this energy is roughly:\n- 50% Infrared (IR)\n- 40% Visible light\n- 10% Ultraviolet (UV) (Most of this is absorbed by Earth's atmosphere)\n",
+    "quizzes": [
+      {
+        "question": "How long does it take for the Earth to complete one full rotation on its axis, and what does this rotation cause?",
+        "options": [
+          "365 days, causing seasons",
+          "28 days, causing lunar phases",
+          "24 hours, causing day and night",
+          "24 hours, causing the seasons"
+        ],
+        "correctIndex": 2,
+        "explanation": "The Earth rotates on its axis every 24 hours, which causes the cycle of day and night."
+      },
+      {
+        "question": "Which of the following best describes the orbit of a comet in the Solar System?",
+        "options": [
+          "Perfectly circular orbit around the Earth",
+          "Highly elliptical orbit around the Sun",
+          "Circular orbit between Mars and Jupiter",
+          "Elliptical orbit around a distant star"
+        ],
+        "correctIndex": 1,
+        "explanation": "Comets typically have highly elliptical orbits around the Sun, often coming from the outer edges of the Solar System."
+      },
+      {
+        "question": "A planet has an orbital radius of $r$ and takes time $T$ to complete one orbit. Which formula gives its orbital speed $v$?",
+        "options": [
+          "$v = \\frac{T}{2\\pi r}$",
+          "$v = \\frac{2\\pi r}{T}$",
+          "$v = \\pi r^2 T$",
+          "$v = \\frac{\\pi r}{T}$"
+        ],
+        "correctIndex": 1,
+        "explanation": "The distance traveled in one circular orbit is the circumference $2\\pi r$. Speed is distance over time, so $v = \\frac{2\\pi r}{T}$."
+      },
+      {
+        "question": "What is the primary process that generates energy in the core of the Sun?",
+        "options": [
+          "Nuclear fission of uranium",
+          "Chemical burning of hydrogen gas",
+          "Nuclear fusion of hydrogen into helium",
+          "Nuclear fusion of helium into carbon"
+        ],
+        "correctIndex": 2,
+        "explanation": "The Sun generates energy through nuclear fusion, primarily fusing four hydrogen nuclei into one helium nucleus in its core."
+      },
+      {
+        "question": "What is the approximate composition of the Sun by mass?",
+        "options": [
+          "75% Hydrogen, 24% Helium, 1% others",
+          "50% Hydrogen, 50% Helium",
+          "75% Helium, 24% Hydrogen, 1% others",
+          "90% Oxygen, 10% Hydrogen"
+        ],
+        "correctIndex": 0,
+        "explanation": "The Sun is composed of mostly hydrogen (about 75%) and helium (about 24%), with trace amounts of heavier elements."
+      },
+      {
+        "question": "Which portion of the Sun's emitted radiation makes up the largest percentage?",
+        "options": [
+          "Visible Light",
+          "Ultraviolet (UV)",
+          "X-rays",
+          "Infrared (IR)"
+        ],
+        "correctIndex": 3,
+        "explanation": "About 50% of the Sun's emitted energy is in the form of Infrared (IR) radiation, followed by 40% visible light."
+      },
+      {
+        "question": "Why do different planets in the solar system have different gravitational field strengths ($g$)?",
+        "options": [
+          "Because they are at different distances from the Sun",
+          "Because they have different masses and radii",
+          "Because they travel at different orbital speeds",
+          "Because they are made of different states of matter"
+        ],
+        "correctIndex": 1,
+        "explanation": "The gravitational field strength $g$ at the surface of a planet depends directly on the planet's mass and inversely on the square of its radius."
+      }
+    ]
+  },
+  {
+    "id": "phys_6_2",
+    "subtopicId": "6.2",
+    "title": "Stars and the Universe",
+    "digitizedText": "## 6.2 Stars and the Universe\n\nBeyond our Solar System lies a vast universe filled with stars, galaxies, and mysteries. Let's delve into the life cycle of stars and the origins of the universe itself.\n\n### The Milky Way and Galaxies\n- Our Solar System is located in a galaxy called the **Milky Way**.\n- The Milky Way is a spiral galaxy with a diameter of about **100,000 light-years**.\n- Our Sun is located about **30,000 light-years** from the galactic center.\n- It takes our Solar System about 225 million years to complete one orbit around the center of the Milky Way.\n- The closest major galaxy to ours is the Andromeda Galaxy.\n\n> [!NOTE]\n> A light-year is the distance that light travels in a vacuum in one year. It is a unit of distance, not time.\n\n### The Life Cycle of Stars\n\nStars are born in huge clouds of dust and gas called **molecular clouds** or **nebulae**. Gravity pulls the gas together to form a **protostar**. As it condenses, it heats up until nuclear fusion begins, making it a **main sequence star**.\n\nThe fate of a star depends on its mass:\n\n**For Stars with Mass < 8x Solar Mass (Like our Sun):**\n1. **Red Giant:** As hydrogen runs out in the core, the star expands and its surface cools, becoming a Red Giant.\n2. **White Dwarf:** Eventually, the outer layers drift away as a **planetary nebula**, and the core collapses into a small, dense White Dwarf (radius < 1000 km, max 1.4 solar masses). It is very hot but no longer undergoes fusion.\n3. **Black Dwarf:** Over billions of years, the white dwarf cools down and fades into a cold, dark Black Dwarf.\n\n**For Stars with Mass > 8x Solar Mass:**\n1. **Red Supergiant:** The core gets hot enough to fuse heavier elements (up to Iron). The outer layers expand massively.\n2. **Supernova:** When the fuel runs out, the star collapses rapidly and explodes violently in a Supernova. The energy is so immense that elements heavier than iron are fused and scattered into space.\n3. **Neutron Star or Black Hole:** The core remains. If it is around 3x solar masses, it forms a super-dense **Neutron Star**. If it is even heavier, gravity overwhelms everything, collapsing it into a **Black Hole** from which not even light can escape.\n\n```mermaid\ngraph TD\n    Nebula[Molecular Cloud / Nebula] --> Protostar\n    Protostar --> MainSequence[Main Sequence Star]\n    MainSequence -->|Mass < 8 Solar Masses| LowMass[Red Giant]\n    LowMass --> PlanetaryNebula[Planetary Nebula]\n    PlanetaryNebula --> WhiteDwarf[White Dwarf]\n    WhiteDwarf --> BlackDwarf[Black Dwarf]\n    \n    MainSequence -->|Mass > 8 Solar Masses| HighMass[Red Supergiant]\n    HighMass --> Supernova[Supernova Explosion]\n    Supernova -->|Core < ~3 Solar Masses| NeutronStar[Neutron Star]\n    Supernova -->|Core > ~3 Solar Masses| BlackHole[Black Hole]\n```\n\n### The Expanding Universe\n\nObservations of distant galaxies show that the Universe is expanding. This is understood through several key concepts:\n\n**1. Redshift and the Doppler Effect**\nWhen an object emitting waves moves away from an observer, the waves get stretched. For sound, this means a lower pitch (the Doppler Effect). For light, this means the wavelength increases, shifting towards the red end of the spectrum.\n- By studying the **absorption spectrum** of light from distant galaxies, astronomers see that the dark absorption lines are shifted towards the red end compared to light from our Sun.\n- The further away a galaxy is, the greater the redshift. This means distant galaxies are moving away from us faster.\n\n**2. The Big Bang Theory**\nThe expansion of the universe suggests that if we rewind time, everything was once contained in a single point of infinite density and temperature called a **singularity**. About **13.8 billion years ago**, this point rapidly expanded in an event known as the Big Bang, creating space, time, matter, and energy.\n\n**3. Cosmic Microwave Background Radiation (CMBR)**\n- CMBR is faint microwave radiation coming from all directions in space.\n- It has a very low temperature of about -270 \u00b0C.\n- CMBR is the residual thermal energy from the Big Bang, stretched into microwaves as the universe expanded and cooled. It is strong evidence for the Big Bang.\n\n### Hubble's Law\nHubble's Law states that the speed at which a galaxy is moving away is directly proportional to its distance from us.\n\\[ v = H_0 d \\]\nwhere:\n- $v$ = speed of galaxy moving away\n- $d$ = distance of galaxy from Earth\n- $H_0$ = Hubble constant (currently estimated at $2.2 \\times 10^{-18} \\text{ per second}$)\n\nWe can use the inverse of the Hubble constant ($H_0^{-1}$, known as Hubble time) to estimate the **age of the universe**:\n\\[ t = \\frac{1}{H_0} \\approx \\frac{1}{2.2 \\times 10^{-18}} \\approx 4.5 \\times 10^{17} \\text{ seconds} \\approx 14.4 \\text{ billion years} \\]\n\n### Composition of the Universe\nOur universe is made mostly of things we cannot see directly:\n- **Dark Energy (68%):** A mysterious force causing the expansion of the universe to accelerate.\n- **Dark Matter (27%):** Invisible mass that exerts gravitational pull, causing galaxies to rotate faster than expected.\n- **Normal Matter (5%):** Everything we can see\u2014stars, planets, dust, and people!\n",
+    "quizzes": [
+      {
+        "question": "What will eventually happen to a star with a mass similar to our Sun after it completes its red giant phase?",
+        "options": [
+          "It will explode in a supernova and become a black hole.",
+          "It will shed its outer layers as a planetary nebula and become a white dwarf.",
+          "It will directly collapse into a neutron star.",
+          "It will fuse heavier elements until it becomes a red supergiant."
+        ],
+        "correctIndex": 1,
+        "explanation": "Stars with a mass less than 8 times the solar mass (like our Sun) become red giants, then shed their outer layers as planetary nebulae, leaving behind a white dwarf."
+      },
+      {
+        "question": "During which stage of a massive star's life are elements heavier than iron formed?",
+        "options": [
+          "Main Sequence phase",
+          "Red Supergiant phase",
+          "Supernova explosion",
+          "Neutron Star formation"
+        ],
+        "correctIndex": 2,
+        "explanation": "The extreme heat and pressure during a supernova explosion are required to fuse elements heavier than iron."
+      },
+      {
+        "question": "When astronomers observe light from distant galaxies, they notice that the absorption lines in their spectra are shifted towards the red end. What does this indicate?",
+        "options": [
+          "The galaxies are moving away from Earth.",
+          "The galaxies are moving towards Earth.",
+          "The galaxies are composed primarily of red giant stars.",
+          "The galaxies are shrinking in size."
+        ],
+        "correctIndex": 0,
+        "explanation": "Redshift indicates an increase in wavelength caused by the Doppler effect, meaning the source of light (the galaxy) is moving away from the observer."
+      },
+      {
+        "question": "According to Hubble's Law ($v = H_0 d$), how does the speed of a receding galaxy relate to its distance from Earth?",
+        "options": [
+          "Speed is inversely proportional to distance.",
+          "Speed is proportional to the square of the distance.",
+          "Speed is directly proportional to distance.",
+          "Speed is constant regardless of distance."
+        ],
+        "correctIndex": 2,
+        "explanation": "Hubble's Law states that the recessional velocity ($v$) of a galaxy is directly proportional to its distance ($d$) from Earth."
+      },
+      {
+        "question": "Which of the following is considered strong evidence for the Big Bang theory?",
+        "options": [
+          "The presence of dark matter in galaxies",
+          "Cosmic Microwave Background Radiation (CMBR) coming from all directions",
+          "The formation of black holes from massive stars",
+          "The existence of planetary nebulae"
+        ],
+        "correctIndex": 1,
+        "explanation": "CMBR is the leftover thermal energy from the Big Bang, which has cooled and stretched into the microwave region as the universe expanded."
+      },
+      {
+        "question": "What makes up the largest percentage of the Universe's total composition?",
+        "options": [
+          "Normal Matter (stars, planets, gas)",
+          "Dark Matter",
+          "Dark Energy",
+          "Neutron Stars and Black Holes"
+        ],
+        "correctIndex": 2,
+        "explanation": "Dark energy is estimated to make up about 68% of the universe, driving its accelerating expansion."
+      },
+      {
+        "question": "How can the Hubble constant ($H_0$) be used to estimate the age of the Universe?",
+        "options": [
+          "By multiplying $H_0$ by the distance to the furthest galaxy",
+          "By calculating the inverse of the Hubble constant ($1 / H_0$)",
+          "By taking the square root of $H_0$",
+          "By dividing $H_0$ by the speed of light"
+        ],
+        "correctIndex": 1,
+        "explanation": "The inverse of the Hubble constant ($1/H_0$) gives an estimate of the time since the universe began expanding, also known as the Hubble time or age of the universe."
+      }
+    ]
+  }
+]
