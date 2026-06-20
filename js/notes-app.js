@@ -218,33 +218,54 @@ function createQuizElement(quizData, quizId) {
     const savedState = localStorage.getItem(`quiz_v2_${quizId}`);
     let answered = savedState === 'correct';
 
-    quizData.options.forEach((optText, i) => {
-        const btn = document.createElement('button');
-        btn.className = 'quiz-option';
-        // Parse inline to allow math formulas in options
-        btn.innerHTML = `<strong>${String.fromCharCode(65 + i)})</strong>&nbsp;&nbsp;${marked.parseInline(optText)}`;
+    if (quizData.options && quizData.options.length > 0) {
+        quizData.options.forEach((optText, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-option';
+            // Parse inline to allow math formulas in options
+            btn.innerHTML = `<strong>${String.fromCharCode(65 + i)})</strong>&nbsp;&nbsp;${marked.parseInline(optText)}`;
+            
+            if (answered && i === quizData.correctIndex) {
+                btn.classList.add('correct');
+                explanation.style.display = 'block';
+            }
+
+            btn.onclick = () => {
+                if (answered) return; // prevent changing answer after correct
+                
+                if (i === quizData.correctIndex) {
+                    btn.classList.add('correct');
+                    explanation.style.display = 'block';
+                    answered = true;
+                    localStorage.setItem(`quiz_v2_${quizId}`, 'correct');
+                } else {
+                    btn.classList.add('wrong');
+                    // Optional: remove wrong class after animation
+                    setTimeout(() => btn.classList.remove('wrong'), 1000);
+                }
+            };
+            optionsContainer.appendChild(btn);
+        });
+    } else {
+        // Structured Question without Options
+        const showSolBtn = document.createElement('button');
+        showSolBtn.className = 'quiz-option';
+        showSolBtn.innerHTML = `<strong>💡 Show Solution</strong>`;
+        showSolBtn.style.justifyContent = 'center';
+        showSolBtn.style.backgroundColor = '#f1f5f9';
         
-        if (answered && i === quizData.correctIndex) {
-            btn.classList.add('correct');
+        if (answered) {
+            showSolBtn.classList.add('correct');
             explanation.style.display = 'block';
         }
 
-        btn.onclick = () => {
-            if (answered) return; // prevent changing answer after correct
-            
-            if (i === quizData.correctIndex) {
-                btn.classList.add('correct');
-                explanation.style.display = 'block';
-                answered = true;
-                localStorage.setItem(`quiz_v2_${quizId}`, 'correct');
-            } else {
-                btn.classList.add('wrong');
-                // Optional: remove wrong class after animation
-                setTimeout(() => btn.classList.remove('wrong'), 1000);
-            }
+        showSolBtn.onclick = () => {
+            showSolBtn.classList.add('correct');
+            explanation.style.display = 'block';
+            localStorage.setItem(`quiz_v2_${quizId}`, 'correct');
         };
-        optionsContainer.appendChild(btn);
-    });
+        optionsContainer.appendChild(showSolBtn);
+    }
 
     container.appendChild(optionsContainer);
     container.appendChild(explanation);
