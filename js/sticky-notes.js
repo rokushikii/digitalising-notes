@@ -72,6 +72,25 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }, 50);
 
+        // Handle resizing without losing drawing
+        const resizeObserver = new ResizeObserver(() => {
+            if (canvas.width === 0 || canvas.height === 0) return;
+            // Save current drawing
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = canvas.width;
+            tempCanvas.height = canvas.height;
+            tempCanvas.getContext('2d').drawImage(canvas, 0, 0);
+
+            // Resize canvas to new dimensions
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+
+            // Restore drawing
+            ctx.drawImage(tempCanvas, 0, 0);
+        });
+        resizeObserver.observe(note);
+
         // Drawing Helper Functions
         function getPos(e) {
             const rect = canvas.getBoundingClientRect();

@@ -390,13 +390,7 @@ body, html {
 [data-theme="dark"] .quiz-option.wrong { color: #fca5a5; }
 
 .quiz-explanation {
-    margin-top: 20px;
-    padding: 16px;
-    background: rgba(107, 70, 193, 0.1);
-    border-left: 4px solid var(--primary-purple);
-    border-radius: 4px;
     display: none;
-    font-size: 15px;
 }
 
 /* Sticky Notes System */
@@ -425,6 +419,8 @@ body, html {
     font-family: 'Segoe Print', 'Comic Sans MS', sans-serif;
     color: #1e293b;
     z-index: 101;
+    resize: both;
+    overflow: hidden;
 }
 
 [data-theme="dark"] .sticky-note {
