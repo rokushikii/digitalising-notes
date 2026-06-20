@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Dynamically load the digitized notes data
     const script = document.createElement('script');
-    script.src = `${subjectCode}/digitized_notes.js`;
+    script.src = `${subjectCode}/digitized_notes.js?v=${new Date().getTime()}`;
     script.onload = () => {
         if (window.subjectNotes && window.subjectNotes.length > 0) {
             initApp(currentSyllabus, window.subjectNotes);
