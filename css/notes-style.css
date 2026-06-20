@@ -503,7 +503,132 @@ body, html {
 .dot-blue { background-color: #bae6fd; }
 .dot-pink { background-color: #fbcfe8; }
 .dot-green { background-color: #bbf7d0; }
-[data-theme="dark"] .dot-yellow { background-color: #854d0e; }
-[data-theme="dark"] .dot-blue { background-color: #0369a1; }
-[data-theme="dark"] .dot-pink { background-color: #be185d; }
 [data-theme="dark"] .dot-green { background-color: #15803d; }
+
+/* === Save My Exams (SME) Diagram Aesthetics === */
+.sme-diagram {
+    background-color: var(--white);
+    border: 1.5px solid var(--border-light);
+    border-radius: var(--radius-md, 12px);
+    padding: 16px;
+    box-shadow: var(--shadow-sm);
+    margin: 16px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sme-axis {
+    stroke: var(--text-main);
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.sme-grid {
+    stroke: var(--border-light);
+    stroke-width: 0.8;
+    stroke-dasharray: 3 3;
+    fill: none;
+}
+
+.sme-text {
+    fill: var(--text-main);
+    font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+    font-size: 12px;
+}
+
+.sme-text-muted {
+    fill: var(--text-muted);
+    font-family: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+    font-size: 11px;
+}
+
+.sme-line-primary, .sme-curve-primary {
+    stroke: #3b82f6; /* Vibrant blue */
+    stroke-width: 2.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sme-line-secondary, .sme-curve-secondary {
+    stroke: #ef4444; /* Coral red */
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sme-line-tertiary, .sme-curve-tertiary {
+    stroke: #10b981; /* Emerald green */
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sme-line-construction {
+    stroke: var(--text-muted);
+    stroke-width: 1.2;
+    stroke-dasharray: 4 4;
+    fill: none;
+}
+
+.sme-fill-primary {
+    fill: #3b82f6;
+    fill-opacity: 0.12;
+}
+
+.sme-fill-secondary {
+    fill: #ef4444;
+    fill-opacity: 0.12;
+}
+
+.sme-fill-tertiary {
+    fill: #10b981;
+    fill-opacity: 0.12;
+}
+
+.sme-marker {
+    fill: var(--text-main);
+}
+
+.sme-marker-primary {
+    fill: #3b82f6;
+}
+
+.sme-marker-secondary {
+    fill: #ef4444;
+}
+
+/* Dark mode overrides for high-contrast accessibility */
+[data-theme="dark"] .sme-line-primary,
+[data-theme="dark"] .sme-curve-primary {
+    stroke: #60a5fa; /* Soft bright blue */
+}
+
+[data-theme="dark"] .sme-line-secondary,
+[data-theme="dark"] .sme-curve-secondary {
+    stroke: #f87171; /* Soft bright red */
+}
+
+[data-theme="dark"] .sme-line-tertiary,
+[data-theme="dark"] .sme-curve-tertiary {
+    stroke: #34d399; /* Soft bright green */
+}
+
+[data-theme="dark"] .sme-fill-primary {
+    fill: #60a5fa;
+    fill-opacity: 0.15;
+}
+
+[data-theme="dark"] .sme-fill-secondary {
+    fill: #f87171;
+    fill-opacity: 0.15;
+}
+
+[data-theme="dark"] .sme-fill-tertiary {
+    fill: #34d399;
+    fill-opacity: 0.15;
+}
+
