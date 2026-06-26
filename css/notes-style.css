@@ -628,3 +628,48 @@ body, html {
     fill-opacity: 0.15;
 }
 
+
+/* === Quick-win: Theme-adaptive fills for SVGs === */
+.sme-fill-white {
+    fill: var(--white);
+}
+.sme-fill-dark {
+    fill: var(--text-main);
+}
+.sme-fill-muted {
+    fill: var(--text-muted);
+}
+.sme-fill-accent {
+    fill: var(--primary-purple);
+}
+.sme-stroke-dark {
+    stroke: var(--text-main);
+}
+.sme-stroke-muted {
+    stroke: var(--text-muted);
+}
+.sme-stroke-border {
+    stroke: var(--border-light);
+}
+/* Named color aliases for SVGs */
+.sme-fill-red { fill: #ef4444; }
+.sme-fill-blue { fill: #3b82f6; }
+.sme-fill-green { fill: #10b981; }
+.sme-fill-orange { fill: #f97316; }
+.sme-fill-yellow { fill: #eab308; }
+.sme-stroke-red { stroke: #ef4444; }
+.sme-stroke-blue { stroke: #3b82f6; }
+
+[data-theme="dark"] .sme-fill-white { fill: #1e293b; }
+[data-theme="dark"] .sme-fill-dark { fill: #f1f5f9; }
+[data-theme="dark"] .sme-fill-muted { fill: #94a3b8; }
+[data-theme="dark"] .sme-stroke-dark { stroke: #f1f5f9; }
+[data-theme="dark"] .sme-stroke-muted { stroke: #94a3b8; }
+[data-theme="dark"] .sme-stroke-border { stroke: #334155; }
+
+/* SVG container fix: prevent clipping */
+.digital-note-content svg {
+    overflow: visible;
+    max-width: 100%;
+    height: auto;
+}

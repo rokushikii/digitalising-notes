@@ -3,7 +3,32 @@ window.subjectNotes = [
         "subtopicId": "1.1",
         "title": "Mappings and Functions",
         "digitizedText": "# Chapter 1: Functions\n\n## 1.1 Mappings and Functions\nA **mapping** transforms one set of numbers into another. A **function** is a special type of mapping where every input in the domain is mapped to exactly one output.\n- **One-to-One Mapping:** Each input maps to a unique output. (This is a function)\n- **Many-to-One Mapping:** Multiple inputs map to the same output. (This is a function)\n- **One-to-Many Mapping:** One input maps to multiple outputs. (**Not** a function)\n<div align=\"center\">\n<svg width=\"500\" height=\"220\" viewBox=\"0 0 500 220\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n<path d=\"M 0 1.5 L 8 5 L 0 8.5 z\" fill=\"currentColor\"/>\n</marker>\n</defs>\n\n<!-- One-to-One Mapping -->\n<ellipse cx=\"60\" cy=\"100\" rx=\"35\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<ellipse cx=\"180\" cy=\"100\" rx=\"35\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n\n<circle cx=\"60\" cy=\"60\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"60\" cy=\"100\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"60\" cy=\"140\" r=\"3\" fill=\"currentColor\"/>\n\n<circle cx=\"180\" cy=\"60\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"180\" cy=\"100\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"180\" cy=\"140\" r=\"3\" fill=\"currentColor\"/>\n\n<text x=\"45\" y=\"64\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">1</text>\n<text x=\"45\" y=\"104\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">2</text>\n<text x=\"45\" y=\"144\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">3</text>\n\n<text x=\"192\" y=\"64\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">a</text>\n<text x=\"192\" y=\"104\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">b</text>\n<text x=\"192\" y=\"144\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">c</text>\n\n<line x1=\"65\" y1=\"60\" x2=\"172\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n<line x1=\"65\" y1=\"100\" x2=\"172\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n<line x1=\"65\" y1=\"140\" x2=\"172\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n\n<text x=\"120\" y=\"195\" text-anchor=\"middle\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">One-to-One Mapping</text>\n\n<!-- Many-to-One Mapping -->\n<ellipse cx=\"320\" cy=\"100\" rx=\"35\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<ellipse cx=\"440\" cy=\"100\" rx=\"35\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n\n<circle cx=\"320\" cy=\"60\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"320\" cy=\"100\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"320\" cy=\"140\" r=\"3\" fill=\"currentColor\"/>\n\n<circle cx=\"440\" cy=\"80\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"440\" cy=\"120\" r=\"3\" fill=\"currentColor\"/>\n\n<text x=\"305\" y=\"64\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">1</text>\n<text x=\"305\" y=\"104\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">2</text>\n<text x=\"305\" y=\"144\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">3</text>\n\n<text x=\"452\" y=\"84\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">a</text>\n<text x=\"452\" y=\"124\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">b</text>\n\n<line x1=\"325\" y1=\"60\" x2=\"432\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n<line x1=\"325\" y1=\"100\" x2=\"432\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n<line x1=\"325\" y1=\"140\" x2=\"432\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/>\n\n<text x=\"380\" y=\"195\" text-anchor=\"middle\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">Many-to-One Mapping</text>\n</svg>\n</div>\n\nTo test if a graph represents a function, use the **Vertical Line Test**: If any vertical line intersects the graph more than once, it is not a function.",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "Which of the following mappings is a function?",
+                "options": ["A mapping where one input gives two different outputs", "A mapping where each input gives exactly one output", "A mapping where no inputs are assigned to outputs", "A mapping where multiple inputs are not allowed"],
+                "correctIndex": 1,
+                "explanation": "A function is a special type of mapping where every input in the domain is mapped to exactly one output. One-to-one and many-to-one mappings are functions, but one-to-many mappings are not."
+            },
+            {
+                "question": "A many-to-one mapping has the property that:",
+                "options": ["Each input maps to a unique output", "One input maps to multiple outputs", "Multiple inputs map to the same output", "No input maps to any output"],
+                "correctIndex": 2,
+                "explanation": "In a many-to-one mapping, multiple different inputs map to the same single output. For example, f(x) = x^2 maps both x = 2 and x = -2 to the same output 4."
+            },
+            {
+                "question": "Which of the following is NOT a function?",
+                "options": ["f(x) = 2x + 3", "f(x) = x^2", "f(x) = ±√x", "f(x) = |x|"],
+                "correctIndex": 2,
+                "explanation": "The expression f(x) = ±√x gives two outputs for each positive input (e.g., f(4) = 2 or f(4) = -2). This is a one-to-many mapping, which violates the definition of a function."
+            },
+            {
+                "question": "If f: x → 3x - 1, what is f(4)?",
+                "options": ["11", "13", "10", "12"],
+                "correctIndex": 0,
+                "explanation": "Substitute x = 4 into f(x) = 3x - 1: f(4) = 3(4) - 1 = 12 - 1 = 11."
+            }
+        ]
     },
     {
         "subtopicId": "1.2",
@@ -11,8 +36,28 @@ window.subjectNotes = [
         "digitizedText": "## 1.2 Domain and Range\n- **Domain:** The set of all valid input values, $x$, for which the function $f(x)$ is defined.\n- **Range:** The set of all resulting output values, $f(x)$ or $y$, corresponding to the given domain.\n\n> [!NOTE]\n> **Example 1: Finding Domain and Range**\n> Given the quadratic function $f(x) = x^2 - 4x + 5$ for the restricted domain $0 \\le x \\le 5$, find its range.\n>\n> **Solution:**\n> 1. Complete the square to find the vertex:\n>    $$f(x) = (x - 2)^2 - 4 + 5 = (x - 2)^2 + 1$$\n> 2. The minimum value of $f(x)$ occurs at the vertex where $x = 2$.\n> 3. Since $x = 2$ is within the domain $0 \\le x \\le 5$, the minimum value is $f(2) = 1$.\n> 4. Evaluate the endpoints of the domain to find the maximum:\n>    - At $x = 0$, $f(0) = (0 - 2)^2 + 1 = 5$\n>    - At $x = 5$, $f(5) = (5 - 2)^2 + 1 = 10$\n> 5. The absolute maximum in this domain is $10$.\n> 6. Therefore, the range is $1 \\le f(x) \\le 10$.",
         "quizzes": [
             {
-                "question": "**Example 1: Finding Domain and Range**\nGiven the quadratic function $f(x) = x^2 - 4x + 5$ for the restricted domain $0 \\le x \\le 5$, find its range.",
-                "explanation": "1. Complete the square to find the vertex:\n$$f(x) = (x - 2)^2 - 4 + 5 = (x - 2)^2 + 1$$\n2. The minimum value of $f(x)$ occurs at the vertex where $x = 2$.\n3. Since $x = 2$ is within the domain $0 \\le x \\le 5$, the minimum value is $f(2) = 1$.\n4. Evaluate the endpoints of the domain to find the maximum:\n- At $x = 0$, $f(0) = (0 - 2)^2 + 1 = 5$\n- At $x = 5$, $f(5) = (5 - 2)^2 + 1 = 10$\n5. The absolute maximum in this domain is $10$.\n6. Therefore, the range is $1 \\le f(x) \\le 10$."
+                "question": "For the function f(x) = x² - 4x + 5 with domain 0 ≤ x ≤ 5, what is the minimum value of f(x)?",
+                "options": ["f(x) = 0", "f(x) = 1", "f(x) = 5", "f(x) = 10"],
+                "correctIndex": 1,
+                "explanation": "Completing the square: f(x) = (x-2)² + 1. The minimum occurs at the vertex where x = 2, giving f(2) = 1. Since x = 2 is within the domain, the minimum value is 1."
+            },
+            {
+                "question": "Which of the following represents the domain of a function?",
+                "options": ["The set of all possible output values", "The set of all valid input values", "The maximum value the function can take", "The number of terms in the function"],
+                "correctIndex": 1,
+                "explanation": "The domain is the set of all valid input values (x) for which the function f(x) is defined."
+            },
+            {
+                "question": "If the domain of f(x) is 0 ≤ x ≤ 5, what is the range of f(x) = (x - 2)² + 1?",
+                "options": ["1 ≤ f(x) ≤ 10", "0 ≤ f(x) ≤ 10", "1 ≤ f(x) ≤ 5", "0 ≤ f(x) ≤ 25"],
+                "correctIndex": 0,
+                "explanation": "The minimum value is f(2) = 1 (vertex). Checking endpoints: f(0) = 5 and f(5) = 10. The maximum in this domain is 10, so the range is 1 ≤ f(x) ≤ 10."
+            },
+            {
+                "question": "For f(x) = (x - 2)² + 1, what is the value of f(5)?",
+                "options": ["7", "9", "10", "12"],
+                "correctIndex": 2,
+                "explanation": "Substitute x = 5: f(5) = (5 - 2)² + 1 = 3² + 1 = 9 + 1 = 10."
             }
         ]
     },
@@ -22,8 +67,28 @@ window.subjectNotes = [
         "digitizedText": "## 1.3 Composite Functions\nA composite function applies one function to the output of another. It is written as $fg(x)$ or $f(g(x))$.\n- **Order of Operations:** $fg(x)$ means evaluate $g(x)$ first, then substitute that result into $f(x)$.\n- **Non-commutative:** Generally, $fg(x) \\neq gf(x)$.\n\n> [!NOTE]\n> **Example 2: Evaluating and Solving Composite Functions**\n> Let $f(x) = 3x - 1$ and $g(x) = x^2 + 2$. Find the expression for $fg(x)$ and solve $fg(x) = 14$.\n>\n> **Solution:**\n> 1. To find $fg(x)$, substitute $g(x)$ into $f(x)$:\n>    $$fg(x) = f(x^2 + 2)$$\n>    $$fg(x) = 3(x^2 + 2) - 1$$\n>    $$fg(x) = 3x^2 + 6 - 1 = 3x^2 + 5$$\n> 2. Set the composite function equal to $14$:\n>    $$3x^2 + 5 = 14$$\n> 3. Solve for $x$:\n>    $$3x^2 = 9$$\n>    $$x^2 = 3$$\n>    $$x = \\pm \\sqrt{3}$$",
         "quizzes": [
             {
-                "question": "**Example 2: Evaluating and Solving Composite Functions**\nLet $f(x) = 3x - 1$ and $g(x) = x^2 + 2$. Find the expression for $fg(x)$ and solve $fg(x) = 14$.",
-                "explanation": "1. To find $fg(x)$, substitute $g(x)$ into $f(x)$:\n$$fg(x) = f(x^2 + 2)$$\n$$fg(x) = 3(x^2 + 2) - 1$$\n$$fg(x) = 3x^2 + 6 - 1 = 3x^2 + 5$$\n2. Set the composite function equal to $14$:\n$$3x^2 + 5 = 14$$\n3. Solve for $x$:\n$$3x^2 = 9$$\n$$x^2 = 3$$\n$$x = \\pm \\sqrt{3}$$"
+                "question": "If f(x) = 3x - 1 and g(x) = x² + 2, what is fg(x)?",
+                "options": ["3x² + 5", "3x² + 6", "9x² - 1", "3x² + 1"],
+                "correctIndex": 0,
+                "explanation": "fg(x) = f(g(x)) = f(x² + 2) = 3(x² + 2) - 1 = 3x² + 6 - 1 = 3x² + 5."
+            },
+            {
+                "question": "If fg(x) = 3x² + 5, what are the solutions to fg(x) = 14?",
+                "options": ["x = 3 only", "x = ±√3", "x = ±3", "x = √3 only"],
+                "correctIndex": 1,
+                "explanation": "Setting 3x² + 5 = 14 gives 3x² = 9, so x² = 3, meaning x = ±√3."
+            },
+            {
+                "question": "Which statement about composite functions is generally true?",
+                "options": ["fg(x) = gf(x) for all functions f and g", "fg(x) means evaluate f(x) first, then g", "fg(x) = gf(x) only if f and g are linear", "fg(x) ≠ gf(x) in general"],
+                "correctIndex": 3,
+                "explanation": "Composite functions are generally non-commutative, meaning fg(x) ≠ gf(x). The order of composition matters."
+            },
+            {
+                "question": "Given f(x) = x + 1 and g(x) = 2x, what is gf(3)?",
+                "options": ["7", "8", "9", "6"],
+                "correctIndex": 1,
+                "explanation": "First find f(3) = 3 + 1 = 4. Then gf(3) = g(f(3)) = g(4) = 2(4) = 8."
             }
         ]
     },
@@ -33,8 +98,28 @@ window.subjectNotes = [
         "digitizedText": "## 1.4 Inverse Functions\nThe inverse function, denoted $f^{-1}(x)$, reverses the effect of $f(x)$.\n- **Condition for Existence:** A function only has an inverse if it is **one-to-one**. If a function is many-to-one, its domain must be restricted to make it one-to-one before finding an inverse.\n- **Horizontal Line Test:** Determines if a function is one-to-one. If a horizontal line crosses the graph more than once, it is not one-to-one.\n- **Domain and Range Swap:** The domain of $f^{-1}(x)$ is the range of $f(x)$, and the range of $f^{-1}(x)$ is the domain of $f(x)$.\n- **Identity Property:** $f(f^{-1}(x)) = x$ and $f^{-1}(f(x)) = x$.\n<div align=\"center\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"20\" y1=\"200\" x2=\"230\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"230,200 224,196 224,204\" fill=\"currentColor\"/>\n<polygon points=\"40,20 36,26 44,26\" fill=\"currentColor\"/>\n\n<!-- Line y = x -->\n<line x1=\"25\" y1=\"215\" x2=\"215\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n<text x=\"215\" y=\"20\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = x</text>\n\n<!-- Projection lines for P(a,b) -->\n<line x1=\"100\" y1=\"80\" x2=\"100\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n<line x1=\"100\" y1=\"80\" x2=\"40\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n\n<!-- Projection lines for P'(b,a) -->\n<line x1=\"160\" y1=\"140\" x2=\"160\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n<line x1=\"160\" y1=\"140\" x2=\"40\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n\n<!-- Line connecting P and P' -->\n<line x1=\"100\" y1=\"80\" x2=\"160\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3\"/>\n\n<!-- Points P and P' -->\n<circle cx=\"100\" cy=\"80\" r=\"3.5\" fill=\"currentColor\"/>\n<circle cx=\"160\" cy=\"140\" r=\"3.5\" fill=\"currentColor\"/>\n\n<!-- Labels -->\n<text x=\"225\" y=\"215\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"25\" y=\"25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n<text x=\"90\" y=\"70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">P(a, b)</text>\n<text x=\"170\" y=\"150\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">P'(b, a)</text>\n\n<!-- Tick Labels -->\n<text x=\"96\" y=\"215\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">a</text>\n<text x=\"156\" y=\"215\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">b</text>\n<text x=\"25\" y=\"83\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">b</text>\n<text x=\"25\" y=\"143\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">a</text>\n<text x=\"28\" y=\"215\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">O</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 3: Finding the Inverse Algebraically**\n> Find the inverse of $f(x) = \\frac{3x + 2}{x - 1}$, where $x \\neq 1$.\n>\n> **Solution:**\n> 1. Set $y = f(x)$:\n>    $$y = \\frac{3x + 2}{x - 1}$$\n> 2. Rearrange to make $x$ the subject:\n>    $$y(x - 1) = 3x + 2$$\n>    $$xy - y = 3x + 2$$\n>    $$xy - 3x = y + 2$$\n>    $$x(y - 3) = y + 2$$\n>    $$x = \\frac{y + 2}{y - 3}$$\n> 3. Replace $y$ with $x$ to express $f^{-1}(x)$:\n>    $$f^{-1}(x) = \\frac{x + 2}{x - 3}, \\quad x \\neq 3$$",
         "quizzes": [
             {
-                "question": "**Example 3: Finding the Inverse Algebraically**\nFind the inverse of $f(x) = \\frac{3x + 2}{x - 1}$, where $x \\neq 1$.",
-                "explanation": "1. Set $y = f(x)$:\n$$y = \\frac{3x + 2}{x - 1}$$\n2. Rearrange to make $x$ the subject:\n$$y(x - 1) = 3x + 2$$\n$$xy - y = 3x + 2$$\n$$xy - 3x = y + 2$$\n$$x(y - 3) = y + 2$$\n$$x = \\frac{y + 2}{y - 3}$$\n3. Replace $y$ with $x$ to express $f^{-1}(x)$:\n$$f^{-1}(x) = \\frac{x + 2}{x - 3}, \\quad x \\neq 3$$"
+                "question": "What condition must a function satisfy for its inverse to exist?",
+                "options": ["It must be a many-to-one function", "It must be one-to-one (injective)", "It must have a range of all real numbers", "It must be a quadratic function"],
+                "correctIndex": 1,
+                "explanation": "A function only has an inverse if it is one-to-one. If it is many-to-one, its domain must be restricted first."
+            },
+            {
+                "question": "What is the relationship between the domain and range of f(x) and f⁻¹(x)?",
+                "options": ["They are identical", "The domain of f⁻¹ equals the range of f, and vice versa", "The domain of f⁻¹ equals the domain of f", "The range of f⁻¹ equals the range of f"],
+                "correctIndex": 1,
+                "explanation": "The domain and range swap: domain of f⁻¹(x) = range of f(x), and range of f⁻¹(x) = domain of f(x)."
+            },
+            {
+                "question": "Find the inverse of f(x) = (3x + 2)/(x - 1), where x ≠ 1.",
+                "options": ["f⁻¹(x) = (x + 2)/(x - 3), x ≠ 3", "f⁻¹(x) = (x - 2)/(x + 3), x ≠ -3", "f⁻¹(x) = (3x + 2)/(x - 1), x ≠ 1", "f⁻¹(x) = (x + 3)/(x - 2), x ≠ 2"],
+                "correctIndex": 0,
+                "explanation": "Setting y = (3x+2)/(x-1) and rearranging: y(x-1) = 3x+2, xy - 3x = y + 2, x(y-3) = y + 2, so x = (y+2)/(y-3). Therefore f⁻¹(x) = (x+2)/(x-3), x ≠ 3."
+            },
+            {
+                "question": "If f(f⁻¹(x)) = x, what property does this demonstrate?",
+                "options": ["The function is linear", "The function is one-to-one", "The inverse function undoes the effect of f", "The function has no inverse"],
+                "correctIndex": 2,
+                "explanation": "The identity property f(f⁻¹(x)) = x demonstrates that the inverse function reverses the effect of f."
             }
         ]
     },
@@ -44,8 +129,22 @@ window.subjectNotes = [
         "digitizedText": "## 1.5 Graphing Functions and Inverses\nUnderstanding the graphical relationship between a function and its inverse is critical.\n- The graph of $y = f^{-1}(x)$ is the **reflection** of the graph of $y = f(x)$ across the line $y = x$.\n- Any point $(a, b)$ on the graph of $f(x)$ becomes $(b, a)$ on the graph of $f^{-1}(x)$.\n- If the graphs of $f(x)$ and $f^{-1}(x)$ intersect, they will always intersect exactly on the line $y = x$.\n\n> [!NOTE]\n> **Example 4: Graphing and Domain Restriction**\n> Consider $f(x) = x^2 - 3$. Restrict its domain so that an inverse exists, and describe the graphs.\n>\n> **Solution:**\n> 1. The full parabola $y = x^2 - 3$ is many-to-one (fails the horizontal line test).\n> 2. **Restrict Domain:** Let the domain be $x \\ge 0$. The function is now one-to-one.\n> 3. The range of $f(x)$ for $x \\ge 0$ is $f(x) \\ge -3$.\n> 4. **Find Inverse:**\n>    $$y = x^2 - 3 \\implies x^2 = y + 3 \\implies x = \\sqrt{y + 3}$$\n>    (We take the positive root because of our domain restriction $x \\ge 0$).\n>    $$f^{-1}(x) = \\sqrt{x + 3}$$\n> 5. **Graph Details:**\n>    - $f(x)$ starts at $(0, -3)$ and curves upwards.\n>    - $f^{-1}(x)$ has domain $x \\ge -3$ and range $f^{-1}(x) \\ge 0$.\n>    - $f^{-1}(x)$ starts at $(-3, 0)$ and curves to the right, forming a perfect reflection of $f(x)$ across $y = x$.\n<div align=\"center\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 220 220\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"20\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"110\" y1=\"20\" x2=\"110\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<!-- Arrowheads -->\n<polygon points=\"200,110 194,106 194,114\" fill=\"currentColor\"/>\n<polygon points=\"110,20 106,26 114,26\" fill=\"currentColor\"/>\n\n<!-- Line y = x -->\n<line x1=\"45\" y1=\"175\" x2=\"175\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4\"/>\n<text x=\"172\" y=\"40\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\" font-style=\"italic\">y = x</text>\n\n<!-- Curve f(x) = x^2 - 3 (x >= 0) -->\n<path d=\"M 110,170 C 110,170 120,165 130,150 C 140,125 150,90 160,45\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"165\" y=\"45\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"10\">f(x)</text>\n\n<!-- Curve f^-1(x) = sqrt(x + 3) -->\n<path d=\"M 50,110 C 50,110 55,100 70,90 C 95,80 130,70 175,60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"180\" y=\"70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"10\">f\u207b\u00b9(x)</text>\n\n<!-- Key points -->\n<!-- (0, -3) -->\n<circle cx=\"110\" cy=\"170\" r=\"2.5\" fill=\"currentColor\"/>\n<text x=\"95\" y=\"174\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">(0,-3)</text>\n\n<!-- (-3, 0) -->\n<circle cx=\"50\" cy=\"110\" r=\"2.5\" fill=\"currentColor\"/>\n<text x=\"35\" y=\"103\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">(-3,0)</text>\n\n<!-- Labels -->\n<text x=\"195\" y=\"122\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\" font-style=\"italic\">x</text>\n<text x=\"100\" y=\"28\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\" font-style=\"italic\">y</text>\n<text x=\"100\" y=\"122\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\" font-style=\"italic\">O</text>\n</svg>\n</div>",
         "quizzes": [
             {
-                "question": "**Example 4: Graphing and Domain Restriction**\nConsider $f(x) = x^2 - 3$. Restrict its domain so that an inverse exists, and describe the graphs.",
-                "explanation": "1. The full parabola $y = x^2 - 3$ is many-to-one (fails the horizontal line test).\n2. **Restrict Domain:** Let the domain be $x \\ge 0$. The function is now one-to-one.\n3. The range of $f(x)$ for $x \\ge 0$ is $f(x) \\ge -3$.\n4. **Find Inverse:**\n$$y = x^2 - 3 \\implies x^2 = y + 3 \\implies x = \\sqrt{y + 3}$$\n(We take the positive root because of our domain restriction $x \\ge 0$).\n$$f^{-1}(x) = \\sqrt{x + 3}$$\n5. **Graph Details:**\n- $f(x)$ starts at $(0, -3)$ and curves upwards.\n- $f^{-1}(x)$ has domain $x \\ge -3$ and range $f^{-1}(x) \\ge 0$.\n- $f^{-1}(x)$ starts at $(-3, 0)$ and curves to the right, forming a perfect reflection of $f(x)$ across $y = x$."
+                "question": "The graph of y = f⁻¹(x) is the reflection of y = f(x) across which line?",
+                "options": ["y = -x", "y = 0", "y = x", "x = 0"],
+                "correctIndex": 2,
+                "explanation": "The graph of y = f⁻¹(x) is always the reflection of y = f(x) across the line y = x."
+            },
+            {
+                "question": "If (3, 7) is a point on the graph of f(x), what point must be on the graph of f⁻¹(x)?",
+                "options": ["(3, 7)", "(7, 7)", "(7, 3)", "(-3, 7)"],
+                "correctIndex": 2,
+                "explanation": "If (a, b) is on f(x), then (b, a) is on f⁻¹(x). So (3, 7) on f becomes (7, 3) on f⁻¹."
+            },
+            {
+                "question": "For f(x) = x² - 3 with domain x ≥ 0, what is f⁻¹(x)?",
+                "options": ["f⁻¹(x) = √(x + 3)", "f⁻¹(x) = -√(x + 3)", "f⁻¹(x) = x² + 3", "f⁻¹(x) = √(x - 3)"],
+                "correctIndex": 0,
+                "explanation": "Setting y = x² - 3: x² = y + 3, x = √(y + 3) (positive root since domain is x ≥ 0). So f⁻¹(x) = √(x + 3)."
             }
         ]
     },
@@ -55,8 +154,28 @@ window.subjectNotes = [
         "digitizedText": "## 1.6 Modulus Functions\nThe modulus (or absolute value) function, denoted by $|x|$, always returns a non-negative value.\n- **Definition:** $|x| = x$ if $x \\ge 0$, and $|x| = -x$ if $x < 0$.\n- **Graphing $y = |f(x)|$:** To sketch the graph of the modulus of a function, first sketch $y = f(x)$. Then, reflect any part of the graph that lies below the $x$-axis upwards so that it sits above the $x$-axis. The resulting graph will have sharp \"V\" shaped points at the $x$-intercepts.\n<div align=\"center\">\n<svg width=\"500\" height=\"200\" viewBox=\"0 0 520 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- LEFT GRAPH: y = |x| -->\n<!-- Axes -->\n<line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<polygon points=\"210,140 204,136 204,144\" fill=\"currentColor\"/>\n<polygon points=\"120,20 116,26 124,26\" fill=\"currentColor\"/>\n\n<!-- Curve y = |x| -->\n<path d=\"M 40,60 L 120,140 L 200,60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Labels -->\n<text x=\"215\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">x</text>\n<text x=\"110\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">y</text>\n<text x=\"108\" y=\"152\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">O</text>\n<text x=\"150\" y=\"55\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">y = |x|</text>\n\n<!-- RIGHT GRAPH: y = |x - 2| + 1 -->\n<!-- Axes -->\n<line x1=\"290\" y1=\"140\" x2=\"500\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"370\" y1=\"20\" x2=\"370\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<polygon points=\"500,140 494,136 494,144\" fill=\"currentColor\"/>\n<polygon points=\"370,20 366,26 374,26\" fill=\"currentColor\"/>\n\n<!-- Curve y = |x - 2| + 1 -->\n<path d=\"M 330,40 L 410,120 L 480,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Projections for vertex (2, 1) -->\n<line x1=\"410\" y1=\"120\" x2=\"410\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n<line x1=\"410\" y1=\"120\" x2=\"370\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-dasharray=\"2\"/>\n<circle cx=\"410\" cy=\"120\" r=\"2.5\" fill=\"currentColor\"/>\n\n<!-- Labels -->\n<text x=\"505\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">x</text>\n<text x=\"360\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">y</text>\n<text x=\"358\" y=\"152\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">O</text>\n<text x=\"420\" y=\"45\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\">y = |x - 2| + 1</text>\n<text x=\"420\" y=\"115\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">(2, 1)</text>\n\n<!-- Tick values -->\n<text x=\"407\" y=\"153\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">2</text>\n<text x=\"358\" y=\"123\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">1</text>\n\n<!-- Y-intercept at (0, 3) -->\n<circle cx=\"370\" cy=\"80\" r=\"2.5\" fill=\"currentColor\"/>\n<text x=\"358\" y=\"83\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\">3</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 5: Solving Modulus Equations**\n> Solve the equation $|2x - 3| = 7$.\n>\n> **Solution:**\n> 1. The expression inside the modulus can either be equal to the positive or negative value:\n>    $$2x - 3 = 7 \\quad \\text{or} \\quad 2x - 3 = -7$$\n> 2. Solve the first case:\n>    $$2x = 10 \\implies x = 5$$\n> 3. Solve the second case:\n>    $$2x = -4 \\implies x = -2$$\n> 4. The solutions are $x = 5$ and $x = -2$.",
         "quizzes": [
             {
-                "question": "**Example 5: Solving Modulus Equations**\nSolve the equation $|2x - 3| = 7$.",
-                "explanation": "1. The expression inside the modulus can either be equal to the positive or negative value:\n$$2x - 3 = 7 \\quad \\text{or} \\quad 2x - 3 = -7$$\n2. Solve the first case:\n$$2x = 10 \\implies x = 5$$\n3. Solve the second case:\n$$2x = -4 \\implies x = -2$$\n4. The solutions are $x = 5$ and $x = -2$."
+                "question": "What is the value of |-5| + |3|?",
+                "options": ["-2", "2", "8", "-8"],
+                "correctIndex": 2,
+                "explanation": "|-5| = 5 and |3| = 3. Therefore |-5| + |3| = 5 + 3 = 8."
+            },
+            {
+                "question": "Solve the equation |2x - 3| = 7.",
+                "options": ["x = 5 only", "x = -2 only", "x = 5 or x = -2", "x = 5 or x = 2"],
+                "correctIndex": 2,
+                "explanation": "2x - 3 = 7 gives x = 5, or 2x - 3 = -7 gives x = -2. Both solutions are valid."
+            },
+            {
+                "question": "Which statement about the modulus function |x| is TRUE?",
+                "options": ["|x| can be negative", "|x| = x for all real x", "|x| ≥ 0 for all real x", "|x| = -x for all real x"],
+                "correctIndex": 2,
+                "explanation": "The modulus function always returns a non-negative value: |x| ≥ 0 for all real x."
+            },
+            {
+                "question": "The graph of y = |f(x)| is obtained by:",
+                "options": ["Reflecting the entire graph in the y-axis", "Reflecting any parts below the x-axis to above it", "Reflecting the entire graph in the x-axis", "Shifting the graph 1 unit up"],
+                "correctIndex": 1,
+                "explanation": "To sketch y = |f(x)|, first sketch y = f(x), then reflect any parts below the x-axis upwards."
             }
         ]
     },
@@ -64,7 +183,26 @@ window.subjectNotes = [
         "subtopicId": "2.1",
         "title": "Introduction to Quadratic Functions",
         "digitizedText": "# Chapter 2: Quadratic Functions\n\n## 2.1 Introduction to Quadratic Functions\nA quadratic function is a polynomial of degree $2$. The general form of a quadratic function is:\n$$f(x) = ax^2 + bx + c$$\nwhere $a$, $b$, and $c$ are constants, and $a \\neq 0$. The graph of a quadratic function is a symmetrical $U$-shaped or $\\cap$-shaped curve called a parabola.\n* If $a > 0$, the parabola opens upwards and has a **minimum** point.\n* If $a < 0$, the parabola opens downwards and has a **maximum** point.\n<div align=\"center\">\n<svg width=\"560\" height=\"260\" viewBox=\"-30 -20 560 260\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Left graph: a > 0 (U-shape) -->\n<line x1=\"0\" y1=\"200\" x2=\"220\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"220,200 214,196 214,204\" fill=\"currentColor\"/>\n<polygon points=\"110,10 106,16 114,16\" fill=\"currentColor\"/>\n<text x=\"212\" y=\"220\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"118\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<!-- U-shape parabola -->\n<path d=\"M 20,200 Q 65,40 110,120 Q 155,40 200,200\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n<circle cx=\"110\" cy=\"120\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"118\" y=\"118\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">min</text>\n<text x=\"110\" y=\"-2\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">a &gt; 0</text>\n<text x=\"110\" y=\"248\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" text-anchor=\"middle\">U-shape (minimum)</text>\n\n<!-- Right graph: a < 0 (cap-shape) -->\n<line x1=\"290\" y1=\"120\" x2=\"510\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"400\" y1=\"10\" x2=\"400\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"510,120 504,116 504,124\" fill=\"currentColor\"/>\n<polygon points=\"400,10 396,16 404,16\" fill=\"currentColor\"/>\n<text x=\"502\" y=\"140\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"408\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<!-- Cap-shape parabola -->\n<path d=\"M 310,120 Q 355,200 400,40 Q 445,200 490,120\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n<circle cx=\"400\" cy=\"40\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"408\" y=\"38\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">max</text>\n<text x=\"400\" y=\"-2\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">a &lt; 0</text>\n<text x=\"400\" y=\"248\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" text-anchor=\"middle\">\u2229-shape (maximum)</text>\n</svg>\n</div>",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "For the quadratic function f(x) = ax² + bx + c, what does the sign of a determine?",
+                "options": ["The y-intercept of the parabola", "Whether the parabola opens upwards or downwards", "The number of x-intercepts", "The position of the y-axis"],
+                "correctIndex": 1,
+                "explanation": "If a > 0, the parabola opens upwards (U-shape) with a minimum. If a < 0, it opens downwards (∩-shape) with a maximum."
+            },
+            {
+                "question": "Which of the following is a quadratic function?",
+                "options": ["f(x) = 3x + 2", "f(x) = x³ - x", "f(x) = 2x² - 5x + 1", "f(x) = 1/x"],
+                "correctIndex": 2,
+                "explanation": "A quadratic function has the form f(x) = ax² + bx + c where a ≠ 0."
+            },
+            {
+                "question": "For f(x) = -3x² + 2x - 1, does the parabola have a maximum or minimum point?",
+                "options": ["Minimum, because a is negative", "Maximum, because a is negative", "Neither, because it is linear", "Minimum, because the constant is negative"],
+                "correctIndex": 1,
+                "explanation": "Since a = -3 < 0, the parabola opens downwards, so it has a maximum point."
+            }
+        ]
     },
     {
         "subtopicId": "2.2",
@@ -72,12 +210,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.2 Completing the Square\nCompleting the square is a method used to rewrite the quadratic function from the general form into the vertex form:\n$$f(x) = a(x - h)^2 + k$$\nThis form is incredibly useful for easily identifying the vertex (maximum or minimum point) of the parabola.\n\n**Steps to complete the square for $x^2 + bx + c$:**\n1. Isolate the $x^2 + bx$ terms.\n2. Add and subtract the square of half the coefficient of $x$: $\\left(\\frac{b}{2}\\right)^2$.\n3. Factor the perfect square trinomial and simplify.\n\n> [!NOTE]\n> **Example 1: Completing the square ($a = 1$)**\n> Express $x^2 - 6x + 5$ in the form $(x - h)^2 + k$.\n>\n> **Solution:**\n> 1. Take half of the $x$ coefficient ($-6$), which is $-3$.\n> 2. Add and subtract $(-3)^2 = 9$:\n>    $$x^2 - 6x + 9 - 9 + 5$$\n> 3. Factor the perfect square and simplify the constants:\n>    $$(x - 3)^2 - 4$$\n\nWhen $a \\neq 1$, factor out $a$ from the $x^2$ and $x$ terms first.\n\n> [!NOTE]\n> **Example 2: Completing the square ($a \\neq 1$)**\n> Express $-2x^2 + 8x - 3$ in the form $a(x - h)^2 + k$.\n>\n> **Solution:**\n> 1. Factor out $-2$ from the $x$ terms:\n>    $$-2(x^2 - 4x) - 3$$\n> 2. Inside the bracket, take half of $-4$ (which is $-2$), square it to get $4$. Add and subtract $4$ inside the bracket:\n>    $$-2(x^2 - 4x + 4 - 4) - 3$$\n> 3. Rewrite the perfect square and distribute the $-2$ to the subtracted term:\n>    $$-2((x - 2)^2 - 4) - 3$$\n>    $$-2(x - 2)^2 + 8 - 3$$\n> 4. Simplify:\n>    $$-2(x - 2)^2 + 5$$",
         "quizzes": [
             {
-                "question": "**Example 1: Completing the square ($a = 1$)**\nExpress $x^2 - 6x + 5$ in the form $(x - h)^2 + k$.",
-                "explanation": "1. Take half of the $x$ coefficient ($-6$), which is $-3$.\n2. Add and subtract $(-3)^2 = 9$:\n$$x^2 - 6x + 9 - 9 + 5$$\n3. Factor the perfect square and simplify the constants:\n$$(x - 3)^2 - 4$$"
+                "question": "Express x² - 6x + 5 in the form (x - h)² + k.",
+                "options": ["(x - 3)² - 4", "(x - 3)² + 4", "(x - 6)² - 31", "(x + 3)² - 4"],
+                "correctIndex": 0,
+                "explanation": "Half of -6 is -3, and (-3)² = 9. So x² - 6x + 5 = (x² - 6x + 9) - 9 + 5 = (x - 3)² - 4."
             },
             {
-                "question": "**Example 2: Completing the square ($a \\neq 1$)**\nExpress $-2x^2 + 8x - 3$ in the form $a(x - h)^2 + k$.",
-                "explanation": "1. Factor out $-2$ from the $x$ terms:\n$$-2(x^2 - 4x) - 3$$\n2. Inside the bracket, take half of $-4$ (which is $-2$), square it to get $4$. Add and subtract $4$ inside the bracket:\n$$-2(x^2 - 4x + 4 - 4) - 3$$\n3. Rewrite the perfect square and distribute the $-2$ to the subtracted term:\n$$-2((x - 2)^2 - 4) - 3$$\n$$-2(x - 2)^2 + 8 - 3$$\n4. Simplify:\n$$-2(x - 2)^2 + 5$$"
+                "question": "Express -2x² + 8x - 3 in the form a(x - h)² + k.",
+                "options": ["-2(x - 2)² + 5", "-2(x + 2)² + 5", "-2(x - 4)² + 29", "2(x - 2)² - 11"],
+                "correctIndex": 0,
+                "explanation": "Factor out -2: -2(x² - 4x) - 3. Complete the square: -2(x² - 4x + 4 - 4) - 3 = -2(x-2)² + 8 - 3 = -2(x-2)² + 5."
+            },
+            {
+                "question": "In the vertex form f(x) = a(x - h)² + k, what are the coordinates of the vertex?",
+                "options": ["(h, k)", "(-h, k)", "(h, -k)", "(-h, -k)"],
+                "correctIndex": 0,
+                "explanation": "In vertex form, the vertex (turning point) is at (h, k)."
             }
         ]
     },
@@ -87,8 +235,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.3 Maximum and Minimum Values\nOnce a quadratic function is in the vertex form $f(x) = a(x - h)^2 + k$, the **vertex** (or turning point) of the parabola is exactly at $(h, k)$.\n\n* If $a > 0$: The function has a **minimum value** of $k$, which occurs when $x = h$.\n* If $a < 0$: The function has a **maximum value** of $k$, which occurs when $x = h$.\n\n> [!NOTE]\n> **Example 3: Finding the maximum point**\n> Find the coordinates of the maximum point of the curve $y = 5 - 4x - 2x^2$.\n>\n> **Solution:**\n> 1. Rearrange the function: $y = -2x^2 - 4x + 5$\n> 2. Factor out $-2$ from the $x$ terms: $y = -2(x^2 + 2x) + 5$\n> 3. Complete the square inside: $y = -2(x^2 + 2x + 1 - 1) + 5$\n> 4. Simplify: $y = -2((x + 1)^2 - 1) + 5 \\implies y = -2(x + 1)^2 + 2 + 5 \\implies y = -2(x + 1)^2 + 7$\n> 5. Since $a = -2 < 0$, it is a maximum. The maximum value is $7$ and occurs at $x = -1$.\n> 6. Coordinates of the maximum point: $(-1, 7)$.",
         "quizzes": [
             {
-                "question": "**Example 3: Finding the maximum point**\nFind the coordinates of the maximum point of the curve $y = 5 - 4x - 2x^2$.",
-                "explanation": "1. Rearrange the function: $y = -2x^2 - 4x + 5$\n2. Factor out $-2$ from the $x$ terms: $y = -2(x^2 + 2x) + 5$\n3. Complete the square inside: $y = -2(x^2 + 2x + 1 - 1) + 5$\n4. Simplify: $y = -2((x + 1)^2 - 1) + 5 \\implies y = -2(x + 1)^2 + 2 + 5 \\implies y = -2(x + 1)^2 + 7$\n5. Since $a = -2 < 0$, it is a maximum. The maximum value is $7$ and occurs at $x = -1$.\n6. Coordinates of the maximum point: $(-1, 7)$."
+                "question": "Find the coordinates of the maximum point of y = 5 - 4x - 2x².",
+                "options": ["(1, 7)", "(-1, 7)", "(-1, -7)", "(1, -7)"],
+                "correctIndex": 1,
+                "explanation": "Rearranging: y = -2x² - 4x + 5. Completing the square: y = -2(x+1)² + 7. Since a = -2 < 0, maximum at (-1, 7)."
+            },
+            {
+                "question": "If f(x) = 3(x - 2)² - 5, what is the minimum value of f(x)?",
+                "options": ["3", "-5", "2", "-2"],
+                "correctIndex": 1,
+                "explanation": "Since a = 3 > 0, minimum at vertex x = 2, giving f(2) = -5."
+            },
+            {
+                "question": "The vertex form of a quadratic is f(x) = a(x - h)² + k. If a > 0, the vertex is a:",
+                "options": ["Maximum point", "Minimum point", "Point of inflection", "Neither"],
+                "correctIndex": 1,
+                "explanation": "When a > 0, the parabola opens upwards, so the vertex is a minimum."
             }
         ]
     },
@@ -98,8 +260,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.4 Roots of Quadratic Equations\nThe roots (or solutions) of the quadratic equation $ax^2 + bx + c = 0$ are the $x$-intercepts of the graph. We can solve for the roots using:\n1. **Factorization**: Finding two numbers that multiply to $ac$ and add to $b$.\n2. **Completing the Square**: Setting $a(x - h)^2 + k = 0$ and solving for $x$.\n3. **Quadratic Formula**:\n   $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\n> [!NOTE]\n> **Example 4: Solving using the quadratic formula**\n> Solve the equation $3x^2 - 5x - 4 = 0$, giving your answers correct to $2$ decimal places.\n>\n> **Solution:**\n> 1. Identify coefficients: $a = 3$, $b = -5$, $c = -4$.\n> 2. Substitute into the formula:\n>    $$x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(3)(-4)}}{2(3)}$$\n>    $$x = \\frac{5 \\pm \\sqrt{25 + 48}}{6}$$\n>    $$x = \\frac{5 \\pm \\sqrt{73}}{6}$$\n> 3. Calculate the values:\n>    $$x \\approx \\frac{5 + 8.544}{6} \\approx 2.26$$\n>    $$x \\approx \\frac{5 - 8.544}{6} \\approx -0.59$$\n> 4. The roots are $x = 2.26$ and $x = -0.59$.",
         "quizzes": [
             {
-                "question": "**Example 4: Solving using the quadratic formula**\nSolve the equation $3x^2 - 5x - 4 = 0$, giving your answers correct to $2$ decimal places.",
-                "explanation": "1. Identify coefficients: $a = 3$, $b = -5$, $c = -4$.\n2. Substitute into the formula:\n$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(3)(-4)}}{2(3)}$$\n$$x = \\frac{5 \\pm \\sqrt{25 + 48}}{6}$$\n$$x = \\frac{5 \\pm \\sqrt{73}}{6}$$\n3. Calculate the values:\n$$x \\approx \\frac{5 + 8.544}{6} \\approx 2.26$$\n$$x \\approx \\frac{5 - 8.544}{6} \\approx -0.59$$\n4. The roots are $x = 2.26$ and $x = -0.59$."
+                "question": "What are the roots of 3x² - 5x - 4 = 0 (to 2 d.p.)?",
+                "options": ["x = 2.26 and x = -0.59", "x = 2.00 and x = -0.67", "x = 3.00 and x = -1.33", "x = 1.67 and x = -0.83"],
+                "correctIndex": 0,
+                "explanation": "Using the quadratic formula: x = (5 ± √73)/6. This gives x ≈ 2.26 and x ≈ -0.59."
+            },
+            {
+                "question": "In the quadratic formula, what does b² - 4ac represent?",
+                "options": ["The vertex of the parabola", "The discriminant", "The y-intercept", "The axis of symmetry"],
+                "correctIndex": 1,
+                "explanation": "The expression b² - 4ac is called the discriminant. It determines the nature of the roots."
+            },
+            {
+                "question": "Which method can be used to solve ALL quadratic equations?",
+                "options": ["Factorization only", "Completing the square only", "The quadratic formula", "Graphing only"],
+                "correctIndex": 2,
+                "explanation": "The quadratic formula works for any quadratic equation ax² + bx + c = 0 (provided a ≠ 0)."
             }
         ]
     },
@@ -109,8 +285,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.5 The Discriminant and Nature of Roots\nThe expression under the square root in the quadratic formula, $b^2 - 4ac$, is called the **discriminant**. It determines the nature of the roots of the quadratic equation:\n* If $b^2 - 4ac > 0$: The equation has **two distinct real roots**. The curve intersects the $x$-axis at two different points.\n* If $b^2 - 4ac = 0$: The equation has **two equal real roots** (or one repeated root). The curve touches the $x$-axis at exactly one point (the $x$-axis is a tangent to the curve).\n* If $b^2 - 4ac < 0$: The equation has **no real roots**. The curve does not intersect the $x$-axis at all (it lies entirely above or entirely below the $x$-axis).\n<div align=\"center\">\n<svg width=\"660\" height=\"250\" viewBox=\"-10 -30 660 260\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Case 1: two distinct roots -->\n<line x1=\"10\" y1=\"160\" x2=\"190\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"100\" y1=\"20\" x2=\"100\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"190,160 184,156 184,164\" fill=\"currentColor\"/>\n<polygon points=\"100,20 96,26 104,26\" fill=\"currentColor\"/>\n<text x=\"182\" y=\"178\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">x</text>\n<text x=\"107\" y=\"30\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y</text>\n<!-- Parabola crossing x-axis twice -->\n<path d=\"M 30,50 Q 65,185 100,170 Q 135,185 170,50\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\" transform=\"scale(1,-1) translate(0,-220)\"/>\n<circle cx=\"58\" cy=\"160\" r=\"3.5\" fill=\"currentColor\"/>\n<circle cx=\"142\" cy=\"160\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"100\" y=\"-12\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">b\u00b2 \u2212 4ac &gt; 0</text>\n<text x=\"100\" y=\"232\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Two distinct real roots</text>\n\n<!-- Case 2: one repeated root -->\n<line x1=\"230\" y1=\"160\" x2=\"410\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"320\" y1=\"20\" x2=\"320\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"410,160 404,156 404,164\" fill=\"currentColor\"/>\n<polygon points=\"320,20 316,26 324,26\" fill=\"currentColor\"/>\n<text x=\"402\" y=\"178\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">x</text>\n<text x=\"327\" y=\"30\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y</text>\n<!-- Parabola touching x-axis -->\n<path d=\"M 250,50 Q 285,168 320,160 Q 355,168 390,50\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\" transform=\"scale(1,-1) translate(0,-220)\"/>\n<circle cx=\"320\" cy=\"160\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"320\" y=\"-12\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">b\u00b2 \u2212 4ac = 0</text>\n<text x=\"320\" y=\"232\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">One repeated root</text>\n\n<!-- Case 3: no real roots -->\n<line x1=\"450\" y1=\"160\" x2=\"630\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"540\" y1=\"20\" x2=\"540\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"630,160 624,156 624,164\" fill=\"currentColor\"/>\n<polygon points=\"540,20 536,26 544,26\" fill=\"currentColor\"/>\n<text x=\"622\" y=\"178\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">x</text>\n<text x=\"547\" y=\"30\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y</text>\n<!-- Parabola above x-axis -->\n<path d=\"M 470,50 Q 505,138 540,120 Q 575,138 610,50\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\" transform=\"scale(1,-1) translate(0,-220)\"/>\n<text x=\"540\" y=\"-12\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">b\u00b2 \u2212 4ac &lt; 0</text>\n<text x=\"540\" y=\"232\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">No real roots</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 5: Using the discriminant**\n> Find the range of values of $k$ for which the equation $x^2 + kx + 9 = 0$ has two distinct real roots.\n>\n> **Solution:**\n> 1. For two distinct real roots, the discriminant must be strictly greater than zero: $b^2 - 4ac > 0$.\n> 2. Identify $a = 1$, $b = k$, $c = 9$.\n> 3. Substitute into the inequality:\n>    $$k^2 - 4(1)(9) > 0$$\n>    $$k^2 - 36 > 0$$\n> 4. Solve the quadratic inequality:\n>    $$(k - 6)(k + 6) > 0$$\n> 5. The critical values are $k = 6$ and $k = -6$. The inequality holds for the \"outside\" regions.\n> 6. Range of values: $k < -6$ or $k > 6$.",
         "quizzes": [
             {
-                "question": "**Example 5: Using the discriminant**\nFind the range of values of $k$ for which the equation $x^2 + kx + 9 = 0$ has two distinct real roots.",
-                "explanation": "1. For two distinct real roots, the discriminant must be strictly greater than zero: $b^2 - 4ac > 0$.\n2. Identify $a = 1$, $b = k$, $c = 9$.\n3. Substitute into the inequality:\n$$k^2 - 4(1)(9) > 0$$\n$$k^2 - 36 > 0$$\n4. Solve the quadratic inequality:\n$$(k - 6)(k + 6) > 0$$\n5. The critical values are $k = 6$ and $k = -6$. The inequality holds for the \"outside\" regions.\n6. Range of values: $k < -6$ or $k > 6$."
+                "question": "If b² - 4ac > 0, the quadratic equation has:",
+                "options": ["No real roots", "Two equal real roots", "Two distinct real roots", "One complex root"],
+                "correctIndex": 2,
+                "explanation": "When b² - 4ac > 0, the equation has two distinct real roots. The curve crosses the x-axis at two points."
+            },
+            {
+                "question": "Find the range of values of k for which x² + kx + 9 = 0 has two distinct real roots.",
+                "options": ["-6 < k < 6", "k < -6 or k > 6", "k = ±6", "-6 ≤ k ≤ 6"],
+                "correctIndex": 1,
+                "explanation": "For two distinct real roots: k² - 36 > 0, so (k-6)(k+6) > 0. This holds when k < -6 or k > 6."
+            },
+            {
+                "question": "If b² - 4ac = 0, the curve y = ax² + bx + c:",
+                "options": ["Crosses the x-axis at two points", "Does not touch the x-axis", "Touches the x-axis at exactly one point", "Is a straight line"],
+                "correctIndex": 2,
+                "explanation": "When the discriminant equals zero, there is exactly one repeated root. The parabola touches the x-axis at one point."
             }
         ]
     },
@@ -120,8 +310,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.6 Sketching Quadratic Graphs\nTo accurately sketch the graph of a parabola $y = ax^2 + bx + c$, you must identify and plot key features:\n1. **Shape**: Look at the sign of $a$. ($a > 0 \\implies \\cup$, $a < 0 \\implies \\cap$)\n2. **$y$-intercept**: Set $x = 0$ to find $y = c$. The coordinates are $(0, c)$.\n3. **$x$-intercept(s)**: Set $y = 0$ and solve $ax^2 + bx + c = 0$ by factoring or using the quadratic formula.\n4. **Vertex**: Complete the square to find the maximum or minimum point $(h, k)$, or use the axis of symmetry formula $x = -\\frac{b}{2a}$ and substitute back to find the $y$-coordinate.\n\n> [!NOTE]\n> **Example 6: Sketching a parabola**\n> Sketch the graph of $y = x^2 - 4x - 5$. Show clearly the coordinates of the turning point and any intersections with the coordinate axes.\n>\n> **Solution:**\n> 1. **Shape:** $a = 1 > 0$, so the curve is a $U$-shape.\n> 2. **$y$-intercept:** Let $x = 0 \\implies y = -5$. Point: $(0, -5)$.\n> 3. **$x$-intercepts:** Let $y = 0 \\implies x^2 - 4x - 5 = 0$.\n>    Factorize: $(x - 5)(x + 1) = 0 \\implies x = 5$ or $x = -1$. Points: $(5, 0)$ and $(-1, 0)$.\n> 4. **Turning Point (Vertex):** Complete the square:\n>    $$y = x^2 - 4x + 4 - 4 - 5$$\n>    $$y = (x - 2)^2 - 9$$\n>    The minimum point is $(2, -9)$.\n> 5. **Sketch:** Draw a smooth $U$-shaped curve passing through $(-1, 0)$ and $(5, 0)$, cutting the $y$-axis at $(0, -5)$, with the lowest point at $(2, -9)$.\n<div align=\"center\">\n<svg width=\"380\" height=\"380\" viewBox=\"-80 -40 380 390\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Coordinate system: origin at pixel (80, 30) -->\n<!-- Scale: 35px per unit -->\n<!-- x: px = 80 + 35*x   y: px = 30 - 35*y -->\n<!-- Key points: (-1,0)->(45,30)  (0,-5)->(80,205)  (2,-9)->(150,345)  (5,0)->(255,30) -->\n\n<!-- Axes -->\n<line x1=\"-40\" y1=\"30\" x2=\"290\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"80\" y1=\"-30\" x2=\"80\" y2=\"350\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"290,30 284,26 284,34\" fill=\"currentColor\"/>\n<polygon points=\"80,-30 76,-24 84,-24\" fill=\"currentColor\"/>\n<text x=\"280\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"86\" y=\"-18\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"70\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" text-anchor=\"end\">O</text>\n\n<!-- Tick marks -->\n<line x1=\"45\" y1=\"26\" x2=\"45\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"45\" y=\"48\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\">\u22121</text>\n<line x1=\"150\" y1=\"26\" x2=\"150\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"150\" y=\"48\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\">2</text>\n<line x1=\"255\" y1=\"26\" x2=\"255\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"255\" y=\"48\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\">5</text>\n<line x1=\"76\" y1=\"205\" x2=\"84\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"70\" y=\"210\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"end\">\u22125</text>\n<line x1=\"76\" y1=\"345\" x2=\"84\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"70\" y=\"350\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"end\">\u22129</text>\n\n<!-- Parabola y = (x-2)^2 - 9 plotted point by point -->\n<!-- x=-2: y=(-4)^2-9=-5+4=... (x-2)^2-9 = 16-9=7 -> px(-10,-215) too high, skip -->\n<!-- x=-1.5: y=(\u22123.5)\u00b2\u22129=12.25\u22129=3.25 -> px(27.5, -83.75) -->\n<!-- x=-1: y=0 -> px(45,30) -->\n<!-- x=-0.5: y=(\u22122.5)\u00b2\u22129=6.25\u22129=\u22122.75 -> px(62.5, 126.25) -->\n<!-- x=0: y=-5 -> px(80,205) -->\n<!-- x=0.5: y=(\u22121.5)\u00b2\u22129=2.25\u22129=\u22126.75 -> px(97.5, 266.25) -->\n<!-- x=1: y=-8 -> px(115,310) -->\n<!-- x=1.5: y=(\u22120.5)\u00b2\u22129=0.25\u22129=\u22128.75 -> px(132.5, 336.25) -->\n<!-- x=2: y=-9 -> px(150,345) -->\n<!-- x=2.5: y=-8.75 -> px(167.5, 336.25) -->\n<!-- x=3: y=-8 -> px(185,310) -->\n<!-- x=3.5: y=-6.75 -> px(202.5, 266.25) -->\n<!-- x=4: y=-5 -> px(220,205) -->\n<!-- x=4.5: y=-2.75 -> px(237.5, 126.25) -->\n<!-- x=5: y=0 -> px(255,30) -->\n<!-- x=5.5: y=3.25 -> px(272.5, -83.75) -->\n<polyline points=\"28,-84 45,30 63,126 80,205 98,266 115,310 133,336 150,345 168,336 185,310 203,266 220,205 238,126 255,30 273,-84\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n\n<!-- Key points -->\n<circle cx=\"45\" cy=\"30\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"8\" y=\"16\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" text-anchor=\"middle\">(\u22121, 0)</text>\n\n<circle cx=\"255\" cy=\"30\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"270\" y=\"16\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">(5, 0)</text>\n\n<circle cx=\"80\" cy=\"205\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"100\" y=\"198\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">(0, \u22125)</text>\n\n<circle cx=\"150\" cy=\"345\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"166\" y=\"340\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">(2, \u22129)</text>\n\n<!-- Axis of symmetry -->\n<line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"5,4\"/>\n\n<!-- Curve label -->\n<text x=\"268\" y=\"-50\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = x\u00b2 \u2212 4x \u2212 5</text>\n</svg>\n</div>",
         "quizzes": [
             {
-                "question": "**Example 6: Sketching a parabola**\nSketch the graph of $y = x^2 - 4x - 5$. Show clearly the coordinates of the turning point and any intersections with the coordinate axes.",
-                "explanation": "1. **Shape:** $a = 1 > 0$, so the curve is a $U$-shape.\n2. **$y$-intercept:** Let $x = 0 \\implies y = -5$. Point: $(0, -5)$.\n3. **$x$-intercepts:** Let $y = 0 \\implies x^2 - 4x - 5 = 0$.\nFactorize: $(x - 5)(x + 1) = 0 \\implies x = 5$ or $x = -1$. Points: $(5, 0)$ and $(-1, 0)$.\n4. **Turning Point (Vertex):** Complete the square:\n$$y = x^2 - 4x + 4 - 4 - 5$$\n$$y = (x - 2)^2 - 9$$\nThe minimum point is $(2, -9)$.\n5. **Sketch:** Draw a smooth $U$-shaped curve passing through $(-1, 0)$ and $(5, 0)$, cutting the $y$-axis at $(0, -5)$, with the lowest point at $(2, -9)$."
+                "question": "For the curve y = x² - 4x - 5, what is the y-intercept?",
+                "options": ["(0, 5)", "(0, -5)", "(0, 0)", "(-1, 0)"],
+                "correctIndex": 1,
+                "explanation": "Setting x = 0: y = -5. The y-intercept is (0, -5)."
+            },
+            {
+                "question": "What is the vertex of y = (x - 2)² - 9?",
+                "options": ["(2, 9)", "(-2, -9)", "(2, -9)", "(-2, 9)"],
+                "correctIndex": 2,
+                "explanation": "In vertex form y = (x - h)² + k, the vertex is (h, k) = (2, -9)."
+            },
+            {
+                "question": "The x-intercepts of y = x² - 4x - 5 are found by solving:",
+                "options": ["x² - 4x - 5 = 0, giving x = 5 or x = -1", "x² - 4x - 5 = 0, giving x = -5 or x = 1", "x² + 4x - 5 = 0, giving x = 1 or x = -5", "x² - 4x + 5 = 0, giving no real solutions"],
+                "correctIndex": 0,
+                "explanation": "Setting y = 0: (x - 5)(x + 1) = 0, giving x = 5 or x = -1."
             }
         ]
     },
@@ -131,8 +335,22 @@ window.subjectNotes = [
         "digitizedText": "## 2.7 Intersection of a Line and a Curve\nTo find the points of intersection between a straight line $y = mx + c$ and a quadratic curve $y = ax^2 + bx + k$, equate the two expressions:\n$$mx + c = ax^2 + bx + k$$\nRearrange this into a single quadratic equation equal to zero:\n$$ax^2 + (b - m)x + (k - c) = 0$$\n\nYou can then use the discriminant ($B^2 - 4AC$) of this *new* equation to determine the geometrical relationship between the line and the curve:\n* $B^2 - 4AC > 0$: The line cuts the curve at **two distinct points** (secant).\n* $B^2 - 4AC = 0$: The line touches the curve at **one point** (tangent).\n* $B^2 - 4AC < 0$: The line **does not intersect** the curve.\n<div align=\"center\">\n<svg width=\"360\" height=\"310\" viewBox=\"-40 -30 370 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-20\" y1=\"220\" x2=\"320\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"320,220 314,216 314,224\" fill=\"currentColor\"/>\n<polygon points=\"30,10 26,16 34,16\" fill=\"currentColor\"/>\n<text x=\"310\" y=\"240\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"38\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"20\" y=\"236\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" text-anchor=\"end\">O</text>\n\n<!-- Parabola -->\n<!-- y = 0.005(x-160)^2 + 60 mapped to SVG: at x_svg=160, y_svg=60 (top) -->\n<!-- Points: x=20,y=158; x=60,y=110; x=100,y=78; x=140,y=62; x=160,y=60; x=200,y=68; x=240,y=92; x=280,y=132; x=310,y=172 -->\n<polyline points=\"20,158 40,130 60,110 80,92 100,78 120,68 140,62 160,60 180,62 200,68 220,78 240,92 260,110 280,132 300,158\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n\n<!-- Line intersecting parabola at two points -->\n<!-- Line from (30,160) to (290,70) -->\n<line x1=\"10\" y1=\"168\" x2=\"305\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"8,4\"/>\n\n<!-- Intersection points (approximate) -->\n<!-- Point A near x_svg=55 -->\n<circle cx=\"55\" cy=\"152\" r=\"4.5\" fill=\"currentColor\"/>\n<text x=\"38\" y=\"148\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"end\">A</text>\n<!-- Point B near x_svg=255 -->\n<circle cx=\"255\" cy=\"82\" r=\"4.5\" fill=\"currentColor\"/>\n<text x=\"268\" y=\"76\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">B</text>\n\n<!-- Labels -->\n<text x=\"290\" y=\"42\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = ax\u00b2 + bx + c</text>\n<text x=\"280\" y=\"105\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = mx + c</text>\n<text x=\"160\" y=\"300\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Line intersects curve at points A and B</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 7: Line tangent to a curve**\n> The line $y = 2x + k$ is a tangent to the curve $y = x^2 + 6x + 5$. Find the value of the constant $k$.\n>\n> **Solution:**\n> 1. Equate the line and the curve:\n>    $$x^2 + 6x + 5 = 2x + k$$\n> 2. Rearrange into standard quadratic form $Ax^2 + Bx + C = 0$:\n>    $$x^2 + 4x + (5 - k) = 0$$\n> 3. For the line to be a tangent, the discriminant must be zero ($B^2 - 4AC = 0$):\n>    $$A = 1, \\quad B = 4, \\quad C = 5 - k$$\n>    $$4^2 - 4(1)(5 - k) = 0$$\n> 4. Solve for $k$:\n>    $$16 - 20 + 4k = 0$$\n>    $$-4 + 4k = 0 \\implies 4k = 4 \\implies k = 1$$",
         "quizzes": [
             {
-                "question": "**Example 7: Line tangent to a curve**\nThe line $y = 2x + k$ is a tangent to the curve $y = x^2 + 6x + 5$. Find the value of the constant $k$.",
-                "explanation": "1. Equate the line and the curve:\n$$x^2 + 6x + 5 = 2x + k$$\n2. Rearrange into standard quadratic form $Ax^2 + Bx + C = 0$:\n$$x^2 + 4x + (5 - k) = 0$$\n3. For the line to be a tangent, the discriminant must be zero ($B^2 - 4AC = 0$):\n$$A = 1, \\quad B = 4, \\quad C = 5 - k$$\n$$4^2 - 4(1)(5 - k) = 0$$\n4. Solve for $k$:\n$$16 - 20 + 4k = 0$$\n$$-4 + 4k = 0 \\implies 4k = 4 \\implies k = 1$$"
+                "question": "The line y = 2x + k is tangent to y = x² + 6x + 5. Find k.",
+                "options": ["k = -1", "k = 1", "k = 0", "k = 2"],
+                "correctIndex": 1,
+                "explanation": "Equating: x² + 4x + (5-k) = 0. For tangency: 16 - 4(5-k) = 0, giving k = 1."
+            },
+            {
+                "question": "When the discriminant of the combined quadratic is zero, the line is:",
+                "options": ["A secant (cuts at two points)", "A tangent (touches at one point)", "Does not intersect the curve", "Perpendicular to the curve"],
+                "correctIndex": 1,
+                "explanation": "Discriminant = 0 means one repeated root, so the line touches the curve at exactly one point — a tangent."
+            },
+            {
+                "question": "To find intersection points of y = mx + c and y = ax² + bx + k, you should:",
+                "options": ["Multiply the two equations together", "Equate the two expressions and solve", "Add the two equations together", "Take the derivative of both equations"],
+                "correctIndex": 1,
+                "explanation": "Equating mx + c = ax² + bx + k and rearranging gives a quadratic equation to solve for x."
             }
         ]
     },
@@ -140,7 +358,26 @@ window.subjectNotes = [
         "subtopicId": "3.1",
         "title": "Introduction to Polynomials",
         "digitizedText": "# Chapter 3: Factors of Polynomials\n\n## 3.1 Introduction to Polynomials\nA polynomial is an algebraic expression consisting of terms in the form $ax^n$, where $a$ is a real number (coefficient) and $n$ is a non-negative integer.\n\nThe general form of a polynomial of degree $n$ is:\n$$P(x) = a_nx^n + a_{n-1}x^{n-1} + \\dots + a_1x + a_0$$\n\n- **Degree:** The highest power of $x$ in the polynomial. For example, a cubic polynomial has a degree of $3$.\n- **Leading Coefficient:** The coefficient of the term with the highest power, $a_n$.\n- **Constant Term:** The term with no $x$, which is $a_0$.",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "What is the degree of P(x) = 4x⁵ - 3x³ + 2x - 7?",
+                "options": ["3", "4", "5", "7"],
+                "correctIndex": 2,
+                "explanation": "The degree is the highest power of x, which is 5."
+            },
+            {
+                "question": "In P(x) = 3x⁴ - 2x² + 1, the leading coefficient is:",
+                "options": ["-2", "1", "3", "4"],
+                "correctIndex": 2,
+                "explanation": "The leading coefficient is the coefficient of the highest power term, which is 3."
+            },
+            {
+                "question": "Which of the following is NOT a polynomial?",
+                "options": ["3x² - 2x + 1", "1/x + 2", "5x³ + 4", "x¹⁰ - x⁵ + 3"],
+                "correctIndex": 1,
+                "explanation": "A polynomial only has non-negative integer powers of x. 1/x = x⁻¹ has a negative power."
+            }
+        ]
     },
     {
         "subtopicId": "3.2",
@@ -148,8 +385,22 @@ window.subjectNotes = [
         "digitizedText": "## 3.2 Polynomial Division\nWhen dividing a polynomial $P(x)$ by a linear divisor $(x - c)$, the result can be written as:\n$$P(x) = (x - c)Q(x) + R$$\nwhere $Q(x)$ is the quotient and $R$ is the constant remainder.\n\nIf the divisor is in the form $(ax - b)$, the relationship is:\n$$P(x) = (ax - b)Q(x) + R$$\n\n> [!NOTE]\n> **Example 1: Polynomial Long Division**\n> Divide $P(x) = 2x^3 - 3x^2 + 4x - 5$ by $(x - 2)$.\n>\n> **Solution:**\n> 1. Set up the long division: divide $2x^3$ by $x$ to get $2x^2$. Multiply $2x^2$ by $(x - 2)$ to get $2x^3 - 4x^2$. Subtract this from $P(x)$.\n> 2. The new polynomial is $x^2 + 4x - 5$. Divide $x^2$ by $x$ to get $x$. Multiply $x$ by $(x - 2)$ to get $x^2 - 2x$. Subtract.\n> 3. The new polynomial is $6x - 5$. Divide $6x$ by $x$ to get $6$. Multiply $6$ by $(x - 2)$ to get $6x - 12$. Subtract.\n> 4. The remainder is $7$.\n> \n> Therefore, $2x^3 - 3x^2 + 4x - 5 = (x - 2)(2x^2 + x + 6) + 7$.",
         "quizzes": [
             {
-                "question": "**Example 1: Polynomial Long Division**\nDivide $P(x) = 2x^3 - 3x^2 + 4x - 5$ by $(x - 2)$.",
-                "explanation": "1. Set up the long division: divide $2x^3$ by $x$ to get $2x^2$. Multiply $2x^2$ by $(x - 2)$ to get $2x^3 - 4x^2$. Subtract this from $P(x)$.\n2. The new polynomial is $x^2 + 4x - 5$. Divide $x^2$ by $x$ to get $x$. Multiply $x$ by $(x - 2)$ to get $x^2 - 2x$. Subtract.\n3. The new polynomial is $6x - 5$. Divide $6x$ by $x$ to get $6$. Multiply $6$ by $(x - 2)$ to get $6x - 12$. Subtract.\n4. The remainder is $7$.\nTherefore, $2x^3 - 3x^2 + 4x - 5 = (x - 2)(2x^2 + x + 6) + 7$."
+                "question": "When P(x) = 2x³ - 3x² + 4x - 5 is divided by (x - 2), the remainder is:",
+                "options": ["5", "7", "3", "0"],
+                "correctIndex": 1,
+                "explanation": "Using the Remainder Theorem: P(2) = 16 - 12 + 8 - 5 = 7."
+            },
+            {
+                "question": "In P(x) = (x - c)Q(x) + R, what does R represent?",
+                "options": ["The quotient", "The dividend", "The remainder", "The factor"],
+                "correctIndex": 2,
+                "explanation": "R is the remainder when dividing P(x) by (x - c)."
+            },
+            {
+                "question": "If P(x) is divided by (x - 2) and the remainder is 0, we conclude:",
+                "options": ["(x - 2) is not a factor", "(x + 2) is a factor", "(x - 2) is a factor", "The polynomial has no real roots"],
+                "correctIndex": 2,
+                "explanation": "By the Factor Theorem, if P(2) = 0, then (x - 2) is a factor of P(x)."
             }
         ]
     },
@@ -159,12 +410,22 @@ window.subjectNotes = [
         "digitizedText": "## 3.3 The Remainder Theorem\nThe Remainder Theorem provides a quick way to find the remainder when a polynomial is divided by a linear factor, without having to perform long division.\n\nIf a polynomial $P(x)$ is divided by $(x - c)$, the remainder is $P(c)$.\nIf divided by $(ax - b)$, the remainder is $P\\left(\\frac{b}{a}\\right)$.\n\n> [!NOTE]\n> **Example 2: Using the Remainder Theorem**\n> Find the remainder when $P(x) = x^3 - 4x^2 + 2x + 5$ is divided by $(x - 3)$.\n>\n> **Solution:**\n> 1. Identify $c$ from the divisor $(x - c)$: $c = 3$.\n> 2. Substitute $x = 3$ into the polynomial:\n>    $$P(3) = (3)^3 - 4(3)^2 + 2(3) + 5$$\n> 3. Simplify the expression:\n>    $$P(3) = 27 - 36 + 6 + 5 = 2$$\n> \n> The remainder is $2$.\n\n> [!NOTE]\n> **Example 3: Unknown Coefficients with the Remainder Theorem**\n> When the polynomial $P(x) = ax^3 + 3x^2 - 2x + b$ is divided by $(x - 1)$, the remainder is $4$. When divided by $(x + 2)$, the remainder is $-17$. Find the values of $a$ and $b$.\n>\n> **Solution:**\n> 1. Using the Remainder Theorem for $(x - 1)$, $P(1) = 4$:\n>    $$a(1)^3 + 3(1)^2 - 2(1) + b = 4$$\n>    $$a + 3 - 2 + b = 4 \\implies a + b = 3 \\quad \\text{--- (Equation 1)}$$\n> 2. Using the Remainder Theorem for $(x + 2)$, $P(-2) = -17$:\n>    $$a(-2)^3 + 3(-2)^2 - 2(-2) + b = -17$$\n>    $$-8a + 12 + 4 + b = -17$$\n>    $$-8a + b = -33 \\quad \\text{--- (Equation 2)}$$\n> 3. Subtract Equation 1 from Equation 2:\n>    $$(-8a + b) - (a + b) = -33 - 3$$\n>    $$-9a = -36 \\implies a = 4$$\n> 4. Substitute $a = 4$ into Equation 1:\n>    $$4 + b = 3 \\implies b = -1$$\n>\n> The values are $a = 4$ and $b = -1$.",
         "quizzes": [
             {
-                "question": "**Example 2: Using the Remainder Theorem**\nFind the remainder when $P(x) = x^3 - 4x^2 + 2x + 5$ is divided by $(x - 3)$.",
-                "explanation": "1. Identify $c$ from the divisor $(x - c)$: $c = 3$.\n2. Substitute $x = 3$ into the polynomial:\n$$P(3) = (3)^3 - 4(3)^2 + 2(3) + 5$$\n3. Simplify the expression:\n$$P(3) = 27 - 36 + 6 + 5 = 2$$\nThe remainder is $2$."
+                "question": "Find the remainder when P(x) = x³ - 4x² + 2x + 5 is divided by (x - 3).",
+                "options": ["0", "1", "2", "-2"],
+                "correctIndex": 2,
+                "explanation": "By the Remainder Theorem: P(3) = 27 - 36 + 6 + 5 = 2."
             },
             {
-                "question": "**Example 3: Unknown Coefficients with the Remainder Theorem**\nWhen the polynomial $P(x) = ax^3 + 3x^2 - 2x + b$ is divided by $(x - 1)$, the remainder is $4$. When divided by $(x + 2)$, the remainder is $-17$. Find the values of $a$ and $b$.",
-                "explanation": "1. Using the Remainder Theorem for $(x - 1)$, $P(1) = 4$:\n$$a(1)^3 + 3(1)^2 - 2(1) + b = 4$$\n$$a + 3 - 2 + b = 4 \\implies a + b = 3 \\quad \\text{--- (Equation 1)}$$\n2. Using the Remainder Theorem for $(x + 2)$, $P(-2) = -17$:\n$$a(-2)^3 + 3(-2)^2 - 2(-2) + b = -17$$\n$$-8a + 12 + 4 + b = -17$$\n$$-8a + b = -33 \\quad \\text{--- (Equation 2)}$$\n3. Subtract Equation 1 from Equation 2:\n$$(-8a + b) - (a + b) = -33 - 3$$\n$$-9a = -36 \\implies a = 4$$\n4. Substitute $a = 4$ into Equation 1:\n$$4 + b = 3 \\implies b = -1$$\nThe values are $a = 4$ and $b = -1$."
+                "question": "When P(x) = ax³ + 3x² - 2x + b is divided by (x - 1), the remainder is 4. What equation does this give?",
+                "options": ["a + b = 3", "a + b = 4", "a - b = 3", "a + b = 5"],
+                "correctIndex": 0,
+                "explanation": "P(1) = a + 3 - 2 + b = a + b + 1 = 4, so a + b = 3."
+            },
+            {
+                "question": "The Remainder Theorem states that when P(x) is divided by (ax - b), the remainder is:",
+                "options": ["P(b)", "P(a)", "P(b/a)", "P(a/b)"],
+                "correctIndex": 2,
+                "explanation": "When dividing by (ax - b), the remainder is P(b/a). For (x - c), the remainder is P(c)."
             }
         ]
     },
@@ -174,8 +435,22 @@ window.subjectNotes = [
         "digitizedText": "## 3.4 The Factor Theorem\nThe Factor Theorem is a special case of the Remainder Theorem. It states that if $P(c) = 0$, then $(x - c)$ is a factor of the polynomial $P(x)$. Conversely, if $(x - c)$ is a factor of $P(x)$, then $P(c) = 0$.\n\nFor a linear divisor $(ax - b)$, $(ax - b)$ is a factor if and only if $P\\left(\\frac{b}{a}\\right) = 0$.\n\n> [!NOTE]\n> **Example 4: Proving a Factor**\n> Show that $(x + 2)$ is a factor of $P(x) = x^3 + 4x^2 + x - 6$.\n>\n> **Solution:**\n> 1. Substitute $x = -2$ into $P(x)$:\n>    $$P(-2) = (-2)^3 + 4(-2)^2 + (-2) - 6$$\n> 2. Calculate the value:\n>    $$P(-2) = -8 + 16 - 2 - 6 = 0$$\n> 3. Since $P(-2) = 0$, by the Factor Theorem, $(x + 2)$ is a factor of $P(x)$.",
         "quizzes": [
             {
-                "question": "**Example 4: Proving a Factor**\nShow that $(x + 2)$ is a factor of $P(x) = x^3 + 4x^2 + x - 6$.",
-                "explanation": "1. Substitute $x = -2$ into $P(x)$:\n$$P(-2) = (-2)^3 + 4(-2)^2 + (-2) - 6$$\n2. Calculate the value:\n$$P(-2) = -8 + 16 - 2 - 6 = 0$$\n3. Since $P(-2) = 0$, by the Factor Theorem, $(x + 2)$ is a factor of $P(x)$."
+                "question": "To show (x + 2) is a factor of P(x) = x³ + 4x² + x - 6, we need to show:",
+                "options": ["P(2) = 0", "P(-2) = 0", "P(0) = 0", "P(1) = 0"],
+                "correctIndex": 1,
+                "explanation": "By the Factor Theorem, (x + 2) is a factor if P(-2) = 0."
+            },
+            {
+                "question": "The Factor Theorem is a special case of:",
+                "options": ["The Quadratic Formula", "The Remainder Theorem", "The Pythagorean Theorem", "The Binomial Theorem"],
+                "correctIndex": 1,
+                "explanation": "The Factor Theorem states that (x - c) is a factor if P(c) = 0, which is the Remainder Theorem with remainder 0."
+            },
+            {
+                "question": "If (x - 3) is a factor of P(x) = x² - 5x + 6, the other factor is:",
+                "options": ["(x + 2)", "(x - 2)", "(x + 3)", "(x - 1)"],
+                "correctIndex": 1,
+                "explanation": "x² - 5x + 6 = (x - 3)(x - 2)."
             }
         ]
     },
@@ -185,8 +460,22 @@ window.subjectNotes = [
         "digitizedText": "## 3.5 Solving Cubic Equations\nTo solve a cubic equation $P(x) = 0$, follow these general steps:\n1. **Find a root by trial and error:** Test small integer values (like $x = 1, -1, 2, -2$) using the Factor Theorem until you find a value $c$ such that $P(c) = 0$. This gives a linear factor $(x - c)$.\n2. **Factorize the cubic polynomial:** Divide the cubic polynomial by the linear factor $(x - c)$ to find the quadratic factor. This can be done using algebraic long division or by comparing coefficients:\n   $$P(x) = (x - c)(Ax^2 + Bx + C)$$\n3. **Solve the quadratic equation:** Factorize the quadratic factor $Ax^2 + Bx + C = 0$, or use the quadratic formula:\n   $$x = \\frac{-B \\pm \\sqrt{B^2 - 4AC}}{2A}$$\n4. **State all the roots:** Combine the root from the linear factor and the roots from the quadratic equation.\n<div align=\"center\">\n<svg width=\"400\" height=\"250\" viewBox=\"0 0 400 250\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"30\" y1=\"100\" x2=\"370\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"150\" y1=\"220\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"370,100 362,96 362,104\" fill=\"currentColor\"/>\n<polygon points=\"150,20 146,28 154,28\" fill=\"currentColor\"/>\n<!-- Axes Labels -->\n<text x=\"365\" y=\"115\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"160\" y=\"25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"138\" y=\"116\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Curve -->\n<path d=\"M 80.0,184.5 L 82.4,171.9 L 84.8,160.1 L 87.3,148.8 L 89.7,138.2 L 92.1,128.3 L 94.5,118.9 L 97.0,110.1 L 99.4,102.0 L 101.8,94.3 L 104.2,87.3 L 106.7,80.8 L 109.1,74.8 L 111.5,69.3 L 113.9,64.3 L 116.4,59.8 L 118.8,55.8 L 121.2,52.2 L 123.6,49.1 L 126.1,46.4 L 128.5,44.1 L 130.9,42.2 L 133.3,40.7 L 135.8,39.6 L 138.2,38.9 L 140.6,38.5 L 143.0,38.4 L 145.5,38.7 L 147.9,39.3 L 150.3,40.1 L 152.7,41.3 L 155.2,42.7 L 157.6,44.3 L 160.0,46.2 L 162.4,48.4 L 164.8,50.7 L 167.3,53.2 L 169.7,56.0 L 172.1,58.9 L 174.5,61.9 L 177.0,65.1 L 179.4,68.4 L 181.8,71.9 L 184.2,75.4 L 186.7,79.0 L 189.1,82.8 L 191.5,86.5 L 193.9,90.3 L 196.4,94.2 L 198.8,98.1 L 201.2,101.9 L 203.6,105.8 L 206.1,109.7 L 208.5,113.5 L 210.9,117.2 L 213.3,121.0 L 215.8,124.6 L 218.2,128.1 L 220.6,131.6 L 223.0,134.9 L 225.5,138.1 L 227.9,141.1 L 230.3,144.0 L 232.7,146.8 L 235.2,149.3 L 237.6,151.6 L 240.0,153.8 L 242.4,155.7 L 244.8,157.3 L 247.3,158.7 L 249.7,159.9 L 252.1,160.7 L 254.5,161.3 L 257.0,161.6 L 259.4,161.5 L 261.8,161.1 L 264.2,160.4 L 266.7,159.3 L 269.1,157.8 L 271.5,155.9 L 273.9,153.6 L 276.4,150.9 L 278.8,147.8 L 281.2,144.2 L 283.6,140.2 L 286.1,135.7 L 288.5,130.7 L 290.9,125.2 L 293.3,119.2 L 295.8,112.7 L 298.2,105.7 L 300.6,98.0 L 303.0,89.9 L 305.5,81.1 L 307.9,71.7 L 310.3,61.8 L 312.7,51.2 L 315.2,39.9 L 317.6,28.1 L 320.0,15.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Key Points Dots & Labels -->\n<circle cx=\"100\" cy=\"100\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"90\" y=\"118\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">-1</text>\n\n<circle cx=\"200\" cy=\"100\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"195\" y=\"118\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">1</text>\n\n<circle cx=\"300\" cy=\"100\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"295\" y=\"118\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">3</text>\n\n<circle cx=\"150\" cy=\"40\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"135\" y=\"44\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">3</text>\n\n<!-- Curve Label -->\n<text x=\"240\" y=\"45\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = x\u00b3 - 3x\u00b2 - x + 3</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 5: Solving a Cubic Equation**\n> Solve the equation $2x^3 - 3x^2 - 11x + 6 = 0$.\n>\n> **Solution:**\n> 1. Let $P(x) = 2x^3 - 3x^2 - 11x + 6$. Use trial and error to find a factor:\n>    $$P(1) = 2(1)^3 - 3(1)^2 - 11(1) + 6 = -6 \\neq 0$$\n>    $$P(-1) = 2(-1)^3 - 3(-1)^2 - 11(-1) + 6 = 12 \\neq 0$$\n>    $$P(2) = 2(2)^3 - 3(2)^2 - 11(2) + 6 = 16 - 12 - 22 + 6 = -12 \\neq 0$$\n>    $$P(-2) = 2(-2)^3 - 3(-2)^2 - 11(-2) + 6 = -16 - 12 + 22 + 6 = 0$$\n>    Since $P(-2) = 0$, $(x + 2)$ is a factor.\n> 2. Express $P(x)$ as a product of $(x + 2)$ and a quadratic factor:\n>    $$2x^3 - 3x^2 - 11x + 6 = (x + 2)(ax^2 + bx + c)$$\n>    By observation, $a = 2$ (to get $2x^3$) and $c = 3$ (to get $6$).\n>    $$2x^3 - 3x^2 - 11x + 6 = (x + 2)(2x^2 + bx + 3)$$\n> 3. Expand to find $b$:\n>    Comparing the $x^2$ coefficient: $b + 4 = -3 \\implies b = -7$.\n>    So, the quadratic factor is $2x^2 - 7x + 3$.\n> 4. Factorize the quadratic equation $2x^2 - 7x + 3 = 0$:\n>    $$2x^2 - 6x - x + 3 = 0$$\n>    $$2x(x - 3) - 1(x - 3) = 0$$\n>    $$(2x - 1)(x - 3) = 0$$\n> 5. The full factorization is $(x + 2)(2x - 1)(x - 3) = 0$.\n> 6. Set each factor to zero to find the roots:\n>    $$x + 2 = 0 \\implies x = -2$$\n>    $$2x - 1 = 0 \\implies x = \\frac{1}{2}$$\n>    $$x - 3 = 0 \\implies x = 3$$\n>\n> The roots of the equation are $x = -2$, $x = \\frac{1}{2}$, and $x = 3$.",
         "quizzes": [
             {
-                "question": "**Example 5: Solving a Cubic Equation**\nSolve the equation $2x^3 - 3x^2 - 11x + 6 = 0$.",
-                "explanation": "1. Let $P(x) = 2x^3 - 3x^2 - 11x + 6$. Use trial and error to find a factor:\n$$P(1) = 2(1)^3 - 3(1)^2 - 11(1) + 6 = -6 \\neq 0$$\n$$P(-1) = 2(-1)^3 - 3(-1)^2 - 11(-1) + 6 = 12 \\neq 0$$\n$$P(2) = 2(2)^3 - 3(2)^2 - 11(2) + 6 = 16 - 12 - 22 + 6 = -12 \\neq 0$$\n$$P(-2) = 2(-2)^3 - 3(-2)^2 - 11(-2) + 6 = -16 - 12 + 22 + 6 = 0$$\nSince $P(-2) = 0$, $(x + 2)$ is a factor.\n2. Express $P(x)$ as a product of $(x + 2)$ and a quadratic factor:\n$$2x^3 - 3x^2 - 11x + 6 = (x + 2)(ax^2 + bx + c)$$\nBy observation, $a = 2$ (to get $2x^3$) and $c = 3$ (to get $6$).\n$$2x^3 - 3x^2 - 11x + 6 = (x + 2)(2x^2 + bx + 3)$$\n3. Expand to find $b$:\nComparing the $x^2$ coefficient: $b + 4 = -3 \\implies b = -7$.\nSo, the quadratic factor is $2x^2 - 7x + 3$.\n4. Factorize the quadratic equation $2x^2 - 7x + 3 = 0$:\n$$2x^2 - 6x - x + 3 = 0$$\n$$2x(x - 3) - 1(x - 3) = 0$$\n$$(2x - 1)(x - 3) = 0$$\n5. The full factorization is $(x + 2)(2x - 1)(x - 3) = 0$.\n6. Set each factor to zero to find the roots:\n$$x + 2 = 0 \\implies x = -2$$\n$$2x - 1 = 0 \\implies x = \\frac{1}{2}$$\n$$x - 3 = 0 \\implies x = 3$$\nThe roots of the equation are $x = -2$, $x = \\frac{1}{2}$, and $x = 3$."
+                "question": "To solve 2x³ - 3x² - 11x + 6 = 0, the first step is typically to:",
+                "options": ["Use the quadratic formula directly", "Find one root by trial and error using the Factor Theorem", "Graph the equation", "Divide all terms by the leading coefficient"],
+                "correctIndex": 1,
+                "explanation": "Test small integer values to find one root, then factorise the cubic into a linear and quadratic factor."
+            },
+            {
+                "question": "If (x + 2)(2x - 1)(x - 3) = 0, the roots are:",
+                "options": ["x = 2, x = ½, x = 3", "x = -2, x = ½, x = 3", "x = -2, x = -½, x = -3", "x = 2, x = -½, x = 3"],
+                "correctIndex": 1,
+                "explanation": "Setting each factor to zero: x = -2, x = ½, x = 3."
+            },
+            {
+                "question": "A cubic polynomial can have at most how many real roots?",
+                "options": ["1", "2", "3", "4"],
+                "correctIndex": 2,
+                "explanation": "A cubic (degree 3) can have at most 3 real roots."
             }
         ]
     },
@@ -194,7 +483,26 @@ window.subjectNotes = [
         "subtopicId": "4.1",
         "title": "The Modulus Function",
         "digitizedText": "# Chapter 4: Equations, Inequalities and Graphs\n\n## 4.1 The Modulus Function\nThe **modulus** (or absolute value) of a real number $x$, denoted by $|x|$, represents its non-negative numerical value regardless of its sign. It can be thought of as the distance of the number from zero on the number line.\n\nMathematically, the modulus function is defined as:\n$$|x| = \\begin{cases} x & \\text{if } x \\ge 0 \\\\ -x & \\text{if } x < 0 \\end{cases}$$\n<div align=\"center\">\n<svg width=\"260\" height=\"180\" viewBox=\"0 0 260 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"20\" y1=\"140\" x2=\"240\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"240,140 234,136 234,144\" fill=\"currentColor\"/>\n<polygon points=\"130,20 126,26 134,26\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"118\" y=\"154\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">O</text>\n<text x=\"245\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"126\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<!-- V-Shape Curve -->\n<path d=\"M 40,50 L 130,140 L 220,50\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<text x=\"180\" y=\"60\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y = |x|</text>\n</svg>\n</div>\n\n### Properties of the Modulus\n1. $|x| \\ge 0$ for all real $x$\n2. $|xy| = |x||y|$\n3. $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ given $y \\neq 0$\n4. $|x|^2 = x^2$",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "What is the value of |-7|?",
+                "options": ["-7", "7", "0", "14"],
+                "correctIndex": 1,
+                "explanation": "Since -7 < 0, |-7| = -(-7) = 7."
+            },
+            {
+                "question": "Which property of the modulus is TRUE?",
+                "options": ["|x|² = x²", "|x + y| = |x| + |y| always", "|x - y| = |x| - |y| always", "|xy| = |x| + |y|"],
+                "correctIndex": 0,
+                "explanation": "Since |x| ≥ 0, squaring gives |x|² = x². The other properties are not always true."
+            },
+            {
+                "question": "If |x| = 5, the possible values of x are:",
+                "options": ["x = 5 only", "x = -5 only", "x = 5 or x = -5", "x = 25 or x = -25"],
+                "correctIndex": 2,
+                "explanation": "|5| = 5 and |-5| = 5, so x = 5 or x = -5."
+            }
+        ]
     },
     {
         "subtopicId": "4.2",
@@ -202,12 +510,22 @@ window.subjectNotes = [
         "digitizedText": "## 4.2 Graphs of Modulus Functions\nTo sketch the graph of $y = |f(x)|$:\n1. Sketch the original graph $y = f(x)$ with a faint or dashed line.\n2. Identify the portions of the graph where $y < 0$ (below the $x$-axis).\n3. Reflect these negative portions in the $x$-axis so that all $y$-values become positive.\n4. Keep the portions of the graph where $y \\ge 0$ unchanged.\n\n### Sketching Linear Modulus Graphs: $y = |ax + b|$\nThe graph of $y = |ax + b|$ forms a \"V\" shape. The vertex (the sharp point) lies on the $x$-axis where $ax + b = 0$.\n<div align=\"center\">\n<svg width=\"280\" height=\"180\" viewBox=\"0 0 280 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"20\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"80\" y1=\"160\" x2=\"80\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"260,140 254,136 254,144\" fill=\"currentColor\"/>\n<polygon points=\"80,20 76,26 84,26\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"68\" y=\"154\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">O</text>\n<text x=\"265\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"76\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<!-- Curve -->\n<path d=\"M 30,30 L 140,140 L 250,30\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<!-- Key Points -->\n<circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"currentColor\"/>\n<circle cx=\"80\" cy=\"80\" r=\"3.5\" fill=\"currentColor\"/>\n<!-- Key Point Labels -->\n<text x=\"130\" y=\"156\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">1.5</text>\n<text x=\"65\" y=\"84\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">3</text>\n<text x=\"175\" y=\"45\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = |2x - 3|</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 1: Sketching a linear modulus graph**\n> Sketch the graph of $y = |2x - 4|$.\n>\n> **Solution:**\n> 1. Consider the underlying line $y = 2x - 4$.\n> 2. **Find the $x$-intercept:** Set $y = 0 \\implies 2x - 4 = 0 \\implies x = 2$. The vertex is at $(2, 0)$.\n> 3. **Find the $y$-intercept:** Set $x = 0 \\implies y = |-4| = 4$. The graph crosses the $y$-axis at $(0, 4)$.\n> 4. Draw a V-shaped graph with its minimum point at $(2, 0)$ passing through $(0, 4)$.\n\n### Sketching Quadratic Modulus Graphs: $y = |ax^2 + bx + c|$\nThe graph will have its negative loops reflected upwards, creating a characteristic \"W\" or bounced shape depending on the roots.\n\n> [!NOTE]\n> **Example 2: Sketching a quadratic modulus graph**\n> Sketch the graph of $y = |x^2 - x - 6|$.\n>\n> **Solution:**\n> 1. Find the roots of $y = x^2 - x - 6$ by setting $y = 0$.\n> 2. Factorize: $(x - 3)(x + 2) = 0 \\implies x = 3$ or $x = -2$.\n> 3. Find the $y$-intercept: $y = |0^2 - 0 - 6| = |-6| = 6$.\n> 4. Sketch the standard parabola opening upwards, passing through $(-2, 0)$ and $(3, 0)$, with a minimum below the $x$-axis.\n> 5. Reflect the section between $x = -2$ and $x = 3$ above the $x$-axis. The new local maximum is the reflected vertex.\n\n### Comparison: $y = |f(x)|$ vs $y = f(|x|)$\nThe graph of $y = |f(x)|$ reflects all negative output values ($y < 0$) in the $x$-axis.\nThe graph of $y = f(|x|)$ discards the portion of the graph for $x < 0$ and reflects the portion for $x \\ge 0$ in the $y$-axis.\n<div align=\"center\">\n<svg width=\"540\" height=\"220\" viewBox=\"0 0 540 220\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- GRAPH 1: y = |f(x)| -->\n<g transform=\"translate(10, 10)\">\n<!-- Axes -->\n<line x1=\"10\" y1=\"140\" x2=\"230\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"80\" y1=\"160\" x2=\"80\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"230,140 224,136 224,144\" fill=\"currentColor\"/>\n<polygon points=\"80,20 76,26 84,26\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"68\" y=\"154\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">O</text>\n<text x=\"235\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"76\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n<!-- Original Reflected Part (Dashed) -->\n<path d=\"M 110,140 Q 140,180 170,140\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4\" fill=\"none\" opacity=\"0.6\"/>\n<!-- Modulus Curve y = |f(x)| -->\n<path d=\"M 50,60 Q 80,80 110,140 Q 140,100 170,140 Q 200,80 215,50\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<!-- Title -->\n<text x=\"120\" y=\"10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">y = |f(x)|</text>\n<text x=\"120\" y=\"195\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\" text-anchor=\"middle\">Reflects negative y-values upwards</text>\n</g>\n\n<!-- GRAPH 2: y = f(|x|) -->\n<g transform=\"translate(280, 10)\">\n<!-- Axes -->\n<line x1=\"10\" y1=\"140\" x2=\"230\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"120\" y1=\"160\" x2=\"120\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"230,140 224,136 224,144\" fill=\"currentColor\"/>\n<polygon points=\"120,20 116,26 124,26\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"108\" y=\"154\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">O</text>\n<text x=\"235\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"116\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n<!-- Discarded Part (Dashed) -->\n<path d=\"M 60,30 Q 90,60 120,80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4\" fill=\"none\" opacity=\"0.6\"/>\n<!-- Modulus Curve y = f(|x|) -->\n<path d=\"M 30,55 Q 60,165 90,140 Q 105,110 120,80 Q 135,110 150,140 Q 180,165 210,55\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<!-- Title -->\n<text x=\"120\" y=\"10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">y = f(|x|)</text>\n<text x=\"120\" y=\"195\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"11\" text-anchor=\"middle\">Replaces x &lt; 0 with reflection of x &gt; 0</text>\n</g>\n</svg>\n</div>",
         "quizzes": [
             {
-                "question": "**Example 1: Sketching a linear modulus graph**\nSketch the graph of $y = |2x - 4|$.",
-                "explanation": "1. Consider the underlying line $y = 2x - 4$.\n2. **Find the $x$-intercept:** Set $y = 0 \\implies 2x - 4 = 0 \\implies x = 2$. The vertex is at $(2, 0)$.\n3. **Find the $y$-intercept:** Set $x = 0 \\implies y = |-4| = 4$. The graph crosses the $y$-axis at $(0, 4)$.\n4. Draw a V-shaped graph with its minimum point at $(2, 0)$ passing through $(0, 4)$."
+                "question": "The graph of y = |2x - 4| has its vertex at:",
+                "options": ["(0, 4)", "(4, 0)", "(2, 0)", "(-2, 0)"],
+                "correctIndex": 2,
+                "explanation": "The vertex occurs where 2x - 4 = 0, giving x = 2, so the vertex is (2, 0)."
             },
             {
-                "question": "**Example 2: Sketching a quadratic modulus graph**\nSketch the graph of $y = |x^2 - x - 6|$.",
-                "explanation": "1. Find the roots of $y = x^2 - x - 6$ by setting $y = 0$.\n2. Factorize: $(x - 3)(x + 2) = 0 \\implies x = 3$ or $x = -2$.\n3. Find the $y$-intercept: $y = |0^2 - 0 - 6| = |-6| = 6$.\n4. Sketch the standard parabola opening upwards, passing through $(-2, 0)$ and $(3, 0)$, with a minimum below the $x$-axis.\n5. Reflect the section between $x = -2$ and $x = 3$ above the $x$-axis. The new local maximum is the reflected vertex."
+                "question": "The graph of y = |ax + b| always forms:",
+                "options": ["A U-shape", "A V-shape", "A straight line", "A parabola"],
+                "correctIndex": 1,
+                "explanation": "The graph of y = |ax + b| always forms a V-shape with vertex on the x-axis."
+            },
+            {
+                "question": "To sketch y = |x² - x - 6|, we first find the roots of x² - x - 6 = 0, which are:",
+                "options": ["x = 3 and x = -2", "x = -3 and x = 2", "x = 6 and x = -1", "x = 1 and x = -6"],
+                "correctIndex": 0,
+                "explanation": "Factorising: (x - 3)(x + 2) = 0, so x = 3 or x = -2."
             }
         ]
     },
@@ -217,12 +535,22 @@ window.subjectNotes = [
         "digitizedText": "## 4.3 Solving Modulus Equations\nWhen solving equations involving absolute values, you must consider both the positive and negative scenarios. Always check for **extraneous solutions** (solutions that do not satisfy the original equation).\n\n### Method 1: Algebraic Splitting\nFor $|f(x)| = g(x)$, split the equation into two cases:\n$$f(x) = g(x) \\quad \\text{or} \\quad f(x) = -g(x)$$\n*Important: You must substitute the solutions back into the original equation to verify them, as $g(x)$ must be $\\ge 0$.*\n<div align=\"center\">\n<svg width=\"280\" height=\"180\" viewBox=\"0 0 280 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"20\" y1=\"130\" x2=\"260\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"110\" y1=\"150\" x2=\"110\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"260,130 254,126 254,134\" fill=\"currentColor\"/>\n<polygon points=\"110,20 106,26 114,26\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"98\" y=\"144\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">O</text>\n<text x=\"265\" y=\"134\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"116\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n\n<!-- V-Shape Graph: y = |2x - 1| -->\n<path d=\"M 35,10 L 125,130 L 215,10\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n\n<!-- Horizontal Line: y = 3 -->\n<line x1=\"20\" y1=\"70\" x2=\"250\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"245\" y=\"65\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = 3</text>\n<text x=\"175\" y=\"25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = |2x - 1|</text>\n\n<!-- Intersection Dots -->\n<circle cx=\"80\" cy=\"70\" r=\"3.5\" fill=\"currentColor\"/>\n<circle cx=\"170\" cy=\"70\" r=\"3.5\" fill=\"currentColor\"/>\n\n<!-- Dashed drop lines to x-axis -->\n<line x1=\"80\" y1=\"70\" x2=\"80\" y2=\"130\" stroke=\"currentColor\" stroke-dasharray=\"4 4\" stroke-width=\"1\"/>\n<line x1=\"170\" y1=\"70\" x2=\"170\" y2=\"130\" stroke=\"currentColor\" stroke-dasharray=\"4 4\" stroke-width=\"1\"/>\n\n<!-- x-coordinates of intersections -->\n<text x=\"73\" y=\"145\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">-1</text>\n<text x=\"167\" y=\"145\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">2</text>\n\n<!-- y-intercept coordinate -->\n<text x=\"96\" y=\"74\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">3</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 3: Solving a modulus equation by splitting**\n> Solve the equation $|3x - 1| = x + 5$.\n>\n> **Solution:**\n> 1. Split into two cases:\n>    **Case 1:** $3x - 1 = x + 5 \\implies 2x = 6 \\implies x = 3$\n>    **Case 2:** $3x - 1 = -(x + 5) \\implies 3x - 1 = -x - 5 \\implies 4x = -4 \\implies x = -1$\n> 2. Check solutions in the original equation:\n>    For $x = 3$: $|3(3) - 1| = |8| = 8$. Right side: $3 + 5 = 8$. (Valid)\n>    For $x = -1$: $|3(-1) - 1| = |-4| = 4$. Right side: $-1 + 5 = 4$. (Valid)\n> 3. The solutions are $x = 3$ and $x = -1$.\n\n### Method 2: Squaring Both Sides\nThis method is particularly useful when both sides of the equation are modulus functions, e.g., $|f(x)| = |g(x)|$. Since $|x|^2 = x^2$, squaring removes the modulus sign.\n$$|f(x)| = |g(x)| \\iff (f(x))^2 = (g(x))^2$$\n\n> [!NOTE]\n> **Example 4: Solving by squaring both sides**\n> Solve the equation $|2x + 3| = |x - 4|$.\n>\n> **Solution:**\n> 1. Square both sides: $(2x + 3)^2 = (x - 4)^2$\n> 2. Expand: $4x^2 + 12x + 9 = x^2 - 8x + 16$\n> 3. Simplify to a quadratic: $3x^2 + 20x - 7 = 0$\n> 4. Factorize: $(3x - 1)(x + 7) = 0$\n> 5. Solve: $x = \\frac{1}{3}$ or $x = -7$",
         "quizzes": [
             {
-                "question": "**Example 3: Solving a modulus equation by splitting**\nSolve the equation $|3x - 1| = x + 5$.",
-                "explanation": "1. Split into two cases:\n**Case 1:** $3x - 1 = x + 5 \\implies 2x = 6 \\implies x = 3$\n**Case 2:** $3x - 1 = -(x + 5) \\implies 3x - 1 = -x - 5 \\implies 4x = -4 \\implies x = -1$\n2. Check solutions in the original equation:\nFor $x = 3$: $|3(3) - 1| = |8| = 8$. Right side: $3 + 5 = 8$. (Valid)\nFor $x = -1$: $|3(-1) - 1| = |-4| = 4$. Right side: $-1 + 5 = 4$. (Valid)\n3. The solutions are $x = 3$ and $x = -1$."
+                "question": "Solve |3x - 1| = x + 5.",
+                "options": ["x = 3 only", "x = -1 only", "x = 3 or x = -1", "x = 2 or x = -3"],
+                "correctIndex": 2,
+                "explanation": "Case 1: 3x - 1 = x + 5 → x = 3. Case 2: 3x - 1 = -(x + 5) → x = -1. Both valid."
             },
             {
-                "question": "**Example 4: Solving by squaring both sides**\nSolve the equation $|2x + 3| = |x - 4|$.",
-                "explanation": "1. Square both sides: $(2x + 3)^2 = (x - 4)^2$\n2. Expand: $4x^2 + 12x + 9 = x^2 - 8x + 16$\n3. Simplify to a quadratic: $3x^2 + 20x - 7 = 0$\n4. Factorize: $(3x - 1)(x + 7) = 0$\n5. Solve: $x = \\frac{1}{3}$ or $x = -7$"
+                "question": "When solving |f(x)| = g(x), why check for extraneous solutions?",
+                "options": ["Because the equation might have no solutions", "Because g(x) must be ≥ 0 for a valid solution", "Because absolute value always equals zero", "Because solutions must always be negative"],
+                "correctIndex": 1,
+                "explanation": "Since |f(x)| ≥ 0, any solution where g(x) < 0 would be extraneous."
+            },
+            {
+                "question": "Solve |2x + 3| = |x - 4| by squaring both sides.",
+                "options": ["x = ⅓ or x = -7", "x = 3 or x = -7", "x = ⅓ or x = 7", "x = -⅓ or x = -7"],
+                "correctIndex": 0,
+                "explanation": "Squaring: 4x² + 12x + 9 = x² - 8x + 16 → 3x² + 20x - 7 = 0 → (3x-1)(x+7) = 0."
             }
         ]
     },
@@ -232,12 +560,22 @@ window.subjectNotes = [
         "digitizedText": "## 4.4 Solving Modulus Inequalities\nThe logic for modulus inequalities relies heavily on the distance interpretation of the modulus.\n\n### Standard Forms\n1. **$|f(x)| < a$** (where $a > 0$):\n   This means the distance is less than $a$.\n   $$-a < f(x) < a$$\n2. **$|f(x)| > a$** (where $a > 0$):\n   This means the distance is strictly greater than $a$.\n   $$f(x) < -a \\quad \\text{or} \\quad f(x) > a$$\n\n> [!NOTE]\n> **Example 5: Linear modulus inequality**\n> Solve the inequality $|4x - 3| \\le 5$.\n>\n> **Solution:**\n> 1. Apply the standard form for 'less than': $-5 \\le 4x - 3 \\le 5$\n> 2. Add $3$ to all parts: $-2 \\le 4x \\le 8$\n> 3. Divide by $4$: $-\\frac{1}{2} \\le x \\le 2$\n\n### Inequalities with Modulus on Both Sides\nFor inequalities of the form $|f(x)| > |g(x)|$ or $|f(x)| < |g(x)|$, the most reliable method is to **square both sides**. Because both sides are non-negative, the direction of the inequality sign is preserved.\n\n> [!NOTE]\n> **Example 6: Modulus inequality by squaring**\n> Solve $|x - 2| > |2x + 1|$.\n>\n> **Solution:**\n> 1. Square both sides: $(x - 2)^2 > (2x + 1)^2$\n> 2. Expand: $x^2 - 4x + 4 > 4x^2 + 4x + 1$\n> 3. Rearrange into a quadratic inequality: $0 > 3x^2 + 8x - 3$\n> 4. Rewrite for clarity: $3x^2 + 8x - 3 < 0$\n> 5. Factorize to find critical values: $(3x - 1)(x + 3) < 0$\n> 6. The critical values are $x = \\frac{1}{3}$ and $x = -3$.\n> 7. The quadratic is a \"U-shaped\" parabola, and we want the region below the $x$-axis ($< 0$).\n> 8. Final solution: $-3 < x < \\frac{1}{3}$",
         "quizzes": [
             {
-                "question": "**Example 5: Linear modulus inequality**\nSolve the inequality $|4x - 3| \\le 5$.",
-                "explanation": "1. Apply the standard form for 'less than': $-5 \\le 4x - 3 \\le 5$\n2. Add $3$ to all parts: $-2 \\le 4x \\le 8$\n3. Divide by $4$: $-\\frac{1}{2} \\le x \\le 2$"
+                "question": "The inequality |4x - 3| ≤ 5 is equivalent to:",
+                "options": ["-5 ≤ 4x - 3 ≤ 5", "4x - 3 ≤ 5 only", "4x - 3 ≥ -5 only", "-5 ≤ 4x - 3 or 4x - 3 ≤ 5"],
+                "correctIndex": 0,
+                "explanation": "|f(x)| ≤ a means -a ≤ f(x) ≤ a."
             },
             {
-                "question": "**Example 6: Modulus inequality by squaring**\nSolve $|x - 2| > |2x + 1|$.",
-                "explanation": "1. Square both sides: $(x - 2)^2 > (2x + 1)^2$\n2. Expand: $x^2 - 4x + 4 > 4x^2 + 4x + 1$\n3. Rearrange into a quadratic inequality: $0 > 3x^2 + 8x - 3$\n4. Rewrite for clarity: $3x^2 + 8x - 3 < 0$\n5. Factorize to find critical values: $(3x - 1)(x + 3) < 0$\n6. The critical values are $x = \\frac{1}{3}$ and $x = -3$.\n7. The quadratic is a \"U-shaped\" parabola, and we want the region below the $x$-axis ($< 0$).\n8. Final solution: $-3 < x < \\frac{1}{3}$"
+                "question": "Solve |4x - 3| ≤ 5.",
+                "options": ["-½ ≤ x ≤ 2", "-2 ≤ x ≤ ½", "-1 ≤ x ≤ 2", "-½ ≤ x ≤ 3"],
+                "correctIndex": 0,
+                "explanation": "-5 ≤ 4x - 3 ≤ 5 → -2 ≤ 4x ≤ 8 → -½ ≤ x ≤ 2."
+            },
+            {
+                "question": "|f(x)| > a (where a > 0) means:",
+                "options": ["-a < f(x) < a", "f(x) < -a or f(x) > a", "f(x) > a only", "f(x) < a"],
+                "correctIndex": 1,
+                "explanation": "|f(x)| > a means the distance from zero is greater than a, so f(x) < -a or f(x) > a."
             }
         ]
     },
@@ -247,8 +585,22 @@ window.subjectNotes = [
         "digitizedText": "## 4.5 Solving Non-linear Inequalities\nFor IGCSE Additional Mathematics, non-linear inequalities are typically quadratic inequalities. To solve quadratic inequalities, never try to simply \"square root\" or manipulate them algebraically like linear equations. Always use a graphical sketch or a number line.\n\n### Steps to Solve Quadratic Inequalities\n1. Rearrange the inequality so that one side is zero, e.g., $ax^2 + bx + c > 0$.\n2. Find the **critical values** by replacing the inequality sign with an equals sign and solving the quadratic equation (by factorizing or using the quadratic formula).\n3. Sketch the curve $y = ax^2 + bx + c$.\n   - If $a > 0$, the curve is U-shaped ($\\cup$).\n   - If $a < 0$, the curve is n-shaped ($\\cap$).\n4. Determine the required range:\n   - For $> 0$, find the $x$-values where the curve is **above** the $x$-axis.\n   - For $< 0$, find the $x$-values where the curve is **below** the $x$-axis.\n\n> [!NOTE]\n> **Example 7: Solving a quadratic inequality**\n> Find the range of values for $x$ which satisfy $2x^2 \\ge 5x + 12$.\n>\n> **Solution:**\n> 1. Rearrange to set to zero: $2x^2 - 5x - 12 \\ge 0$\n> 2. Find critical values by factorizing $2x^2 - 5x - 12 = 0$:\n>    $(2x + 3)(x - 4) = 0$\n>    Critical values are $x = -1.5$ and $x = 4$.\n> 3. Sketch the parabola (U-shape) passing through $(-1.5, 0)$ and $(4, 0)$.\n> 4. We want the region where the curve is $\\ge 0$ (above or on the $x$-axis). This occurs on the outer sections of the critical values.\n> 5. Final answer: $x \\le -1.5$ or $x \\ge 4$.\n<div align=\"center\">\n<svg width=\"320\" height=\"80\" viewBox=\"0 0 320 80\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Number Line -->\n<line x1=\"20\" y1=\"45\" x2=\"300\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads for number line -->\n<polygon points=\"20,45 28,41 28,49\" fill=\"currentColor\"/>\n<polygon points=\"300,45 292,41 292,49\" fill=\"currentColor\"/>\n\n<!-- Ticks -->\n<line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"220\" y1=\"40\" x2=\"220\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n\n<!-- Tick Labels -->\n<text x=\"88\" y=\"65\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">-1.5</text>\n<text x=\"215\" y=\"65\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">4</text>\n\n<!-- Solution Rays (drawn at y = 20) -->\n<!-- Left Ray: x <= -1.5 -->\n<line x1=\"100\" y1=\"20\" x2=\"40\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/>\n<polygon points=\"40,20 48,16 48,24\" fill=\"currentColor\"/>\n<circle cx=\"100\" cy=\"20\" r=\"4\" fill=\"currentColor\"/>\n\n<!-- Right Ray: x >= 4 -->\n<line x1=\"220\" y1=\"20\" x2=\"280\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/>\n<polygon points=\"280,20 272,16 272,24\" fill=\"currentColor\"/>\n<circle cx=\"220\" cy=\"20\" r=\"4\" fill=\"currentColor\"/>\n\n<!-- Vertical guideline from ray start to number line -->\n<line x1=\"100\" y1=\"20\" x2=\"100\" y2=\"40\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" stroke-width=\"1\"/>\n<line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"40\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" stroke-width=\"1\"/>\n\n<!-- Region labels -->\n<text x=\"35\" y=\"12\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">x \u2264 -1.5</text>\n<text x=\"240\" y=\"12\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">x \u2265 4</text>\n</svg>\n</div>",
         "quizzes": [
             {
-                "question": "**Example 7: Solving a quadratic inequality**\nFind the range of values for $x$ which satisfy $2x^2 \\ge 5x + 12$.",
-                "explanation": "1. Rearrange to set to zero: $2x^2 - 5x - 12 \\ge 0$\n2. Find critical values by factorizing $2x^2 - 5x - 12 = 0$:\n$(2x + 3)(x - 4) = 0$\nCritical values are $x = -1.5$ and $x = 4$.\n3. Sketch the parabola (U-shape) passing through $(-1.5, 0)$ and $(4, 0)$.\n4. We want the region where the curve is $\\ge 0$ (above or on the $x$-axis). This occurs on the outer sections of the critical values.\n5. Final answer: $x \\le -1.5$ or $x \\ge 4$."
+                "question": "Solve 2x² ≥ 5x + 12.",
+                "options": ["-1.5 ≤ x ≤ 4", "x ≤ -1.5 or x ≥ 4", "-4 ≤ x ≤ 1.5", "x < -1.5 or x > 4"],
+                "correctIndex": 1,
+                "explanation": "Rearranging: 2x² - 5x - 12 ≥ 0 → (2x + 3)(x - 4) ≥ 0. U-shaped parabola, ≥ 0 on outer regions: x ≤ -1.5 or x ≥ 4."
+            },
+            {
+                "question": "To solve a quadratic inequality, the FIRST step is:",
+                "options": ["Take the square root of both sides", "Rearrange so one side is zero", "Multiply both sides by -1", "Divide by the coefficient of x²"],
+                "correctIndex": 1,
+                "explanation": "Always rearrange so one side is zero, then find critical values."
+            },
+            {
+                "question": "When sketching y = 2x² - 5x - 12, the parabola opens:",
+                "options": ["Downwards (∩-shape)", "Upwards (∪-shape)", "Sideways", "It depends on x"],
+                "correctIndex": 1,
+                "explanation": "Since a = 2 > 0, the parabola opens upwards (∪-shape)."
             }
         ]
     },
@@ -258,8 +610,16 @@ window.subjectNotes = [
         "digitizedText": "## 4.6 Intersecting Graphs and Inequalities\nSometimes you are asked to solve an inequality of the form $f(x) < g(x)$ by looking at their graphs.\n- The solution to $f(x) = g(x)$ gives the $x$-coordinates of the intersection points.\n- The solution to $f(x) > g(x)$ is the set of $x$-values for which the graph of $y = f(x)$ lies **above** the graph of $y = g(x)$.\n- The solution to $f(x) < g(x)$ is the set of $x$-values for which the graph of $y = f(x)$ lies **below** the graph of $y = g(x)$.\n\n> [!NOTE]\n> **Example 8: Graphical method for inequalities**\n> The line $y = x + 2$ intersects the curve $y = x^2$ at $x = -1$ and $x = 2$. Use this information to solve $x^2 < x + 2$.\n>\n> **Solution:**\n> 1. The inequality asks where the curve $y = x^2$ is **below** the line $y = x + 2$.\n> 2. Plotting or imagining both graphs, the parabola $y = x^2$ dips below the straight line $y = x + 2$ strictly between their points of intersection.\n> 3. Therefore, the solution is the continuous interval between the two $x$-coordinates: $-1 < x < 2$.",
         "quizzes": [
             {
-                "question": "**Example 8: Graphical method for inequalities**\nThe line $y = x + 2$ intersects the curve $y = x^2$ at $x = -1$ and $x = 2$. Use this information to solve $x^2 < x + 2$.",
-                "explanation": "1. The inequality asks where the curve $y = x^2$ is **below** the line $y = x + 2$.\n2. Plotting or imagining both graphs, the parabola $y = x^2$ dips below the straight line $y = x + 2$ strictly between their points of intersection.\n3. Therefore, the solution is the continuous interval between the two $x$-coordinates: $-1 < x < 2$."
+                "question": "If y = x + 2 intersects y = x² at x = -1 and x = 2, the solution to x² < x + 2 is:",
+                "options": ["x < -1 or x > 2", "-1 < x < 2", "x = -1 or x = 2", "-1 ≤ x ≤ 2"],
+                "correctIndex": 1,
+                "explanation": "x² < x + 2 asks where the parabola is below the line, which is between the intersection points: -1 < x < 2."
+            },
+            {
+                "question": "The solution to f(x) > g(x) graphically represents:",
+                "options": ["The points where f and g intersect", "The x-values where f(x) lies above g(x)", "The x-values where f(x) lies below g(x)", "The area between the curves"],
+                "correctIndex": 1,
+                "explanation": "f(x) > g(x) means f(x) is above g(x)."
             }
         ]
     },
@@ -267,7 +627,20 @@ window.subjectNotes = [
         "subtopicId": "5.1",
         "title": "Introduction",
         "digitizedText": "# Chapter 5: Simultaneous Equations\n\n## 5.1 Introduction\n\nIn IGCSE Additional Mathematics (0606), you are frequently required to solve simultaneous equations where one equation is **linear** and the other is **non-linear** (such as a quadratic equation, a circle, or a hyperbola). \n\nThe solutions to these equations represent the points of intersection of their respective graphs on a two-dimensional Cartesian plane.",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "A system with one linear and one non-linear equation can have at most how many solutions?",
+                "options": ["Exactly 1", "Exactly 2", "At most 2", "No solutions"],
+                "correctIndex": 2,
+                "explanation": "Substituting the linear into the non-linear gives a quadratic, which has at most 2 solutions."
+            },
+            {
+                "question": "The solutions to simultaneous equations represent:",
+                "options": ["The slopes of the curves", "The y-intercepts", "The intersection points of their graphs", "The area between the curves"],
+                "correctIndex": 2,
+                "explanation": "Solutions are the coordinates where the graphs intersect."
+            }
+        ]
     },
     {
         "subtopicId": "5.2",
@@ -275,12 +648,22 @@ window.subjectNotes = [
         "digitizedText": "## 5.2 Substitution Method\n\nThe most robust and standard method for solving a system consisting of a linear and a non-linear equation is the **Substitution Method**. The elimination method is generally not suitable when dealing with non-linear terms like $x^2$, $y^2$, or $xy$.\n\n### Steps for the Substitution Method:\n1. **Rearrange the linear equation** to make either $x$ or $y$ the subject. Choose the variable that avoids fractions if possible.\n2. **Substitute** this expression into the non-linear equation. This will result in an equation with only one variable (usually a quadratic equation).\n3. **Solve** the resulting equation to find the values of the first variable. You may need to factorize, use the quadratic formula, or complete the square.\n4. **Substitute** these values back into the rearranged linear equation to find the corresponding values of the second variable.\n5. **State the final solutions** clearly as coordinate pairs $(x, y)$.\n\n> [!NOTE]\n> **Example 1: Solving a Linear and a Quadratic Equation**\n> Solve the simultaneous equations:\n> $$y = x + 1$$\n> $$x^2 + y^2 = 13$$\n>\n> **Solution:**\n> 1. The linear equation is already rearranged to make $y$ the subject: $y = x + 1$.\n> 2. Substitute $y = x + 1$ into the non-linear equation:\n> $$x^2 + (x + 1)^2 = 13$$\n> 3. Expand the bracket and simplify:\n> $$x^2 + (x^2 + 2x + 1) = 13$$\n> $$2x^2 + 2x + 1 - 13 = 0$$\n> $$2x^2 + 2x - 12 = 0$$\n> 4. Divide the entire equation by $2$ to simplify:\n> $$x^2 + x - 6 = 0$$\n> 5. Factorize the quadratic equation:\n> $$(x + 3)(x - 2) = 0$$\n> $$x = -3 \\quad \\text{or} \\quad x = 2$$\n> 6. Substitute the $x$-values back into the linear equation $y = x + 1$:\n> When $x = -3$, $y = -3 + 1 = -2$.\n> When $x = 2$, $y = 2 + 1 = 3$.\n> 7. The solutions are $(-3, -2)$ and $(2, 3)$.\n\n> [!NOTE]\n> **Example 2: Involving a Product Term ($xy$)**\n> Solve the simultaneous equations:\n> $$2x + y = 7$$\n> $$xy = 6$$\n>\n> **Solution:**\n> 1. Rearrange the linear equation to make $y$ the subject (to avoid fractions):\n> $$y = 7 - 2x$$\n> 2. Substitute $y$ into the non-linear equation:\n> $$x(7 - 2x) = 6$$\n> 3. Expand and rearrange into the standard quadratic form $ax^2 + bx + c = 0$:\n> $$7x - 2x^2 = 6$$\n> $$2x^2 - 7x + 6 = 0$$\n> 4. Factorize the quadratic equation:\n> $$(2x - 3)(x - 2) = 0$$\n> $$x = \\frac{3}{2} \\quad \\text{or} \\quad x = 2$$\n> 5. Find the corresponding $y$-values using $y = 7 - 2x$:\n> When $x = \\frac{3}{2}$, $y = 7 - 2\\left(\\frac{3}{2}\\right) = 7 - 3 = 4$.\n> When $x = 2$, $y = 7 - 2(2) = 7 - 4 = 3$.\n> 6. The solutions are \\left(\\frac{3}{2}, 4\\right) and $(2, 3)$.",
         "quizzes": [
             {
-                "question": "**Example 1: Solving a Linear and a Quadratic Equation**\nSolve the simultaneous equations:\n$$y = x + 1$$\n$$x^2 + y^2 = 13$$",
-                "explanation": "1. The linear equation is already rearranged to make $y$ the subject: $y = x + 1$.\n2. Substitute $y = x + 1$ into the non-linear equation:\n$$x^2 + (x + 1)^2 = 13$$\n3. Expand the bracket and simplify:\n$$x^2 + (x^2 + 2x + 1) = 13$$\n$$2x^2 + 2x + 1 - 13 = 0$$\n$$2x^2 + 2x - 12 = 0$$\n4. Divide the entire equation by $2$ to simplify:\n$$x^2 + x - 6 = 0$$\n5. Factorize the quadratic equation:\n$$(x + 3)(x - 2) = 0$$\n$$x = -3 \\quad \\text{or} \\quad x = 2$$\n6. Substitute the $x$-values back into the linear equation $y = x + 1$:\nWhen $x = -3$, $y = -3 + 1 = -2$.\nWhen $x = 2$, $y = 2 + 1 = 3$.\n7. The solutions are $(-3, -2)$ and $(2, 3)$."
+                "question": "Solve y = x + 1 and x² + y² = 13. One solution is (2, 3). What is the other?",
+                "options": ["(-2, -1)", "(-3, -2)", "(-1, -3)", "(3, 2)"],
+                "correctIndex": 1,
+                "explanation": "Substituting: x² + (x+1)² = 13 → x² + x - 6 = 0 → (x+3)(x-2) = 0. So x = -3, y = -2."
             },
             {
-                "question": "**Example 2: Involving a Product Term ($xy$)**\nSolve the simultaneous equations:\n$$2x + y = 7$$\n$$xy = 6$$",
-                "explanation": "1. Rearrange the linear equation to make $y$ the subject (to avoid fractions):\n$$y = 7 - 2x$$\n2. Substitute $y$ into the non-linear equation:\n$$x(7 - 2x) = 6$$\n3. Expand and rearrange into the standard quadratic form $ax^2 + bx + c = 0$:\n$$7x - 2x^2 = 6$$\n$$2x^2 - 7x + 6 = 0$$\n4. Factorize the quadratic equation:\n$$(2x - 3)(x - 2) = 0$$\n$$x = \\frac{3}{2} \\quad \\text{or} \\quad x = 2$$\n5. Find the corresponding $y$-values using $y = 7 - 2x$:\nWhen $x = \\frac{3}{2}$, $y = 7 - 2\\left(\\frac{3}{2}\\right) = 7 - 3 = 4$.\nWhen $x = 2$, $y = 7 - 2(2) = 7 - 4 = 3$.\n6. The solutions are \\left(\\frac{3}{2}, 4\\right) and $(2, 3)$."
+                "question": "When solving 2x + y = 7 and xy = 6, why rearrange the linear equation first?",
+                "options": ["To avoid fractions when substituting", "To make the equation quadratic", "Because elimination works better", "Because the problem requires it"],
+                "correctIndex": 0,
+                "explanation": "Making y the subject avoids fractions in the substitution."
+            },
+            {
+                "question": "For 2x + y = 7 and xy = 6, if x = ¾ or x = 2, the y-values are:",
+                "options": ["y = 4 and y = 3", "y = 3 and y = 4", "y = 5 and y = 3", "y = 4 and y = 5"],
+                "correctIndex": 0,
+                "explanation": "Using y = 7 - 2x: when x = 3/2, y = 4; when x = 2, y = 3."
             }
         ]
     },
@@ -290,8 +673,16 @@ window.subjectNotes = [
         "digitizedText": "## 5.3 Solving Graphically\n\nSolving simultaneous equations graphically involves plotting both equations on the same Cartesian axes. The real solutions to the system of equations are the coordinates of the points where the graphs intersect.\n<div align=\"center\">\n<svg width=\"320\" height=\"250\" viewBox=\"0 -50 320 250\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"30\" y1=\"180\" x2=\"290\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"-40\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"290,180 282,176 282,184\" fill=\"currentColor\"/>\n<polygon points=\"150,-40 146,-32 154,-32\" fill=\"currentColor\"/>\n<!-- Axes Labels -->\n<text x=\"285\" y=\"195\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"160\" y=\"-35\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"138\" y=\"195\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Parabola y = x^2 -->\n<path d=\"M 62.0,10.6 L 64.0,18.1 L 66.0,25.5 L 67.9,32.7 L 69.9,39.7 L 71.9,46.6 L 73.9,53.2 L 75.9,59.8 L 77.8,66.1 L 79.8,72.3 L 81.8,78.2 L 83.8,84.1 L 85.8,89.7 L 87.7,95.2 L 89.7,100.5 L 91.7,105.6 L 93.7,110.6 L 95.7,115.4 L 97.6,120.0 L 99.6,124.5 L 101.6,128.7 L 103.6,132.9 L 105.6,136.8 L 107.5,140.6 L 109.5,144.1 L 111.5,147.6 L 113.5,150.8 L 115.5,153.9 L 117.4,156.8 L 119.4,159.5 L 121.4,162.1 L 123.4,164.5 L 125.4,166.7 L 127.3,168.8 L 129.3,170.6 L 131.3,172.3 L 133.3,173.9 L 135.3,175.2 L 137.2,176.4 L 139.2,177.5 L 141.2,178.3 L 143.2,179.0 L 145.2,179.5 L 147.1,179.8 L 149.1,180.0 L 151.1,180.0 L 153.1,179.8 L 155.1,179.4 L 157.0,178.9 L 159.0,178.2 L 161.0,177.4 L 163.0,176.3 L 164.9,175.1 L 166.9,173.7 L 168.9,172.2 L 170.9,170.5 L 172.9,168.6 L 174.8,166.5 L 176.8,164.3 L 178.8,161.8 L 180.8,159.3 L 182.8,156.5 L 184.7,153.6 L 186.7,150.5 L 188.7,147.2 L 190.7,143.8 L 192.7,140.2 L 194.6,136.4 L 196.6,132.4 L 198.6,128.3 L 200.6,124.0 L 202.6,119.6 L 204.5,114.9 L 206.5,110.1 L 208.5,105.1 L 210.5,100.0 L 212.5,94.6 L 214.4,89.2 L 216.4,83.5 L 218.4,77.6 L 220.4,71.6 L 222.4,65.5 L 224.3,59.1 L 226.3,52.6 L 228.3,45.9 L 230.3,39.0 L 232.3,32.0 L 234.2,24.8 L 236.2,17.4 L 238.2,9.8 L 240.2,2.1 L 242.2,-5.8 L 244.1,-13.9 L 246.1,-22.1 L 248.1,-30.5 L 250.1,-39.1 L 252.1,-47.9 L 254.0,-56.8 L 256.0,-65.9 L 258.0,-75.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Line y = x + 2 -->\n<path d=\"M 62.0,187.0 L 258.0,15.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Intersection points and dashed projection lines -->\n<!-- (-1, 1) -->\n<line x1=\"110\" y1=\"145\" x2=\"110\" y2=\"180\" stroke=\"currentColor\" stroke-dasharray=\"3\" stroke-width=\"1\"/>\n<line x1=\"110\" y1=\"145\" x2=\"150\" y2=\"145\" stroke=\"currentColor\" stroke-dasharray=\"3\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"145\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"65\" y=\"145\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(-1, 1)</text>\n<text x=\"103\" y=\"193\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\">-1</text>\n<text x=\"155\" y=\"149\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\">1</text>\n\n<!-- (2, 4) -->\n<line x1=\"230\" y1=\"40\" x2=\"230\" y2=\"180\" stroke=\"currentColor\" stroke-dasharray=\"3\" stroke-width=\"1\"/>\n<line x1=\"230\" y1=\"40\" x2=\"150\" y2=\"40\" stroke=\"currentColor\" stroke-dasharray=\"3\" stroke-width=\"1\"/>\n<circle cx=\"230\" cy=\"40\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"238\" y=\"44\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(2, 4)</text>\n<text x=\"226\" y=\"193\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\">2</text>\n<text x=\"155\" y=\"44\" fill=\"currentColor\" font-family=\"serif\" font-size=\"10\">4</text>\n\n<!-- Curve & Line Labels -->\n<text x=\"60\" y=\"-10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = x\u00b2</text>\n<text x=\"195\" y=\"70\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = x + 2</text>\n</svg>\n</div>\n\n### Types of Intersections\nWhen plotting a line (linear equation) and a curve (non-linear equation), there are three possible scenarios determined by the discriminant ($b^2 - 4ac$) of the resulting quadratic equation:\n- **Two distinct points of intersection ($b^2 - 4ac > 0$):** The line cuts the curve at two distinct points. The system has two distinct real solutions.\n- **One point of intersection ($b^2 - 4ac = 0$):** The line is a tangent to the curve. The system has one repeated real solution.\n- **No points of intersection ($b^2 - 4ac < 0$):** The line and the curve do not meet. The system has no real solutions.\n\n> [!NOTE]\n> **Example 3: Graphical Solution and Algebraic Verification**\n> A student plots the straight line $y = x - 3$ and the parabola $y = x^2 - 2x - 3$ on the same graph. The line and the curve intersect at two points. Find the coordinates of these intersection points to solve the simultaneous equations graphically, and verify algebraically.\n>\n> **Solution:**\n> 1. **Graphical Observation:** By observing the plotted graph, the straight line $y = x - 3$ crosses the parabola $y = x^2 - 2x - 3$ exactly at the points $(0, -3)$ and $(3, 0)$.\n> 2. **Graphical Solution:** The solutions to the simultaneous equations are $x = 0, y = -3$ and $x = 3, y = 0$.\n> 3. **Algebraic Verification:**\n> Equate the two expressions for $y$:\n> $$x^2 - 2x - 3 = x - 3$$\n> Rearrange to form a quadratic equation equal to zero:\n> $$x^2 - 3x = 0$$\n> Factorize by taking out the common factor $x$:\n> $$x(x - 3) = 0$$\n> $$x = 0 \\quad \\text{or} \\quad x = 3$$\n> Substitute the $x$-values into the linear equation $y = x - 3$:\n> When $x = 0$, $y = 0 - 3 = -3$.\n> When $x = 3$, $y = 3 - 3 = 0$.\n> 4. The algebraic method confirms the graphical points of intersection are indeed $(0, -3)$ and $(3, 0)$.",
         "quizzes": [
             {
-                "question": "**Example 3: Graphical Solution and Algebraic Verification**\nA student plots the straight line $y = x - 3$ and the parabola $y = x^2 - 2x - 3$ on the same graph. The line and the curve intersect at two points. Find the coordinates of these intersection points to solve the simultaneous equations graphically, and verify algebraically.",
-                "explanation": "1. **Graphical Observation:** By observing the plotted graph, the straight line $y = x - 3$ crosses the parabola $y = x^2 - 2x - 3$ exactly at the points $(0, -3)$ and $(3, 0)$.\n2. **Graphical Solution:** The solutions to the simultaneous equations are $x = 0, y = -3$ and $x = 3, y = 0$.\n3. **Algebraic Verification:**\nEquate the two expressions for $y$:\n$$x^2 - 2x - 3 = x - 3$$\nRearrange to form a quadratic equation equal to zero:\n$$x^2 - 3x = 0$$\nFactorize by taking out the common factor $x$:\n$$x(x - 3) = 0$$\n$$x = 0 \\quad \\text{or} \\quad x = 3$$\nSubstitute the $x$-values into the linear equation $y = x - 3$:\nWhen $x = 0$, $y = 0 - 3 = -3$.\nWhen $x = 3$, $y = 3 - 3 = 0$.\n4. The algebraic method confirms the graphical points of intersection are indeed $(0, -3)$ and $(3, 0)$."
+                "question": "Graphical solutions to simultaneous equations are:",
+                "options": ["The y-intercepts", "The intersection point coordinates", "The slopes", "The area enclosed"],
+                "correctIndex": 1,
+                "explanation": "They are the coordinates where the graphs intersect."
+            },
+            {
+                "question": "If y = x - 3 and y = x² - 2x - 3 intersect at two points, what are they?",
+                "options": ["(0, -3) and (3, 0)", "(-3, 0) and (0, -3)", "(1, -2) and (3, 0)", "(0, 3) and (3, 0)"],
+                "correctIndex": 0,
+                "explanation": "Equating: x² - 3x = 0 → x(x - 3) = 0. So (0, -3) and (3, 0)."
             }
         ]
     },
@@ -301,8 +692,22 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 6: Logarithmic and Exponential Functions\n\n## 6.1 Exponentials and Logarithms\nAn exponential function is of the form $y = a^x$, where $a > 0$ and $a \\neq 1$. The logarithm is the inverse operation of exponentiation. It answers the question: \"To what power must we raise the base $a$ to obtain $y$?\"\n\nThe fundamental relationship between exponential and logarithmic forms is:\n$$y = a^x \\iff \\log_a(y) = x$$\n\nwhere:\n- $a$ is the base ($a > 0$, $a \\neq 1$)\n- $x$ is the exponent or logarithm\n- $y$ is the argument ($y > 0$)\n<div align=\"center\">\n<svg width=\"340\" height=\"320\" viewBox=\"0 0 340 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"10\" y1=\"200\" x2=\"320\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"100\" y1=\"290\" x2=\"100\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<!-- Arrowheads -->\n<polygon points=\"320,200 314,196 314,204\" fill=\"currentColor\"/>\n<polygon points=\"100,20 96,26 104,26\" fill=\"currentColor\"/>\n<!-- Axis Labels -->\n<text x=\"325\" y=\"204\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"95\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"85\" y=\"215\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">O</text>\n\n<!-- Line y = x (dashed) -->\n<line x1=\"30\" y1=\"270\" x2=\"280\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n<text x=\"250\" y=\"45\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = x</text>\n\n<!-- Curve y = 2^x -->\n<path d=\"M 12.5,193.8 L 30,191.3 L 47.5,187.6 L 65,182.5 L 82.5,175.3 L 100,165 L 117.5,150.5 L 135,130 L 152.5,101 L 170,60 L 187.5,2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"135\" y=\"65\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = 2<tspan baseline-shift=\"super\" font-size=\"9\">x</tspan></text>\n\n<!-- Curve y = log_2(x) -->\n<path d=\"M 106.2,287.5 L 108.8,270 L 112.4,252.5 L 117.5,235 L 124.7,217.5 L 135,200 L 152.5,182.5 L 170,165 L 201,147.5 L 240,130 L 298,112.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"220\" y=\"125\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = log<tspan baseline-shift=\"sub\" font-size=\"9\">2</tspan>(x)</text>\n\n<!-- Key Points -->\n<circle cx=\"100\" cy=\"165\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"65\" y=\"163\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(0, 1)</text>\n\n<circle cx=\"135\" cy=\"200\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"132\" y=\"218\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(1, 0)</text>\n\n<!-- Reflection Indicator -->\n<line x1=\"100\" y1=\"165\" x2=\"135\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"0.75\" stroke-dasharray=\"2,2\"/>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 1: Converting between forms**\n> Convert $2^3 = 8$ into logarithmic form, and $\\log_5(25) = 2$ into exponential form.\n>\n> **Solution:**\n> 1. For $2^3 = 8$, the base is $2$, the exponent is $3$, and the result is $8$. In logarithmic form, this is $\\log_2(8) = 3$.\n> 2. For $\\log_5(25) = 2$, the base is $5$, the logarithm is $2$, and the argument is $25$. In exponential form, this is $5^2 = 25$.",
         "quizzes": [
             {
-                "question": "**Example 1: Converting between forms**\nConvert $2^3 = 8$ into logarithmic form, and $\\log_5(25) = 2$ into exponential form.",
-                "explanation": "1. For $2^3 = 8$, the base is $2$, the exponent is $3$, and the result is $8$. In logarithmic form, this is $\\log_2(8) = 3$.\n2. For $\\log_5(25) = 2$, the base is $5$, the logarithm is $2$, and the argument is $25$. In exponential form, this is $5^2 = 25$."
+                "question": "Convert 2³ = 8 into logarithmic form.",
+                "options": ["log₈(2) = 3", "log₂(8) = 3", "log₃(8) = 2", "log₂(3) = 8"],
+                "correctIndex": 1,
+                "explanation": "aˣ = y converts to logₐ(y) = x. So 2³ = 8 becomes log₂(8) = 3."
+            },
+            {
+                "question": "Convert log₅(25) = 2 into exponential form.",
+                "options": ["5² = 25", "25⁵ = 2", "2⁵ = 25", "5²⁵ = 2"],
+                "correctIndex": 0,
+                "explanation": "logₐ(y) = x converts to aˣ = y. So log₅(25) = 2 becomes 5² = 25."
+            },
+            {
+                "question": "In the exponential function y = aˣ, what restriction is on a?",
+                "options": ["a > 0", "a > 0 and a ≠ 1", "a can be any real number", "0 < a < 1"],
+                "correctIndex": 1,
+                "explanation": "We require a > 0 and a ≠ 1 for a meaningful exponential function."
             }
         ]
     },
@@ -312,12 +717,22 @@ window.subjectNotes = [
         "digitizedText": "## 6.2 Rules of Logarithms\nTo manipulate and simplify logarithmic expressions, we use the laws of logarithms. These rules directly correspond to the laws of indices.\n\nFor any base $a > 0$ ($a \\neq 1$) and positive real numbers $x$ and $y$:\n\n1. **Product Rule:** $\\log_a(xy) = \\log_a(x) + \\log_a(y)$\n2. **Quotient Rule:** $\\log_a\\left(\\frac{x}{y}\\right) = \\log_a(x) - \\log_a(y)$\n3. **Power Rule:** $\\log_a(x^n) = n\\log_a(x)$\n4. **Logarithm of $1$:** $\\log_a(1) = 0$ (since $a^0 = 1$)\n5. **Logarithm of the Base:** $\\log_a(a) = 1$ (since $a^1 = a$)\n6. **Inverse Properties:** $a^{\\log_a(x)} = x$ and $\\log_a(a^x) = x$\n\n> [!NOTE]\n> **Example 2: Simplifying logarithmic expressions**\n> Express $\\log_3(18) - \\log_3(2)$ as a single logarithm and evaluate it.\n>\n> **Solution:**\n> 1. Apply the Quotient Rule: $\\log_3\\left(\\frac{18}{2}\\right)$\n> 2. Simplify the fraction: $\\log_3(9)$\n> 3. Recognize that $9 = 3^2$, so $\\log_3(3^2) = 2\\log_3(3) = 2(1) = 2$.\n> 4. Final answer: $2$\n\n> [!NOTE]\n> **Example 3: Expanding logarithmic expressions**\n> Expand $\\log_a\\left(\\frac{x^3\\sqrt{y}}{z^2}\\right)$ in terms of $\\log_a(x)$, $\\log_a(y)$, and $\\log_a(z)$.\n>\n> **Solution:**\n> 1. Apply the Quotient Rule: $\\log_a(x^3\\sqrt{y}) - \\log_a(z^2)$\n> 2. Apply the Product Rule: $\\log_a(x^3) + \\log_a(\\sqrt{y}) - \\log_a(z^2)$\n> 3. Rewrite the square root as a fractional index: $\\log_a(x^3) + \\log_a(y^{\\frac{1}{2}}) - \\log_a(z^2)$\n> 4. Apply the Power Rule: $3\\log_a(x) + \\frac{1}{2}\\log_a(y) - 2\\log_a(z)$",
         "quizzes": [
             {
-                "question": "**Example 2: Simplifying logarithmic expressions**\nExpress $\\log_3(18) - \\log_3(2)$ as a single logarithm and evaluate it.",
-                "explanation": "1. Apply the Quotient Rule: $\\log_3\\left(\\frac{18}{2}\\right)$\n2. Simplify the fraction: $\\log_3(9)$\n3. Recognize that $9 = 3^2$, so $\\log_3(3^2) = 2\\log_3(3) = 2(1) = 2$.\n4. Final answer: $2$"
+                "question": "Simplify log₃(18) - log₃(2).",
+                "options": ["log₃(9)", "2", "log₃(16)", "9"],
+                "correctIndex": 1,
+                "explanation": "Quotient rule: log₃(18/2) = log₃(9) = log₃(3²) = 2."
             },
             {
-                "question": "**Example 3: Expanding logarithmic expressions**\nExpand $\\log_a\\left(\\frac{x^3\\sqrt{y}}{z^2}\\right)$ in terms of $\\log_a(x)$, $\\log_a(y)$, and $\\log_a(z)$.",
-                "explanation": "1. Apply the Quotient Rule: $\\log_a(x^3\\sqrt{y}) - \\log_a(z^2)$\n2. Apply the Product Rule: $\\log_a(x^3) + \\log_a(\\sqrt{y}) - \\log_a(z^2)$\n3. Rewrite the square root as a fractional index: $\\log_a(x^3) + \\log_a(y^{\\frac{1}{2}}) - \\log_a(z^2)$\n4. Apply the Power Rule: $3\\log_a(x) + \\frac{1}{2}\\log_a(y) - 2\\log_a(z)$"
+                "question": "Expand logₐ(x³√y / z²).",
+                "options": ["3logₐ(x) + ½logₐ(y) - 2logₐ(z)", "3logₐ(x) + 2logₐ(y) - 2logₐ(z)", "3logₐ(x) + ½logₐ(y) + 2logₐ(z)", "logₐ(x³) + logₐ(y) - logₐ(z²)"],
+                "correctIndex": 0,
+                "explanation": "Apply quotient, product, and power rules. √y = y^(1/2) gives ½logₐ(y)."
+            },
+            {
+                "question": "Which law states logₐ(xy) = logₐ(x) + logₐ(y)?",
+                "options": ["The power rule", "The quotient rule", "The product rule", "The change of base rule"],
+                "correctIndex": 2,
+                "explanation": "The product rule: logarithm of a product equals the sum of logarithms."
             }
         ]
     },
@@ -327,8 +742,22 @@ window.subjectNotes = [
         "digitizedText": "## 6.3 Natural Logarithms and e\nThe mathematical constant $e \\approx 2.71828$ is a special base used extensively in calculus and continuous growth problems. A logarithm with base $e$ is called a natural logarithm, denoted by $\\ln$.\n\n$$\\ln(x) = \\log_e(x)$$\n<div align=\"center\">\n<svg width=\"340\" height=\"320\" viewBox=\"0 0 340 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"10\" y1=\"200\" x2=\"320\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"100\" y1=\"290\" x2=\"100\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<!-- Arrowheads -->\n<polygon points=\"320,200 314,196 314,204\" fill=\"currentColor\"/>\n<polygon points=\"100,20 96,26 104,26\" fill=\"currentColor\"/>\n<!-- Axis Labels -->\n<text x=\"325\" y=\"204\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"95\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"85\" y=\"215\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">O</text>\n\n<!-- Line y = x (dashed) -->\n<line x1=\"30\" y1=\"270\" x2=\"280\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n<text x=\"250\" y=\"45\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = x</text>\n\n<!-- Curve y = e^x -->\n<path d=\"M 12.5,197.1 L 30,195.3 L 47.5,192.2 L 65,187.1 L 82.5,178.8 L 100,165 L 117.5,142.3 L 135,104.9 L 152.5,43.1 L 163,-11.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"135\" y=\"55\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = e<tspan baseline-shift=\"super\" font-size=\"9\">x</tspan></text>\n\n<!-- Curve y = ln(x) -->\n<path d=\"M 102.9,287.5 L 104.7,270 L 107.8,252.5 L 112.9,235 L 121.2,217.5 L 135,200 L 157.7,182.5 L 195.1,165 L 256.9,147.5 L 311.7,137\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"225\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y = ln(x)</text>\n\n<!-- Tangent Line at (0,1): y = x + 1 -->\n<line x1=\"12.5\" y1=\"252.5\" x2=\"170\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"3,1\"/>\n<text x=\"15\" y=\"255\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" font-style=\"italic\">Tangent (m = 1)</text>\n\n<!-- Key Points -->\n<circle cx=\"100\" cy=\"165\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"65\" y=\"163\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(0, 1)</text>\n\n<circle cx=\"135\" cy=\"200\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"132\" y=\"218\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(1, 0)</text>\n\n<!-- Reflection Indicator -->\n<line x1=\"100\" y1=\"165\" x2=\"135\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"0.75\" stroke-dasharray=\"2,2\"/>\n</svg>\n</div>\n\nAll standard logarithm rules apply to natural logarithms:\n- $\\ln(xy) = \\ln(x) + \\ln(y)$\n- $\\ln\\left(\\frac{x}{y}\\right) = \\ln(x) - \\ln(y)$\n- $\\ln(x^n) = n\\ln(x)$\n- $\\ln(e) = 1$\n- $\\ln(1) = 0$\n- $e^{\\ln(x)} = x$ and $\\ln(e^x) = x$\n\n> [!NOTE]\n> **Example 4: Simplifying natural logarithms**\n> Simplify $e^{2\\ln(3)} + \\ln\\left(\\frac{1}{e^4}\\right)$.\n>\n> **Solution:**\n> 1. Simplify the first term using the Power Rule: $e^{\\ln(3^2)} = e^{\\ln(9)}$\n> 2. Apply the Inverse Property $e^{\\ln(x)} = x$: $e^{\\ln(9)} = 9$\n> 3. Simplify the second term: $\\ln(e^{-4})$\n> 4. Apply the Inverse Property $\\ln(e^x) = x$: $\\ln(e^{-4}) = -4$\n> 5. Combine the terms: $9 - 4 = 5$",
         "quizzes": [
             {
-                "question": "**Example 4: Simplifying natural logarithms**\nSimplify $e^{2\\ln(3)} + \\ln\\left(\\frac{1}{e^4}\\right)$.",
-                "explanation": "1. Simplify the first term using the Power Rule: $e^{\\ln(3^2)} = e^{\\ln(9)}$\n2. Apply the Inverse Property $e^{\\ln(x)} = x$: $e^{\\ln(9)} = 9$\n3. Simplify the second term: $\\ln(e^{-4})$\n4. Apply the Inverse Property $\\ln(e^x) = x$: $\\ln(e^{-4}) = -4$\n5. Combine the terms: $9 - 4 = 5$"
+                "question": "The natural logarithm ln(x) has which base?",
+                "options": ["10", "2", "e ≈ 2.71828", "1"],
+                "correctIndex": 2,
+                "explanation": "ln(x) = logₑ(x), where e ≈ 2.71828."
+            },
+            {
+                "question": "Simplify e^(2ln3) + ln(1/e⁴).",
+                "options": ["5", "9", "13", "-5"],
+                "correctIndex": 0,
+                "explanation": "e^(2ln3) = e^(ln9) = 9, and ln(e⁻⁴) = -4. Result: 9 - 4 = 5."
+            },
+            {
+                "question": "What is e^(lnx) equal to?",
+                "options": ["ln(x)", "eˣ", "x", "1"],
+                "correctIndex": 2,
+                "explanation": "e^(lnx) = x by the inverse property of exponential and logarithmic functions."
             }
         ]
     },
@@ -338,8 +767,16 @@ window.subjectNotes = [
         "digitizedText": "## 6.4 Change of Base Formula\nSometimes it is necessary to evaluate logarithms with bases not available on a standard calculator, or to solve equations with different bases. We use the Change of Base formula:\n\n$$\\log_a(b) = \\frac{\\log_c(b)}{\\log_c(a)}$$\n\nwhere $c$ is any positive new base ($c \\neq 1$). Commonly, we change the base to $10$ (common logarithm, $\\log$) or $e$ (natural logarithm, $\\ln$):\n\n$$\\log_a(b) = \\frac{\\ln(b)}{\\ln(a)} = \\frac{\\log_{10}(b)}{\\log_{10}(a)}$$\n\nA useful deduction from this formula is:\n$$\\log_a(b) = \\frac{1}{\\log_b(a)}$$\n\n> [!NOTE]\n> **Example 5: Evaluating a logarithm using change of base**\n> Evaluate $\\log_2(7)$ to $3$ significant figures.\n>\n> **Solution:**\n> 1. Apply the Change of Base formula to convert to base $10$ or base $e$: $\\log_2(7) = \\frac{\\ln(7)}{\\ln(2)}$\n> 2. Use a calculator: $\\frac{1.9459}{0.6931} \\approx 2.807...$\n> 3. Round to $3$ significant figures: $2.81$",
         "quizzes": [
             {
-                "question": "**Example 5: Evaluating a logarithm using change of base**\nEvaluate $\\log_2(7)$ to $3$ significant figures.",
-                "explanation": "1. Apply the Change of Base formula to convert to base $10$ or base $e$: $\\log_2(7) = \\frac{\\ln(7)}{\\ln(2)}$\n2. Use a calculator: $\\frac{1.9459}{0.6931} \\approx 2.807...$\n3. Round to $3$ significant figures: $2.81$"
+                "question": "Using change of base, log₂(7) equals:",
+                "options": ["ln(7)/ln(2)", "ln(2)/ln(7)", "ln(7) × ln(2)", "log(2)/log(7)"],
+                "correctIndex": 0,
+                "explanation": "logₐ(b) = logc(b)/logc(a). Using natural logs: log₂(7) = ln(7)/ln(2) ≈ 2.81."
+            },
+            {
+                "question": "The identity logₐ(b) = 1/logᵦ(a) is:",
+                "options": ["The power rule", "A deduction from change of base formula", "The product rule", "The quotient rule"],
+                "correctIndex": 1,
+                "explanation": "Setting c = b in the change of base formula gives this result."
             }
         ]
     },
@@ -349,16 +786,22 @@ window.subjectNotes = [
         "digitizedText": "## 6.5 Solving Exponential Equations\nWhen solving equations where the unknown is in the exponent, taking logarithms (usually $\\ln$ or $\\log_{10}$) on both sides allows us to use the Power Rule to bring the exponent down.\n\n### Type 1: Equations reducible to the same base\nIf both sides can be expressed as powers of the same base, we equate the exponents.\n\n> [!NOTE]\n> **Example 6: Solving equations with the same base**\n> Solve $4^x = 8^{x-1}$.\n>\n> **Solution:**\n> 1. Express both sides with base $2$: $(2^2)^x = (2^3)^{x-1}$\n> 2. Apply index laws: $2^{2x} = 2^{3x-3}$\n> 3. Equate the exponents: $2x = 3x - 3$\n> 4. Solve for $x$: $x = 3$\n\n### Type 2: Taking logarithms on both sides\nIf the bases cannot be made the same, take $\\ln$ or $\\log_{10}$ of both sides.\n\n> [!NOTE]\n> **Example 7: Solving using natural logarithms**\n> Solve $3^{2x-1} = 5$ giving your answer to $3$ significant figures.\n>\n> **Solution:**\n> 1. Take the natural logarithm of both sides: $\\ln(3^{2x-1}) = \\ln(5)$\n> 2. Bring the exponent down: $(2x - 1)\\ln(3) = \\ln(5)$\n> 3. Isolate the bracket: $2x - 1 = \\frac{\\ln(5)}{\\ln(3)}$\n> 4. Rearrange to solve for $x$: $2x = \\frac{\\ln(5)}{\\ln(3)} + 1$\n> 5. Divide by $2$: $x = \\frac{1}{2} \\left( \\frac{\\ln(5)}{\\ln(3)} + 1 \\right)$\n> 6. Calculate: $x \\approx 1.23$\n\n### Type 3: Hidden Quadratic Equations\nSome exponential equations take the form of quadratics. We can use a substitution (like $u = e^x$) to solve them.\n\n> [!NOTE]\n> **Example 8: Solving a hidden quadratic exponential equation**\n> Solve the equation $e^{2x} - 5e^x + 6 = 0$.\n>\n> **Solution:**\n> 1. Rewrite $e^{2x}$ as $(e^x)^2$: $(e^x)^2 - 5e^x + 6 = 0$\n> 2. Let $u = e^x$. The equation becomes: $u^2 - 5u + 6 = 0$\n> 3. Factorize the quadratic: $(u - 2)(u - 3) = 0$\n> 4. Solve for $u$: $u = 2$ or $u = 3$\n> 5. Substitute $e^x$ back: $e^x = 2$ or $e^x = 3$\n> 6. Take $\\ln$ of both sides: $x = \\ln(2)$ or $x = \\ln(3)$",
         "quizzes": [
             {
-                "question": "**Example 6: Solving equations with the same base**\nSolve $4^x = 8^{x-1}$.",
-                "explanation": "1. Express both sides with base $2$: $(2^2)^x = (2^3)^{x-1}$\n2. Apply index laws: $2^{2x} = 2^{3x-3}$\n3. Equate the exponents: $2x = 3x - 3$\n4. Solve for $x$: $x = 3$"
+                "question": "Solve 4ˣ = 8^(x-1).",
+                "options": ["x = 1", "x = 2", "x = 3", "x = 4"],
+                "correctIndex": 2,
+                "explanation": "Express in base 2: 2^(2x) = 2^(3x-3). So 2x = 3x - 3, giving x = 3."
             },
             {
-                "question": "**Example 7: Solving using natural logarithms**\nSolve $3^{2x-1} = 5$ giving your answer to $3$ significant figures.",
-                "explanation": "1. Take the natural logarithm of both sides: $\\ln(3^{2x-1}) = \\ln(5)$\n2. Bring the exponent down: $(2x - 1)\\ln(3) = \\ln(5)$\n3. Isolate the bracket: $2x - 1 = \\frac{\\ln(5)}{\\ln(3)}$\n4. Rearrange to solve for $x$: $2x = \\frac{\\ln(5)}{\\ln(3)} + 1$\n5. Divide by $2$: $x = \\frac{1}{2} \\left( \\frac{\\ln(5)}{\\ln(3)} + 1 \\right)$\n6. Calculate: $x \\approx 1.23$"
+                "question": "To solve 3^(2x-1) = 5, the first step is to:",
+                "options": ["Divide both sides by 3", "Take the natural logarithm of both sides", "Square both sides", "Subtract 5 from both sides"],
+                "correctIndex": 1,
+                "explanation": "Taking ln of both sides brings down the exponent: (2x-1)ln3 = ln5."
             },
             {
-                "question": "**Example 8: Solving a hidden quadratic exponential equation**\nSolve the equation $e^{2x} - 5e^x + 6 = 0$.",
-                "explanation": "1. Rewrite $e^{2x}$ as $(e^x)^2$: $(e^x)^2 - 5e^x + 6 = 0$\n2. Let $u = e^x$. The equation becomes: $u^2 - 5u + 6 = 0$\n3. Factorize the quadratic: $(u - 2)(u - 3) = 0$\n4. Solve for $u$: $u = 2$ or $u = 3$\n5. Substitute $e^x$ back: $e^x = 2$ or $e^x = 3$\n6. Take $\\ln$ of both sides: $x = \\ln(2)$ or $x = \\ln(3)$"
+                "question": "To solve e^(2x) - 5eˣ + 6 = 0, let u = eˣ to get:",
+                "options": ["u² - 5u + 6 = 0", "2u - 5u + 6 = 0", "u² - 5u - 6 = 0", "e^(2u) - 5u + 6 = 0"],
+                "correctIndex": 0,
+                "explanation": "Since e^(2x) = (eˣ)² = u², the equation becomes u² - 5u + 6 = 0."
             }
         ]
     },
@@ -368,12 +811,22 @@ window.subjectNotes = [
         "digitizedText": "## 6.6 Solving Logarithmic Equations\nWhen solving equations involving logarithms, we use logarithm laws to combine terms and then convert them into exponential form. Remember to check that your solutions are valid (arguments of logarithms must be positive, i.e., $y > 0$ in $\\log_a(y)$).\n\n### Strategy:\n1. Use laws of logarithms to condense multiple logarithmic terms into a single logarithm.\n2. Convert the logarithmic equation into exponential form.\n3. Solve for the unknown.\n4. Verify the answers.\n\n> [!NOTE]\n> **Example 9: Condensing and converting to exponential form**\n> Solve the equation $\\log_2(x) + \\log_2(x - 3) = 2$.\n>\n> **Solution:**\n> 1. Use the Product Rule to combine logs: $\\log_2(x(x - 3)) = 2$\n> 2. Convert to exponential form: $x(x - 3) = 2^2$\n> 3. Expand and simplify: $x^2 - 3x = 4 \\implies x^2 - 3x - 4 = 0$\n> 4. Factorize the quadratic: $(x - 4)(x + 1) = 0$\n> 5. Solve for $x$: $x = 4$ or $x = -1$\n> 6. Check validity: If $x = -1$, $\\log_2(-1)$ is undefined.\n> 7. Final valid solution: $x = 4$\n\n> [!NOTE]\n> **Example 10: Solving equations with different logarithmic bases**\n> Solve the equation $\\log_9(x) + \\log_3(x) = 3$.\n>\n> **Solution:**\n> 1. Use the Change of Base formula to change $\\log_9(x)$ to base $3$: $\\log_9(x) = \\frac{\\log_3(x)}{\\log_3(9)}$\n> 2. Since $9 = 3^2$, $\\log_3(9) = 2$, so $\\log_9(x) = \\frac{1}{2}\\log_3(x)$.\n> 3. Substitute back into the equation: $\\frac{1}{2}\\log_3(x) + \\log_3(x) = 3$\n> 4. Combine terms: $\\frac{3}{2}\\log_3(x) = 3$\n> 5. Multiply both sides by $\\frac{2}{3}$: $\\log_3(x) = 2$\n> 6. Convert to exponential form: $x = 3^2$\n> 7. Final solution: $x = 9$",
         "quizzes": [
             {
-                "question": "**Example 9: Condensing and converting to exponential form**\nSolve the equation $\\log_2(x) + \\log_2(x - 3) = 2$.",
-                "explanation": "1. Use the Product Rule to combine logs: $\\log_2(x(x - 3)) = 2$\n2. Convert to exponential form: $x(x - 3) = 2^2$\n3. Expand and simplify: $x^2 - 3x = 4 \\implies x^2 - 3x - 4 = 0$\n4. Factorize the quadratic: $(x - 4)(x + 1) = 0$\n5. Solve for $x$: $x = 4$ or $x = -1$\n6. Check validity: If $x = -1$, $\\log_2(-1)$ is undefined.\n7. Final valid solution: $x = 4$"
+                "question": "Solve log₂(x) + log₂(x - 3) = 2.",
+                "options": ["x = 4 only", "x = -1 only", "x = 4 or x = -1", "x = 2 or x = -1"],
+                "correctIndex": 0,
+                "explanation": "Combining: log₂(x(x-3)) = 2, so x(x-3) = 4, giving x = 4 or x = -1. Only x = 4 is valid."
             },
             {
-                "question": "**Example 10: Solving equations with different logarithmic bases**\nSolve the equation $\\log_9(x) + \\log_3(x) = 3$.",
-                "explanation": "1. Use the Change of Base formula to change $\\log_9(x)$ to base $3$: $\\log_9(x) = \\frac{\\log_3(x)}{\\log_3(9)}$\n2. Since $9 = 3^2$, $\\log_3(9) = 2$, so $\\log_9(x) = \\frac{1}{2}\\log_3(x)$.\n3. Substitute back into the equation: $\\frac{1}{2}\\log_3(x) + \\log_3(x) = 3$\n4. Combine terms: $\\frac{3}{2}\\log_3(x) = 3$\n5. Multiply both sides by $\\frac{2}{3}$: $\\log_3(x) = 2$\n6. Convert to exponential form: $x = 3^2$\n7. Final solution: $x = 9$"
+                "question": "Why must we check solutions in logarithmic equations?",
+                "options": ["Logarithms require positive arguments", "Solutions might be imaginary", "The base might change", "The equation is always quadratic"],
+                "correctIndex": 0,
+                "explanation": "The argument of a logarithm must be positive. Solutions making it ≤ 0 are extraneous."
+            },
+            {
+                "question": "Solve log₉(x) + log₃(x) = 3.",
+                "options": ["x = 3", "x = 9", "x = 27", "x = 81"],
+                "correctIndex": 1,
+                "explanation": "Change of base: log₉(x) = ½log₃(x). So ½log₃(x) + log₃(x) = 3 → ³⁄₂log₃(x) = 3 → log₃(x) = 2 → x = 9."
             }
         ]
     },
@@ -383,8 +836,22 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 7: Straight-Line Graphs\n\n## 7.1 Distance Between Two Points\n\nThe distance, $d$, between two points $A(x_1, y_1)$ and $B(x_2, y_2)$ can be found using the Pythagorean theorem:\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n<div align=\"center\">\n<svg width=\"340\" height=\"300\" viewBox=\"-50 -30 380 340\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-30\" y1=\"260\" x2=\"320\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"0\" y1=\"290\" x2=\"0\" y2=\"-10\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"320,260 314,256 314,264\" fill=\"currentColor\"/>\n<polygon points=\"0,-10 -4,-4 4,-4\" fill=\"currentColor\"/>\n<!-- Axis labels -->\n<text x=\"310\" y=\"280\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"10\" y=\"2\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<!-- Origin -->\n<text x=\"-18\" y=\"278\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">O</text>\n<!-- Point P -->\n<circle cx=\"60\" cy=\"200\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"30\" y=\"195\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">P(x\u2081, y\u2081)</text>\n<!-- Point Q -->\n<circle cx=\"260\" cy=\"60\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"265\" y=\"55\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Q(x\u2082, y\u2082)</text>\n<!-- Line PQ -->\n<line x1=\"60\" y1=\"200\" x2=\"260\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<!-- Horizontal leg -->\n<line x1=\"60\" y1=\"200\" x2=\"260\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\"/>\n<!-- Vertical leg -->\n<line x1=\"260\" y1=\"200\" x2=\"260\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\"/>\n<!-- Right angle marker -->\n<polyline points=\"245,200 245,185 260,185\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<!-- Horizontal label -->\n<text x=\"120\" y=\"225\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">x\u2082 \u2212 x\u2081</text>\n<!-- Vertical label -->\n<text x=\"268\" y=\"140\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y\u2082 \u2212 y\u2081</text>\n<!-- Hypotenuse label -->\n<text x=\"110\" y=\"110\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">d</text>\n</svg>\n</div>\n\nThe distance formula is derived from the Pythagorean theorem by forming a right-angled triangle between the two points. The horizontal distance is $x_2 - x_1$ and the vertical distance is $y_2 - y_1$.\n\n> [!NOTE]\n> **Example 1: Finding the distance between two points**\n> Find the distance between the points $P(-2, 5)$ and $Q(4, -3)$.\n>\n> **Solution:**\n> 1. Identify the coordinates: $(x_1, y_1) = (-2, 5)$ and $(x_2, y_2) = (4, -3)$.\n> 2. Substitute into the distance formula:\n> $$d = \\sqrt{(4 - (-2))^2 + (-3 - 5)^2}$$\n> $$d = \\sqrt{(6)^2 + (-8)^2}$$\n> $$d = \\sqrt{36 + 64}$$\n> $$d = \\sqrt{100}$$\n> 3. Solve: $d = 10$.",
         "quizzes": [
             {
-                "question": "**Example 1: Finding the distance between two points**\nFind the distance between the points $P(-2, 5)$ and $Q(4, -3)$.",
-                "explanation": "1. Identify the coordinates: $(x_1, y_1) = (-2, 5)$ and $(x_2, y_2) = (4, -3)$.\n2. Substitute into the distance formula:\n$$d = \\sqrt{(4 - (-2))^2 + (-3 - 5)^2}$$\n$$d = \\sqrt{(6)^2 + (-8)^2}$$\n$$d = \\sqrt{36 + 64}$$\n$$d = \\sqrt{100}$$\n3. Solve: $d = 10$."
+                "question": "Find the distance between P(-2, 5) and Q(4, -3).",
+                "options": ["8", "10", "12", "√100"],
+                "correctIndex": 1,
+                "explanation": "d = √(6² + (-8)²) = √(36 + 64) = √100 = 10."
+            },
+            {
+                "question": "The distance formula is derived from:",
+                "options": ["The midpoint formula", "Pythagoras' theorem", "The gradient formula", "Trigonometry"],
+                "correctIndex": 1,
+                "explanation": "It comes from Pythagoras' theorem applied to the horizontal and vertical differences."
+            },
+            {
+                "question": "The distance between (0, 0) and (3, 4) is:",
+                "options": ["3", "4", "5", "7"],
+                "correctIndex": 2,
+                "explanation": "d = √(9 + 16) = √25 = 5."
             }
         ]
     },
@@ -394,8 +861,16 @@ window.subjectNotes = [
         "digitizedText": "## 7.2 Midpoint of a Line Segment\n\nThe midpoint, $M$, of a line segment connecting two points $A(x_1, y_1)$ and $B(x_2, y_2)$ is the average of their $x$-coordinates and $y$-coordinates:\n$$M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)$$\n\n> [!NOTE]\n> **Example 2: Finding the midpoint of a line segment**\n> The coordinates of point $A$ are $(3, -4)$ and point $B$ are $(7, 6)$. Find the midpoint $M$ of the line segment $AB$.\n>\n> **Solution:**\n> 1. Identify the coordinates: $(x_1, y_1) = (3, -4)$ and $(x_2, y_2) = (7, 6)$.\n> 2. Substitute into the midpoint formula:\n> $$M = \\left( \\frac{3 + 7}{2}, \\frac{-4 + 6}{2} \\right)$$\n> $$M = \\left( \\frac{10}{2}, \\frac{2}{2} \\right)$$\n> 3. Simplify: $M = (5, 1)$.",
         "quizzes": [
             {
-                "question": "**Example 2: Finding the midpoint of a line segment**\nThe coordinates of point $A$ are $(3, -4)$ and point $B$ are $(7, 6)$. Find the midpoint $M$ of the line segment $AB$.",
-                "explanation": "1. Identify the coordinates: $(x_1, y_1) = (3, -4)$ and $(x_2, y_2) = (7, 6)$.\n2. Substitute into the midpoint formula:\n$$M = \\left( \\frac{3 + 7}{2}, \\frac{-4 + 6}{2} \\right)$$\n$$M = \\left( \\frac{10}{2}, \\frac{2}{2} \\right)$$\n3. Simplify: $M = (5, 1)$."
+                "question": "Find the midpoint of A(3, -4) and B(7, 6).",
+                "options": ["(5, 1)", "(10, 2)", "(4, 10)", "(5, -1)"],
+                "correctIndex": 0,
+                "explanation": "M = ((3+7)/2, (-4+6)/2) = (5, 1)."
+            },
+            {
+                "question": "The midpoint of (-1, 3) and (5, -1) is:",
+                "options": ["(2, 1)", "(4, 2)", "(3, 1)", "(2, 2)"],
+                "correctIndex": 0,
+                "explanation": "M = ((-1+5)/2, (3-1)/2) = (2, 1)."
             }
         ]
     },
@@ -405,8 +880,22 @@ window.subjectNotes = [
         "digitizedText": "## 7.3 Gradient of a Straight Line\n\nThe gradient (or slope), $m$, represents steepness of a line. For two points $A(x_1, y_1)$ and $B(x_2, y_2)$, the gradient is:\n$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$\n\n- **Positive gradient:** Line slopes upwards from left to right.\n- **Negative gradient:** Line slopes downwards from left to right.\n- **Zero gradient:** Horizontal line.\n- **Undefined gradient:** Vertical line.\n<div align=\"center\">\n<svg width=\"500\" height=\"220\" viewBox=\"-10 -10 520 230\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- === Positive Gradient === -->\n<line x1=\"10\" y1=\"190\" x2=\"140\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"20\" y1=\"200\" x2=\"20\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<polygon points=\"140,190 134,186 134,194\" fill=\"currentColor\"/>\n<polygon points=\"20,20 16,26 24,26\" fill=\"currentColor\"/>\n<line x1=\"30\" y1=\"170\" x2=\"130\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.2\"/>\n<text x=\"30\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Positive (m &gt; 0)</text>\n<text x=\"135\" y=\"188\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"26\" y=\"28\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n\n<!-- === Negative Gradient === -->\n<line x1=\"190\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<polygon points=\"320,190 314,186 314,194\" fill=\"currentColor\"/>\n<polygon points=\"200,20 196,26 204,26\" fill=\"currentColor\"/>\n<line x1=\"210\" y1=\"50\" x2=\"310\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"2.2\"/>\n<text x=\"200\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Negative (m &lt; 0)</text>\n<text x=\"315\" y=\"188\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"206\" y=\"28\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n\n<!-- === Zero Gradient === -->\n<line x1=\"370\" y1=\"190\" x2=\"500\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"380\" y1=\"200\" x2=\"380\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<polygon points=\"500,190 494,186 494,194\" fill=\"currentColor\"/>\n<polygon points=\"380,20 376,26 384,26\" fill=\"currentColor\"/>\n<line x1=\"390\" y1=\"110\" x2=\"490\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\"/>\n<text x=\"395\" y=\"15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Zero (m = 0)</text>\n<text x=\"495\" y=\"188\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">x</text>\n<text x=\"386\" y=\"28\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">y</text>\n</svg>\n</div>\n\n### Parallel and Perpendicular Lines\n\nLet $m_1$ and $m_2$ be the gradients of two straight lines.\n- **Parallel lines:** The lines have the same gradient.\n  $$m_1 = m_2$$\n- **Perpendicular lines:** The lines intersect at a right angle ($90^\\circ$). The product of their gradients is $-1$.\n  $$m_1 \\times m_2 = -1 \\quad \\text{or} \\quad m_2 = -\\frac{1}{m_1}$$\n<div align=\"center\">\n<svg width=\"300\" height=\"280\" viewBox=\"-40 -30 340 310\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-20\" y1=\"240\" x2=\"280\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"0\" y1=\"270\" x2=\"0\" y2=\"-10\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"280,240 274,236 274,244\" fill=\"currentColor\"/>\n<polygon points=\"0,-10 -4,-4 4,-4\" fill=\"currentColor\"/>\n<text x=\"270\" y=\"258\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"10\" y=\"2\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"-18\" y=\"258\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">O</text>\n<!-- Line 1: gradient = 2 -->\n<line x1=\"40\" y1=\"280\" x2=\"200\" y2=\"-40\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"195\" y=\"-15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">L\u2081 (m\u2081 = 2)</text>\n<!-- Line 2: gradient = -1/2 -->\n<line x1=\"-20\" y1=\"50\" x2=\"280\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"200\" y=\"215\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">L\u2082 (m\u2082 = \u2212\u00bd)</text>\n<!-- Intersection point -->\n<circle cx=\"120\" cy=\"120\" r=\"3\" fill=\"currentColor\"/>\n<!-- Right angle marker -->\n<rect x=\"120\" y=\"108\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" transform=\"rotate(27, 120, 120)\"/>\n<!-- Product label -->\n<text x=\"60\" y=\"-15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">m\u2081 \u00d7 m\u2082 = \u22121</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 3: Finding gradients and checking for perpendicular lines**\n> Given points $A(-1, 2)$, $B(3, 10)$, $C(4, -2)$, and $D(8, -4)$, determine if the line passing through $A$ and $B$ is perpendicular to the line passing through $C$ and $D$.\n>\n> **Solution:**\n> 1. Find the gradient of line $AB$:\n> $$m_{AB} = \\frac{10 - 2}{3 - (-1)} = \\frac{8}{4} = 2$$\n> 2. Find the gradient of line $CD$:\n> $$m_{CD} = \\frac{-4 - (-2)}{8 - 4} = \\frac{-2}{4} = -\\frac{1}{2}$$\n> 3. Multiply the gradients:\n> $$m_{AB} \\times m_{CD} = 2 \\times \\left(-\\frac{1}{2}\\right) = -1$$\n> 4. Conclusion: Since the product is $-1$, the lines $AB$ and $CD$ are perpendicular.",
         "quizzes": [
             {
-                "question": "**Example 3: Finding gradients and checking for perpendicular lines**\nGiven points $A(-1, 2)$, $B(3, 10)$, $C(4, -2)$, and $D(8, -4)$, determine if the line passing through $A$ and $B$ is perpendicular to the line passing through $C$ and $D$.",
-                "explanation": "1. Find the gradient of line $AB$:\n$$m_{AB} = \\frac{10 - 2}{3 - (-1)} = \\frac{8}{4} = 2$$\n2. Find the gradient of line $CD$:\n$$m_{CD} = \\frac{-4 - (-2)}{8 - 4} = \\frac{-2}{4} = -\\frac{1}{2}$$\n3. Multiply the gradients:\n$$m_{AB} \\times m_{CD} = 2 \\times \\left(-\\frac{1}{2}\\right) = -1$$\n4. Conclusion: Since the product is $-1$, the lines $AB$ and $CD$ are perpendicular."
+                "question": "Find the gradient of the line through A(-1, 2) and B(3, 10).",
+                "options": ["1", "2", "½", "4"],
+                "correctIndex": 1,
+                "explanation": "m = (10-2)/(3-(-1)) = 8/4 = 2."
+            },
+            {
+                "question": "If two lines are perpendicular and one has gradient 2, the other has gradient:",
+                "options": ["2", "-2", "½", "-½"],
+                "correctIndex": 3,
+                "explanation": "Perpendicular gradients multiply to give -1: 2 × m₂ = -1, so m₂ = -½."
+            },
+            {
+                "question": "A horizontal line has gradient:",
+                "options": ["1", "0", "Undefined", "-1"],
+                "correctIndex": 1,
+                "explanation": "A horizontal line has no rise (Δy = 0), so gradient = 0."
             }
         ]
     },
@@ -416,8 +905,16 @@ window.subjectNotes = [
         "digitizedText": "## 7.4 Equation of a Straight Line\n\nA straight-line equation can be expressed in various forms:\n\n1. **Gradient-Intercept Form:**\n   $$y = mx + c$$\n   Where $m$ is the gradient and $c$ is the $y$-intercept.\n\n2. **Point-Gradient Form:**\n   $$y - y_1 = m(x - x_1)$$\n   Used when the gradient $m$ and a single point $(x_1, y_1)$ are known.\n\n3. **General Form:**\n   $$ax + by + c = 0$$\n   Where $a$, $b$, and $c$ are integers.\n<div align=\"center\">\n<svg width=\"340\" height=\"300\" viewBox=\"-60 -40 390 340\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-40\" y1=\"230\" x2=\"310\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"0\" y1=\"280\" x2=\"0\" y2=\"-20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"310,230 304,226 304,234\" fill=\"currentColor\"/>\n<polygon points=\"0,-20 -4,-14 4,-14\" fill=\"currentColor\"/>\n<text x=\"300\" y=\"250\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"10\" y=\"-8\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"-18\" y=\"248\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">O</text>\n<!-- Straight line y = mx + c -->\n<line x1=\"-30\" y1=\"188\" x2=\"280\" y2=\"-2\" stroke=\"currentColor\" stroke-width=\"2.2\"/>\n<!-- y-intercept point (0, c) -->\n<circle cx=\"0\" cy=\"170\" r=\"4\" fill=\"currentColor\"/>\n<text x=\"8\" y=\"165\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">(0, c)</text>\n<!-- Gradient triangle -->\n<line x1=\"60\" y1=\"133\" x2=\"160\" y2=\"133\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"5,3\"/>\n<line x1=\"160\" y1=\"133\" x2=\"160\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"5,3\"/>\n<polyline points=\"148,133 148,121 160,121\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<text x=\"85\" y=\"152\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">run</text>\n<text x=\"166\" y=\"108\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">rise</text>\n<text x=\"175\" y=\"60\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">m = rise / run</text>\n<text x=\"200\" y=\"25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y = mx + c</text>\n<circle cx=\"60\" cy=\"133\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"160\" cy=\"72\" r=\"3\" fill=\"currentColor\"/>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Finding the equation of a perpendicular bisector**\n> Find the equation of the perpendicular bisector of the line segment joining $P(2, -3)$ and $Q(8, 5)$. Give your answer in the form $ax + by + c = 0$.\n>\n> **Solution:**\n> 1. Find the midpoint $M$ of $PQ$:\n> $$M = \\left( \\frac{2 + 8}{2}, \\frac{-3 + 5}{2} \\right) = (5, 1)$$\n> 2. Find the gradient of $PQ$:\n> $$m_{PQ} = \\frac{5 - (-3)}{8 - 2} = \\frac{8}{6} = \\frac{4}{3}$$\n> 3. Find the gradient of the perpendicular line:\n> $$m_{\\perp} = -\\frac{3}{4}$$\n> 4. Use the point-gradient form with midpoint $M(5, 1)$:\n> $$y - 1 = -\\frac{3}{4}(x - 5)$$\n> 5. Rearrange into the general form $ax + by + c = 0$:\n> $$4(y - 1) = -3(x - 5)$$\n> $$4y - 4 = -3x + 15$$\n> $$3x + 4y - 19 = 0$$",
         "quizzes": [
             {
-                "question": "**Example 4: Finding the equation of a perpendicular bisector**\nFind the equation of the perpendicular bisector of the line segment joining $P(2, -3)$ and $Q(8, 5)$. Give your answer in the form $ax + by + c = 0$.",
-                "explanation": "1. Find the midpoint $M$ of $PQ$:\n$$M = \\left( \\frac{2 + 8}{2}, \\frac{-3 + 5}{2} \\right) = (5, 1)$$\n2. Find the gradient of $PQ$:\n$$m_{PQ} = \\frac{5 - (-3)}{8 - 2} = \\frac{8}{6} = \\frac{4}{3}$$\n3. Find the gradient of the perpendicular line:\n$$m_{\\perp} = -\\frac{3}{4}$$\n4. Use the point-gradient form with midpoint $M(5, 1)$:\n$$y - 1 = -\\frac{3}{4}(x - 5)$$\n5. Rearrange into the general form $ax + by + c = 0$:\n$$4(y - 1) = -3(x - 5)$$\n$$4y - 4 = -3x + 15$$\n$$3x + 4y - 19 = 0$$"
+                "question": "Find the perpendicular bisector of P(2, -3) and Q(8, 5).",
+                "options": ["3x + 4y - 19 = 0", "4x + 3y - 17 = 0", "3x - 4y - 19 = 0", "3x + 4y + 19 = 0"],
+                "correctIndex": 0,
+                "explanation": "Midpoint (5,1), gradient of PQ = 4/3, perpendicular gradient = -3/4. Using point-gradient: 3x + 4y - 19 = 0."
+            },
+            {
+                "question": "In y = mx + c, what does c represent?",
+                "options": ["The gradient", "The x-intercept", "The y-intercept", "The origin"],
+                "correctIndex": 2,
+                "explanation": "c is the y-intercept — the y-coordinate where x = 0."
             }
         ]
     },
@@ -427,12 +924,16 @@ window.subjectNotes = [
         "digitizedText": "## 7.5 Non-Linear to Linear Form\n\nMany relationships in science and mathematics are non-linear (e.g., curves). By manipulating the equation algebraically or using logarithms, we can convert these into a linear form:\n$$Y = mX + c$$\nWhere $Y$ and $X$ are functions of $x$ and $y$, $m$ is the gradient, and $c$ is the $Y$-intercept.\n\nPlotting $Y$ against $X$ will yield a straight line.\n\n### Common Transformations\n\n**1. Polynomials:**\nIf $y = ax^2 + bx$, we divide the entire equation by $x$:\n$$\\frac{y}{x} = ax + b$$\n- $Y = \\frac{y}{x}$\n- $X = x$\n- Gradient $m = a$\n- $Y$-intercept $c = b$\n\n**2. Exponential relationships ($y = A b^x$):**\nTake the logarithm (either base $10$ or base $e$) of both sides:\n$$\\ln y = \\ln (A b^x)$$\n$$\\ln y = \\ln A + x \\ln b$$\n- $Y = \\ln y$\n- $X = x$\n- Gradient $m = \\ln b$\n- $Y$-intercept $c = \\ln A$\n\n**3. Power relationships ($y = A x^n$):**\nTake the logarithm of both sides:\n$$\\ln y = \\ln (A x^n)$$\n$$\\ln y = \\ln A + n \\ln x$$\n- $Y = \\ln y$\n- $X = \\ln x$\n- Gradient $m = n$\n- $Y$-intercept $c = \\ln A$\n<div align=\"center\">\n<svg width=\"480\" height=\"280\" viewBox=\"-30 -30 510 310\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- ===== LEFT: Original curve y = Ax^n ===== -->\n<line x1=\"-10\" y1=\"230\" x2=\"190\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"10\" y1=\"260\" x2=\"10\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"190,230 184,226 184,234\" fill=\"currentColor\"/>\n<polygon points=\"10,10 6,16 14,16\" fill=\"currentColor\"/>\n<text x=\"180\" y=\"250\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"18\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<path d=\"M 20,225 Q 50,210 80,160 Q 110,100 140,40 Q 155,10 170,0\" stroke=\"currentColor\" stroke-width=\"2.2\" fill=\"none\"/>\n<text x=\"130\" y=\"-10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y = Ax\u207f</text>\n<text x=\"40\" y=\"275\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Non-linear</text>\n\n<!-- ===== Arrow ===== -->\n<line x1=\"210\" y1=\"130\" x2=\"260\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"260,130 254,126 254,134\" fill=\"currentColor\"/>\n<text x=\"213\" y=\"120\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">take ln</text>\n\n<!-- ===== RIGHT: Linear graph ln(y) vs ln(x) ===== -->\n<line x1=\"270\" y1=\"230\" x2=\"470\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"290\" y1=\"260\" x2=\"290\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"470,230 464,226 464,234\" fill=\"currentColor\"/>\n<polygon points=\"290,10 286,16 294,16\" fill=\"currentColor\"/>\n<text x=\"450\" y=\"250\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">ln x</text>\n<text x=\"298\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">ln y</text>\n<!-- Straight line -->\n<line x1=\"300\" y1=\"190\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.2\"/>\n<!-- y-intercept -->\n<circle cx=\"300\" cy=\"190\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"240\" y=\"185\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">ln A</text>\n<!-- Gradient triangle -->\n<line x1=\"340\" y1=\"153\" x2=\"410\" y2=\"153\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"5,3\"/>\n<line x1=\"410\" y1=\"153\" x2=\"410\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"5,3\"/>\n<polyline points=\"398,153 398,141 410,141\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"360\" y=\"170\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">1</text>\n<text x=\"415\" y=\"128\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">n</text>\n<text x=\"350\" y=\"40\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">ln y = n ln x + ln A</text>\n<text x=\"320\" y=\"275\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Linear</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 5: Linearising an equation using logarithms**\n> Variables $x$ and $y$ are connected by the equation $y = A b^x$, where $A$ and $b$ are constants. When a graph of $\\ln y$ against $x$ is plotted, a straight line passing through the points $(2, 3.5)$ and $(5, 9.5)$ is obtained. Find the values of $A$ and $b$.\n>\n> **Solution:**\n> 1. Linearise the equation by taking the natural logarithm ($\\ln$) of both sides:\n> $$\\ln y = \\ln (A b^x)$$\n> $$\\ln y = \\ln A + x \\ln b$$\n> This matches $Y = mX + c$, where $Y = \\ln y$, $X = x$, $m = \\ln b$, and $c = \\ln A$.\n>\n> 2. Find the gradient $m$:\n> $$m = \\frac{9.5 - 3.5}{5 - 2} = \\frac{6}{3} = 2$$\n> Therefore, $\\ln b = 2 \\implies b = e^2 \\approx 7.39$.\n>\n> 3. Find the $Y$-intercept $c$ using the point $(2, 3.5)$:\n> $$Y - Y_1 = m(X - X_1)$$\n> $$Y - 3.5 = 2(X - 2)$$\n> $$Y = 2X - 4 + 3.5$$\n> $$Y = 2X - 0.5$$\n> So, $c = -0.5$.\n>\n> 4. Solve for $A$:\n> $$\\ln A = -0.5 \\implies A = e^{-0.5} \\approx 0.607$$\n\n> [!NOTE]\n> **Example 6: Linearising an algebraic equation**\n> Variables $x$ and $y$ are related by the equation $x^2 y = a x + b$. When a graph of $x^2 y$ against $x$ is plotted, a straight line is obtained. State the variables that must be plotted on the $Y$-axis and $X$-axis, and identify the gradient and $Y$-intercept in terms of $a$ and $b$.\n>\n> **Solution:**\n> 1. The given equation is already in the form $Y = mX + c$:\n> $$x^2 y = a(x) + b$$\n> 2. Identify the linear components:\n> - $Y$-axis: Plot $x^2 y$\n> - $X$-axis: Plot $x$\n> - Gradient ($m$): $a$\n> - $Y$-intercept ($c$): $b$",
         "quizzes": [
             {
-                "question": "**Example 5: Linearising an equation using logarithms**\nVariables $x$ and $y$ are connected by the equation $y = A b^x$, where $A$ and $b$ are constants. When a graph of $\\ln y$ against $x$ is plotted, a straight line passing through the points $(2, 3.5)$ and $(5, 9.5)$ is obtained. Find the values of $A$ and $b$.",
-                "explanation": "1. Linearise the equation by taking the natural logarithm ($\\ln$) of both sides:\n$$\\ln y = \\ln (A b^x)$$\n$$\\ln y = \\ln A + x \\ln b$$\nThis matches $Y = mX + c$, where $Y = \\ln y$, $X = x$, $m = \\ln b$, and $c = \\ln A$.\n2. Find the gradient $m$:\n$$m = \\frac{9.5 - 3.5}{5 - 2} = \\frac{6}{3} = 2$$\nTherefore, $\\ln b = 2 \\implies b = e^2 \\approx 7.39$.\n3. Find the $Y$-intercept $c$ using the point $(2, 3.5)$:\n$$Y - Y_1 = m(X - X_1)$$\n$$Y - 3.5 = 2(X - 2)$$\n$$Y = 2X - 4 + 3.5$$\n$$Y = 2X - 0.5$$\nSo, $c = -0.5$.\n4. Solve for $A$:\n$$\\ln A = -0.5 \\implies A = e^{-0.5} \\approx 0.607$$"
+                "question": "For y = Abˣ, plotting ln y against x gives a straight line with gradient:",
+                "options": ["ln A", "ln b", "b", "A"],
+                "correctIndex": 1,
+                "explanation": "ln y = ln A + x ln b. The gradient is ln b."
             },
             {
-                "question": "**Example 6: Linearising an algebraic equation**\nVariables $x$ and $y$ are related by the equation $x^2 y = a x + b$. When a graph of $x^2 y$ against $x$ is plotted, a straight line is obtained. State the variables that must be plotted on the $Y$-axis and $X$-axis, and identify the gradient and $Y$-intercept in terms of $a$ and $b$.",
-                "explanation": "1. The given equation is already in the form $Y = mX + c$:\n$$x^2 y = a(x) + b$$\n2. Identify the linear components:\n- $Y$-axis: Plot $x^2 y$\n- $X$-axis: Plot $x$\n- Gradient ($m$): $a$\n- $Y$-intercept ($c$): $b$"
+                "question": "To linearise y = Axⁿ, we plot:",
+                "options": ["y against x", "ln y against x", "ln y against ln x", "y against ln x"],
+                "correctIndex": 2,
+                "explanation": "ln y = ln A + n ln x. Plotting ln y against ln x gives a straight line with gradient n."
             }
         ]
     },
@@ -442,8 +943,16 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 8: Coordinate Geometry of the Circle\n\n## 8.1 Standard Equation of a Circle\n\nA circle is defined as the locus of all points $(x, y)$ that are at a constant distance, $r$, from a fixed point called the centre, $(a, b)$.\n<div align=\"center\">\n<svg width=\"320\" height=\"320\" viewBox=\"0 0 320 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"20\" y1=\"240\" x2=\"290\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"260\" x2=\"40\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"290,240 284,236 284,244\" fill=\"currentColor\"/>\n<polygon points=\"40,15 36,21 44,21\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"295\" y=\"245\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"35\" y=\"10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"25\" y=\"255\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Dashed coordinates for center -->\n<line x1=\"150\" y1=\"120\" x2=\"150\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.7\"/>\n<line x1=\"150\" y1=\"120\" x2=\"40\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.7\"/>\n<text x=\"147\" y=\"255\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">a</text>\n<text x=\"25\" y=\"124\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">b</text>\n\n<!-- Circle -->\n<circle cx=\"150\" cy=\"120\" r=\"70\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n\n<!-- Center (a, b) -->\n<circle cx=\"150\" cy=\"120\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"155\" y=\"115\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">(a, b)</text>\n\n<!-- Radius line and point (x, y) -->\n<line x1=\"150\" y1=\"120\" x2=\"208\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"208\" cy=\"80\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"214\" y=\"75\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">(x, y)</text>\n<text x=\"180\" y=\"93\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">r</text>\n</svg>\n</div>\n\nUsing the distance formula, the standard equation of a circle with centre $(a, b)$ and radius $r$ is:\n\n$$ (x - a)^2 + (y - b)^2 = r^2 $$\n\nIf the centre of the circle is at the origin $(0, 0)$, the equation simplifies to:\n\n$$ x^2 + y^2 = r^2 $$\n\n> [!NOTE]\n> **Example 1: Finding the equation of a circle**\n> Find the equation of the circle with centre $(3, -2)$ and radius $5$.\n>\n> **Solution:**\n> 1. Identify the given values: $a = 3$, $b = -2$, and $r = 5$.\n> 2. Substitute into the standard equation: $(x - 3)^2 + (y - (-2))^2 = 5^2$\n> 3. Simplify the equation: $(x - 3)^2 + (y + 2)^2 = 25$",
         "quizzes": [
             {
-                "question": "**Example 1: Finding the equation of a circle**\nFind the equation of the circle with centre $(3, -2)$ and radius $5$.",
-                "explanation": "1. Identify the given values: $a = 3$, $b = -2$, and $r = 5$.\n2. Substitute into the standard equation: $(x - 3)^2 + (y - (-2))^2 = 5^2$\n3. Simplify the equation: $(x - 3)^2 + (y + 2)^2 = 25$"
+                "question": "Find the equation of the circle with centre (3, -2) and radius 5.",
+                "options": ["(x-3)² + (y-2)² = 25", "(x-3)² + (y+2)² = 25", "(x+3)² + (y-2)² = 25", "(x+3)² + (y+2)² = 25"],
+                "correctIndex": 1,
+                "explanation": "Using (x-a)² + (y-b)² = r²: (x-3)² + (y+2)² = 25."
+            },
+            {
+                "question": "The standard equation of a circle is:",
+                "options": ["(x+a)² + (y+b)² = r", "(x-a)² + (y-b)² = r²", "(x-a)² + (y-b)² = r", "x² + y² = r²"],
+                "correctIndex": 1,
+                "explanation": "Standard form: (x-a)² + (y-b)² = r² with centre (a,b) and radius r."
             }
         ]
     },
@@ -451,7 +960,20 @@ window.subjectNotes = [
         "subtopicId": "8.2",
         "title": "General Form of a Circle",
         "digitizedText": "## 8.2 General Form of a Circle\n\nWhen the standard equation is expanded, we obtain the general equation of a circle:\n\n$$ x^2 + y^2 + 2gx + 2fy + c = 0 $$\n\nTo find the centre and radius from this general form, you can either complete the square or use the established formulas:\n- **Centre:** $(-g, -f)$\n- **Radius:** $r = \\sqrt{g^2 + f^2 - c}$\n\n> [!NOTE]\n> **Example 2: Finding the centre and radius from the expanded form**\n> Find the centre and radius of the circle given by the equation $x^2 + y^2 - 6x + 8y + 9 = 0$.\n>\n> **Solution (Method 1: Completing the square):**\n> 1. Group the $x$ and $y$ terms: $(x^2 - 6x) + (y^2 + 8y) = -9$\n> 2. Complete the square for both variables: $(x - 3)^2 - 9 + (y + 4)^2 - 16 = -9$\n> 3. Rearrange into standard form: $(x - 3)^2 + (y + 4)^2 = 16$\n> 4. Identify the centre and radius: The centre is $(3, -4)$ and the radius is $r = \\sqrt{16} = 4$.\n>\n> **Solution (Method 2: Using formulas):**\n> 1. Compare with $x^2 + y^2 + 2gx + 2fy + c = 0$: $2g = -6 \\implies g = -3$, $2f = 8 \\implies f = 4$, and $c = 9$.\n> 2. The centre is $(-g, -f) = (3, -4)$.\n> 3. The radius is $r = \\sqrt{(-3)^2 + 4^2 - 9} = \\sqrt{9 + 16 - 9} = \\sqrt{16} = 4$.",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "For x² + y² - 6x + 8y + 9 = 0, the centre is:",
+                "options": ["(3, -4)", "(-3, 4)", "(6, -8)", "(-6, 8)"],
+                "correctIndex": 0,
+                "explanation": "2g = -6 → g = -3, 2f = 8 → f = 4. Centre = (-g, -f) = (3, -4)."
+            },
+            {
+                "question": "For x² + y² - 6x + 8y + 9 = 0, the radius is:",
+                "options": ["3", "4", "5", "16"],
+                "correctIndex": 1,
+                "explanation": "r = √(g² + f² - c) = √(9 + 16 - 9) = √16 = 4."
+            }
+        ]
     },
     {
         "subtopicId": "8.3",
@@ -459,8 +981,16 @@ window.subjectNotes = [
         "digitizedText": "## 8.3 Line and Circle Intersection\n\nTo find the points of intersection between a straight line and a circle, substitute the linear equation into the circle's equation. This will result in a quadratic equation.\n<div align=\"center\">\n<svg width=\"320\" height=\"320\" viewBox=\"0 0 320 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"20\" y1=\"240\" x2=\"290\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"260\" x2=\"40\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"290,240 284,236 284,244\" fill=\"currentColor\"/>\n<polygon points=\"40,15 36,21 44,21\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"295\" y=\"245\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"35\" y=\"10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"25\" y=\"255\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Circle -->\n<circle cx=\"150\" cy=\"130\" r=\"60\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n\n<!-- Line -->\n<line x1=\"70\" y1=\"200\" x2=\"250\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"/>\n\n<!-- Intersection points -->\n<circle cx=\"114\" cy=\"178\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"65\" y=\"178\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">P(x\u2081, y\u2081)</text>\n\n<circle cx=\"210\" cy=\"130\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"218\" y=\"126\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Q(x\u2082, y\u2082)</text>\n\n<!-- Labels for Line and Circle -->\n<text x=\"75\" y=\"90\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Circle</text>\n<text x=\"235\" y=\"105\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Line</text>\n</svg>\n</div>\n\nThe number of intersection points depends on the discriminant ($\\Delta = b^2 - 4ac$) of the resulting quadratic equation:\n- **Two distinct points of intersection (Secant):** $b^2 - 4ac > 0$\n- **One point of intersection (Tangent):** $b^2 - 4ac = 0$\n- **No points of intersection:** $b^2 - 4ac < 0$\n\n> [!NOTE]\n> **Example 3: Intersection of a line and circle**\n> Find the coordinates of the points of intersection of the line $y = x + 1$ and the circle $x^2 + y^2 = 25$.\n>\n> **Solution:**\n> 1. Substitute $y = x + 1$ into the circle's equation: $x^2 + (x + 1)^2 = 25$\n> 2. Expand and simplify: $x^2 + x^2 + 2x + 1 = 25 \\implies 2x^2 + 2x - 24 = 0$\n> 3. Divide by $2$: $x^2 + x - 12 = 0$\n> 4. Factorize the quadratic: $(x + 4)(x - 3) = 0$\n> 5. Find the $x$-coordinates: $x = -4$ or $x = 3$\n> 6. Substitute $x$ back into the linear equation to find $y$:\n>    - If $x = -4$, $y = -4 + 1 = -3$. Point: $(-4, -3)$\n>    - If $x = 3$, $y = 3 + 1 = 4$. Point: $(3, 4)$\n> 7. The points of intersection are $(-4, -3)$ and $(3, 4)$.",
         "quizzes": [
             {
-                "question": "**Example 3: Intersection of a line and circle**\nFind the coordinates of the points of intersection of the line $y = x + 1$ and the circle $x^2 + y^2 = 25$.",
-                "explanation": "1. Substitute $y = x + 1$ into the circle's equation: $x^2 + (x + 1)^2 = 25$\n2. Expand and simplify: $x^2 + x^2 + 2x + 1 = 25 \\implies 2x^2 + 2x - 24 = 0$\n3. Divide by $2$: $x^2 + x - 12 = 0$\n4. Factorize the quadratic: $(x + 4)(x - 3) = 0$\n5. Find the $x$-coordinates: $x = -4$ or $x = 3$\n6. Substitute $x$ back into the linear equation to find $y$:\n- If $x = -4$, $y = -4 + 1 = -3$. Point: $(-4, -3)$\n- If $x = 3$, $y = 3 + 1 = 4$. Point: $(3, 4)$\n7. The points of intersection are $(-4, -3)$ and $(3, 4)$."
+                "question": "Substituting y = x + 1 into x² + y² = 25 gives:",
+                "options": ["2x² + 2x - 24 = 0", "x² + x - 24 = 0", "2x² - 2x - 24 = 0", "x² + 2x - 24 = 0"],
+                "correctIndex": 0,
+                "explanation": "x² + (x+1)² = 25 → 2x² + 2x - 24 = 0."
+            },
+            {
+                "question": "The intersection points of y = x + 1 and x² + y² = 25 are:",
+                "options": ["(-4, -3) and (3, 4)", "(-4, 3) and (3, -4)", "(4, -3) and (-3, 4)", "(-4, -3) and (3, -4)"],
+                "correctIndex": 0,
+                "explanation": "Using y = x + 1: x = -4 → y = -3, x = 3 → y = 4."
             }
         ]
     },
@@ -470,8 +1000,16 @@ window.subjectNotes = [
         "digitizedText": "## 8.4 Tangent Lines to a Circle\n\nA tangent to a circle is a straight line that touches the circle at exactly one point. Two vital geometric properties are used to solve tangent problems:\n1. **Perpendicularity:** The tangent at a point on the circle is strictly perpendicular to the radius drawn to that point of tangency. If the gradient of the radius is $m_1$, then the gradient of the tangent is $m_2 = -\\frac{1}{m_1}$.\n2. **Distance:** The perpendicular distance from the centre of the circle to the tangent line is exactly equal to the radius.\n<div align=\"center\">\n<svg width=\"320\" height=\"320\" viewBox=\"0 0 320 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"20\" y1=\"240\" x2=\"290\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"260\" x2=\"40\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"290,240 284,236 284,244\" fill=\"currentColor\"/>\n<polygon points=\"40,15 36,21 44,21\" fill=\"currentColor\"/>\n<!-- Labels -->\n<text x=\"295\" y=\"245\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"35\" y=\"10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"25\" y=\"255\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Circle -->\n<circle cx=\"150\" cy=\"130\" r=\"60\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n\n<!-- Center (a, b) -->\n<circle cx=\"150\" cy=\"130\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"120\" y=\"135\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">C(a, b)</text>\n\n<!-- Radius to point of tangency -->\n<line x1=\"150\" y1=\"130\" x2=\"198\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n<text x=\"175\" y=\"120\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">r</text>\n\n<!-- Tangent Line -->\n<line x1=\"144\" y1=\"22\" x2=\"246\" y2=\"158\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"235\" y=\"145\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Tangent</text>\n\n<!-- Point of tangency -->\n<circle cx=\"198\" cy=\"94\" r=\"3.5\" fill=\"currentColor\"/>\n<text x=\"206\" y=\"90\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">P(x\u2081, y\u2081)</text>\n\n<!-- Right angle marker -->\n<path d=\"M 190,100 L 184,92 L 192,86\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\" />\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Finding the equation of a tangent at a given point**\n> Find the equation of the tangent to the circle $(x - 2)^2 + (y + 1)^2 = 25$ at the point $(5, 3)$.\n>\n> **Solution:**\n> 1. Identify the centre of the circle: The centre is $(2, -1)$.\n> 2. Find the gradient of the radius connecting the centre $(2, -1)$ and the point $(5, 3)$:\n>    $$ m_{\\text{radius}} = \\frac{3 - (-1)}{5 - 2} = \\frac{4}{3} $$\n> 3. Find the gradient of the tangent (perpendicular to the radius):\n>    $$ m_{\\text{tangent}} = -\\frac{3}{4} $$\n> 4. Use the point-slope form $y - y_1 = m(x - x_1)$ with the point $(5, 3)$:\n>    $$ y - 3 = -\\frac{3}{4}(x - 5) $$\n> 5. Simplify to the general linear form:\n>    $$ 4(y - 3) = -3(x - 5) $$\n>    $$ 4y - 12 = -3x + 15 $$\n>    $$ 3x + 4y - 27 = 0 $$",
         "quizzes": [
             {
-                "question": "**Example 4: Finding the equation of a tangent at a given point**\nFind the equation of the tangent to the circle $(x - 2)^2 + (y + 1)^2 = 25$ at the point $(5, 3)$.",
-                "explanation": "1. Identify the centre of the circle: The centre is $(2, -1)$.\n2. Find the gradient of the radius connecting the centre $(2, -1)$ and the point $(5, 3)$:\n$$ m_{\\text{radius}} = \\frac{3 - (-1)}{5 - 2} = \\frac{4}{3} $$\n3. Find the gradient of the tangent (perpendicular to the radius):\n$$ m_{\\text{tangent}} = -\\frac{3}{4} $$\n4. Use the point-slope form $y - y_1 = m(x - x_1)$ with the point $(5, 3)$:\n$$ y - 3 = -\\frac{3}{4}(x - 5) $$\n5. Simplify to the general linear form:\n$$ 4(y - 3) = -3(x - 5) $$\n$$ 4y - 12 = -3x + 15 $$\n$$ 3x + 4y - 27 = 0 $$"
+                "question": "The tangent to a circle is perpendicular to the:",
+                "options": ["Chord at the point of contact", "Radius at the point of tangency", "Diameter at the centre", "Other tangent"],
+                "correctIndex": 1,
+                "explanation": "A tangent is always perpendicular to the radius at the point of tangency."
+            },
+            {
+                "question": "If the radius gradient is 4/3, the tangent gradient is:",
+                "options": ["3/4", "-4/3", "-3/4", "4/3"],
+                "correctIndex": 2,
+                "explanation": "Perpendicular: m₁ × m₂ = -1, so m₂ = -3/4."
             }
         ]
     },
@@ -481,8 +1019,22 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 9: Circular Measure\n\n## 9.1 Introduction to Radians\nIn circular measure, angles are measured in **radians** rather than degrees. One radian is defined as the angle subtended at the centre of a circle by an arc whose length is equal to the radius of the circle.\n<div align=\"center\">\n<svg width=\"340\" height=\"340\" viewBox=\"-170 -170 340 340\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Full circle -->\n<circle cx=\"0\" cy=\"0\" r=\"130\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<!-- Centre dot -->\n<circle cx=\"0\" cy=\"0\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"8\" y=\"14\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">O</text>\n<!-- Horizontal diameter -->\n<line x1=\"-130\" y1=\"0\" x2=\"130\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"6,4\"/>\n<!-- Vertical diameter (dashed, for reference) -->\n<line x1=\"0\" y1=\"-130\" x2=\"0\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"6,4\"/>\n<!-- Right half-circle arc highlighted (top) -->\n<path d=\"M 130,0 A 130,130 0 0,0 -130,0\" stroke=\"#e74c3c\" stroke-width=\"3.5\" fill=\"none\"/>\n<!-- Right half-circle arc highlighted (bottom) -->\n<path d=\"M -130,0 A 130,130 0 0,0 130,0\" stroke=\"#3498db\" stroke-width=\"3.5\" fill=\"none\"/>\n<!-- Label: \u03c0 at top of semicircle -->\n<text x=\"-8\" y=\"-140\" fill=\"#e74c3c\" font-family=\"serif\" font-size=\"16\" font-style=\"italic\" text-anchor=\"middle\">\u03c0 rad</text>\n<text x=\"-8\" y=\"-125\" fill=\"#e74c3c\" font-family=\"serif\" font-size=\"13\" text-anchor=\"middle\">(180\u00b0)</text>\n<!-- Label: \u03c0 at bottom of semicircle -->\n<text x=\"-8\" y=\"152\" fill=\"#3498db\" font-family=\"serif\" font-size=\"16\" font-style=\"italic\" text-anchor=\"middle\">\u03c0 rad</text>\n<text x=\"-8\" y=\"167\" fill=\"#3498db\" font-family=\"serif\" font-size=\"13\" text-anchor=\"middle\">(180\u00b0)</text>\n<!-- Label: full circle = 2\u03c0 -->\n<text x=\"155\" y=\"5\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">2\u03c0 rad</text>\n<text x=\"155\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">(360\u00b0)</text>\n<!-- Tick marks at key angles -->\n<!-- 0\u00b0 / 0 rad -->\n<line x1=\"125\" y1=\"0\" x2=\"135\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"100\" y=\"-10\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">0\u00b0</text>\n<!-- 90\u00b0 / \u03c0/2 -->\n<line x1=\"0\" y1=\"-125\" x2=\"0\" y2=\"-135\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"10\" y=\"-110\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">\u03c0/2</text>\n<text x=\"10\" y=\"-96\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(90\u00b0)</text>\n<!-- 180\u00b0 / \u03c0 -->\n<line x1=\"-125\" y1=\"0\" x2=\"-135\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<!-- 270\u00b0 / 3\u03c0/2 -->\n<line x1=\"0\" y1=\"125\" x2=\"0\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"10\" y=\"120\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">3\u03c0/2</text>\n<text x=\"10\" y=\"134\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">(270\u00b0)</text>\n</svg>\n</div>\n\n### Converting Between Degrees and Radians\nSince the circumference of a full circle is $2\\pi r$, a full revolution of $360^\\circ$ corresponds to an angle of $2\\pi$ radians.\n\n$$360^\\circ = 2\\pi \\text{ radians} \\implies 180^\\circ = \\pi \\text{ radians}$$\n\n- **Degrees to Radians:** Multiply the angle by $\\frac{\\pi}{180}$\n- **Radians to Degrees:** Multiply the angle by $\\frac{180}{\\pi}$\n\n> [!NOTE]\n> **Example 1: Converting angles**\n> Convert $60^\\circ$ to radians and $\\frac{3\\pi}{4}$ radians to degrees.\n> \n> **Solution:**\n> 1. Convert $60^\\circ$ to radians: \n> $$60 \\times \\frac{\\pi}{180} = \\frac{\\pi}{3} \\text{ radians}$$\n> 2. Convert $\\frac{3\\pi}{4}$ radians to degrees:\n> $$\\frac{3\\pi}{4} \\times \\frac{180}{\\pi} = 135^\\circ$$",
         "quizzes": [
             {
-                "question": "**Example 1: Converting angles**\nConvert $60^\\circ$ to radians and $\\frac{3\\pi}{4}$ radians to degrees.",
-                "explanation": "1. Convert $60^\\circ$ to radians: \n$$60 \\times \\frac{\\pi}{180} = \\frac{\\pi}{3} \\text{ radians}$$\n2. Convert $\\frac{3\\pi}{4}$ radians to degrees:\n$$\\frac{3\\pi}{4} \\times \\frac{180}{\\pi} = 135^\\circ$$"
+                "question": "Convert 60° to radians.",
+                "options": ["π/6", "π/4", "π/3", "π/2"],
+                "correctIndex": 2,
+                "explanation": "60 × π/180 = π/3 radians."
+            },
+            {
+                "question": "Convert 3π/4 radians to degrees.",
+                "options": ["45°", "90°", "135°", "180°"],
+                "correctIndex": 2,
+                "explanation": "3π/4 × 180/π = 135°."
+            },
+            {
+                "question": "A full circle (360°) equals:",
+                "options": ["π radians", "2π radians", "4π radians", "360 radians"],
+                "correctIndex": 1,
+                "explanation": "360° = 2π radians."
             }
         ]
     },
@@ -492,12 +1044,22 @@ window.subjectNotes = [
         "digitizedText": "## 9.2 Arc Length\nThe arc length $s$ of a circle with radius $r$ and a central angle $\\theta$ measured in radians is given by the formula:\n\n$$s = r\\theta$$\n\n*If the angle is given in degrees, it must first be converted to radians before using this formula.*\n<div align=\"center\">\n<svg width=\"320\" height=\"300\" viewBox=\"-40 -40 320 300\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Circle -->\n<circle cx=\"130\" cy=\"140\" r=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.4\"/>\n<!-- Centre dot -->\n<circle cx=\"130\" cy=\"140\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"122\" y=\"160\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">O</text>\n<!-- Radius line 1 (to right, at 0\u00b0) -->\n<line x1=\"130\" y1=\"140\" x2=\"250\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n<!-- Radius line 2 (at ~60\u00b0 above horizontal) -->\n<line x1=\"130\" y1=\"140\" x2=\"190\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n<!-- Arc (highlighted) from 0\u00b0 to 60\u00b0 -->\n<path d=\"M 250,140 A 120,120 0 0,0 190,36\" stroke=\"#e74c3c\" stroke-width=\"3.5\" fill=\"none\"/>\n<!-- Angle arc at centre -->\n<path d=\"M 160,140 A 30,30 0 0,0 145,114\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"/>\n<!-- Label: \u03b8 at the angle -->\n<text x=\"163\" y=\"126\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\" font-style=\"italic\">\u03b8</text>\n<!-- Label: r on bottom radius -->\n<text x=\"185\" y=\"158\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">r</text>\n<!-- Label: r on angled radius -->\n<text x=\"147\" y=\"82\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">r</text>\n<!-- Label: s on the arc -->\n<text x=\"230\" y=\"78\" fill=\"#e74c3c\" font-family=\"serif\" font-size=\"17\" font-weight=\"bold\" font-style=\"italic\">s</text>\n<!-- Small arrow hint on arc -->\n<polygon points=\"194,40 190,36 196,34\" fill=\"#e74c3c\"/>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 2: Finding arc length**\n> A circle has a radius of $8 \\text{ cm}$. Find the length of the arc that subtends an angle of $1.5 \\text{ radians}$ at the centre.\n> \n> **Solution:**\n> 1. Identify the given values: $r = 8$, $\\theta = 1.5$\n> 2. Apply the arc length formula: \n> $$s = r\\theta = 8 \\times 1.5 = 12 \\text{ cm}$$\n\n> [!NOTE]\n> **Example 3: Finding the radius from arc length**\n> An arc of length $15 \\text{ cm}$ subtends an angle of $\\frac{5\\pi}{6} \\text{ radians}$ at the centre of a circle. Find the radius of the circle.\n> \n> **Solution:**\n> 1. State the formula: $s = r\\theta$\n> 2. Substitute the known values: $15 = r \\times \\frac{5\\pi}{6}$\n> 3. Solve for $r$: \n> $$r = \\frac{15 \\times 6}{5\\pi} = \\frac{18}{\\pi} \\approx 5.73 \\text{ cm}$$",
         "quizzes": [
             {
-                "question": "**Example 2: Finding arc length**\nA circle has a radius of $8 \\text{ cm}$. Find the length of the arc that subtends an angle of $1.5 \\text{ radians}$ at the centre.",
-                "explanation": "1. Identify the given values: $r = 8$, $\\theta = 1.5$\n2. Apply the arc length formula: \n$$s = r\\theta = 8 \\times 1.5 = 12 \\text{ cm}$$"
+                "question": "Find the arc length with radius 8 cm and angle 1.5 radians.",
+                "options": ["6 cm", "10.5 cm", "12 cm", "15 cm"],
+                "correctIndex": 2,
+                "explanation": "s = rθ = 8 × 1.5 = 12 cm."
             },
             {
-                "question": "**Example 3: Finding the radius from arc length**\nAn arc of length $15 \\text{ cm}$ subtends an angle of $\\frac{5\\pi}{6} \\text{ radians}$ at the centre of a circle. Find the radius of the circle.",
-                "explanation": "1. State the formula: $s = r\\theta$\n2. Substitute the known values: $15 = r \\times \\frac{5\\pi}{6}$\n3. Solve for $r$: \n$$r = \\frac{15 \\times 6}{5\\pi} = \\frac{18}{\\pi} \\approx 5.73 \\text{ cm}$$"
+                "question": "An arc of length 15 cm subtends 5π/6 radians. The radius is:",
+                "options": ["18/π ≈ 5.73 cm", "5π/6 cm", "3π cm", "5/6 cm"],
+                "correctIndex": 0,
+                "explanation": "r = s/θ = 15/(5π/6) = 18/π ≈ 5.73 cm."
+            },
+            {
+                "question": "The formula s = rθ requires θ in:",
+                "options": ["Degrees", "Radians", "Gradians", "Any unit"],
+                "correctIndex": 1,
+                "explanation": "Arc length formula only works with radians."
             }
         ]
     },
@@ -507,8 +1069,16 @@ window.subjectNotes = [
         "digitizedText": "## 9.3 Area of a Sector\nA sector is the region bounded by two radii and an arc. The area $A$ of a sector of a circle with radius $r$ and central angle $\\theta$ (in radians) is given by:\n\n$$A = \\frac{1}{2}r^2\\theta$$\n<div align=\"center\">\n<svg width=\"320\" height=\"300\" viewBox=\"-40 -40 320 300\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Full circle (faint) -->\n<circle cx=\"130\" cy=\"140\" r=\"120\" stroke=\"currentColor\" stroke-width=\"1\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.3\"/>\n<!-- Sector (shaded region) -->\n<path d=\"M 130,140 L 250,140 A 120,120 0 0,0 190,36 Z\" fill=\"#3498db\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<!-- Re-draw the arc on top with color -->\n<path d=\"M 250,140 A 120,120 0 0,0 190,36\" stroke=\"#3498db\" stroke-width=\"3\" fill=\"none\"/>\n<!-- Centre dot -->\n<circle cx=\"130\" cy=\"140\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"116\" y=\"160\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">O</text>\n<!-- Angle arc at centre -->\n<path d=\"M 160,140 A 30,30 0 0,0 145,114\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"/>\n<!-- Label: \u03b8 -->\n<text x=\"163\" y=\"126\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\" font-style=\"italic\">\u03b8</text>\n<!-- Label: r on bottom radius -->\n<text x=\"185\" y=\"158\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">r</text>\n<!-- Label: r on angled radius -->\n<text x=\"147\" y=\"82\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">r</text>\n<!-- Label: Sector -->\n<text x=\"185\" y=\"118\" fill=\"#3498db\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">Sector</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Calculating sector area**\n> Find the area of a sector of a circle with radius $10 \\text{ cm}$ and an angle of $0.8 \\text{ radians}$.\n> \n> **Solution:**\n> 1. Identify the given values: $r = 10$, $\\theta = 0.8$\n> 2. Apply the sector area formula: \n> $$A = \\frac{1}{2}(10)^2(0.8)$$\n> 3. Calculate:\n> $$A = \\frac{1}{2} \\times 100 \\times 0.8 = 40 \\text{ cm}^2$$",
         "quizzes": [
             {
-                "question": "**Example 4: Calculating sector area**\nFind the area of a sector of a circle with radius $10 \\text{ cm}$ and an angle of $0.8 \\text{ radians}$.",
-                "explanation": "1. Identify the given values: $r = 10$, $\\theta = 0.8$\n2. Apply the sector area formula: \n$$A = \\frac{1}{2}(10)^2(0.8)$$\n3. Calculate:\n$$A = \\frac{1}{2} \\times 100 \\times 0.8 = 40 \\text{ cm}^2$$"
+                "question": "Find the sector area with radius 10 cm and angle 0.8 radians.",
+                "options": ["8 cm²", "40 cm²", "80 cm²", "16 cm²"],
+                "correctIndex": 1,
+                "explanation": "A = ½r²θ = ½(100)(0.8) = 40 cm²."
+            },
+            {
+                "question": "The sector area formula is:",
+                "options": ["A = r²θ", "A = ½r²θ", "A = ½rθ", "A = πr²θ"],
+                "correctIndex": 1,
+                "explanation": "A = ½r²θ where θ is in radians."
             }
         ]
     },
@@ -518,8 +1088,16 @@ window.subjectNotes = [
         "digitizedText": "## 9.4 Area of a Segment\nA segment is the region bounded by a chord and an arc. The area of a segment can be found by subtracting the area of the triangle formed by the two radii and the chord from the area of the sector.\n<div align=\"center\">\n<svg width=\"580\" height=\"280\" viewBox=\"-10 -30 580 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- === LEFT DIAGRAM: Sector with triangle shown === -->\n<!-- Full circle (faint) -->\n<circle cx=\"120\" cy=\"130\" r=\"110\" stroke=\"currentColor\" stroke-width=\"1\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.3\"/>\n<!-- Sector shaded -->\n<path d=\"M 120,130 L 230,130 A 110,110 0 0,0 175,34 Z\" fill=\"#3498db\" fill-opacity=\"0.2\" stroke=\"none\"/>\n<!-- Triangle (within sector) -->\n<path d=\"M 120,130 L 230,130 L 175,34 Z\" fill=\"#2ecc71\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arc -->\n<path d=\"M 230,130 A 110,110 0 0,0 175,34\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/>\n<!-- Radii -->\n<line x1=\"120\" y1=\"130\" x2=\"230\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n<line x1=\"120\" y1=\"130\" x2=\"175\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n<!-- Chord (dashed) -->\n<line x1=\"230\" y1=\"130\" x2=\"175\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6,3\"/>\n<!-- Centre dot -->\n<circle cx=\"120\" cy=\"130\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"106\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">O</text>\n<!-- Angle arc -->\n<path d=\"M 148,130 A 28,28 0 0,0 134,106\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"/>\n<text x=\"150\" y=\"118\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">\u03b8</text>\n<!-- Labels -->\n<text x=\"170\" y=\"148\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">r</text>\n<text x=\"136\" y=\"76\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">r</text>\n<text x=\"160\" y=\"100\" fill=\"#2ecc71\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">Triangle</text>\n<!-- Title -->\n<text x=\"120\" y=\"-10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Sector = Triangle + Segment</text>\n\n<!-- === EQUALS SIGN === -->\n<text x=\"270\" y=\"130\" fill=\"currentColor\" font-family=\"serif\" font-size=\"28\" font-weight=\"bold\">=</text>\n\n<!-- === RIGHT DIAGRAM: Segment only === -->\n<!-- Full circle (faint) -->\n<circle cx=\"420\" cy=\"130\" r=\"110\" stroke=\"currentColor\" stroke-width=\"1\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.3\"/>\n<!-- Segment shaded (area between arc and chord) -->\n<path d=\"M 530,130 A 110,110 0 0,0 475,34 L 530,130 Z\" fill=\"#e74c3c\" fill-opacity=\"0.3\" stroke=\"none\"/>\n<!-- The chord -->\n<line x1=\"530\" y1=\"130\" x2=\"475\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<!-- Arc -->\n<path d=\"M 530,130 A 110,110 0 0,0 475,34\" stroke=\"#e74c3c\" stroke-width=\"3\" fill=\"none\"/>\n<!-- Radii (faint) -->\n<line x1=\"420\" y1=\"130\" x2=\"530\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/>\n<line x1=\"420\" y1=\"130\" x2=\"475\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/>\n<!-- Centre dot -->\n<circle cx=\"420\" cy=\"130\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"406\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">O</text>\n<!-- Label -->\n<text x=\"505\" y=\"92\" fill=\"#e74c3c\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">Segment</text>\n<!-- Chord label -->\n<text x=\"510\" y=\"78\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">chord</text>\n<!-- Title -->\n<text x=\"420\" y=\"-10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Segment (shaded)</text>\n</svg>\n</div>\n\nThe area of the triangle is given by $\\frac{1}{2}ab\\sin C$. In this context, $a = r$, $b = r$, and $C = \\theta$. Therefore, the area of the triangle is:\n\n$$\\text{Area of Triangle} = \\frac{1}{2}r^2\\sin\\theta$$\n\nSubtracting this from the sector area gives the formula for the area of a segment:\n\n$$A = \\frac{1}{2}r^2\\theta - \\frac{1}{2}r^2\\sin\\theta = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$$\n\n*Ensure your calculator is in **radian mode** when evaluating $\\sin\\theta$.*\n\n> [!NOTE]\n> **Example 5: Finding the area of a segment**\n> A chord of a circle with radius $6 \\text{ cm}$ subtends an angle of $\\frac{\\pi}{3} \\text{ radians}$ at the centre. Find the area of the minor segment.\n> \n> **Solution:**\n> 1. Identify the given values: $r = 6$, $\\theta = \\frac{\\pi}{3}$\n> 2. Use the segment area formula: \n> $$A = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$$\n> 3. Substitute the values:\n> $$A = \\frac{1}{2}(6)^2\\left(\\frac{\\pi}{3} - \\sin\\left(\\frac{\\pi}{3}\\right)\\right)$$\n> 4. Evaluate $\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$:\n> $$A = 18\\left(\\frac{\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right)$$\n> 5. Calculate the final value:\n> $$A = 6\\pi - 9\\sqrt{3} \\approx 3.26 \\text{ cm}^2$$",
         "quizzes": [
             {
-                "question": "**Example 5: Finding the area of a segment**\nA chord of a circle with radius $6 \\text{ cm}$ subtends an angle of $\\frac{\\pi}{3} \\text{ radians}$ at the centre. Find the area of the minor segment.",
-                "explanation": "1. Identify the given values: $r = 6$, $\\theta = \\frac{\\pi}{3}$\n2. Use the segment area formula: \n$$A = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$$\n3. Substitute the values:\n$$A = \\frac{1}{2}(6)^2\\left(\\frac{\\pi}{3} - \\sin\\left(\\frac{\\pi}{3}\\right)\\right)$$\n4. Evaluate $\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$:\n$$A = 18\\left(\\frac{\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right)$$\n5. Calculate the final value:\n$$A = 6\\pi - 9\\sqrt{3} \\approx 3.26 \\text{ cm}^2$$"
+                "question": "The area of a segment is calculated by:",
+                "options": ["Arc length × radius", "Sector area minus triangle area", "Sector area plus triangle area", "Sector area divided by 2"],
+                "correctIndex": 1,
+                "explanation": "Segment area = sector area - triangle area = ½r²(θ - sin θ)."
+            },
+            {
+                "question": "For radius 6 cm and angle π/3, the segment area is:",
+                "options": ["6π cm²", "18(π/3 - √3/2) cm²", "3π cm²", "π/3 cm²"],
+                "correctIndex": 1,
+                "explanation": "A = ½(36)(π/3 - sin(π/3)) = 18(π/3 - √3/2) ≈ 3.26 cm²."
             }
         ]
     },
@@ -529,8 +1107,16 @@ window.subjectNotes = [
         "digitizedText": "## 9.5 Combined Problems\nOften, exam questions will combine arc length, sector area, and segment area, requiring you to find perimeters or total areas of composite shapes.\n\n**Key strategies for combined problems:**\n- **Perimeter of a sector:** $P = r + r + s = 2r + r\\theta$\n- **Perimeter of a segment:** $P = \\text{arc length} + \\text{chord length}$. \n  The chord length can be found using the cosine rule: \n  $$c^2 = r^2 + r^2 - 2r^2\\cos\\theta = 2r^2(1 - \\cos\\theta)$$\n\n> [!NOTE]\n> **Example 6: Perimeter of a segment**\n> Find the perimeter of the segment in Example 5.\n> \n> **Solution:**\n> 1. Calculate the arc length: \n> $$s = r\\theta = 6 \\times \\frac{\\pi}{3} = 2\\pi \\approx 6.28 \\text{ cm}$$\n> 2. Calculate the chord length using the cosine rule:\n> $$c^2 = 2(6)^2\\left(1 - \\cos\\left(\\frac{\\pi}{3}\\right)\\right) = 72\\left(1 - 0.5\\right) = 36$$\n> $$c = \\sqrt{36} = 6 \\text{ cm}$$\n> *(Note: Since $\\theta = \\frac{\\pi}{3}$ or $60^\\circ$, the triangle is equilateral, so the chord is equal to the radius).*\n> 3. Add the lengths together:\n> $$P = 2\\pi + 6 \\approx 12.28 \\text{ cm}$$",
         "quizzes": [
             {
-                "question": "**Example 6: Perimeter of a segment**\nFind the perimeter of the segment in Example 5.",
-                "explanation": "1. Calculate the arc length: \n$$s = r\\theta = 6 \\times \\frac{\\pi}{3} = 2\\pi \\approx 6.28 \\text{ cm}$$\n2. Calculate the chord length using the cosine rule:\n$$c^2 = 2(6)^2\\left(1 - \\cos\\left(\\frac{\\pi}{3}\\right)\\right) = 72\\left(1 - 0.5\\right) = 36$$\n$$c = \\sqrt{36} = 6 \\text{ cm}$$\n*(Note: Since $\\theta = \\frac{\\pi}{3}$ or $60^\\circ$, the triangle is equilateral, so the chord is equal to the radius).*\n3. Add the lengths together:\n$$P = 2\\pi + 6 \\approx 12.28 \\text{ cm}$$"
+                "question": "The perimeter of a sector with radius r and arc length s is:",
+                "options": ["r + s", "2r + s", "r + 2s", "2r + 2s"],
+                "correctIndex": 1,
+                "explanation": "Two radii plus the arc: 2r + s."
+            },
+            {
+                "question": "To find chord length with radius r and angle θ, we use:",
+                "options": ["Pythagoras' theorem", "c² = 2r²(1 - cos θ)", "The sine rule", "The tangent ratio"],
+                "correctIndex": 1,
+                "explanation": "The cosine rule on the isosceles triangle gives c² = 2r²(1 - cos θ)."
             }
         ]
     },
@@ -538,7 +1124,26 @@ window.subjectNotes = [
         "subtopicId": "10.1",
         "title": "Exact Trigonometric Values",
         "digitizedText": "# Chapter 10: Trigonometry\n\n## 10.1 Exact Trigonometric Values\n\nIn IGCSE Additional Mathematics, you are expected to know the exact values of trigonometric functions for standard angles in both degrees and radians.\n\n| Degrees ($^\\circ$) | Radians ($\\text{rad}$) | $\\sin \\theta$ | $\\cos \\theta$ | $\\tan \\theta$ |\n| :---: | :---: | :---: | :---: | :---: |\n| $0^\\circ$ | $0$ | $0$ | $1$ | $0$ |\n| $30^\\circ$ | $\\frac{\\pi}{6}$ | $\\frac{1}{2}$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{1}{\\sqrt{3}}$ or $\\frac{\\sqrt{3}}{3}$ |\n| $45^\\circ$ | $\\frac{\\pi}{4}$ | $\\frac{1}{\\sqrt{2}}$ or $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{\\sqrt{2}}$ or $\\frac{\\sqrt{2}}{2}$ | $1$ |\n| $60^\\circ$ | $\\frac{\\pi}{3}$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{1}{2}$ | $\\sqrt{3}$ |\n| $90^\\circ$ | $\\frac{\\pi}{2}$ | $1$ | $0$ | Undefined |\n\n### Right-Angled Triangle Trigonometry and Special Triangles\n\nTo understand where these exact values come from, we refer to the definitions of trigonometric ratios in a right-angled triangle, and the two special triangles: the $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle and the $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle.\n<div align=\"center\">\n  <!-- Standard Right-Angled Triangle -->\n  <svg width=\"220\" height=\"180\" viewBox=\"0 0 220 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:inline-block; margin: 10px;\">\n<path d=\"M 30,150 L 170,150 L 170,30 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M 155,150 L 155,135 L 170,135\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<path d=\"M 60,150 A 30,30 0 0,0 56,128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"65\" y=\"145\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\">\u03b8</text>\n<text x=\"90\" y=\"170\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Adjacent</text>\n<text x=\"180\" y=\"95\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"start\">Opposite</text>\n<text x=\"90\" y=\"80\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Hypotenuse</text>\n</svg>\n\n  <!-- 45-45-90 Triangle -->\n  <svg width=\"220\" height=\"180\" viewBox=\"0 0 220 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:inline-block; margin: 10px;\">\n<path d=\"M 40,140 L 140,140 L 140,40 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M 125,140 L 125,125 L 140,125\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<path d=\"M 70,140 A 30,30 0 0,0 61.2,118.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<path d=\"M 140,70 A 30,30 0 0,0 118.8,61.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"68\" y=\"136\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">45\u00b0</text>\n<text x=\"120\" y=\"76\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">45\u00b0</text>\n<text x=\"90\" y=\"160\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"middle\">1</text>\n<text x=\"150\" y=\"95\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"start\">1</text>\n<text x=\"80\" y=\"85\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"end\">\u221a2</text>\n</svg>\n\n  <!-- 30-60-90 Triangle -->\n  <svg width=\"250\" height=\"180\" viewBox=\"0 0 250 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:inline-block; margin: 10px;\">\n<path d=\"M 30,140 L 203,140 L 203,40 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M 188,140 L 188,125 L 203,125\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<path d=\"M 70,140 A 40,40 0 0,0 64.6,120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<path d=\"M 203,80 A 40,40 0 0,0 183,60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"75\" y=\"135\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">30\u00b0</text>\n<text x=\"180\" y=\"75\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\">60\u00b0</text>\n<text x=\"116\" y=\"160\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"middle\">\u221a3</text>\n<text x=\"213\" y=\"95\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"start\">1</text>\n<text x=\"110\" y=\"80\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n</svg>\n</div>",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "What is the exact value of sin(30°)?",
+                "options": ["√3/2", "1/2", "√2/2", "1"],
+                "correctIndex": 1,
+                "explanation": "From the special triangle, sin(30°) = ½."
+            },
+            {
+                "question": "What is the exact value of tan(60°)?",
+                "options": ["1", "1/√3", "√3", "√3/2"],
+                "correctIndex": 2,
+                "explanation": "tan(60°) = sin(60°)/cos(60°) = (√3/2)/(½) = √3."
+            },
+            {
+                "question": "In a right-angled triangle, cos θ = adjacent / ?",
+                "options": ["Opposite", "Hypotenuse", "Adjacent", "Perpendicular"],
+                "correctIndex": 1,
+                "explanation": "cos θ = adjacent/hypotenuse (CAH from SOH CAH TOA)."
+            }
+        ]
     },
     {
         "subtopicId": "10.2",
@@ -546,8 +1151,16 @@ window.subjectNotes = [
         "digitizedText": "## 10.2 Reciprocal Trigonometric Functions\n\nIn addition to the primary trigonometric functions ($\\sin$, $\\cos$, $\\tan$), you must understand their reciprocals: secant ($\\sec$), cosecant ($\\csc$ or $\\text{cosec}$), and cotangent ($\\cot$).\n\n$$ \\sec \\theta = \\frac{1}{\\cos \\theta} \\quad \\text{for} \\quad \\cos \\theta \\neq 0 $$\n\n$$ \\csc \\theta = \\frac{1}{\\sin \\theta} \\quad \\text{for} \\quad \\sin \\theta \\neq 0 $$\n\n$$ \\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{\\cos \\theta}{\\sin \\theta} \\quad \\text{for} \\quad \\sin \\theta \\neq 0 $$\n\n> [!NOTE]\n> **Example 1: Evaluating Reciprocal Functions**\n> Find the exact value of $\\sec(30^\\circ) \\times \\cot(60^\\circ)$.\n>\n> **Solution:**\n> 1. Express in terms of primary functions: $\\sec(30^\\circ) = \\frac{1}{\\cos(30^\\circ)}$ and $\\cot(60^\\circ) = \\frac{1}{\\tan(60^\\circ)}$.\n> 2. Substitute the exact values: $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$ and $\\tan(60^\\circ) = \\sqrt{3}$.\n> 3. Evaluate each term: $\\sec(30^\\circ) = \\frac{2}{\\sqrt{3}}$ and $\\cot(60^\\circ) = \\frac{1}{\\sqrt{3}}$.\n> 4. Multiply: $\\frac{2}{\\sqrt{3}} \\times \\frac{1}{\\sqrt{3}} = \\frac{2}{3}$.",
         "quizzes": [
             {
-                "question": "**Example 1: Evaluating Reciprocal Functions**\nFind the exact value of $\\sec(30^\\circ) \\times \\cot(60^\\circ)$.",
-                "explanation": "1. Express in terms of primary functions: $\\sec(30^\\circ) = \\frac{1}{\\cos(30^\\circ)}$ and $\\cot(60^\\circ) = \\frac{1}{\\tan(60^\\circ)}$.\n2. Substitute the exact values: $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$ and $\\tan(60^\\circ) = \\sqrt{3}$.\n3. Evaluate each term: $\\sec(30^\\circ) = \\frac{2}{\\sqrt{3}}$ and $\\cot(60^\\circ) = \\frac{1}{\\sqrt{3}}$.\n4. Multiply: $\\frac{2}{\\sqrt{3}} \\times \\frac{1}{\\sqrt{3}} = \\frac{2}{3}$."
+                "question": "Find sec(30°) × cot(60°).",
+                "options": ["1/3", "2/3", "1", "3/2"],
+                "correctIndex": 1,
+                "explanation": "sec(30°) = 2/√3 and cot(60°) = 1/√3. Product: (2/√3)(1/√3) = 2/3."
+            },
+            {
+                "question": "csc θ equals:",
+                "options": ["1/cos θ", "1/sin θ", "sin θ/cos θ", "cos θ/sin θ"],
+                "correctIndex": 1,
+                "explanation": "csc θ = 1/sin θ (cosecant is the reciprocal of sine)."
             }
         ]
     },
@@ -557,8 +1170,22 @@ window.subjectNotes = [
         "digitizedText": "## 10.3 The ASTC Quadrant Rule\n\nThe Cartesian plane is divided into four quadrants. The ASTC rule (often remembered as \"All Students Take Calculus\" or \"Add Sugar To Coffee\") determines whether a trigonometric function is positive or negative in a specific quadrant.\n\n*   **Quadrant 1 ($0^\\circ \\leq \\theta < 90^\\circ$):** **A**ll functions ($\\sin$, $\\cos$, $\\tan$) are positive.\n*   **Quadrant 2 ($90^\\circ \\leq \\theta < 180^\\circ$):** **S**ine (and $\\csc$) are positive.\n*   **Quadrant 3 ($180^\\circ \\leq \\theta < 270^\\circ$):** **T**angent (and $\\cot$) are positive.\n*   **Quadrant 4 ($270^\\circ \\leq \\theta < 360^\\circ$):** **C**osine (and $\\sec$) are positive.\n<div align=\"center\">\n<svg width=\"320\" height=\"320\" viewBox=\"-160 -160 320 320\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid/Axes -->\n<line x1=\"-140\" y1=\"0\" x2=\"140\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"0\" y1=\"-140\" x2=\"0\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<!-- Arrowheads -->\n<polygon points=\"140,0 134,-4 134,4\" fill=\"currentColor\"/>\n<polygon points=\"0,-140 -4,-134 4,-134\" fill=\"currentColor\"/>\n<!-- Axis Labels -->\n<text x=\"145\" y=\"5\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"-12\" y=\"-142\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n\n<!-- Circle -->\n<circle cx=\"0\" cy=\"0\" r=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n\n<!-- Angle Direction Arrow -->\n<path d=\"M 40,0 A 40,40 0 0,0 0,-40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"0,-40 5,-36 -1,-34\" fill=\"currentColor\"/>\n<text x=\"25\" y=\"-25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\">\u03b8</text>\n\n<!-- Quadrant Labels -->\n<!-- Q1: Top-Right (A) -->\n<text x=\"60\" y=\"-70\" fill=\"currentColor\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"24\" text-anchor=\"middle\">A</text>\n<text x=\"60\" y=\"-45\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">All positive</text>\n<text x=\"60\" y=\"-25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\" font-style=\"italic\">sin, cos, tan &gt; 0</text>\n<text x=\"110\" y=\"-110\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"start\">Quadrant I (0\u00b0 to 90\u00b0)</text>\n\n<!-- Q2: Top-Left (S) -->\n<text x=\"-60\" y=\"-70\" fill=\"currentColor\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"24\" text-anchor=\"middle\">S</text>\n<text x=\"-60\" y=\"-45\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Sine positive</text>\n<text x=\"-60\" y=\"-25\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\" font-style=\"italic\">others &lt; 0</text>\n<text x=\"-110\" y=\"-110\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"end\">Quadrant II (90\u00b0 to 180\u00b0)</text>\n\n<!-- Q3: Bottom-Left (T) -->\n<text x=\"-60\" y=\"45\" fill=\"currentColor\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"24\" text-anchor=\"middle\">T</text>\n<text x=\"-60\" y=\"70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Tangent positive</text>\n<text x=\"-60\" y=\"90\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\" font-style=\"italic\">others &lt; 0</text>\n<text x=\"-110\" y=\"120\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"end\">Quadrant III (180\u00b0 to 270\u00b0)</text>\n\n<!-- Q4: Bottom-Right (C) -->\n<text x=\"60\" y=\"45\" fill=\"currentColor\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"24\" text-anchor=\"middle\">C</text>\n<text x=\"60\" y=\"70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Cosine positive</text>\n<text x=\"60\" y=\"90\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\" text-anchor=\"middle\" font-style=\"italic\">others &lt; 0</text>\n<text x=\"110\" y=\"120\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"start\">Quadrant IV (270\u00b0 to 360\u00b0)</text>\n\n<!-- Boundary angles -->\n<text x=\"115\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">0\u00b0 / 360\u00b0</text>\n<text x=\"12\" y=\"-115\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"start\">90\u00b0</text>\n<text x=\"-115\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">180\u00b0</text>\n<text x=\"12\" y=\"115\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"start\">270\u00b0</text>\n</svg>\n</div>\n\n### Reference Angles (Basic Angles)\nTo find trigonometric values for angles outside the first quadrant, we use a reference angle, $\\alpha$, which is the acute positive angle made with the $x$-axis.\n\n*   **Q1:** $\\alpha = \\theta$\n*   **Q2:** $\\alpha = 180^\\circ - \\theta$ or $\\alpha = \\pi - \\theta$\n*   **Q3:** $\\alpha = \\theta - 180^\\circ$ or $\\alpha = \\theta - \\pi$\n*   **Q4:** $\\alpha = 360^\\circ - \\theta$ or $\\alpha = 2\\pi - \\theta$\n\n> [!NOTE]\n> **Example 2: Using the ASTC Rule**\n> Given that $\\sin \\theta = -\\frac{1}{2}$ and $180^\\circ \\leq \\theta \\leq 270^\\circ$, find the exact value of $\\tan \\theta$.\n>\n> **Solution:**\n> 1. Identify the quadrant: The domain $180^\\circ \\leq \\theta \\leq 270^\\circ$ places $\\theta$ in Quadrant 3.\n> 2. Find the reference angle $\\alpha$: $\\sin \\alpha = \\frac{1}{2} \\implies \\alpha = 30^\\circ$.\n> 3. Determine the sign for $\\tan \\theta$: In Quadrant 3 (**T**), tangent is positive.\n> 4. State the final value: $\\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$, so $\\tan \\theta = \\frac{1}{\\sqrt{3}}$.",
         "quizzes": [
             {
-                "question": "**Example 2: Using the ASTC Rule**\nGiven that $\\sin \\theta = -\\frac{1}{2}$ and $180^\\circ \\leq \\theta \\leq 270^\\circ$, find the exact value of $\\tan \\theta$.",
-                "explanation": "1. Identify the quadrant: The domain $180^\\circ \\leq \\theta \\leq 270^\\circ$ places $\\theta$ in Quadrant 3.\n2. Find the reference angle $\\alpha$: $\\sin \\alpha = \\frac{1}{2} \\implies \\alpha = 30^\\circ$.\n3. Determine the sign for $\\tan \\theta$: In Quadrant 3 (**T**), tangent is positive.\n4. State the final value: $\\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$, so $\\tan \\theta = \\frac{1}{\\sqrt{3}}$."
+                "question": "In which quadrant is cos θ positive and sin θ negative?",
+                "options": ["Q1", "Q2", "Q3", "Q4"],
+                "correctIndex": 3,
+                "explanation": "In Q4 (270°-360°), cosine (C) is positive and sine is negative."
+            },
+            {
+                "question": "Given sin θ = -½ and 180° ≤ θ ≤ 270°, find tan θ.",
+                "options": ["-1/√3", "1/√3", "-√3", "√3"],
+                "correctIndex": 1,
+                "explanation": "Q3: tangent is positive. Reference angle 30°. tan(30°) = 1/√3."
+            },
+            {
+                "question": "ASTC stands for (Q1 to Q4):",
+                "options": ["All, Sine, Tangent, Cosine", "Add, Subtract, Multiply, Divide", "Angle, Side, Triangle, Circle", "Adjacent, Sine, Tangent, Cosine"],
+                "correctIndex": 0,
+                "explanation": "ASTC: All (Q1), Sine (Q2), Tangent (Q3), Cosine (Q4) are positive."
             }
         ]
     },
@@ -568,8 +1195,16 @@ window.subjectNotes = [
         "digitizedText": "## 10.4 Trigonometric Identities\n\nIdentities are equations that are true for all valid values of the variable. You must memorize and apply the following fundamental identities:\n\n**Quotient Identity:**\n$$ \\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} $$\n\n**Pythagorean Identities:**\n1. $$ \\sin^2 \\theta + \\cos^2 \\theta = 1 $$\n2. $$ 1 + \\tan^2 \\theta = \\sec^2 \\theta $$ (Derived by dividing the first identity by $\\cos^2 \\theta$)\n3. $$ 1 + \\cot^2 \\theta = \\csc^2 \\theta $$ (Derived by dividing the first identity by $\\sin^2 \\theta$)\n\n> [!NOTE]\n> **Example 3: Proving a Trigonometric Identity**\n> Prove that $\\sec \\theta - \\tan \\theta \\sin \\theta = \\cos \\theta$.\n>\n> **Solution:**\n> 1. Start with the Left Hand Side ($\\text{LHS}$) and express everything in terms of $\\sin$ and $\\cos$:\n>    $\\text{LHS} = \\frac{1}{\\cos \\theta} - \\left( \\frac{\\sin \\theta}{\\cos \\theta} \\right) \\sin \\theta$\n> 2. Simplify the expression:\n>    $\\text{LHS} = \\frac{1}{\\cos \\theta} - \\frac{\\sin^2 \\theta}{\\cos \\theta}$\n> 3. Combine the fractions over a common denominator:\n>    $\\text{LHS} = \\frac{1 - \\sin^2 \\theta}{\\cos \\theta}$\n> 4. Apply the Pythagorean identity $\\cos^2 \\theta = 1 - \\sin^2 \\theta$:\n>    $\\text{LHS} = \\frac{\\cos^2 \\theta}{\\cos \\theta}$\n> 5. Cancel out the common factor:\n>    $\\text{LHS} = \\cos \\theta = \\text{RHS}$ (Proven)",
         "quizzes": [
             {
-                "question": "**Example 3: Proving a Trigonometric Identity**\nProve that $\\sec \\theta - \\tan \\theta \\sin \\theta = \\cos \\theta$.",
-                "explanation": "1. Start with the Left Hand Side ($\\text{LHS}$) and express everything in terms of $\\sin$ and $\\cos$:\n$\\text{LHS} = \\frac{1}{\\cos \\theta} - \\left( \\frac{\\sin \\theta}{\\cos \\theta} \\right) \\sin \\theta$\n2. Simplify the expression:\n$\\text{LHS} = \\frac{1}{\\cos \\theta} - \\frac{\\sin^2 \\theta}{\\cos \\theta}$\n3. Combine the fractions over a common denominator:\n$\\text{LHS} = \\frac{1 - \\sin^2 \\theta}{\\cos \\theta}$\n4. Apply the Pythagorean identity $\\cos^2 \\theta = 1 - \\sin^2 \\theta$:\n$\\text{LHS} = \\frac{\\cos^2 \\theta}{\\cos \\theta}$\n5. Cancel out the common factor:\n$\\text{LHS} = \\cos \\theta = \\text{RHS}$ (Proven)"
+                "question": "Which identity is correct?",
+                "options": ["sin²θ - cos²θ = 1", "sin²θ + cos²θ = 1", "sin²θ × cos²θ = 1", "sin θ/cos θ = cos θ"],
+                "correctIndex": 1,
+                "explanation": "The fundamental identity: sin²θ + cos²θ = 1."
+            },
+            {
+                "question": "The identity 1 + tan²θ = sec²θ is derived by dividing sin²θ + cos²θ = 1 by:",
+                "options": ["2", "cos²θ", "sin²θ", "tan θ"],
+                "correctIndex": 1,
+                "explanation": "Dividing by cos²θ: tan²θ + 1 = sec²θ."
             }
         ]
     },
@@ -579,16 +1214,22 @@ window.subjectNotes = [
         "digitizedText": "## 10.5 Solving Trigonometric Equations\n\nSolving a trigonometric equation involves finding all possible angles within a given domain that satisfy the equation. \n\n**General Steps:**\n1.  Simplify the equation to the form $\\text{trig}(\\theta) = k$. (You may need to factorize or use identities).\n2.  Find the reference angle (basic angle), $\\alpha = \\text{trig}^{-1}(|k|)$.\n3.  Determine the relevant quadrants using the ASTC rule (based on the sign of $k$).\n4.  Calculate all possible values for the angle within the given domain.\n\n### Trigonometric Curves (y = sin x and y = cos x)\n\nTo visualize the solutions, it is helpful to refer to the basic graphs of the trigonometric functions. Below are the graphs of $y = \\sin x$ and $y = \\cos x$ for $0^\\circ \\leq x \\leq 360^\\circ$:\n<div align=\"center\">\n<strong>y = sin(x) for 0\u00b0 &le; x &le; 360\u00b0</strong><br/>\n<svg width=\"440\" height=\"180\" viewBox=\"0 -90 440 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid / Axes -->\n<line x1=\"20\" y1=\"0\" x2=\"420\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"-80\" x2=\"40\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"420,0 414,-4 414,4\" fill=\"currentColor\"/>\n<polygon points=\"40,-80 36,-74 44,-74\" fill=\"currentColor\"/>\n<!-- Axis Labels -->\n<text x=\"425\" y=\"5\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"25\" y=\"-75\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n\n<!-- Ticks on y-axis -->\n<line x1=\"35\" y1=\"-60\" x2=\"45\" y2=\"-60\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"60\" x2=\"45\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<text x=\"25\" y=\"-56\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">1</text>\n<text x=\"25\" y=\"64\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">-1</text>\n\n<!-- Dashed lines to peaks/troughs -->\n<line x1=\"40\" y1=\"-60\" x2=\"130\" y2=\"-60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n<line x1=\"40\" y1=\"60\" x2=\"310\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n\n<!-- Curve y = sin(x) -->\n<path d=\"M 40,0 C 90,-80 170,-80 220,0 C 270,80 350,80 400,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/>\n\n<!-- Key Points / Dots -->\n<circle cx=\"40\" cy=\"0\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"130\" cy=\"-60\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"220\" cy=\"0\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"310\" cy=\"60\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"400\" cy=\"0\" r=\"4\" fill=\"currentColor\"/>\n\n<!-- Key Labels -->\n<text x=\"130\" y=\"-70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Peak (90\u00b0, 1)</text>\n<text x=\"310\" y=\"78\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Trough (270\u00b0, -1)</text>\n<text x=\"40\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">0\u00b0</text>\n<text x=\"130\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">90\u00b0</text>\n<text x=\"220\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">180\u00b0</text>\n<text x=\"310\" y=\"-10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">270\u00b0</text>\n<text x=\"400\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">360\u00b0</text>\n</svg>\n</div>\n\n<div align=\"center\" style=\"margin-top: 20px;\">\n<strong>y = cos(x) for 0\u00b0 &le; x &le; 360\u00b0</strong><br/>\n<svg width=\"440\" height=\"180\" viewBox=\"0 -90 440 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid / Axes -->\n<line x1=\"20\" y1=\"0\" x2=\"420\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"-80\" x2=\"40\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"420,0 414,-4 414,4\" fill=\"currentColor\"/>\n<polygon points=\"40,-80 36,-74 44,-74\" fill=\"currentColor\"/>\n<!-- Axis Labels -->\n<text x=\"425\" y=\"5\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"25\" y=\"-75\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n\n<!-- Ticks on y-axis -->\n<line x1=\"35\" y1=\"-60\" x2=\"45\" y2=\"-60\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"60\" x2=\"45\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<text x=\"25\" y=\"-56\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">1</text>\n<text x=\"25\" y=\"64\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">-1</text>\n\n<!-- Dashed lines to peaks/troughs -->\n<line x1=\"40\" y1=\"-60\" x2=\"400\" y2=\"-60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n<line x1=\"40\" y1=\"60\" x2=\"220\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n\n<!-- Curve y = cos(x) -->\n<path d=\"M 40,-60 C 130,-60 130,60 220,60 C 310,60 310,-60 400,-60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/>\n\n<!-- Key Points / Dots -->\n<circle cx=\"40\" cy=\"-60\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"130\" cy=\"0\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"220\" cy=\"60\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"310\" cy=\"0\" r=\"4\" fill=\"currentColor\"/>\n<circle cx=\"400\" cy=\"-60\" r=\"4\" fill=\"currentColor\"/>\n\n<!-- Key Labels -->\n<text x=\"55\" y=\"-70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"start\">Peak (0\u00b0, 1)</text>\n<text x=\"385\" y=\"-70\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">Peak (360\u00b0, 1)</text>\n<text x=\"220\" y=\"78\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">Trough (180\u00b0, -1)</text>\n<text x=\"40\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">0\u00b0</text>\n<text x=\"130\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">90\u00b0</text>\n<text x=\"220\" y=\"-10\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">180\u00b0</text>\n<text x=\"310\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">270\u00b0</text>\n<text x=\"400\" y=\"18\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">360\u00b0</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Solving a Linear Trigonometric Equation**\n> Solve $2 \\cos x + \\sqrt{3} = 0$ for $0^\\circ \\leq x \\leq 360^\\circ$.\n>\n> **Solution:**\n> 1. Isolate $\\cos x$: $\\cos x = -\\frac{\\sqrt{3}}{2}$\n> 2. Find the reference angle $\\alpha$: $\\cos \\alpha = \\frac{\\sqrt{3}}{2} \\implies \\alpha = 30^\\circ$.\n> 3. Apply the ASTC rule: $\\cos x$ is negative in Quadrant 2 and Quadrant 3.\n> 4. Find $x$ for Quadrant 2: $x = 180^\\circ - 30^\\circ = 150^\\circ$.\n> 5. Find $x$ for Quadrant 3: $x = 180^\\circ + 30^\\circ = 210^\\circ$.\n> 6. Final answer: $x = 150^\\circ, 210^\\circ$.\n\n> [!NOTE]\n> **Example 5: Solving an Equation with Multiple Angles**\n> Solve $\\sin(2\\theta) = 0.5$ for $0 \\leq \\theta \\leq \\pi$ radians.\n>\n> **Solution:**\n> 1. Adjust the domain: Since $0 \\leq \\theta \\leq \\pi$, the domain for $2\\theta$ is $0 \\leq 2\\theta \\leq 2\\pi$.\n> 2. Find the reference angle $\\alpha$: $\\sin \\alpha = 0.5 \\implies \\alpha = \\frac{\\pi}{6}$.\n> 3. Apply the ASTC rule: $\\sin(2\\theta)$ is positive in Quadrant 1 and Quadrant 2.\n> 4. Find values for $2\\theta$:\n>    Quadrant 1: $2\\theta = \\frac{\\pi}{6}$\n>    Quadrant 2: $2\\theta = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$\n> 5. Solve for $\\theta$ by dividing each result by $2$:\n>    $\\theta = \\frac{\\pi}{12}, \\frac{5\\pi}{12}$.\n\n> [!NOTE]\n> **Example 6: Solving a Quadratic Trigonometric Equation**\n> Solve $2\\sin^2 x - \\sin x - 1 = 0$ for $0^\\circ \\leq x \\leq 360^\\circ$.\n>\n> **Solution:**\n> 1. Treat it as a quadratic equation. Let $u = \\sin x$: $2u^2 - u - 1 = 0$.\n> 2. Factorize: $(2u + 1)(u - 1) = 0$.\n> 3. Substitute $\\sin x$ back: $(2\\sin x + 1)(\\sin x - 1) = 0$.\n> 4. Solve each factor separately:\n>    Case 1: $2\\sin x + 1 = 0 \\implies \\sin x = -0.5$.\n>    Case 2: $\\sin x - 1 = 0 \\implies \\sin x = 1$.\n> 5. Solve Case 1 ($\\sin x = -0.5$): \n>    Reference angle $\\alpha = 30^\\circ$. Quadrants 3 and 4 (since $\\sin$ is negative).\n>    $x = 180^\\circ + 30^\\circ = 210^\\circ$ and $x = 360^\\circ - 30^\\circ = 330^\\circ$.\n> 6. Solve Case 2 ($\\sin x = 1$): \n>    $x = 90^\\circ$.\n> 7. Final answer: $x = 90^\\circ, 210^\\circ, 330^\\circ$.",
         "quizzes": [
             {
-                "question": "**Example 4: Solving a Linear Trigonometric Equation**\nSolve $2 \\cos x + \\sqrt{3} = 0$ for $0^\\circ \\leq x \\leq 360^\\circ$.",
-                "explanation": "1. Isolate $\\cos x$: $\\cos x = -\\frac{\\sqrt{3}}{2}$\n2. Find the reference angle $\\alpha$: $\\cos \\alpha = \\frac{\\sqrt{3}}{2} \\implies \\alpha = 30^\\circ$.\n3. Apply the ASTC rule: $\\cos x$ is negative in Quadrant 2 and Quadrant 3.\n4. Find $x$ for Quadrant 2: $x = 180^\\circ - 30^\\circ = 150^\\circ$.\n5. Find $x$ for Quadrant 3: $x = 180^\\circ + 30^\\circ = 210^\\circ$.\n6. Final answer: $x = 150^\\circ, 210^\\circ$."
+                "question": "Solve 2cos x + √3 = 0 for 0° ≤ x ≤ 360°.",
+                "options": ["30° and 150°", "150° and 210°", "210° and 330°", "150° and 330°"],
+                "correctIndex": 1,
+                "explanation": "cos x = -√3/2. Reference 30°. Q2: 150°, Q3: 210°."
             },
             {
-                "question": "**Example 5: Solving an Equation with Multiple Angles**\nSolve $\\sin(2\\theta) = 0.5$ for $0 \\leq \\theta \\leq \\pi$ radians.",
-                "explanation": "1. Adjust the domain: Since $0 \\leq \\theta \\leq \\pi$, the domain for $2\\theta$ is $0 \\leq 2\\theta \\leq 2\\pi$.\n2. Find the reference angle $\\alpha$: $\\sin \\alpha = 0.5 \\implies \\alpha = \\frac{\\pi}{6}$.\n3. Apply the ASTC rule: $\\sin(2\\theta)$ is positive in Quadrant 1 and Quadrant 2.\n4. Find values for $2\\theta$:\nQuadrant 1: $2\\theta = \\frac{\\pi}{6}$\nQuadrant 2: $2\\theta = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$\n5. Solve for $\\theta$ by dividing each result by $2$:\n$\\theta = \\frac{\\pi}{12}, \\frac{5\\pi}{12}$."
+                "question": "Solve sin(2θ) = 0.5 for 0 ≤ θ ≤ π.",
+                "options": ["π/6 and 5π/6", "π/12 and 5π/12", "π/3 and 2π/3", "π/6 and π/3"],
+                "correctIndex": 1,
+                "explanation": "Domain for 2θ: 0 to 2π. 2θ = π/6 or 5π/6. Divide by 2: θ = π/12 or 5π/12."
             },
             {
-                "question": "**Example 6: Solving a Quadratic Trigonometric Equation**\nSolve $2\\sin^2 x - \\sin x - 1 = 0$ for $0^\\circ \\leq x \\leq 360^\\circ$.",
-                "explanation": "1. Treat it as a quadratic equation. Let $u = \\sin x$: $2u^2 - u - 1 = 0$.\n2. Factorize: $(2u + 1)(u - 1) = 0$.\n3. Substitute $\\sin x$ back: $(2\\sin x + 1)(\\sin x - 1) = 0$.\n4. Solve each factor separately:\nCase 1: $2\\sin x + 1 = 0 \\implies \\sin x = -0.5$.\nCase 2: $\\sin x - 1 = 0 \\implies \\sin x = 1$.\n5. Solve Case 1 ($\\sin x = -0.5$): \nReference angle $\\alpha = 30^\\circ$. Quadrants 3 and 4 (since $\\sin$ is negative).\n$x = 180^\\circ + 30^\\circ = 210^\\circ$ and $x = 360^\\circ - 30^\\circ = 330^\\circ$.\n6. Solve Case 2 ($\\sin x = 1$): \n$x = 90^\\circ$.\n7. Final answer: $x = 90^\\circ, 210^\\circ, 330^\\circ$."
+                "question": "Solving 2sin²x - sin x - 1 = 0, the solutions for sin x are:",
+                "options": ["sin x = 1 or sin x = -½", "sin x = -1 or sin x = ½", "sin x = 1 or sin x = ½", "sin x = -1 or sin x = -½"],
+                "correctIndex": 0,
+                "explanation": "Factorising: (2sin x + 1)(sin x - 1) = 0. So sin x = -½ or sin x = 1."
             }
         ]
     },
@@ -598,8 +1239,22 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 11: Permutations and Combinations\n\n## 11.1 Basic Counting Principles\n\nIn combinatorics, the fundamental counting principles help determine the number of possible outcomes for multiple events.\n\n### The Addition Rule (The \"OR\" Rule)\nIf an event can occur in $m$ ways and a second, mutually exclusive event can occur in $n$ ways, then the total number of ways either of the events can occur is $m + n$.\n\n### The Multiplication Rule (The \"AND\" Rule)\nIf a sequence of events consists of one event that can occur in $m$ ways, followed by a second independent event that can occur in $n$ ways, the total number of ways the sequence can occur is $m \\times n$.\n\n> [!NOTE]\n> **Example 1: Applying Counting Principles**\n> A restaurant offers $3$ starters, $5$ main courses, and $4$ desserts. How many different three-course meals can be chosen?\n>\n> **Solution:**\n> 1. Identify the number of choices for each course: $3$ starters, $5$ mains, and $4$ desserts.\n> 2. Since the choices are independent and we are choosing a starter AND a main AND a dessert, use the multiplication rule.\n> 3. Calculate the total combinations: $3 \\times 5 \\times 4 = 60$.\n> 4. There are $60$ possible three-course meals.",
         "quizzes": [
             {
-                "question": "**Example 1: Applying Counting Principles**\nA restaurant offers $3$ starters, $5$ main courses, and $4$ desserts. How many different three-course meals can be chosen?",
-                "explanation": "1. Identify the number of choices for each course: $3$ starters, $5$ mains, and $4$ desserts.\n2. Since the choices are independent and we are choosing a starter AND a main AND a dessert, use the multiplication rule.\n3. Calculate the total combinations: $3 \\times 5 \\times 4 = 60$.\n4. There are $60$ possible three-course meals."
+                "question": "A restaurant offers 3 starters, 5 mains, and 4 desserts. How many three-course meals?",
+                "options": ["12", "30", "60", "120"],
+                "correctIndex": 2,
+                "explanation": "Multiplication rule: 3 × 5 × 4 = 60."
+            },
+            {
+                "question": "The addition rule applies when events are:",
+                "options": ["Independent", "Mutually exclusive (OR)", "Dependent", "Sequential"],
+                "correctIndex": 1,
+                "explanation": "Addition rule: mutually exclusive events. Total = m + n."
+            },
+            {
+                "question": "A coin is flipped and a die is rolled. Total outcomes:",
+                "options": ["6", "8", "12", "36"],
+                "correctIndex": 2,
+                "explanation": "2 × 6 = 12 possible outcomes."
             }
         ]
     },
@@ -607,7 +1262,26 @@ window.subjectNotes = [
         "subtopicId": "11.2",
         "title": "Factorials",
         "digitizedText": "## 11.2 Factorials\n\nA **factorial** represents the product of an integer and all the positive integers below it. It is denoted by an exclamation mark ($!$).\n\n$$ n! = n \\times (n - 1) \\times (n - 2) \\times \\dots \\times 3 \\times 2 \\times 1 $$\n\n**Key Properties:**\n*   $1! = 1$\n*   $0! = 1$ (By mathematical convention, there is exactly $1$ way to arrange zero objects).\n*   $n! = n \\times (n - 1)!$",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "What is 0!?",
+                "options": ["0", "1", "Undefined", "0.5"],
+                "correctIndex": 1,
+                "explanation": "By convention, 0! = 1."
+            },
+            {
+                "question": "What is 5!?",
+                "options": ["20", "60", "100", "120"],
+                "correctIndex": 3,
+                "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120."
+            },
+            {
+                "question": "The property n! = n × (n-1)! is useful because:",
+                "options": ["It always gives a prime number", "It simplifies factorial expressions", "It only works for even numbers", "It converts to decimals"],
+                "correctIndex": 1,
+                "explanation": "It allows cancellation of common factorial terms."
+            }
+        ]
     },
     {
         "subtopicId": "11.3",
@@ -615,8 +1289,16 @@ window.subjectNotes = [
         "digitizedText": "## 11.3 Permutations\n\nA **permutation** is an arrangement of objects where the **order does matter**. Arranging a sequence of letters, digits to form a password, or people in specific seats are examples of permutations.\n\n### Arranging $n$ Distinct Objects\nThe number of ways to arrange $n$ distinct objects in a line is $n!$.\n\n### Arranging $r$ Objects from $n$ Distinct Objects\nIf you have $n$ distinct objects and want to arrange $r$ of them, the formula is:\n\n$$ ^{n}P_{r} = \\frac{n!}{(n - r)!} $$\n\n> [!NOTE]\n> **Example 2: Simple Permutations**\n> In a race with $8$ runners, in how many ways can the gold, silver, and bronze medals be awarded?\n>\n> **Solution:**\n> 1. We are selecting $3$ runners from $8$, and the order of medals matters (Gold $\\neq$ Silver).\n> 2. Use the permutation formula with $n = 8$ and $r = 3$:\n>    $$ ^{8}P_{3} = \\frac{8!}{(8 - 3)!} = \\frac{8!}{5!} $$\n> 3. Expand and cancel terms: $8 \\times 7 \\times 6 = 336$.\n> 4. There are $336$ ways to award the medals.",
         "quizzes": [
             {
-                "question": "**Example 2: Simple Permutations**\nIn a race with $8$ runners, in how many ways can the gold, silver, and bronze medals be awarded?",
-                "explanation": "1. We are selecting $3$ runners from $8$, and the order of medals matters (Gold $\\neq$ Silver).\n2. Use the permutation formula with $n = 8$ and $r = 3$:\n$$ ^{8}P_{3} = \\frac{8!}{(8 - 3)!} = \\frac{8!}{5!} $$\n3. Expand and cancel terms: $8 \\times 7 \\times 6 = 336$.\n4. There are $336$ ways to award the medals."
+                "question": "In a race with 8 runners, how many ways for gold, silver, bronze?",
+                "options": ["56", "336", "512", "20160"],
+                "correctIndex": 1,
+                "explanation": "⁸P₃ = 8!/5! = 8 × 7 × 6 = 336."
+            },
+            {
+                "question": "A permutation differs from a combination because:",
+                "options": ["Permutations use factorials", "In permutations, order matters", "Permutations are always larger", "Combinations are only for numbers"],
+                "correctIndex": 1,
+                "explanation": "In permutations, order matters; in combinations, it doesn't."
             }
         ]
     },
@@ -626,8 +1308,16 @@ window.subjectNotes = [
         "digitizedText": "## 11.4 Combinations\n\nA **combination** is a selection of objects where the **order does NOT matter**. Choosing a committee, picking a team, or selecting a set of books are examples of combinations.\n\n### Selecting $r$ Objects from $n$ Distinct Objects\nThe formula to select $r$ objects from $n$ distinct objects is:\n\n$$ ^{n}C_{r} = \\frac{n!}{r!(n - r)!} $$\n\n> [!NOTE]\n> **Example 3: Basic Selections**\n> A team of $4$ students is to be chosen from a group of $10$ students. How many different teams can be formed?\n>\n> **Solution:**\n> 1. Identify that order does not matter (a team is an unordered group), so use combinations.\n> 2. Use the formula for $^{10}C_{4}$:\n>    $$ ^{10}C_{4} = \\frac{10!}{4!(10 - 4)!} = \\frac{10!}{4! \\times 6!} $$\n> 3. Calculate: $\\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 210$.\n> 4. There are $210$ possible teams.",
         "quizzes": [
             {
-                "question": "**Example 3: Basic Selections**\nA team of $4$ students is to be chosen from a group of $10$ students. How many different teams can be formed?",
-                "explanation": "1. Identify that order does not matter (a team is an unordered group), so use combinations.\n2. Use the formula for $^{10}C_{4}$:\n$$ ^{10}C_{4} = \\frac{10!}{4!(10 - 4)!} = \\frac{10!}{4! \\times 6!} $$\n3. Calculate: $\\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 210$.\n4. There are $210$ possible teams."
+                "question": "Choose 4 students from 10. How many teams?",
+                "options": ["5040", "210", "240", "10000"],
+                "correctIndex": 1,
+                "explanation": "¹⁰C₄ = 10!/(4!6!) = 210."
+            },
+            {
+                "question": "nCr = nPr / ?",
+                "options": ["r!", "n!", "(n-r)!", "2"],
+                "correctIndex": 0,
+                "explanation": "nCr = nPr / r! because each combination is counted r! times in permutations."
             }
         ]
     },
@@ -637,16 +1327,22 @@ window.subjectNotes = [
         "digitizedText": "## 11.5 Arrangements with Restrictions\n\nOften, permutations come with specific constraints. Let us explore the common techniques to solve them.\n\n### 1. Grouping Items Together (The \"Tie\" Method)\nIf certain items must sit or be grouped together, treat them as a single combined \"super-unit\".\n\n> [!NOTE]\n> **Example 4: Items Grouped Together**\n> How many ways can the letters of the word $COMPUTER$ be arranged if the vowels ($O, U, E$) must always be next to each other?\n>\n> **Solution:**\n> 1. Treat the $3$ vowels ($O, U, E$) as $1$ single unit.\n> 2. Count the remaining units. There are $5$ consonants ($C, M, P, T, R$) plus $1$ vowel unit, totaling $6$ units.\n> 3. Arrange the $6$ units: $6! = 720$ ways.\n> 4. Arrange the $3$ vowels internally within their unit: $3! = 6$ ways.\n> 5. Multiply the arrangements: $720 \\times 6 = 4320$ ways.\n\n### 2. Separating Items (The \"Slot\" Method)\nIf items must not sit together, arrange the unrestricted items first and place the restricted items into the gaps between them.\n\n> [!NOTE]\n> **Example 5: Separating Items**\n> How many ways can $4$ boys and $3$ girls be arranged in a line if no two girls can stand next to each other?\n>\n> **Solution:**\n> 1. Arrange the boys first. There are $4$ boys, yielding $4! = 24$ ways.\n> 2. Create \"slots\" around the boys for the girls to stand in: $\\_ \\ B \\ \\_ \\ B \\ \\_ \\ B \\ \\_ \\ B \\ \\_$\n> 3. There are $5$ available slots for the $3$ girls. The order matters, so we use $^{5}P_{3} = \\frac{5!}{2!} = 60$ ways.\n> 4. Multiply the independent arrangements: $24 \\times 60 = 1440$ ways.\n\n### 3. Permutations with Identical Objects\nIf you are arranging $n$ objects where some objects are indistinguishable (e.g., $n_1$ are alike, $n_2$ are alike, etc.), divide the total permutations by the factorials of the repeated objects.\n\n$$ \\text{Arrangements} = \\frac{n!}{n_1! \\times n_2! \\times \\dots \\times n_k!} $$\n\n> [!NOTE]\n> **Example 6: Indistinguishable Objects**\n> Find the number of distinct arrangements of the letters in the word $MATHEMATICS$.\n>\n> **Solution:**\n> 1. Count the total number of letters: $n = 11$.\n> 2. Identify the frequencies of repeated letters: $M$ appears $2$ times, $A$ appears $2$ times, and $T$ appears $2$ times.\n> 3. Apply the formula:\n>    $$ \\frac{11!}{2! \\times 2! \\times 2!} $$\n> 4. Calculate the result: $\\frac{39916800}{8} = 4989600$ arrangements.",
         "quizzes": [
             {
-                "question": "**Example 4: Items Grouped Together**\nHow many ways can the letters of the word $COMPUTER$ be arranged if the vowels ($O, U, E$) must always be next to each other?",
-                "explanation": "1. Treat the $3$ vowels ($O, U, E$) as $1$ single unit.\n2. Count the remaining units. There are $5$ consonants ($C, M, P, T, R$) plus $1$ vowel unit, totaling $6$ units.\n3. Arrange the $6$ units: $6! = 720$ ways.\n4. Arrange the $3$ vowels internally within their unit: $3! = 6$ ways.\n5. Multiply the arrangements: $720 \\times 6 = 4320$ ways."
+                "question": "Letters of COMPUTER with vowels (O,U,E) together:",
+                "options": ["720", "4320", "5040", "40320"],
+                "correctIndex": 1,
+                "explanation": "6 units: 6! = 720. Vowels internally: 3! = 6. Total: 720 × 6 = 4320."
             },
             {
-                "question": "**Example 5: Separating Items**\nHow many ways can $4$ boys and $3$ girls be arranged in a line if no two girls can stand next to each other?",
-                "explanation": "1. Arrange the boys first. There are $4$ boys, yielding $4! = 24$ ways.\n2. Create \"slots\" around the boys for the girls to stand in: $\\_ \\ B \\ \\_ \\ B \\ \\_ \\ B \\ \\_ \\ B \\ \\_$\n3. There are $5$ available slots for the $3$ girls. The order matters, so we use $^{5}P_{3} = \\frac{5!}{2!} = 60$ ways.\n4. Multiply the independent arrangements: $24 \\times 60 = 1440$ ways."
+                "question": "4 boys and 3 girls, no two girls adjacent:",
+                "options": ["144", "1440", "2880", "5040"],
+                "correctIndex": 1,
+                "explanation": "Boys: 4! = 24. Slots for girls: ⁵P₃ = 60. Total: 24 × 60 = 1440."
             },
             {
-                "question": "**Example 6: Indistinguishable Objects**\nFind the number of distinct arrangements of the letters in the word $MATHEMATICS$.",
-                "explanation": "1. Count the total number of letters: $n = 11$.\n2. Identify the frequencies of repeated letters: $M$ appears $2$ times, $A$ appears $2$ times, and $T$ appears $2$ times.\n3. Apply the formula:\n$$ \\frac{11!}{2! \\times 2! \\times 2!} $$\n4. Calculate the result: $\\frac{39916800}{8} = 4989600$ arrangements."
+                "question": "Distinct arrangements of MATHEMATICS:",
+                "options": ["11!/(2!2!2!)", "11!", "11!/3!", "11!/(2!3!)"],
+                "correctIndex": 0,
+                "explanation": "11 letters, M(2), A(2), T(2) repeated. 11!/(2!×2!×2!) = 4,989,600."
             }
         ]
     },
@@ -656,12 +1352,16 @@ window.subjectNotes = [
         "digitizedText": "## 11.6 Selections with Restrictions\n\nCombinations can also have conditions, such as forcing the inclusion or exclusion of items, or selecting items from multiple distinct categories.\n\n### 1. Multi-Category Selections\nWhen forming a group from different categories (e.g., men and women), calculate the combinations for each category separately and multiply them.\n\n> [!NOTE]\n> **Example 7: Selecting from Multiple Categories**\n> A committee of $5$ people is to be selected from $6$ men and $7$ women. How many committees can be formed if there must be exactly $3$ men and $2$ women?\n>\n> **Solution:**\n> 1. Select the men: Choose $3$ men from $6$, which is $^{6}C_{3}$.\n> 2. Select the women: Choose $2$ women from $7$, which is $^{7}C_{2}$.\n> 3. Multiply the combinations since both selections must occur simultaneously:\n>    $$ ^{6}C_{3} \\times ^{7}C_{2} = 20 \\times 21 = 420 $$\n> 4. There are $420$ possible committees.\n\n### 2. \"At Least\" or \"At Most\" Restrictions\nFor statements containing \"at least\" or \"at most\", you can sum the combinations of all valid scenarios. Alternatively, use the **complement method** by subtracting the unwanted scenarios from the total unrestricted combinations.\n\n$$ \\text{Favorable Selections} = \\text{Total Unrestricted Selections} - \\text{Unwanted Selections} $$\n\n> [!NOTE]\n> **Example 8: Using the Complement Method**\n> From the same group of $6$ men and $7$ women, how many committees of $5$ people contain at least $1$ man?\n>\n> **Solution:**\n> 1. Identify the complement: The opposite of \"at least $1$ man\" is \"exactly $0$ men\" (a committee of only women).\n> 2. Calculate the total unconstrained committees: choose $5$ from $13$ people ($^{13}C_{5} = 1287$).\n> 3. Calculate the committees with no men: choose $5$ from $7$ women ($^{7}C_{5} = 21$).\n> 4. Subtract the all-women committees from the total: $1287 - 21 = 1266$.\n> 5. There are $1266$ committees with at least one man.",
         "quizzes": [
             {
-                "question": "**Example 7: Selecting from Multiple Categories**\nA committee of $5$ people is to be selected from $6$ men and $7$ women. How many committees can be formed if there must be exactly $3$ men and $2$ women?",
-                "explanation": "1. Select the men: Choose $3$ men from $6$, which is $^{6}C_{3}$.\n2. Select the women: Choose $2$ women from $7$, which is $^{7}C_{2}$.\n3. Multiply the combinations since both selections must occur simultaneously:\n$$ ^{6}C_{3} \\times ^{7}C_{2} = 20 \\times 21 = 420 $$\n4. There are $420$ possible committees."
+                "question": "Committee of 5 from 6 men, 7 women with exactly 3 men, 2 women:",
+                "options": ["420", "1287", "252", "672"],
+                "correctIndex": 0,
+                "explanation": "⁶C₃ × ⁷C₂ = 20 × 21 = 420."
             },
             {
-                "question": "**Example 8: Using the Complement Method**\nFrom the same group of $6$ men and $7$ women, how many committees of $5$ people contain at least $1$ man?",
-                "explanation": "1. Identify the complement: The opposite of \"at least $1$ man\" is \"exactly $0$ men\" (a committee of only women).\n2. Calculate the total unconstrained committees: choose $5$ from $13$ people ($^{13}C_{5} = 1287$).\n3. Calculate the committees with no men: choose $5$ from $7$ women ($^{7}C_{5} = 21$).\n4. Subtract the all-women committees from the total: $1287 - 21 = 1266$.\n5. There are $1266$ committees with at least one man."
+                "question": "For 'at least 1 man', the complement is:",
+                "options": ["Exactly 1 man", "No men (all women)", "More women than men", "At least 1 woman"],
+                "correctIndex": 1,
+                "explanation": "Complement of 'at least 1 man' is 'no men'. Total - all women = ¹³C₅ - ⁷C₅ = 1266."
             }
         ]
     },
@@ -669,7 +1369,20 @@ window.subjectNotes = [
         "subtopicId": "12.1",
         "title": "Sequences and Series",
         "digitizedText": "# Chapter 12: Series\n\n## 12.1 Sequences and Series\nA sequence is an ordered list of numbers generated according to a specific rule. Each number in the sequence is called a term, typically denoted by $u_n$, where $n$ is the position of the term. A series is formed when the terms of a sequence are added together, denoted by $S_n$.",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "What is the difference between a sequence and a series?",
+                "options": ["A sequence is ordered; a series is random", "A sequence lists terms; a series adds them", "They are the same thing", "A series is always infinite"],
+                "correctIndex": 1,
+                "explanation": "A sequence lists terms; a series sums them."
+            },
+            {
+                "question": "In a sequence, uₙ represents:",
+                "options": ["The sum of the first n terms", "The nth term", "The common difference", "The number of terms"],
+                "correctIndex": 1,
+                "explanation": "uₙ is the nth term; Sₙ is the sum of the first n terms."
+            }
+        ]
     },
     {
         "subtopicId": "12.2",
@@ -677,12 +1390,22 @@ window.subjectNotes = [
         "digitizedText": "## 12.2 Arithmetic Progressions\nAn Arithmetic Progression (AP) is a sequence in which the difference between any two consecutive terms is a constant. This constant is called the common difference, denoted by $d$.\n\n### Important Variables\n*   $a$ = first term ($u_1$)\n*   $d$ = common difference ($u_{n} - u_{n-1}$)\n*   $n$ = number of terms\n*   $u_n$ = the $n$-th term\n*   $S_n$ = the sum of the first $n$ terms\n\n### The $n$-th Term of an AP\nThe formula to find any specific term in an arithmetic progression is:\n$$u_n = a + (n - 1)d$$\n\n> [!NOTE]\n> **Example 1: Finding the $n$-th term of an Arithmetic Progression**\n> Find the $15$-th term of the arithmetic progression $3, 7, 11, 15, \\dots$\n>\n> **Solution:**\n> 1. Identify the first term, $a = 3$.\n> 2. Find the common difference, $d = 7 - 3 = 4$.\n> 3. Substitute $a = 3$, $d = 4$, and $n = 15$ into the formula:\n> $$u_{15} = 3 + (15 - 1)(4)$$\n> $$u_{15} = 3 + 14(4)$$\n> $$u_{15} = 3 + 56 = 59$$\n\n### The Sum to $n$ Terms of an AP\nTo find the sum of the first $n$ terms of an AP, use either of the following formulas depending on the given information:\n$$S_n = \\frac{n}{2}[2a + (n - 1)d]$$\nAlternatively, if the last term $l$ is known:\n$$S_n = \\frac{n}{2}(a + l)$$\n\n> [!NOTE]\n> **Example 2: Calculating the sum to $n$ terms of an AP**\n> The first term of an arithmetic progression is $-5$ and the common difference is $6$. Find the sum of the first $20$ terms.\n>\n> **Solution:**\n> 1. Identify the given values: $a = -5$, $d = 6$, $n = 20$.\n> 2. Substitute into the sum formula:\n> $$S_{20} = \\frac{20}{2}[2(-5) + (20 - 1)(6)]$$\n> $$S_{20} = 10[-10 + 19(6)]$$\n> $$S_{20} = 10[-10 + 114]$$\n> $$S_{20} = 10(104) = 1040$$",
         "quizzes": [
             {
-                "question": "**Example 1: Finding the $n$-th term of an Arithmetic Progression**\nFind the $15$-th term of the arithmetic progression $3, 7, 11, 15, \\dots$",
-                "explanation": "1. Identify the first term, $a = 3$.\n2. Find the common difference, $d = 7 - 3 = 4$.\n3. Substitute $a = 3$, $d = 4$, and $n = 15$ into the formula:\n$$u_{15} = 3 + (15 - 1)(4)$$\n$$u_{15} = 3 + 14(4)$$\n$$u_{15} = 3 + 56 = 59$$"
+                "question": "Find the 15th term of the AP: 3, 7, 11, 15, …",
+                "options": ["55", "59", "63", "45"],
+                "correctIndex": 1,
+                "explanation": "a = 3, d = 4. u₁₅ = 3 + 14(4) = 59."
             },
             {
-                "question": "**Example 2: Calculating the sum to $n$ terms of an AP**\nThe first term of an arithmetic progression is $-5$ and the common difference is $6$. Find the sum of the first $20$ terms.",
-                "explanation": "1. Identify the given values: $a = -5$, $d = 6$, $n = 20$.\n2. Substitute into the sum formula:\n$$S_{20} = \\frac{20}{2}[2(-5) + (20 - 1)(6)]$$\n$$S_{20} = 10[-10 + 19(6)]$$\n$$S_{20} = 10[-10 + 114]$$\n$$S_{20} = 10(104) = 1040$$"
+                "question": "Sum of first 20 terms with a = -5, d = 6:",
+                "options": ["1040", "1100", "980", "1000"],
+                "correctIndex": 0,
+                "explanation": "S₂₀ = 10[-10 + 114] = 10(104) = 1040."
+            },
+            {
+                "question": "The common difference d is found by:",
+                "options": ["Multiplying consecutive terms", "Subtracting any term from the next", "Dividing consecutive terms", "Adding all terms"],
+                "correctIndex": 1,
+                "explanation": "d = uₙ - uₙ₋₁ (constant difference between consecutive terms)."
             }
         ]
     },
@@ -692,12 +1415,22 @@ window.subjectNotes = [
         "digitizedText": "## 12.3 Geometric Progressions\nA Geometric Progression (GP) is a sequence in which the ratio between any two consecutive terms is a constant. This constant is called the common ratio, denoted by $r$.\n\n### Important Variables\n*   $a$ = first term ($u_1$)\n*   $r$ = common ratio ($\\frac{u_n}{u_{n-1}}$)\n*   $n$ = number of terms\n*   $u_n$ = the $n$-th term\n*   $S_n$ = the sum of the first $n$ terms\n\n### The $n$-th Term of a GP\nThe formula to find the $n$-th term of a geometric progression is:\n$$u_n = a r^{n - 1}$$\n\n> [!NOTE]\n> **Example 3: Finding terms in a Geometric Progression**\n> Find the $6$-th term of the geometric progression $2, 6, 18, 54, \\dots$\n>\n> **Solution:**\n> 1. Identify the first term, $a = 2$.\n> 2. Find the common ratio, $r = \\frac{6}{2} = 3$.\n> 3. Substitute $a = 2$, $r = 3$, and $n = 6$ into the formula:\n> $$u_6 = 2(3)^{6 - 1}$$\n> $$u_6 = 2(3)^5$$\n> $$u_6 = 2(243) = 486$$\n\n### The Sum to $n$ Terms of a GP\nThere are two equivalent formulas used to find the sum of the first $n$ terms of a GP. Choose the one that keeps the denominator positive for easier calculation:\nFor $|r| < 1$:\n$$S_n = \\frac{a(1 - r^n)}{1 - r}$$\nFor $|r| > 1$:\n$$S_n = \\frac{a(r^n - 1)}{r - 1}$$\n\n> [!NOTE]\n> **Example 4: Calculating the sum to $n$ terms of a GP**\n> Find the sum of the first $8$ terms of the geometric progression $5, 10, 20, 40, \\dots$\n>\n> **Solution:**\n> 1. Identify the given values: $a = 5$, $r = \\frac{10}{5} = 2$, $n = 8$.\n> 2. Since $|r| > 1$, use the second formula:\n> $$S_8 = \\frac{5(2^8 - 1)}{2 - 1}$$\n> $$S_8 = \\frac{5(256 - 1)}{1}$$\n> $$S_8 = 5(255) = 1275$$",
         "quizzes": [
             {
-                "question": "**Example 3: Finding terms in a Geometric Progression**\nFind the $6$-th term of the geometric progression $2, 6, 18, 54, \\dots$",
-                "explanation": "1. Identify the first term, $a = 2$.\n2. Find the common ratio, $r = \\frac{6}{2} = 3$.\n3. Substitute $a = 2$, $r = 3$, and $n = 6$ into the formula:\n$$u_6 = 2(3)^{6 - 1}$$\n$$u_6 = 2(3)^5$$\n$$u_6 = 2(243) = 486$$"
+                "question": "Find the 6th term of the GP: 2, 6, 18, 54, …",
+                "options": ["162", "324", "486", "1458"],
+                "correctIndex": 2,
+                "explanation": "a = 2, r = 3. u₆ = 2 × 3⁵ = 486."
             },
             {
-                "question": "**Example 4: Calculating the sum to $n$ terms of a GP**\nFind the sum of the first $8$ terms of the geometric progression $5, 10, 20, 40, \\dots$",
-                "explanation": "1. Identify the given values: $a = 5$, $r = \\frac{10}{5} = 2$, $n = 8$.\n2. Since $|r| > 1$, use the second formula:\n$$S_8 = \\frac{5(2^8 - 1)}{2 - 1}$$\n$$S_8 = \\frac{5(256 - 1)}{1}$$\n$$S_8 = 5(255) = 1275$$"
+                "question": "Sum of first 8 terms of 5, 10, 20, 40, …:",
+                "options": ["635", "1020", "1275", "2555"],
+                "correctIndex": 2,
+                "explanation": "a = 5, r = 2. S₈ = 5(2⁸ - 1)/(2-1) = 5(255) = 1275."
+            },
+            {
+                "question": "The nth term of a GP is:",
+                "options": ["a + (n-1)r", "ar^(n-1)", "arⁿ", "a/r^(n-1)"],
+                "correctIndex": 1,
+                "explanation": "uₙ = ar^(n-1)."
             }
         ]
     },
@@ -707,8 +1440,22 @@ window.subjectNotes = [
         "digitizedText": "## 12.4 Sum to Infinity\nIf the common ratio $r$ of a geometric progression falls within the range $-1 < r < 1$ (or $|r| < 1$), the terms of the sequence get progressively smaller and approach zero. This is known as a convergent series. For such a series, it is possible to find the sum of all its terms stretching to infinity, denoted by $S_{\\infty}$.\n\nThe formula for the sum to infinity is:\n$$S_{\\infty} = \\frac{a}{1 - r}$$\n*Note: This formula is only valid when $|r| < 1$. If $|r| \\geq 1$, the series diverges and the sum to infinity is undefined.*\n\n> [!NOTE]\n> **Example 5: Sum to infinity of a convergent GP**\n> Find the sum to infinity of the geometric series $18 - 6 + 2 - \\frac{2}{3} + \\dots$\n>\n> **Solution:**\n> 1. Identify the first term, $a = 18$.\n> 2. Find the common ratio, $r = \\frac{-6}{18} = -\\frac{1}{3}$.\n> 3. Verify that the condition for convergence is met: $|-\\frac{1}{3}| < 1$.\n> 4. Substitute $a = 18$ and $r = -\\frac{1}{3}$ into the sum to infinity formula:\n> $$S_{\\infty} = \\frac{18}{1 - (-\\frac{1}{3})}$$\n> $$S_{\\infty} = \\frac{18}{1 + \\frac{1}{3}}$$\n> $$S_{\\infty} = \\frac{18}{\\frac{4}{3}}$$\n> $$S_{\\infty} = 18 \\times \\frac{3}{4} = \\frac{54}{4} = 13.5$$",
         "quizzes": [
             {
-                "question": "**Example 5: Sum to infinity of a convergent GP**\nFind the sum to infinity of the geometric series $18 - 6 + 2 - \\frac{2}{3} + \\dots$",
-                "explanation": "1. Identify the first term, $a = 18$.\n2. Find the common ratio, $r = \\frac{-6}{18} = -\\frac{1}{3}$.\n3. Verify that the condition for convergence is met: $|-\\frac{1}{3}| < 1$.\n4. Substitute $a = 18$ and $r = -\\frac{1}{3}$ into the sum to infinity formula:\n$$S_{\\infty} = \\frac{18}{1 - (-\\frac{1}{3})}$$\n$$S_{\\infty} = \\frac{18}{1 + \\frac{1}{3}}$$\n$$S_{\\infty} = \\frac{18}{\\frac{4}{3}}$$\n$$S_{\\infty} = 18 \\times \\frac{3}{4} = \\frac{54}{4} = 13.5$$"
+                "question": "For 18 - 6 + 2 - ⅔ + …, the common ratio is:",
+                "options": ["3", "-3", "⅓", "-⅓"],
+                "correctIndex": 3,
+                "explanation": "r = -6/18 = -⅓. |r| = ⅓ < 1, so the series converges."
+            },
+            {
+                "question": "S∞ = a/(1-r) is valid only when:",
+                "options": ["r > 1", "r = 1", "|r| < 1", "r < -1"],
+                "correctIndex": 2,
+                "explanation": "Only for convergent geometric series where |r| < 1."
+            },
+            {
+                "question": "Find S∞ for 18 - 6 + 2 - ⅔ + …:",
+                "options": ["10", "12", "13.5", "15"],
+                "correctIndex": 2,
+                "explanation": "S∞ = 18/(1-(-⅓)) = 18/(4/3) = 13.5."
             }
         ]
     },
@@ -716,13 +1463,39 @@ window.subjectNotes = [
         "subtopicId": "13.1",
         "title": "Introduction to Vectors",
         "digitizedText": "# Chapter 13: Vectors in Two Dimensions\n\n## 13.1 Introduction to Vectors\n\nA **scalar** quantity has only magnitude (size). Examples include distance, speed, mass, and time.\nA **vector** quantity has both magnitude and direction. Examples include displacement, velocity, acceleration, and force.\n\nIn written mathematics, a vector is typically denoted by a bold letter such as $\\mathbf{a}$, an underlined letter such as $\\underline{a}$, or with an arrow showing its start and end points, such as $\\vec{AB}$.\n\n\n<div align=\"center\">\n<svg width=\"300\" height=\"210\" viewBox=\"0 0 300 210\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Grid Lines -->\n<!-- Horizontal -->\n<line x1=\"30\" y1=\"30\" x2=\"270\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"30\" y1=\"60\" x2=\"270\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"30\" y1=\"90\" x2=\"270\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"30\" y1=\"120\" x2=\"270\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"30\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"30\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<!-- Vertical -->\n<line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"240\" y1=\"30\" x2=\"240\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n<line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\" stroke-opacity=\"0.3\" />\n\n<!-- Vector Line -->\n<line x1=\"90\" y1=\"150\" x2=\"210\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\" />\n<!-- Arrowhead -->\n<polygon points=\"210,60 198,64 202.8,70.4\" fill=\"currentColor\" />\n<!-- Points -->\n<circle cx=\"90\" cy=\"150\" r=\"4\" fill=\"currentColor\" />\n<circle cx=\"210\" cy=\"60\" r=\"4\" fill=\"currentColor\" />\n<!-- Labels -->\n<text x=\"80\" y=\"165\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">A</text>\n<text x=\"215\" y=\"52\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">B</text>\n<text x=\"155\" y=\"95\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a</text>\n</svg>\n</div>",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "Which is a vector quantity?",
+                "options": ["Mass", "Temperature", "Velocity", "Time"],
+                "correctIndex": 2,
+                "explanation": "Velocity has magnitude and direction."
+            },
+            {
+                "question": "A scalar quantity has:",
+                "options": ["Only direction", "Both magnitude and direction", "Only magnitude", "Neither"],
+                "correctIndex": 2,
+                "explanation": "Scalars have only magnitude (e.g., mass, temperature)."
+            }
+        ]
     },
     {
         "subtopicId": "13.2",
         "title": "Vector Representation",
         "digitizedText": "## 13.2 Vector Representation\n\nVectors in two dimensions can be represented in two main forms:\n\n1. **Column Vector Notation:**\n   A vector representing a movement of $x$ units horizontally and $y$ units vertically is written as:\n   $$\\mathbf{a} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}$$\n   \n2. **Base Vector Notation ($\\mathbf{i}$ and $\\mathbf{j}$):**\n   Let $\\mathbf{i}$ be a vector of magnitude $1$ in the positive $x$-direction, and $\\mathbf{j}$ be a vector of magnitude $1$ in the positive $y$-direction.\n   $$\\mathbf{i} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$$\n   Then any vector can be written as:\n   $$\\mathbf{a} = x\\mathbf{i} + y\\mathbf{j}$$",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "The column vector (3, -2) represents:",
+                "options": ["3 left, 2 down", "3 right, 2 up", "3 right, 2 down", "2 right, 3 down"],
+                "correctIndex": 2,
+                "explanation": "Top = horizontal (3 right), bottom = vertical (-2 = 2 down)."
+            },
+            {
+                "question": "3i + 4j in column form is:",
+                "options": ["(4, 3)", "(3, 4)", "(7, 0)", "(12, 0)"],
+                "correctIndex": 1,
+                "explanation": "i is horizontal, j is vertical: (3, 4)."
+            }
+        ]
     },
     {
         "subtopicId": "13.3",
@@ -730,8 +1503,16 @@ window.subjectNotes = [
         "digitizedText": "## 13.3 Magnitude of a Vector\n\nThe **magnitude** (or length) of a vector $\\mathbf{a} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} = x\\mathbf{i} + y\\mathbf{j}$ is denoted by $|\\mathbf{a}|$ and is found using Pythagoras' theorem:\n$$|\\mathbf{a}| = \\sqrt{x^2 + y^2}$$\n\n> [!NOTE]\n> **Example 1: Finding the magnitude of a vector**\n> Find the magnitude of the vector $\\mathbf{v} = 3\\mathbf{i} - 4\\mathbf{j}$.\n>\n> **Solution:**\n> 1. Identify the components: $x = 3$, $y = -4$\n> 2. Apply the magnitude formula: $|\\mathbf{v}| = \\sqrt{3^2 + (-4)^2}$\n> 3. Calculate the result: $|\\mathbf{v}| = \\sqrt{9 + 16} = \\sqrt{25} = 5$",
         "quizzes": [
             {
-                "question": "**Example 1: Finding the magnitude of a vector**\nFind the magnitude of the vector $\\mathbf{v} = 3\\mathbf{i} - 4\\mathbf{j}$.",
-                "explanation": "1. Identify the components: $x = 3$, $y = -4$\n2. Apply the magnitude formula: $|\\mathbf{v}| = \\sqrt{3^2 + (-4)^2}$\n3. Calculate the result: $|\\mathbf{v}| = \\sqrt{9 + 16} = \\sqrt{25} = 5$"
+                "question": "Find |v| for v = 3i - 4j.",
+                "options": ["1", "7", "5", "25"],
+                "correctIndex": 2,
+                "explanation": "|v| = √(9 + 16) = √25 = 5."
+            },
+            {
+                "question": "The magnitude of (x, y) uses:",
+                "options": ["Midpoint formula", "Pythagoras: √(x² + y²)", "Gradient formula", "Distance formula to origin"],
+                "correctIndex": 1,
+                "explanation": "|a| = √(x² + y²) by Pythagoras."
             }
         ]
     },
@@ -739,7 +1520,20 @@ window.subjectNotes = [
         "subtopicId": "13.4",
         "title": "Vector Addition and Subtraction",
         "digitizedText": "## 13.4 Vector Addition and Subtraction\n\nWhen adding or subtracting vectors, we perform the operation on the corresponding horizontal and vertical components.\n\nGiven $\\mathbf{a} = \\begin{pmatrix} x_1 \\\\ y_1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} x_2 \\\\ y_2 \\end{pmatrix}$:\n$$\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} x_1 + x_2 \\\\ y_1 + y_2 \\end{pmatrix}$$\n$$\\mathbf{a} - \\mathbf{b} = \\begin{pmatrix} x_1 - x_2 \\\\ y_1 - y_2 \\end{pmatrix}$$\n\n**Geometrical representation:**\n- **Addition:** The triangle law of vector addition states that if you place the tail of vector $\\mathbf{b}$ at the head of vector $\\mathbf{a}$, the sum $\\mathbf{a} + \\mathbf{b}$ is the vector from the tail of $\\mathbf{a}$ to the head of $\\mathbf{b}$.\n- **Subtraction:** $\\mathbf{a} - \\mathbf{b}$ is the same as $\\mathbf{a} + (-\\mathbf{b})$, where $-\\mathbf{b}$ is the vector $\\mathbf{b}$ but in the exact opposite direction.\n<div align=\"center\">\n<svg width=\"600\" height=\"250\" viewBox=\"0 0 600 250\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Left Side: Triangle Law -->\n<text x=\"150\" y=\"30\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Triangle Law</text>\n\n<!-- Vector a -->\n<line x1=\"50\" y1=\"200\" x2=\"180\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\" />\n<polygon points=\"180,200 170,196 170,204\" fill=\"currentColor\" />\n<text x=\"110\" y=\"218\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a</text>\n\n<!-- Vector b -->\n<line x1=\"180\" y1=\"200\" x2=\"250\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" />\n<g transform=\"translate(250,90) rotate(-57.53)\">\n<polygon points=\"0,0 -12,-4 -12,4\" fill=\"currentColor\" />\n</g>\n<text x=\"225\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">b</text>\n\n<!-- Vector a+b -->\n<line x1=\"50\" y1=\"200\" x2=\"250\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" />\n<g transform=\"translate(250,90) rotate(-28.81)\">\n<polygon points=\"0,0 -12,-4 -12,4\" fill=\"currentColor\" />\n</g>\n<text x=\"120\" y=\"130\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a + b</text>\n\n<!-- Dots -->\n<circle cx=\"50\" cy=\"200\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"180\" cy=\"200\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"250\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" />\n\n<!-- Right Side: Parallelogram Law -->\n<text x=\"450\" y=\"30\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Parallelogram Law</text>\n\n<!-- Vector a -->\n<line x1=\"350\" y1=\"200\" x2=\"480\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\" />\n<polygon points=\"480,200 470,196 470,204\" fill=\"currentColor\" />\n<text x=\"410\" y=\"218\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a</text>\n\n<!-- Vector b -->\n<line x1=\"350\" y1=\"200\" x2=\"420\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" />\n<g transform=\"translate(420,90) rotate(-57.53)\">\n<polygon points=\"0,0 -12,-4 -12,4\" fill=\"currentColor\" />\n</g>\n<text x=\"365\" y=\"145\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">b</text>\n\n<!-- Dashed copies -->\n<line x1=\"480\" y1=\"200\" x2=\"550\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\" stroke-opacity=\"0.6\" />\n<line x1=\"420\" y1=\"90\" x2=\"550\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\" stroke-opacity=\"0.6\" />\n<text x=\"480\" y=\"80\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" opacity=\"0.6\">a</text>\n<text x=\"525\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" opacity=\"0.6\">b</text>\n\n<!-- Diagonal a+b -->\n<line x1=\"350\" y1=\"200\" x2=\"550\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" />\n<g transform=\"translate(550,90) rotate(-28.81)\">\n<polygon points=\"0,0 -12,-4 -12,4\" fill=\"currentColor\" />\n</g>\n<text x=\"450\" y=\"135\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a + b</text>\n\n<!-- Dots -->\n<circle cx=\"350\" cy=\"200\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"480\" cy=\"200\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"420\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"550\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" />\n</svg>\n</div>",
-        "quizzes": []
+        "quizzes": [
+            {
+                "question": "If a = (2, 5) and b = (-1, 3), find a + b.",
+                "options": ["(3, 8)", "(1, 2)", "(1, 8)", "(3, 2)"],
+                "correctIndex": 2,
+                "explanation": "(2+(-1), 5+3) = (1, 8)."
+            },
+            {
+                "question": "The triangle law states a + b is:",
+                "options": ["From head of a to tail of b", "From tail of a to head of b (b starts at head of a)", "The bisector", "The average"],
+                "correctIndex": 1,
+                "explanation": "Place tail of b at head of a. Sum goes from tail of a to head of b."
+            }
+        ]
     },
     {
         "subtopicId": "13.5",
@@ -747,8 +1541,16 @@ window.subjectNotes = [
         "digitizedText": "## 13.5 Scalar Multiplication\n\nMultiplying a vector by a scalar (a real number) $k$ changes its magnitude but leaves its direction unchanged (or reverses it if $k$ is negative).\n\n$$k\\mathbf{a} = k \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} kx \\\\ ky \\end{pmatrix}$$\n\nTwo vectors $\\mathbf{a}$ and $\\mathbf{b}$ are **parallel** if one is a scalar multiple of the other:\n$$\\mathbf{a} = k\\mathbf{b}$$\n\n> [!NOTE]\n> **Example 2: Vector operations and parallel vectors**\n> Given $\\mathbf{p} = \\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$, find $2\\mathbf{p} - 3\\mathbf{q}$.\n>\n> **Solution:**\n> 1. Substitute the vectors into the expression: $2 \\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix} - 3 \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$\n> 2. Perform scalar multiplication: $\\begin{pmatrix} 4 \\\\ 10 \\end{pmatrix} - \\begin{pmatrix} -3 \\\\ 9 \\end{pmatrix}$\n> 3. Subtract the components: $\\begin{pmatrix} 4 - (-3) \\\\ 10 - 9 \\end{pmatrix} = \\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$",
         "quizzes": [
             {
-                "question": "**Example 2: Vector operations and parallel vectors**\nGiven $\\mathbf{p} = \\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$, find $2\\mathbf{p} - 3\\mathbf{q}$.",
-                "explanation": "1. Substitute the vectors into the expression: $2 \\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix} - 3 \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$\n2. Perform scalar multiplication: $\\begin{pmatrix} 4 \\\\ 10 \\end{pmatrix} - \\begin{pmatrix} -3 \\\\ 9 \\end{pmatrix}$\n3. Subtract the components: $\\begin{pmatrix} 4 - (-3) \\\\ 10 - 9 \\end{pmatrix} = \\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$"
+                "question": "Find 2p - 3q if p = (2, 5) and q = (-1, 3).",
+                "options": ["(7, 1)", "(1, 1)", "(7, 19)", "(-1, 1)"],
+                "correctIndex": 0,
+                "explanation": "2(2,5) - 3(-1,3) = (4,10) - (-3,9) = (7,1)."
+            },
+            {
+                "question": "Two vectors are parallel if one is:",
+                "options": ["The negative of the other", "A scalar multiple of the other", "Perpendicular", "The reciprocal"],
+                "correctIndex": 1,
+                "explanation": "a = kb for some scalar k ≠ 0."
             }
         ]
     },
@@ -758,8 +1560,16 @@ window.subjectNotes = [
         "digitizedText": "## 13.6 Unit Vectors\n\nA **unit vector** is a vector that has a magnitude of $1$. The unit vector in the direction of vector $\\mathbf{a}$ is often denoted by $\\mathbf{\\hat{a}}$. \n\nTo find the unit vector in the direction of $\\mathbf{a}$, divide the vector by its magnitude:\n$$\\mathbf{\\hat{a}} = \\frac{1}{|\\mathbf{a}|} \\mathbf{a} = \\frac{1}{\\sqrt{x^2 + y^2}} \\begin{pmatrix} x \\\\ y \\end{pmatrix}$$\n\n> [!NOTE]\n> **Example 3: Finding a unit vector**\n> Find the unit vector in the direction of $\\mathbf{a} = 5\\mathbf{i} + 12\\mathbf{j}$.\n>\n> **Solution:**\n> 1. Find the magnitude of $\\mathbf{a}$: $|\\mathbf{a}| = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$\n> 2. Multiply the vector by the reciprocal of its magnitude: $\\mathbf{\\hat{a}} = \\frac{1}{13} (5\\mathbf{i} + 12\\mathbf{j})$\n> 3. Write the final answer: $\\mathbf{\\hat{a}} = \\frac{5}{13}\\mathbf{i} + \\frac{12}{13}\\mathbf{j}$",
         "quizzes": [
             {
-                "question": "**Example 3: Finding a unit vector**\nFind the unit vector in the direction of $\\mathbf{a} = 5\\mathbf{i} + 12\\mathbf{j}$.",
-                "explanation": "1. Find the magnitude of $\\mathbf{a}$: $|\\mathbf{a}| = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$\n2. Multiply the vector by the reciprocal of its magnitude: $\\mathbf{\\hat{a}} = \\frac{1}{13} (5\\mathbf{i} + 12\\mathbf{j})$\n3. Write the final answer: $\\mathbf{\\hat{a}} = \\frac{5}{13}\\mathbf{i} + \\frac{12}{13}\\mathbf{j}$"
+                "question": "Find the unit vector of a = 5i + 12j.",
+                "options": ["5/13 i + 12/13 j", "5/17 i + 12/17 j", "5i + 12j", "1/5 i + 1/12 j"],
+                "correctIndex": 0,
+                "explanation": "|a| = 13. Unit vector = (1/13)(5i + 12j) = 5/13 i + 12/13 j."
+            },
+            {
+                "question": "A unit vector has magnitude:",
+                "options": ["0", "1", "r", "Depends"],
+                "correctIndex": 1,
+                "explanation": "By definition, a unit vector has magnitude 1."
             }
         ]
     },
@@ -769,8 +1579,16 @@ window.subjectNotes = [
         "digitizedText": "## 13.7 Position Vectors\n\nA **position vector** describes the position of a point relative to a fixed origin $O$. If a point has coordinates $P(x, y)$, its position vector is:\n$$\\vec{OP} = \\mathbf{p} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} = x\\mathbf{i} + y\\mathbf{j}$$\n\nTo find the vector between two points $A$ and $B$, we use their position vectors $\\mathbf{a}$ and $\\mathbf{b}$:\n$$\\vec{AB} = \\vec{AO} + \\vec{OB} = -\\vec{OA} + \\vec{OB} = \\mathbf{b} - \\mathbf{a}$$\n<div align=\"center\">\n<svg width=\"360\" height=\"280\" viewBox=\"0 0 360 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"40\" y1=\"220\" x2=\"320\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\" />\n<line x1=\"60\" y1=\"240\" x2=\"60\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\" />\n<!-- Arrowheads -->\n<polygon points=\"320,220 312,216 312,224\" fill=\"currentColor\" />\n<polygon points=\"60,40 56,48 64,48\" fill=\"currentColor\" />\n<!-- Axis Labels -->\n<text x=\"325\" y=\"225\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">x</text>\n<text x=\"55\" y=\"30\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">y</text>\n<text x=\"45\" y=\"235\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">O</text>\n\n<!-- Position Vector OA -->\n<line x1=\"60\" y1=\"220\" x2=\"140\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\" />\n<g transform=\"translate(140,140) rotate(-45)\">\n<polygon points=\"0,0 -8,-3 -8,3\" fill=\"currentColor\" />\n</g>\n<text x=\"90\" y=\"185\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">a</text>\n\n<!-- Position Vector OB -->\n<line x1=\"60\" y1=\"220\" x2=\"260\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\" />\n<g transform=\"translate(260,90) rotate(-33.02)\">\n<polygon points=\"0,0 -8,-3 -8,3\" fill=\"currentColor\" />\n</g>\n<text x=\"160\" y=\"170\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">b</text>\n\n<!-- Vector AB -->\n<line x1=\"140\" y1=\"140\" x2=\"260\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" />\n<g transform=\"translate(260,90) rotate(-22.62)\">\n<polygon points=\"0,0 -12,-4 -12,4\" fill=\"currentColor\" />\n</g>\n<text x=\"180\" y=\"105\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\">b - a</text>\n\n<!-- Dots -->\n<circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"currentColor\" />\n<circle cx=\"260\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" />\n<!-- Labels for Points -->\n<text x=\"130\" y=\"130\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">A</text>\n<text x=\"265\" y=\"85\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">B</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Vector between two points**\n> The coordinates of points $A$ and $B$ are $(2, 4)$ and $(7, -1)$ respectively. Find the vector $\\vec{AB}$ and its magnitude.\n>\n> **Solution:**\n> 1. Write the position vectors: $\\vec{OA} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$ and $\\vec{OB} = \\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$\n> 2. Use the formula $\\vec{AB} = \\vec{OB} - \\vec{OA}$: $\\vec{AB} = \\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix} - \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -5 \\end{pmatrix}$\n> 3. Find the magnitude: $|\\vec{AB}| = \\sqrt{5^2 + (-5)^2} = \\sqrt{25 + 25} = \\sqrt{50} = 5\\sqrt{2}$",
         "quizzes": [
             {
-                "question": "**Example 4: Vector between two points**\nThe coordinates of points $A$ and $B$ are $(2, 4)$ and $(7, -1)$ respectively. Find the vector $\\vec{AB}$ and its magnitude.",
-                "explanation": "1. Write the position vectors: $\\vec{OA} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$ and $\\vec{OB} = \\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$\n2. Use the formula $\\vec{AB} = \\vec{OB} - \\vec{OA}$: $\\vec{AB} = \\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix} - \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -5 \\end{pmatrix}$\n3. Find the magnitude: $|\\vec{AB}| = \\sqrt{5^2 + (-5)^2} = \\sqrt{25 + 25} = \\sqrt{50} = 5\\sqrt{2}$"
+                "question": "If A = (2, 4) and B = (7, -1), find AB.",
+                "options": ["(-5, 5)", "(5, -5)", "(9, 3)", "(-5, -5)"],
+                "correctIndex": 1,
+                "explanation": "AB = OB - OA = (7,-1) - (2,4) = (5,-5)."
+            },
+            {
+                "question": "The position vector of P(3, -2) is:",
+                "options": ["(-2, 3)", "(3, -2)", "(5, 0)", "(1, 1)"],
+                "correctIndex": 1,
+                "explanation": "OP = (3, -2)."
             }
         ]
     },
@@ -780,12 +1598,16 @@ window.subjectNotes = [
         "digitizedText": "## 13.8 Solving Geometric Problems\n\nVectors are powerful tools for solving geometric problems involving shapes, lines, and ratios.\n\n### 13.8.1 Collinear Points\nThree points $A$, $B$, and $C$ are **collinear** (lie on the same straight line) if the vectors between them are parallel and they share a common point. For example, if $\\vec{AB} = k\\vec{BC}$ for some scalar $k$, then $A$, $B$, and $C$ are collinear.\n\n### 13.8.2 Ratio Theorem\nIf a point $P$ divides the line segment $AB$ in the ratio $\\lambda : \\mu$, the position vector of $P$ is given by:\n$$\\vec{OP} = \\frac{\\mu \\mathbf{a} + \\lambda \\mathbf{b}}{\\lambda + \\mu}$$\nWhere $\\mathbf{a}$ and $\\mathbf{b}$ are the position vectors of $A$ and $B$ respectively.\n\n> [!NOTE]\n> **Example 5: Proving points are collinear**\n> Let $O$ be the origin. The position vectors of points $A$, $B$, and $C$ are $\\mathbf{a} = 2\\mathbf{i} + \\mathbf{j}$, $\\mathbf{b} = 5\\mathbf{i} + 3\\mathbf{j}$, and $\\mathbf{c} = 11\\mathbf{i} + 7\\mathbf{j}$. Show that points $A$, $B$, and $C$ are collinear.\n>\n> **Solution:**\n> 1. Find vector $\\vec{AB}$: $\\vec{AB} = \\mathbf{b} - \\mathbf{a} = (5\\mathbf{i} + 3\\mathbf{j}) - (2\\mathbf{i} + \\mathbf{j}) = 3\\mathbf{i} + 2\\mathbf{j}$\n> 2. Find vector $\\vec{BC}$: $\\vec{BC} = \\mathbf{c} - \\mathbf{b} = (11\\mathbf{i} + 7\\mathbf{j}) - (5\\mathbf{i} + 3\\mathbf{j}) = 6\\mathbf{i} + 4\\mathbf{j}$\n> 3. Compare the two vectors: We can see that $\\vec{BC} = 2(3\\mathbf{i} + 2\\mathbf{j}) = 2\\vec{AB}$\n> 4. Conclusion: Since $\\vec{BC}$ is a scalar multiple of $\\vec{AB}$, the vectors are parallel. Because they share the common point $B$, the points $A$, $B$, and $C$ must be collinear.\n\n> [!NOTE]\n> **Example 6: Finding a point on a line in a given ratio**\n> Points $P$ and $Q$ have position vectors $\\mathbf{p} = \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}$. Point $R$ lies on the line segment $PQ$ such that $PR:RQ = 1:3$. Find the position vector of $R$.\n>\n> **Solution:**\n> 1. Identify the given vectors and ratio: $\\mathbf{p} = \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$, $\\mathbf{q} = \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}$, ratio $\\lambda:\\mu = 1:3$\n> 2. Use the ratio theorem formula: $\\vec{OR} = \\frac{3\\mathbf{p} + 1\\mathbf{q}}{1 + 3}$\n> 3. Substitute the vectors: $\\vec{OR} = \\frac{3 \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}}{4}$\n> 4. Calculate the numerator: $3 \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} -6 \\\\ 9 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 16 \\end{pmatrix}$\n> 5. Divide by the denominator: $\\vec{OR} = \\frac{1}{4} \\begin{pmatrix} 0 \\\\ 16 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 4 \\end{pmatrix}$",
         "quizzes": [
             {
-                "question": "**Example 5: Proving points are collinear**\nLet $O$ be the origin. The position vectors of points $A$, $B$, and $C$ are $\\mathbf{a} = 2\\mathbf{i} + \\mathbf{j}$, $\\mathbf{b} = 5\\mathbf{i} + 3\\mathbf{j}$, and $\\mathbf{c} = 11\\mathbf{i} + 7\\mathbf{j}$. Show that points $A$, $B$, and $C$ are collinear.",
-                "explanation": "1. Find vector $\\vec{AB}$: $\\vec{AB} = \\mathbf{b} - \\mathbf{a} = (5\\mathbf{i} + 3\\mathbf{j}) - (2\\mathbf{i} + \\mathbf{j}) = 3\\mathbf{i} + 2\\mathbf{j}$\n2. Find vector $\\vec{BC}$: $\\vec{BC} = \\mathbf{c} - \\mathbf{b} = (11\\mathbf{i} + 7\\mathbf{j}) - (5\\mathbf{i} + 3\\mathbf{j}) = 6\\mathbf{i} + 4\\mathbf{j}$\n3. Compare the two vectors: We can see that $\\vec{BC} = 2(3\\mathbf{i} + 2\\mathbf{j}) = 2\\vec{AB}$\n4. Conclusion: Since $\\vec{BC}$ is a scalar multiple of $\\vec{AB}$, the vectors are parallel. Because they share the common point $B$, the points $A$, $B$, and $C$ must be collinear."
+                "question": "A, B, C are collinear if:",
+                "options": ["AB + BC = 0", "AB is a scalar multiple of BC and they share a point", "|AB| = |BC|", "AB · BC = 0"],
+                "correctIndex": 1,
+                "explanation": "Parallel vectors sharing a common point means collinear."
             },
             {
-                "question": "**Example 6: Finding a point on a line in a given ratio**\nPoints $P$ and $Q$ have position vectors $\\mathbf{p} = \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}$. Point $R$ lies on the line segment $PQ$ such that $PR:RQ = 1:3$. Find the position vector of $R$.",
-                "explanation": "1. Identify the given vectors and ratio: $\\mathbf{p} = \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$, $\\mathbf{q} = \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}$, ratio $\\lambda:\\mu = 1:3$\n2. Use the ratio theorem formula: $\\vec{OR} = \\frac{3\\mathbf{p} + 1\\mathbf{q}}{1 + 3}$\n3. Substitute the vectors: $\\vec{OR} = \\frac{3 \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}}{4}$\n4. Calculate the numerator: $3 \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} -6 \\\\ 9 \\end{pmatrix} + \\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 16 \\end{pmatrix}$\n5. Divide by the denominator: $\\vec{OR} = \\frac{1}{4} \\begin{pmatrix} 0 \\\\ 16 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 4 \\end{pmatrix}$"
+                "question": "R divides PQ in ratio 1:3. p = (-2, 3), q = (6, 7). Find OR.",
+                "options": ["(0, 4)", "(2, 5)", "(4, 6)", "(-1, 4)"],
+                "correctIndex": 0,
+                "explanation": "OR = (3p + q)/4 = (3(-2,3) + (6,7))/4 = (0,16)/4 = (0,4)."
             }
         ]
     },
@@ -795,16 +1617,22 @@ window.subjectNotes = [
         "digitizedText": "# Chapter 14: Calculus\n\n## 14.1 Differentiation Fundamentals\n\nDifferentiation allows us to find the rate of change of a quantity. For a curve $y = f(x)$, the derivative $\\frac{\\mathrm{d}y}{\\mathrm{d}x}$ or $f'(x)$ gives the gradient of the curve at any point.\n\nGeometrically, $\\frac{\\mathrm{d}y}{\\mathrm{d}x}$ at a point is the **slope of the tangent line** to the curve at that point.\n<div align=\"center\">\n<svg width=\"380\" height=\"300\" viewBox=\"-50 -40 420 340\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-30\" y1=\"250\" x2=\"370\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"30\" y1=\"290\" x2=\"30\" y2=\"-20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"370,250 364,246 364,254\" fill=\"currentColor\"/>\n<polygon points=\"30,-20 26,-14 34,-14\" fill=\"currentColor\"/>\n<!-- Axis labels -->\n<text x=\"360\" y=\"272\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">x</text>\n<text x=\"12\" y=\"-5\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">y</text>\n<!-- Curve y = f(x) -->\n<path d=\"M 50,220 C 100,240 140,60 200,100 C 260,140 300,20 350,50\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n<text x=\"345\" y=\"40\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = f(x)</text>\n<!-- Point P on curve -->\n<circle cx=\"200\" cy=\"100\" r=\"4.5\" fill=\"currentColor\"/>\n<text x=\"208\" y=\"92\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">P</text>\n<!-- Tangent line at P -->\n<line x1=\"110\" y1=\"160\" x2=\"310\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-dasharray=\"8,4\"/>\n<text x=\"300\" y=\"22\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">tangent at P</text>\n<!-- Gradient annotation -->\n<line x1=\"230\" y1=\"80\" x2=\"290\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/>\n<line x1=\"230\" y1=\"80\" x2=\"230\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/>\n<text x=\"250\" y=\"95\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">\u03b4x</text>\n<text x=\"234\" y=\"64\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">\u03b4y</text>\n<!-- dy/dx label -->\n<text x=\"60\" y=\"30\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\">gradient = dy/dx</text>\n</svg>\n</div>\n\n**Basic rules:**\n\n- If $y = ax^n$, then $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = anx^{n-1}$.\n- Derivative of a constant is $0$.\n- $\\frac{\\mathrm{d}}{\\mathrm{d}x} (e^{ax}) = ae^{ax}$.\n- $\\frac{\\mathrm{d}}{\\mathrm{d}x} (\\ln(ax)) = \\frac{1}{x}$.\n- $\\frac{\\mathrm{d}}{\\mathrm{d}x} (\\sin(ax)) = a\\cos(ax)$.\n- $\\frac{\\mathrm{d}}{\\mathrm{d}x} (\\cos(ax)) = -a\\sin(ax)$.\n- $\\frac{\\mathrm{d}}{\\mathrm{d}x} (\\tan(ax)) = a\\sec^2(ax)$.\n\n### The Chain Rule\n\nUsed for differentiating composite functions.\n\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\frac{\\mathrm{d}y}{\\mathrm{d}u} \\times \\frac{\\mathrm{d}u}{\\mathrm{d}x} $$\n\n> [!NOTE]\n> **Example 1: Using the Chain Rule**\n> Differentiate $y = (3x^2 + 5)^4$ with respect to $x$.\n>\n> **Solution:**\n> 1. Let $u = 3x^2 + 5$, then $y = u^4$.\n> 2. Find the derivatives: $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 6x$ and $\\frac{\\mathrm{d}y}{\\mathrm{d}u} = 4u^3$.\n> 3. Apply the chain rule:\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4u^3 \\times 6x = 24x(3x^2 + 5)^3 $$\n\n### The Product Rule\n\nUsed when differentiating the product of two functions.\n\n$$ \\frac{\\mathrm{d}}{\\mathrm{d}x} (uv) = u \\frac{\\mathrm{d}v}{\\mathrm{d}x} + v \\frac{\\mathrm{d}u}{\\mathrm{d}x} $$\n\n> [!NOTE]\n> **Example 2: Using the Product Rule**\n> Find $\\frac{\\mathrm{d}y}{\\mathrm{d}x}$ if $y = x^2 \\sin(3x)$.\n>\n> **Solution:**\n> 1. Let $u = x^2$ and $v = \\sin(3x)$.\n> 2. Then $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 2x$ and $\\frac{\\mathrm{d}v}{\\mathrm{d}x} = 3\\cos(3x)$.\n> 3. Apply the product rule:\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = x^2 (3\\cos(3x)) + \\sin(3x)(2x) $$\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\cos(3x) + 2x \\sin(3x) $$\n\n### The Quotient Rule\n\nUsed when differentiating the quotient of two functions.\n\n$$ \\frac{\\mathrm{d}}{\\mathrm{d}x} \\left( \\frac{u}{v} \\right) = \\frac{v \\frac{\\mathrm{d}u}{\\mathrm{d}x} - u \\frac{\\mathrm{d}v}{\\mathrm{d}x}}{v^2} $$\n\n> [!NOTE]\n> **Example 3: Using the Quotient Rule**\n> Differentiate $y = \\frac{e^{2x}}{x + 1}$.\n>\n> **Solution:**\n> 1. Let $u = e^{2x}$ and $v = x + 1$.\n> 2. Then $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 2e^{2x}$ and $\\frac{\\mathrm{d}v}{\\mathrm{d}x} = 1$.\n> 3. Apply the quotient rule:\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\frac{(x + 1)(2e^{2x}) - (e^{2x})(1)}{(x + 1)^2} $$\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\frac{e^{2x}(2x + 2 - 1)}{(x + 1)^2} = \\frac{e^{2x}(2x + 1)}{(x + 1)^2} $$",
         "quizzes": [
             {
-                "question": "**Example 1: Using the Chain Rule**\nDifferentiate $y = (3x^2 + 5)^4$ with respect to $x$.",
-                "explanation": "1. Let $u = 3x^2 + 5$, then $y = u^4$.\n2. Find the derivatives: $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 6x$ and $\\frac{\\mathrm{d}y}{\\mathrm{d}u} = 4u^3$.\n3. Apply the chain rule:\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4u^3 \\times 6x = 24x(3x^2 + 5)^3 $$"
+                "question": "Differentiate y = (3x² + 5)⁴.",
+                "options": ["4(3x² + 5)³", "24x(3x² + 5)³", "12x(3x² + 5)³", "(3x² + 5)³"],
+                "correctIndex": 1,
+                "explanation": "Chain rule: dy/dx = 4(3x²+5)³ × 6x = 24x(3x²+5)³."
             },
             {
-                "question": "**Example 2: Using the Product Rule**\nFind $\\frac{\\mathrm{d}y}{\\mathrm{d}x}$ if $y = x^2 \\sin(3x)$.",
-                "explanation": "1. Let $u = x^2$ and $v = \\sin(3x)$.\n2. Then $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 2x$ and $\\frac{\\mathrm{d}v}{\\mathrm{d}x} = 3\\cos(3x)$.\n3. Apply the product rule:\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = x^2 (3\\cos(3x)) + \\sin(3x)(2x) $$\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\cos(3x) + 2x \\sin(3x) $$"
+                "question": "Find dy/dx if y = x²sin(3x).",
+                "options": ["2x sin(3x)", "3x²cos(3x) + 2x sin(3x)", "x²cos(3x)", "3x²cos(3x)"],
+                "correctIndex": 1,
+                "explanation": "Product rule: dy/dx = x²(3cos3x) + sin(3x)(2x) = 3x²cos(3x) + 2x sin(3x)."
             },
             {
-                "question": "**Example 3: Using the Quotient Rule**\nDifferentiate $y = \\frac{e^{2x}}{x + 1}$.",
-                "explanation": "1. Let $u = e^{2x}$ and $v = x + 1$.\n2. Then $\\frac{\\mathrm{d}u}{\\mathrm{d}x} = 2e^{2x}$ and $\\frac{\\mathrm{d}v}{\\mathrm{d}x} = 1$.\n3. Apply the quotient rule:\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\frac{(x + 1)(2e^{2x}) - (e^{2x})(1)}{(x + 1)^2} $$\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\frac{e^{2x}(2x + 2 - 1)}{(x + 1)^2} = \\frac{e^{2x}(2x + 1)}{(x + 1)^2} $$"
+                "question": "Differentiate y = e^(2x)/(x+1).",
+                "options": ["e^(2x)/(x+1)²", "e^(2x)(2x+1)/(x+1)²", "2e^(2x)/(x+1)", "e^(2x)(2x+3)/(x+1)²"],
+                "correctIndex": 1,
+                "explanation": "Quotient rule: dy/dx = [(x+1)(2e²ˣ) - e²ˣ(1)]/(x+1)² = e²ˣ(2x+1)/(x+1)²."
             }
         ]
     },
@@ -814,8 +1642,22 @@ window.subjectNotes = [
         "digitizedText": "## 14.2 Turning Points (Stationary Points)\n\nA turning point occurs where the gradient of the curve is zero.\nAt a stationary point, $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 0$.\n<div align=\"center\">\n<svg width=\"420\" height=\"320\" viewBox=\"-50 -50 470 370\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-30\" y1=\"270\" x2=\"400\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"30\" y1=\"310\" x2=\"30\" y2=\"-30\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"400,270 394,266 394,274\" fill=\"currentColor\"/>\n<polygon points=\"30,-30 26,-24 34,-24\" fill=\"currentColor\"/>\n<!-- Axis labels -->\n<text x=\"390\" y=\"290\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">x</text>\n<text x=\"12\" y=\"-15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">y</text>\n<!-- Cubic-style curve with max and min -->\n<path d=\"M 50,250 C 80,180 100,40 160,55 C 210,68 250,250 300,230 C 340,214 370,100 400,80\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n<!-- Maximum point -->\n<circle cx=\"160\" cy=\"55\" r=\"5\" fill=\"currentColor\"/>\n<text x=\"130\" y=\"35\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Maximum</text>\n<!-- Horizontal tangent at max -->\n<line x1=\"110\" y1=\"55\" x2=\"210\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"6,4\"/>\n<text x=\"175\" y=\"48\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">dy/dx = 0</text>\n<!-- Minimum point -->\n<circle cx=\"300\" cy=\"230\" r=\"5\" fill=\"currentColor\"/>\n<text x=\"278\" y=\"260\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-weight=\"bold\">Minimum</text>\n<!-- Horizontal tangent at min -->\n<line x1=\"250\" y1=\"230\" x2=\"350\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"6,4\"/>\n<text x=\"310\" y=\"224\" fill=\"currentColor\" font-family=\"serif\" font-size=\"11\">dy/dx = 0</text>\n<!-- Sign change annotations for dy/dx -->\n<text x=\"90\" y=\"130\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\">\u2197</text>\n<text x=\"80\" y=\"150\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">dy/dx > 0</text>\n<text x=\"215\" y=\"160\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\">\u2198</text>\n<text x=\"205\" y=\"180\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">dy/dx < 0</text>\n<text x=\"345\" y=\"170\" fill=\"currentColor\" font-family=\"serif\" font-size=\"16\">\u2197</text>\n<text x=\"335\" y=\"190\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">dy/dx > 0</text>\n<!-- Curve label -->\n<text x=\"370\" y=\"72\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = f(x)</text>\n</svg>\n</div>\n\n### Determining the Nature of Turning Points\n\nTo classify a stationary point, we use the **second derivative test**, evaluating $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2}$ at the $x$-coordinate of the point.\n\n- If $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} > 0$, the point is a **minimum**.\n- If $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} < 0$, the point is a **maximum**.\n- If $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 0$, the test is inconclusive (it could be a point of inflection \u2014 test the first derivative on either side).\n\n**Summary of sign changes around turning points:**\n<div align=\"center\">\n<svg width=\"400\" height=\"160\" viewBox=\"0 0 400 160\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Maximum box -->\n<rect x=\"10\" y=\"10\" width=\"180\" height=\"140\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"55\" y=\"35\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\">Maximum</text>\n<line x1=\"20\" y1=\"45\" x2=\"180\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"30\" y=\"68\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">Before: dy/dx > 0</text>\n<text x=\"30\" y=\"92\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">At point: dy/dx = 0</text>\n<text x=\"30\" y=\"116\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">After: dy/dx &lt; 0</text>\n<text x=\"30\" y=\"140\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">d\u00b2y/dx\u00b2 &lt; 0</text>\n<!-- Minimum box -->\n<rect x=\"210\" y=\"10\" width=\"180\" height=\"140\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"258\" y=\"35\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-weight=\"bold\">Minimum</text>\n<line x1=\"220\" y1=\"45\" x2=\"380\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"1\"/>\n<text x=\"230\" y=\"68\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">Before: dy/dx &lt; 0</text>\n<text x=\"230\" y=\"92\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">At point: dy/dx = 0</text>\n<text x=\"230\" y=\"116\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">After: dy/dx > 0</text>\n<text x=\"230\" y=\"140\" fill=\"currentColor\" font-family=\"serif\" font-size=\"12\">d\u00b2y/dx\u00b2 > 0</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 4: Finding and Classifying Turning Points**\n> Find the coordinates of the turning points of the curve $y = x^3 - 3x^2 - 9x + 5$ and determine their nature.\n>\n> **Solution:**\n> 1. Find the first derivative:\n> $$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 6x - 9 $$\n> 2. Set $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 0$ to find stationary points:\n> $$ 3(x^2 - 2x - 3) = 0 $$\n> $$ 3(x - 3)(x + 1) = 0 $$\n> $$ x = 3 \\text{ or } x = -1 $$\n> 3. Find the corresponding $y$-coordinates:\n> When $x = 3$, $y = (3)^3 - 3(3)^2 - 9(3) + 5 = -22$. Point: $(3, -22)$.\n> When $x = -1$, $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$. Point: $(-1, 10)$.\n> 4. Find the second derivative:\n> $$ \\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 6 $$\n> 5. Classify the points:\n> At $x = 3$: $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6(3) - 6 = 12 > 0$ (Minimum point).\n> At $x = -1$: $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6(-1) - 6 = -12 < 0$ (Maximum point).",
         "quizzes": [
             {
-                "question": "**Example 4: Finding and Classifying Turning Points**\nFind the coordinates of the turning points of the curve $y = x^3 - 3x^2 - 9x + 5$ and determine their nature.",
-                "explanation": "1. Find the first derivative:\n$$ \\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 6x - 9 $$\n2. Set $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 0$ to find stationary points:\n$$ 3(x^2 - 2x - 3) = 0 $$\n$$ 3(x - 3)(x + 1) = 0 $$\n$$ x = 3 \\text{ or } x = -1 $$\n3. Find the corresponding $y$-coordinates:\nWhen $x = 3$, $y = (3)^3 - 3(3)^2 - 9(3) + 5 = -22$. Point: $(3, -22)$.\nWhen $x = -1$, $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$. Point: $(-1, 10)$.\n4. Find the second derivative:\n$$ \\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 6 $$\n5. Classify the points:\nAt $x = 3$: $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6(3) - 6 = 12 > 0$ (Minimum point).\nAt $x = -1$: $\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6(-1) - 6 = -12 < 0$ (Maximum point)."
+                "question": "Find the turning points of y = x³ - 3x² - 9x + 5.",
+                "options": ["x = -3 and x = 1", "x = -1 and x = 3", "x = 1 and x = 3", "x = -1 and x = -3"],
+                "correctIndex": 1,
+                "explanation": "dy/dx = 3x² - 6x - 9 = 3(x-3)(x+1) = 0. So x = 3 or x = -1."
+            },
+            {
+                "question": "If d²y/dx² > 0 at a stationary point, it is a:",
+                "options": ["Maximum", "Minimum", "Inflection point", "Cannot determine"],
+                "correctIndex": 1,
+                "explanation": "Positive second derivative → concave up → minimum."
+            },
+            {
+                "question": "At a stationary point, dy/dx is:",
+                "options": ["Undefined", "1", "0", "Maximum"],
+                "correctIndex": 2,
+                "explanation": "At a turning point, the gradient is zero."
             }
         ]
     },
@@ -825,8 +1667,22 @@ window.subjectNotes = [
         "digitizedText": "## 14.3 Kinematics\n\nCalculus is highly useful in kinematics for analyzing objects moving in a straight line. We relate displacement ($s$), velocity ($v$), and acceleration ($a$) using derivatives and integrals.\n\n- **Velocity** is the rate of change of displacement: $v = \\frac{\\mathrm{d}s}{\\mathrm{d}t}$\n- **Acceleration** is the rate of change of velocity: $a = \\frac{\\mathrm{d}v}{\\mathrm{d}t} = \\frac{\\mathrm{d}^2s}{\\mathrm{d}t^2}$\n\nConversely:\n\n- $v = \\int a \\, \\mathrm{d}t$\n- $s = \\int v \\, \\mathrm{d}t$\n\n> [!NOTE]\n> **Example 5: Kinematics using Differentiation**\n> A particle moves such that its displacement, $s$ meters, from a fixed point $O$ at time $t$ seconds is given by $s = t^3 - 6t^2 + 9t$. Find the acceleration of the particle when it is momentarily at rest.\n>\n> **Solution:**\n> 1. Find the velocity $v$:\n> $$ v = \\frac{\\mathrm{d}s}{\\mathrm{d}t} = 3t^2 - 12t + 9 $$\n> 2. Particle is at rest when $v = 0$:\n> $$ 3(t^2 - 4t + 3) = 0 $$\n> $$ 3(t - 1)(t - 3) = 0 $$\n> $$ t = 1 \\text{ or } t = 3 $$\n> 3. Find the acceleration $a$:\n> $$ a = \\frac{\\mathrm{d}v}{\\mathrm{d}t} = 6t - 12 $$\n> 4. Evaluate $a$ at $t = 1$ and $t = 3$:\n> At $t = 1$, $a = 6(1) - 12 = -6 \\text{ ms}^{-2}$.\n> At $t = 3$, $a = 6(3) - 12 = 6 \\text{ ms}^{-2}$.",
         "quizzes": [
             {
-                "question": "**Example 5: Kinematics using Differentiation**\nA particle moves such that its displacement, $s$ meters, from a fixed point $O$ at time $t$ seconds is given by $s = t^3 - 6t^2 + 9t$. Find the acceleration of the particle when it is momentarily at rest.",
-                "explanation": "1. Find the velocity $v$:\n$$ v = \\frac{\\mathrm{d}s}{\\mathrm{d}t} = 3t^2 - 12t + 9 $$\n2. Particle is at rest when $v = 0$:\n$$ 3(t^2 - 4t + 3) = 0 $$\n$$ 3(t - 1)(t - 3) = 0 $$\n$$ t = 1 \\text{ or } t = 3 $$\n3. Find the acceleration $a$:\n$$ a = \\frac{\\mathrm{d}v}{\\mathrm{d}t} = 6t - 12 $$\n4. Evaluate $a$ at $t = 1$ and $t = 3$:\nAt $t = 1$, $a = 6(1) - 12 = -6 \\text{ ms}^{-2}$.\nAt $t = 3$, $a = 6(3) - 12 = 6 \\text{ ms}^{-2}$."
+                "question": "If s = t³ - 6t² + 9t, the velocity is:",
+                "options": ["3t² - 12t + 9", "t² - 6t + 9", "3t - 12", "t³ - 6t² + 9"],
+                "correctIndex": 0,
+                "explanation": "v = ds/dt = 3t² - 12t + 9."
+            },
+            {
+                "question": "The particle is at rest when v = 0, which gives:",
+                "options": ["t = 0", "t = 1 or t = 3", "t = 2", "t = -1 or t = -3"],
+                "correctIndex": 1,
+                "explanation": "3(t-1)(t-3) = 0 → t = 1 or t = 3."
+            },
+            {
+                "question": "Acceleration is the derivative of:",
+                "options": ["Displacement", "Velocity", "Time", "Position"],
+                "correctIndex": 1,
+                "explanation": "a = dv/dt = d²s/dt²."
             }
         ]
     },
@@ -836,12 +1692,22 @@ window.subjectNotes = [
         "digitizedText": "## 14.4 Integration\n\nIntegration is the reverse process of differentiation.\n\n### Indefinite Integration\n\nWhen integrating without limits, always add the constant of integration, $c$.\n\n$$ \\int x^n \\, \\mathrm{d}x = \\frac{x^{n+1}}{n+1} + c \\quad \\text{for } n \\neq -1 $$\n\n$$ \\int \\frac{1}{x} \\, \\mathrm{d}x = \\ln|x| + c $$\n\n$$ \\int e^{ax} \\, \\mathrm{d}x = \\frac{1}{a} e^{ax} + c $$\n\n$$ \\int \\cos(ax) \\, \\mathrm{d}x = \\frac{1}{a} \\sin(ax) + c $$\n\n$$ \\int \\sin(ax) \\, \\mathrm{d}x = -\\frac{1}{a} \\cos(ax) + c $$\n\n> [!NOTE]\n> **Example 6: Indefinite Integration**\n> Find $y$ given that $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4e^{2x} - \\frac{3}{x^2}$ and that $y = 5$ when $x = 1$.\n>\n> **Solution:**\n> 1. Integrate to find $y$:\n> $$ y = \\int \\left( 4e^{2x} - 3x^{-2} \\right) \\mathrm{d}x $$\n> $$ y = 2e^{2x} - \\frac{3x^{-1}}{-1} + c $$\n> $$ y = 2e^{2x} + \\frac{3}{x} + c $$\n> 2. Use the given condition to find $c$:\n> $$ 5 = 2e^{2(1)} + \\frac{3}{1} + c $$\n> $$ 5 = 2e^2 + 3 + c $$\n> $$ c = 2 - 2e^2 $$\n> 3. Write the final equation:\n> $$ y = 2e^{2x} + \\frac{3}{x} + 2 - 2e^2 $$\n\n### Definite Integration\n\nUsed when evaluating an integral between two limits, $a$ and $b$.\n\n$$ \\int_{a}^{b} f'(x) \\, \\mathrm{d}x = [f(x)]_{a}^{b} = f(b) - f(a) $$\n\n### Area Under a Curve\n\nThe area enclosed by the curve $y = f(x)$, the $x$-axis, and the vertical lines $x = a$ and $x = b$ is given by:\n\n$$ \\text{Area} = \\int_{a}^{b} y \\, \\mathrm{d}x $$\n\nIf the area lies below the $x$-axis, the integral evaluates to a negative number. Take the absolute value for the physical area.\n<div align=\"center\">\n<svg width=\"400\" height=\"300\" viewBox=\"-60 -50 460 350\" xmlns=\"http://www.w3.org/2000/svg\">\n<!-- Axes -->\n<line x1=\"-40\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"30\" y1=\"290\" x2=\"30\" y2=\"-30\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<!-- Arrowheads -->\n<polygon points=\"380,250 374,246 374,254\" fill=\"currentColor\"/>\n<polygon points=\"30,-30 26,-24 34,-24\" fill=\"currentColor\"/>\n<!-- Axis labels -->\n<text x=\"370\" y=\"272\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">x</text>\n<text x=\"12\" y=\"-15\" fill=\"currentColor\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">y</text>\n<!-- Shaded area under curve between a and b -->\n<path d=\"M 100,250 L 100,160 C 130,80 180,40 220,30 C 260,40 290,90 310,130 L 310,250 Z\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/>\n<!-- Curve y = f(x) -->\n<path d=\"M 50,230 C 70,210 90,170 100,160 C 130,80 180,40 220,30 C 260,40 290,90 310,130 C 340,190 360,210 380,200\" stroke=\"currentColor\" stroke-width=\"2.5\" fill=\"none\"/>\n<!-- Vertical lines at x = a and x = b -->\n<line x1=\"100\" y1=\"250\" x2=\"100\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"6,4\"/>\n<line x1=\"310\" y1=\"250\" x2=\"310\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"6,4\"/>\n<!-- Labels for a and b -->\n<text x=\"92\" y=\"270\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">a</text>\n<text x=\"305\" y=\"270\" fill=\"currentColor\" font-family=\"serif\" font-size=\"14\" font-style=\"italic\">b</text>\n<!-- Curve label -->\n<text x=\"345\" y=\"192\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\" font-style=\"italic\">y = f(x)</text>\n<!-- Area label -->\n<text x=\"155\" y=\"185\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">Area = \u222b f(x) dx</text>\n<!-- Origin -->\n<text x=\"18\" y=\"268\" fill=\"currentColor\" font-family=\"serif\" font-size=\"13\">O</text>\n</svg>\n</div>\n\n> [!NOTE]\n> **Example 7: Finding the Area Under a Curve**\n> Find the area bounded by the curve $y = 4 - x^2$ and the $x$-axis.\n>\n> **Solution:**\n> 1. Find the $x$-intercepts by setting $y = 0$:\n> $$ 4 - x^2 = 0 \\implies x^2 = 4 \\implies x = -2, x = 2 $$\n> 2. Set up the definite integral:\n> $$ \\text{Area} = \\int_{-2}^{2} (4 - x^2) \\, \\mathrm{d}x $$\n> 3. Integrate:\n> $$ \\text{Area} = \\left[ 4x - \\frac{x^3}{3} \\right]_{-2}^{2} $$\n> 4. Evaluate:\n> $$ \\text{Upper limit} = 4(2) - \\frac{(2)^3}{3} = 8 - \\frac{8}{3} = \\frac{16}{3} $$\n> $$ \\text{Lower limit} = 4(-2) - \\frac{(-2)^3}{3} = -8 + \\frac{8}{3} = -\\frac{16}{3} $$\n> $$ \\text{Area} = \\frac{16}{3} - \\left( -\\frac{16}{3} \\right) = \\frac{32}{3} \\text{ units}^2 $$",
         "quizzes": [
             {
-                "question": "**Example 6: Indefinite Integration**\nFind $y$ given that $\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4e^{2x} - \\frac{3}{x^2}$ and that $y = 5$ when $x = 1$.",
-                "explanation": "1. Integrate to find $y$:\n$$ y = \\int \\left( 4e^{2x} - 3x^{-2} \\right) \\mathrm{d}x $$\n$$ y = 2e^{2x} - \\frac{3x^{-1}}{-1} + c $$\n$$ y = 2e^{2x} + \\frac{3}{x} + c $$\n2. Use the given condition to find $c$:\n$$ 5 = 2e^{2(1)} + \\frac{3}{1} + c $$\n$$ 5 = 2e^2 + 3 + c $$\n$$ c = 2 - 2e^2 $$\n3. Write the final equation:\n$$ y = 2e^{2x} + \\frac{3}{x} + 2 - 2e^2 $$"
+                "question": "Find ∫3x² dx.",
+                "options": ["6x + c", "x³ + c", "3x³ + c", "x³/3 + c"],
+                "correctIndex": 1,
+                "explanation": "∫3x² dx = 3 × x³/3 + c = x³ + c."
             },
             {
-                "question": "**Example 7: Finding the Area Under a Curve**\nFind the area bounded by the curve $y = 4 - x^2$ and the $x$-axis.",
-                "explanation": "1. Find the $x$-intercepts by setting $y = 0$:\n$$ 4 - x^2 = 0 \\implies x^2 = 4 \\implies x = -2, x = 2 $$\n2. Set up the definite integral:\n$$ \\text{Area} = \\int_{-2}^{2} (4 - x^2) \\, \\mathrm{d}x $$\n3. Integrate:\n$$ \\text{Area} = \\left[ 4x - \\frac{x^3}{3} \\right]_{-2}^{2} $$\n4. Evaluate:\n$$ \\text{Upper limit} = 4(2) - \\frac{(2)^3}{3} = 8 - \\frac{8}{3} = \\frac{16}{3} $$\n$$ \\text{Lower limit} = 4(-2) - \\frac{(-2)^3}{3} = -8 + \\frac{8}{3} = -\\frac{16}{3} $$\n$$ \\text{Area} = \\frac{16}{3} - \\left( -\\frac{16}{3} \\right) = \\frac{32}{3} \\text{ units}^2 $$"
+                "question": "Find the area under y = 4 - x² between x = -2 and x = 2.",
+                "options": ["16/3 units²", "32/3 units²", "8 units²", "16 units²"],
+                "correctIndex": 1,
+                "explanation": "∫₋₂² (4-x²)dx = [4x - x³/3]₋₂² = 16/3 + 16/3 = 32/3."
+            },
+            {
+                "question": "The constant of integration c accounts for:",
+                "options": ["Making the answer positive", "All possible antiderivatives", "Rounding", "Verification"],
+                "correctIndex": 1,
+                "explanation": "Since d/dx(constant) = 0, there are infinitely many antiderivatives differing by a constant."
             }
         ]
     }
