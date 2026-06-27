@@ -49,6 +49,31 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('lms_theme', newTheme);
         themeBtn.innerText = newTheme === 'dark' ? '☀️' : '🌙';
     });
+
+    // Sidebar Toggle Logic
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    
+    // On load, if mobile, ensure it starts collapsed
+    if (window.innerWidth <= 768) {
+        sidebar.classList.add('collapsed');
+    }
+    
+    sidebarToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle('collapsed');
+        sidebar.classList.toggle('active');
+    });
+    
+    // Close sidebar on mobile when clicking anywhere outside of it
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            if (!sidebar.contains(e.target) && e.target !== sidebarToggle) {
+                sidebar.classList.add('collapsed');
+                sidebar.classList.remove('active');
+            }
+        }
+    });
     
     // Initialize Mermaid globally
     if (window.mermaid) {
@@ -126,7 +151,14 @@ function initApp(syllabusData, notesData) {
                 item.innerHTML = `<span style="opacity: ${isAvailable ? 1 : 0.4}">${st.id} ${st.title} ${isAvailable ? '' : '(Pending)'}</span>`;
                 
                 if (isAvailable) {
-                    item.onclick = () => loadNote(st.id, notesMap[st.id], item);
+                    item.onclick = () => {
+                        loadNote(st.id, notesMap[st.id], item);
+                        if (window.innerWidth <= 768) {
+                            const sidebar = document.getElementById('sidebar');
+                            sidebar.classList.add('collapsed');
+                            sidebar.classList.remove('active');
+                        }
+                    };
                 }
                 
                 contentWrap.appendChild(item);

@@ -139,6 +139,7 @@ body, html {
     display: flex;
     flex-direction: column;
     z-index: 10;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
 }
 
 .search-box {
@@ -628,6 +629,15 @@ body, html {
     fill-opacity: 0.15;
 }
 
+[data-theme="dark"] .sme-marker-primary {
+    fill: #60a5fa;
+}
+
+[data-theme="dark"] .sme-marker-secondary {
+    fill: #f87171;
+}
+
+
 
 /* === Quick-win: Theme-adaptive fills for SVGs === */
 .sme-fill-white {
@@ -673,3 +683,71 @@ body, html {
     max-width: 100%;
     height: auto;
 }
+
+/* --- Sidebar Collapse Rules --- */
+.sidebar.collapsed {
+    width: 0 !important;
+    min-width: 0 !important;
+    border-right: 0 !important;
+    overflow: hidden !important;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Hide instructions on mobile */
+    .instruction-text {
+        display: none;
+    }
+
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    /* Hide subject badge on header to avoid overflow */
+    .subject-badge {
+        display: none;
+    }
+
+    /* Fixed drawer overlay layout for sidebar */
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: calc(100vh - 60px);
+        width: 280px;
+        min-width: 280px;
+        transform: translateX(-100%);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    /* Slides sidebar in on mobile */
+    .sidebar.active {
+        transform: translateX(0) !important;
+    }
+
+    /* Completely collapses sidebar without pushing content */
+    .sidebar.collapsed {
+        transform: translateX(-100%) !important;
+        width: 280px !important;
+        min-width: 280px !important;
+    }
+
+    .workspace {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 16px;
+    }
+    .logo-icon {
+        display: none; /* Hide icon on extra small screens */
+    }
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
